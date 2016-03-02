@@ -182,15 +182,15 @@
 	}
 	.btn-fb-share{
 		width: 100%;
-    margin-left: 0px;
+    	margin-left: 0px;
 	}
 	.btn-fb-share > span{
 		padding-left: 0px;
 	}
 	.btn-tt-share{
 		width: 100%;
-    margin-left: 0px;
-    margin-top: 10px;
+	    margin-left: 0px;
+	    margin-top: 10px;
 		padding-left: 0px;
 	}
 	.btn-grey{
@@ -199,13 +199,13 @@
 	}
 	.pop-view > li.active > a, .pop-view > li.active > a:hover{
 		padding: 2px 5px;
-    height: 26px;
-    font-size: 12px;
+	    height: 26px;
+	    font-size: 12px;
 	}
 	.pop-view > li > a{
 		font-size: 12px;
-    padding: 2px 5px;
-    height: 26px;
+	    padding: 2px 5px;
+	    height: 26px;
 	}
 	.comment-status{
 		font-size: 11.5px;
@@ -251,19 +251,19 @@
 /*--------------------------------------------------------------
 												Anime Category
 ---------------------------------------------------------------*/
-@media only screen and (max-width: 992px){
+@media only screen and (min-width: 992px){
 	
 	.alphabet-nav > a{
 		padding: 4px 7px;
-    letter-spacing: 5.2px;
+    	letter-spacing: 5.2px;
 	}
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (min-width: 768px) and (max-width: 990px){
 
 	.alphabet-nav > a {
-    padding: 4px 4px;
-    letter-spacing: 3px;
+	    padding: 4px 4px;
+	    letter-spacing: 3px;
 	}
 	.right-inner-addon{
 		width: 340px;
@@ -272,13 +272,13 @@
 		padding: 13px 315px;
 	}
 }
-@media only screen and (max-width: 480px){
+@media only screen and (min-width: 480px) and (max-width: 990px){
 	
 	.follow-responsive{
 		display: inline-block;
 		border-bottom: 1px solid #eee;
-    width: 100%;
-    padding: 10px 10px;
+	    width: 100%;
+	    padding: 10px 10px;
 	}
 	.right-button{
 		display: none;
@@ -288,10 +288,10 @@
 	}
 	.list-place {
 		margin: 0px;
-    display: inline-block;
-    margin-top: 105px;
-    width: 100%;
-    padding: 0px 25px;
+	    display: inline-block;
+	    margin-top: 105px;
+	    width: 100%;
+	    padding: 0px 25px;
 	}
 	.list-followers{
 		padding: 0px 20px;
@@ -329,7 +329,7 @@
 	}
 	.right-inner-addon{
 		width: 100%;
-    margin-bottom: 20px;
+    	margin-bottom: 20px;
 	}
 	.right-inner-addon > i{ 
 		padding: 13px 385px; 
@@ -356,14 +356,14 @@
 		display: inline-block;
 	}
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 479px){
 	.list-place{
 		padding: 0px 0px;
-    margin-top: 75px;
+    	margin-top: 75px;
 	}
 	.list-followers{
 		padding: 0px 8px;
-    margin-right: 0px;
+    	margin-right: 0px;
 	}
 	.list-followers > a > h5{
 		font-size: 11px;
