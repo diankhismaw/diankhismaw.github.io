@@ -70,6 +70,9 @@
 	.link-comment{
 		padding: 0px !important;
 	}
+	.horizontal-vote{
+		padding-left: 0px;
+	}
 	.horizontal-vote-up{
 		padding: 2px 5px;
 	    width: auto;
