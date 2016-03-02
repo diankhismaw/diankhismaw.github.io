@@ -357,6 +357,25 @@
 	}
 }
 @media only screen and (min-width: 320px) and (max-width: 479px){
+	.alphabet-nav{ 
+		display: none; 
+	}
+	.alphabet-res{ 
+		display: inline-block;
+		float: right;
+	}
+	.right-inner-addon{ 
+		display: none; 
+	}
+	.inner-res{
+		display: block;
+	}
+	.show-tabs{
+		display: none;
+	}
+	.hide-tabs{
+		display: inline-block !important;
+	}
 	.list-place{
 		padding: 0px 0px;
     	margin-top: 75px;
