@@ -96,19 +96,19 @@
 	}
 	.btn-fb-share{
 		width: 110px;
-    float: left;
-    margin-left: 9px;
-    height: auto;
-    padding: 3px 0px;
+	    float: left;
+	    margin-left: 9px;
+	    height: auto;
+	    padding: 3px 0px;
 	}
 	.btn-fb-share > span{
 		padding-left: 20px;
 	}
 	.btn-tt-share{
 		width: 110px;
-    height: auto;
-    margin-left: 10px;
-    padding: 3px 0px;
+	    height: auto;
+	    margin-left: 10px;
+	    padding: 3px 0px;
 		padding-left: 20px;
 	}
 	.input-text-comment{
@@ -121,12 +121,16 @@
 
 @media only screen and (min-width: 320px){
 	.navbar-toggle {
-    border: 1px solid #fff;
-    margin: 17px 15px 10px 10px;
+	    border: 1px solid #fff;
+	    margin: 17px 15px 10px 10px;
 	}
-	.wraper-view {
-		display: inline-block;
-		padding: 0px;
+	.navbar-toggle > span{
+		background-color: #fff;
+	}
+	.wraper-view > h3{
+	    padding-left: 0px;
+	    display: inline-block;
+	    font-size: 20px;
 	}
 	.link-comment{
 		padding: 0px !important;
