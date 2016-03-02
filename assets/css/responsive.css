@@ -127,6 +127,10 @@
 	.navbar-toggle > span{
 		background-color: #fff;
 	}
+	.wraper-view{
+		padding-left: 0px;
+		display: inline-block;
+	}
 	.wraper-view > h3{
 	    padding-left: 0px;
 	    display: inline-block;
