@@ -352,6 +352,7 @@
 	}
 	.dropdown-right-res > li{
 		list-style: none;
+<<<<<<< HEAD
 	}
 }
 @media only screen and (min-width: 320px) and (max-width: 479px){
@@ -364,6 +365,20 @@
 	.right-button{
 		display: none;
 	}
+=======
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 479px){
+	.follow-responsive{
+		display: inline-block;
+		border-bottom: 1px solid #eee;
+    width: 100%;
+    padding: 10px 10px;
+	}
+	.right-button{
+		display: none;
+	}
+>>>>>>> 0788d62b2d413ff34443096c4df6eb6ae8587fb2
 	.alphabet-nav{ 
 		display: none; 
 	}
@@ -504,6 +519,42 @@
 @media only screen and (min-width: 480px) and (max-width: 767px){
 	.wrap-res-avatar{
 		display: inline-block;
+<<<<<<< HEAD
+	}
+	.wraper-discuss-click{
+		padding: 0px;
+	}
+	.wrap-tag-comment{
+		width: 100%;
+    padding-left: 47px;
+	}
+	.avatar-comment > a{
+		font-size: 13px;
+	}
+	.wrap-tag-comment > .tag-minute{
+		margin-left: 10px;
+	}
+	.normal-tag{
+		padding: 2px 5px !important;
+	}
+	.red-tag{
+		padding: 2px 5px !important; 
+	}
+	.btn-fb-share{
+		width: 200px;
+	}
+	.btn-tt-share{
+		width: 200px;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+	.wraper-discuss-click{
+		padding: 0px;
+	}
+	.wrap-res-avatar{
+		display: inline-block;
+=======
+>>>>>>> 0788d62b2d413ff34443096c4df6eb6ae8587fb2
 	}
 	.wraper-discuss-click{
 		padding: 0px;
