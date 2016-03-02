@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>League Meme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/helper.css" rel="stylesheet">
+    <link href="assets/css/hack.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+
+    <link href="assets/css/jquery-ui.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  
+   <body style="background-color:#eee;">
+    <!-- Modal Login-->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="assets/img/close.png" alt="close"/></button>
+          <div class="modal-header bor-none">
+            <h2 class="modal-title mar-t-40" id="myModalLabel">Login to Your Account</h2>
+            <p class="grey-color-xs">You can connect with a social network</p>
+            <div class="connect-social">
+              <div class="col-md-5">
+                <div class="wrap-fb pull-right">
+                  <div class="connect-l-fb">
+                    <i class="fa fa-facebook"></i>
+                  </div>
+                  <div class="connect-r-fb">
+                    Facebook
+                  </div>
+                </div>
+              </div><!-- end col-md-6 -->
+              <div class="col-md-2">
+                <div class="center-block">
+                  <span class="circles">OR</span>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="wrap-gp pull-left">
+                  <div class="connect-l-gp">
+                    <img src="assets/img/gplus.png" alt="">
+                  </div>
+                  <div class="connect-r-gp">
+                    Google
+                  </div>
+                </div>
+              </div><!-- end col-md-6 -->
+            </div><!-- connect social -->
+          </div><!-- end modal header-->
+
+          <div class="modal-footer">
+            <p class="text-left black-col">Login with your Email Address</p>
+            <form>
+              <div class="form-group text-left">
+                <label for="exampleInputEmail1">Username</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+              <div class="form-group text-left">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <p class="text-right link-log">Forgot the password?</p>
+              </div>
+              <button type="submit" class="btn btn-login-green pull-left">Login</button>
+              <div class="clearfix"></div>
+              <p class="link-log text-left">Didn’t have an account? <a href="#">Sign up</a></p> 
+            </form>
+          </div>
+        </div>
+      </div>
+    </div><!-- end modal -->
+    
+    <!-- Static navbar -->
+    <nav class="navbar navbar-chocolate navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/logo-simple.png" alt="logo" />
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav menu">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Discussion<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            <li><a href="#about">Anime</a></li>
+            <li><a href="#contact">News</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right menu">
+            
+            <li>
+              <a href="../navbar/">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+              </a>
+            </li>
+            <li class="active">
+              <a data-toggle="modal" href="#" data-target="#login">Login</a>
+            </li>
+            <li class="mar-t-10">
+              <button type="button" class="btn btn-green">Sign Up</button>
+            </li>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <!--content section-->
+		<div class="container">
+			<div class="single-panel">
+				<div class="col-md-8 no-padding">
+					
+					<div class="col-md-12 no-padding">
+						
+						<div class="col-md-9 no-padding">
+							<div class="media info-avatar avatar-view">	
+								<div class="media-left">
+									<a href="">
+										<img src="assets/img/admin.png" alt="" class="media-object avatar">
+									</a>
+								</div>
+								<div class="media-body">
+									<a href="">
+										<h5>ADMIN</h5>
+									</a>
+									<span class="minute">15min ago to <a href="" class="minute">/a/onepiece</a></span>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 no-padding">
+							<div class="btn btn-green btn-view">Next</div>
+						</div>
+						
+					</div> <!--avatar -->
+					
+					<div class="col-md-12 wraper-view">
+						<h3><a href="">Rest and Peace ACE !</a></h3>
+						<a href=""><img src="assets/img/img-1.png" alt="ace" class="img-responsive meme-view" /></a>
+
+						<!--like-->
+						<div class="link-comment" style="padding: 0px 55px;">
+							<a href="#">20 Likes</a>
+						&nbsp; - &nbsp;  
+							<a href="#">1 Comments</a>
+							<a data-toggle="modal" href="#" data-target="#login" style="float: right;">Report</a>
+						</div>
+						
+						<!-- vote -->
+						<div class="wraper-share">
+							<ul class="horizontal-vote">
+								<li class="horizontal-vote-up">
+									<a href="#">
+										<i class="fa fa-arrow-up"></i>
+										<span>SUGOI</span>
+									</a>
+								</li>
+								<li class="horizontal-vote-down">
+									<a href="#">
+										<i class="fa fa-arrow-down"></i>
+									</a>
+								</li>
+							</ul>
+							<!-- others btn -->
+                            <a class="others-btn">
+                              <img src="assets/img/others-btn.png">
+                            </a>
+							<!--social share -->
+							<div class="social-share">
+								<a href="#" class="btn-fb-share">
+									<span>Share</span>
+								</a>
+								<a href="#" class="btn-tt-share">
+									<span>Share</span>
+								</a>
+							</div>
+						</div>
+						
+						<div class="hastag-view">
+							<a class="btn btn-grey" href="#" role="button">#Anime</a>
+							<a class="btn btn-grey" href="#" role="button">#onepiece</a>
+						</div>
+						
+					</div><!-- wraper-view -->
+					
+					<div class="tab-comment">
+						<ul id="pop" class="nav pop-tabs pop-view" role="tablist"> 
+							<li role="presentation" class="active">
+								<a href="#popular" role="tab" data-toggle="tab" aria-controls="popular" aria-expanded="true">Popular</a>
+							</li> 
+							<li role="presentation" class="mar-lm-5">
+								<a href="#news" role="tab" data-toggle="tab" aria-controls="news">News</a>
+							</li>
+							<li style="float:right;">
+								<div class="comment-status">200 Comments</div>
+							</li> 
+						</ul>
+						<hr/>
+						
+					</div>
+					
+					<div class="tab-content">
+						<!-- popular-->
+						<div role="tabpanel" class="tab-pane active" id="popular"> 
+							<div class="text-comment">
+								<div class="wrap-avatar-comment">
+									<a href="#">
+										<img class="media-object avatar" src="assets/img/admin.png" alt="...">
+									</a>
+								</div>
+								<div class="input-text-comment">
+									<textarea class="form-control form-comment" rows="3" placeholder="What's on your mind"></textarea>
+									<a href="" class="pull-right small-btn green-bg">
+										Comment
+									</a>
+								</div>
+							</div>
+							
+							<div class="user-comment">
+								
+								<div class="media info-avatar">
+									<div class="media-left">
+										<a href="#">
+											<img class="media-object avatar" src="assets/img/admin.png" alt="...">
+										</a>
+									</div>
+
+									<div class="media-body w-100">
+										<a href=""><h5 class="user">Luffy D’monkeys</h5></a>
+										<div class="date">100 Point - <a href=""> 6 Days ago </a></div>
+									</div>
+								</div>
+								
+                 <p class="dis-cap comment-field-user">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare consequat sapien, a lacinia ligula egestas eu. Aliquam quis purus lorem. Donec tincidunt accumsan ligula, sit amet fermentum magna viverra ut. Mauris porta sagittis dui, id iaculis augue imperdiet vitae. Praesent placerat diam in odio posuere
+                </p>
+                
+                <div class="reply-comment">
+                	<a href=""><span>Reply</span></a>
+									<a href=""><img src="assets/img/up-reply.png"></a>	
+									<a href=""><img src="assets/img/down-reply.png"></a>
+                </div>
+							</div>
+							
+							<div class="comment-to-comment">
+								<div class="user-comment">
+
+									<div class="media info-avatar">
+										<div class="media-left">
+											<a href="#">
+												<img class="media-object avatar" src="assets/img/admin.png" alt="...">
+											</a>
+										</div>
+
+										<div class="media-body w-100">
+											<a href=""><h5 class="user">Luffy D’monkeys</h5></a>
+											<div class="date">100 Point - <a href=""> 6 Days ago </a></div>
+										</div>
+									</div>
+
+									 <p class="dis-cap comment-field-user">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare consequat sapien, a lacinia ligula egestas eu. Aliquam quis purus lorem. Donec tincidunt accumsan ligula, sit amet fermentum magna viverra ut. Mauris porta sagittis dui, id iaculis augue imperdiet vitae. Praesent placerat diam in odio posuere
+									</p>
+
+									<div class="reply-comment">
+										<a href=""><span>Reply</span></a>
+										<a href=""><img src="assets/img/up-reply.png"></a>	
+										<a href=""><img src="assets/img/down-reply.png"></a>	
+									</div>
+								</div>
+							</div>
+									
+						</div><!-- tab panel -->
+						
+						<div role="tabpanel" class="tab-pane" id="news">
+							mdlsamdlasm
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4 ads-view">
+					<div class="banner">
+						<a href="#" target="_self">
+							<img src="assets/img/ads.png" alt="ads" class="img-responsive" />
+						</a>
+					</div>
+					<!--bannner-->
+					<div class="banner">
+						<a href="#" target="_self">
+							<img src="assets/img/idea.png" alt="banner" class="img-responsive" />
+						    <h4>Nice Guys</h4>
+						</a>
+					</div>
+					<!--bannner-->
+					<div class="banner">
+						<a href="#" target="_self">
+							<img src="assets/img/banner2.png" alt="banner" class="img-responsive" />
+						    <h4>What is she</h4>
+						</a>
+					</div>
+
+					<!-- social -->
+					<div class="social-network">
+						<ul class="list-unstyled">
+							<li>
+								<a href="#" target="_self">
+									<div class="link"><i class="fa fa-facebook"></i></div>
+								</a>
+								<p class="text-con">50K</p>
+							</li>
+							<li>
+								<a href="#" target="_self">
+									<div class="link"><i class="fa fa-twitter"></i></div>
+								</a>
+								<p class="text-con">1K</p>
+							</li> 
+							<li>
+								<a href="#" target="_self">
+									<div class="link"><i class="fa fa-instagram"></i></div>
+								</a>
+								<p class="text-con">30K</p>
+							</li>
+						</ul>
+					</div>
+
+					<div class="link-bottom">
+						<ul class="list-unstyled">
+							<li><a href="#">Advertise</a></li>
+							<li><a href="#">Contacts</a></li>
+							<li><a href="#">Privacy</a></li>
+							<li><a href="">Terms</a></li>
+						</ul>
+						<p class="text-center copyright">Copyright © All Rights Reserved
+					</div>
+				</div>
+                  
+			</div>
+		</div>
+		
+		<!-------------------------
+					Java Script
+		--------------------------->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+	</body>

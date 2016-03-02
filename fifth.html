@@ -1,0 +1,3633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>League Meme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/helper.css" rel="stylesheet">
+    <link href="assets/css/hack.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+		<link href="assets/css/img-hover.css" rel="stylesheet">
+    <link href="assets/css/jquery-ui.min.css" rel="stylesheet">
+    
+		<!-- Important Owl stylesheet -->
+		<link rel="stylesheet" href="assets/css/owl.carousel.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.css">
+
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+        <!-- Modal Login-->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="assets/img/close.png" alt="close"/></button>
+          <div class="modal-header bor-none">
+            <h2 class="modal-title mar-t-40" id="myModalLabel">Login to Your Account</h2>
+            <p class="grey-color-xs">You can connect with a social network</p>
+            <div class="connect-social">
+              <div class="col-md-5">
+                <div class="wrap-fb pull-right">
+                  <div class="connect-l-fb">
+                    <i class="fa fa-facebook"></i>
+                  </div>
+                  <div class="connect-r-fb">
+                    Facebook
+                  </div>
+                </div>
+              </div><!-- end col-md-6 -->
+              <div class="col-md-2">
+                <div class="center-block">
+                  <span class="circles">OR</span>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="wrap-gp pull-left">
+                  <div class="connect-l-gp">
+                    <img src="assets/img/gplus.png" alt="">
+                  </div>
+                  <div class="connect-r-gp">
+                    Google
+                  </div>
+                </div>
+              </div><!-- end col-md-6 -->
+            </div><!-- connect social -->
+          </div><!-- end modal header-->
+
+          <div class="modal-footer">
+            <p class="text-left black-col">Login with your Email Address</p>
+            <form>
+              <div class="form-group text-left">
+                <label for="exampleInputEmail1">Username</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+              <div class="form-group text-left">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <p class="text-right link-log">Forgot the password?</p>
+              </div>
+              <button type="submit" class="btn btn-login-green pull-left">Login</button>
+              <div class="clearfix"></div>
+              <p class="link-log text-left">Didn’t have an account? <a href="#">Sign up</a></p> 
+            </form>
+          </div>
+        </div>
+      </div>
+    </div><!-- end modal -->
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-chocolate navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/img/logo-simple.png" alt="logo" />
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav menu">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Discussion<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            <li><a href="third-page.html">Anime</a></li>
+            <li><a href="#contact">News</a></li>
+          </ul>
+          
+          <ul class="nav navbar-nav navbar-right menu">
+						<li>
+							<a href="../navbar/">
+								<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+							</a>
+						</li>
+						<li class="active">
+							<a href="profile.html">Luffy D'monkeys</a>
+						</li>
+						<li class="mar-t-10 upload-triger">
+							<a href="#" data-toggle="modal" data-target="#upload" type="button" class="btn btn-green">Upload</a>
+						</li>
+					</ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+      
+		<div class="background-cover">
+			<div class="overlay-cover"></div>
+			<div class="bottom-cover"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+
+						<div class="img-profile">
+							<img src="assets/img/luffy.png" alt="logo-big" />
+						</div>
+
+						<div class="info-account" >
+							<div class="name-user">Dian Khisma Wijaya</div>
+							<div class="bio">
+								I’m young web designer, try to make you laugh at here, be awesome 
+	with me and have fun together
+							</div>
+							<div class="nation">
+								<i class="fa fa-circle"></i>
+									<a href="#"> Indonesia</a>
+								<i class="fa fa-circle"></i>
+							</div>
+						</div>
+
+						<ul class="text-center list-unstyled list-place row">
+							<li class="list-followers">
+								<a href="#">
+									<h5>FOLLLOWING</h5>
+									<h2>4.500</h2>
+								</a>
+							</li>
+							<li class="list-followers">
+								<a href="#">
+									<h5>FOLLOWERS</h5>
+									<h2>1.278</h2>
+								</a>
+							</li>
+							<li class="list-followers">
+								<a href="#">
+									<h5>POST COUNT</h5> 
+									<h2>990</h2>
+								</a>
+							</li>
+							<li class="right-button">
+								<button type="button" class="btn btn-green">Unfollow</button>
+								&nbsp;
+								<button type="button" class="btn btn-trans">Message</button>
+							</li>
+						</ul>
+
+					</div><!-- end col-md-12 -->
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</div><!-- end background-cover -->
+
+    <div class="col-md-12 tab-top">
+      <div class="container">
+        <div class="row">
+          <ul id="fifth" class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#summary" aria-controls="summary" role="tab" data-toggle="tab">One Piece</a></li>
+            <li role="presentation"><a href="#discussion" aria-controls="synopsis" role="tab" data-toggle="tab">Discussion</a></li>
+            <li role="presentation"><a href="#manga" aria-controls="background" role="tab" data-toggle="tab">Manga</a></li>
+            <li role="presentation"><a href="#theories" aria-controls="background" role="tab" data-toggle="tab">Theories</a></li>
+            <li role="presentation"><a href="#episode-sec" aria-controls="background" role="tab" data-toggle="tab">Episode</a></li>
+            <li role="presentation"><a href="#review-sec" aria-controls="background" role="tab" data-toggle="tab">Review</a></li>
+            <li role="presentation"><a href="#quotes-sec" aria-controls="background" role="tab" data-toggle="tab">Quotes</a></li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+           	<!-- One piece tab -->
+            <div role="tabpanel" class="tab-pane active" id="summary">
+              <div class="left-panel-sec">
+                <div class="wrap-panel">
+                  <div class="content-panel">
+                    <img src="assets/img/onepiece.png" alt="" class="w-100">
+                  </div>
+                  <div class="episode-title">
+                    Ep: 275 
+                  </div>
+                  <div class="manga-title">
+                    Manga: 275 
+                  </div>
+                  <div class="last-update">
+                    <div class="episode">
+                      <span>2d 5hr 59m</span>
+                    </div>
+                    <div class="episode">
+                      <span>2d 5hr 59m</span>
+                    </div>
+                  </div>
+									<div class="content-panel info-table">
+										
+                  	<div class="fill-describe">
+                  		<span class="caption-describe">Score</span>
+                  		<span>:</span>
+                  		<span class="score-left">5/10</span>
+                  	</div>
+                  	<div class="fill-describe">
+                  		<span class="caption-describe">Current Episode</span>
+                  		<span>:</span>
+                  		<span class="score-left">744</span>
+                  	</div>
+                  	<div class="fill-eiscribe">
+                  		<span class="caption-describe">Current Manga</span>
+                  		<span>:</span>
+                  		<span class="score-left">725</span>
+                  	</div>
+										
+                  	<div class="td">
+											<div class="fill-describe">
+												<span class="caption-describe">English</span>
+												<span>:</span>
+												<span class="score-left">ERASED</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Synonyms</span>
+												<span>:</span>
+												<span class="score-left">The Town Where</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Japanese</span>
+												<span>:</span>
+												<span class="score-left">僕だけが</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Episode</span>
+												<span>:</span>
+												<span class="score-left">12</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Status</span>
+												<span>:</span>
+												<span class="score-left">Currently Airing</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Aired</span>
+												<span>:</span>
+												<span class="score-left">Jan 8, 2016</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Genres</span>
+												<span>:</span>
+												<span class="score-left">Mystery</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Duration</span>
+												<span>:</span>
+												<span class="score-left">23 min/eps</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Rating</span>
+												<span>:</span>
+												<span class="score-left">R - 17+</span>
+											</div>
+                  	</div>
+                  	<div class="btn-more" id="more">More..</div>
+									</div>
+									
+                  
+                  <div class="title link-menu-top">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-book"></i> Synopsis</a>
+                  </div>
+                  <div class="title link-menu">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-pencil-square-o"></i> Write Review</a>
+                  </div>
+                  <div class="title link-menu">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-plus"></i> Add to..</a>
+                  </div>
+                </div><!-- end wrap-panel-->
+              </div><!-- end left-panel-sec -->
+
+              <div class="right-panel-sec">
+                <div class="row">
+                  <div class="col-md-7 main-content">
+
+                    <!-- tab -->
+                    <div class="row">
+                      
+                      <div class="col-md-8">
+                        <ul id="pop" class="nav pop-tabs" role="tablist" style="margin-top:10px;"> 
+                          <li role="presentation" class="active">
+                            <a href="#popular" role="tab" data-toggle="tab" aria-controls="popular" aria-expanded="true">Popular</a>
+                          </li> 
+                          <li role="presentation" class="mar-lm-5">
+                            <a href="#news" role="tab" data-toggle="tab" aria-controls="news">News</a>
+                          </li> 
+                        </ul>
+                      </div>
+                      
+                      <div class="col-md-4">
+                        <div class="trolls" style="margin-top: 20px;">
+                          <a href="">
+                            <span class="linky">All The Things</span>
+                            <span>&nbsp;&nbsp;&nbsp;<img src="assets/img/icon/post/dropdown.png"></span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="popContent" class="tab-content">
+                      <!-- popular-->
+                      <div role="tabpanel" class="tab-pane fade in active" id="popular"> 
+                        <div classs="row">
+                          
+                          <div class="col-md-12">
+                            
+                            <!--wrapper avatar-->
+                            <div class="wrapper-avatar">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="profile.html">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                <div class="media-body w-2000">
+                                  <a href="profile.html"><h5>Luffy D'Monkey</h5></a>
+                                  <span class="minute">15min ago</span>
+                                </div>
+                              </div>
+                              <h3><a href="">Rest and Peace ACE !</a></h3>
+                              <a href="view-post.html"><img src="assets/img/img-1.png" alt="ace" class="img-responsive meme-big" /></a>
+
+                              <!--like-->
+                              <div class="link-comment">
+                                <a href="#">20 Likes</a>
+                                &nbsp; - &nbsp; 
+                                <a href="#">1 Comments</a>
+                              </div>
+
+                              <div class="shares">
+                                <!-- update -->
+                                <div class="link-icon pull-left">
+                                  <ul class="list-unstyled left-link">
+                                    <li>
+                                      <a href="" class="hvr-bounce-in">
+                                        <img src="assets/img/icon/post/up.png">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="" class="hvr-bounce-in">
+                                        <img src="assets/img/icon/post/down.png">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="" class="hvr-bounce-in">
+                                        <img src="assets/img/icon/post/comment.png">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="" class="hvr-bounce-in">
+                                        <img src="assets/img/icon/post/open.png">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="" class="hvr-bounce-in">
+                                        <img src="assets/img/icon/post/link.png">
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+
+                                <!-- social -->
+                                <div class="pull-right social-btn">
+                                  <a href="" class="fb-bg medium-btn mar-r-5">
+                                    <i class="fa fa-facebook"></i>
+                                    share
+                                  </a>
+                                  
+                                  <a href="" class="tw-bg medium-btn">
+                                    <i class="fa fa-twitter"></i>
+                                    share
+                                  </a>
+                                </div>
+                              </div><!-- end shares-->
+                              
+                              <div class="clearfix"></div>
+                              <div class="hastag">
+                                <a class="btn btn-grey" href="#" role="button">#Anime</a>
+                                <a class="btn btn-grey" href="#" role="button">#onepiece</a>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                            <!--wrapper avatar-->
+                            <div class="wrapper-avatar">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="profile.html">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                <div class="media-body w-2000">
+                                  <a href="profile.html"><h5>ADMIN</h5></a>
+                                  <span class="minute">15min ago</span>
+                                </div>
+                              </div>
+                              <h3><a href="">Rest and Peace ACE !</a></h3>
+                              <a href="view-post.html"><img src="assets/img/img-1.png" alt="ace" class="img-responsive meme-big" /></a>
+
+                              <!--like-->
+                              <div class="link-comment">
+                                <a href="#">20 Likes</a>
+                                &nbsp; - &nbsp; 
+                                <a href="#">1 Comments</a>
+                              </div>
+
+                              <div class="shares">
+                                <!-- update -->
+                                <div class="link-icon pull-left">
+                                  <ul class="list-unstyled left-link">
+                                    <li>
+                                      <a href="" class="hvr-bounce-in">
+                                        <img src="assets/img/icon/post/up.png">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="" class="hvr-bounce-in">
+                                        <img src="assets/img/icon/post/down.png">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="" class="hvr-bounce-in">
+                                        <img src="assets/img/icon/post/comment.png">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="" class="hvr-bounce-in">
+                                        <img src="assets/img/icon/post/open.png">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="" class="hvr-bounce-in">
+                                        <img src="assets/img/icon/post/link.png">
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+
+                                <!-- social -->
+                                <div class="pull-right social-btn">
+                                  <a href="" class="fb-bg medium-btn mar-r-5">
+                                    <i class="fa fa-facebook"></i>
+                                    share
+                                  </a>
+                                  <a href="" class="tw-bg medium-btn">
+                                    <i class="fa fa-twitter"></i>
+                                    share
+                                  </a>
+                                </div>
+                              </div><!-- end shares-->
+                              
+                              <div class="clearfix"></div>
+                              <div class="hastag">
+                                <a class="btn btn-grey" href="#" role="button">#Anime</a>
+                                <a class="btn btn-grey" href="#" role="button">#onepiece</a>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                            <!--wrapper avatar-->
+                            <div class="wrapper-avatar">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="profile.html">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                <div class="media-body w-2000">
+                                  <a href="profile.html"><h5>ADMIN</h5></a>
+                                  <span class="minute">15min ago</span>
+                                </div>
+                              </div>
+                              <h3><a href="profile.html">Rest and Peace ACE !</a></h3>
+                              <a href="view-post.html"><img src="assets/img/img-1.png" alt="ace" class="img-responsive meme-big" /></a>
+
+                              <!--like-->
+                              <div class="link-comment">
+                                <a href="#">20 Likes</a>
+                                &nbsp; - &nbsp; 
+                                <a href="#">1 Comments</a>
+                              </div>
+
+                              <div class="shares">
+                                <!-- update -->
+                                <div class="link-icon pull-left">
+                                  <ul class="list-unstyled left-link">
+                                    <li>
+                                      <a href="" class="hvr-bounce-in">
+                                        <img src="assets/img/icon/post/up.png">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="" class="hvr-bounce-in">
+                                        <img src="assets/img/icon/post/down.png">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="" class="hvr-bounce-in">
+                                        <img src="assets/img/icon/post/comment.png">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="" class="hvr-bounce-in">
+                                        <img src="assets/img/icon/post/open.png">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="" class="hvr-bounce-in">
+                                        <img src="assets/img/icon/post/link.png">
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+
+                                <!-- social -->
+                                <div class="pull-right social-btn">
+                                  <a href="" class="fb-bg medium-btn mar-r-5">
+                                    <i class="fa fa-facebook"></i>
+                                    share
+                                  </a>
+                                  <a href="" class="tw-bg medium-btn">
+                                    <i class="fa fa-twitter"></i>
+                                    share
+                                  </a>
+                                </div>
+                              </div><!-- end shares-->
+                              
+                              <div class="clearfix"></div>
+                              <div class="hastag">
+                                <a class="btn btn-grey" href="#" role="button">#Anime</a>
+                                <a class="btn btn-grey" href="#" role="button">#onepiece</a>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                            <!--wrapper avatar-->
+                            <div class="wrapper-avatar">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="profile.html">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                <div class="media-body w-2000">
+                                  <a href="profile.html"><h5>ADMIN</h5></a>
+                                  <span class="minute">15min ago</span>
+                                </div>
+                                <!--<div class="media-body">
+                                  <span><img src="assets/img/icon/post/click.png"></span>&nbsp;&nbsp;
+                                  <a href=""><span class="linky">One Piece</span></a>
+                                </div>-->
+                              </div>
+                              <h3><a href="">Rest and Peace ACE !</a></h3>
+                              <a href="view-post.html"><img src="assets/img/img-1.png" alt="ace" class="img-responsive meme-big" /></a>
+
+                              <!--like-->
+                              <div class="link-comment">
+                                <a href="#">20 Likes</a>
+                                &nbsp; - &nbsp; 
+                                <a href="#">1 Comments</a>
+                              </div>
+
+                              <div class="shares">
+                                <!-- update -->
+                                <div class="link-icon pull-left">
+                                  <ul class="list-unstyled left-link">
+                                    <li>
+                                      <a href="" class="hvr-bounce-in">
+                                        <img src="assets/img/icon/post/up.png">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="" class="hvr-bounce-in">
+                                        <img src="assets/img/icon/post/down.png">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="" class="hvr-bounce-in">
+                                        <img src="assets/img/icon/post/comment.png">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="" class="hvr-bounce-in">
+                                        <img src="assets/img/icon/post/open.png">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="" class="hvr-bounce-in">
+                                        <img src="assets/img/icon/post/link.png">
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+
+                                <!-- social -->
+                                <div class="pull-right social-btn">
+                                  <a href="" class="fb-bg medium-btn mar-r-5">
+                                    <i class="fa fa-facebook"></i>
+                                    share
+                                  </a>
+                                  <a href="" class="tw-bg medium-btn">
+                                    <i class="fa fa-twitter"></i>
+                                    share
+                                  </a>
+                                </div>
+                              </div><!-- end shares-->
+                              
+                              <div class="clearfix"></div>
+                              <div class="hastag">
+                                <a class="btn btn-grey" href="#" role="button">#Anime</a>
+                                <a class="btn btn-grey" href="#" role="button">#onepiece</a>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                          </div> <!--end col-md-12-->
+                        
+                        </div> 
+                      </div>
+
+                      <!-- news -->
+                      <div role="tabpanel" class="tab-pane" id="news"> 
+                        <p>
+                          Hello World!
+                        </p> 
+                      </div>
+                    </div>
+
+                  
+                  </div>
+                  
+                  <div class="col-md-5 ads">
+                    <div class="banner">
+                      <a href="#" target="_self">
+                          <img src="assets/img/asasa.png" alt="ads" class="img-responsive" />
+                      </a>
+                    </div>
+                    <!--bannner-->
+										<div class="banner">
+											<a href="#" target="_self">
+												<img src="assets/img/idea.png" alt="banner" class="img-responsive" />
+													<h4>Nice Guys</h4>
+											</a>
+										</div>
+										<!--bannner-->
+										<div class="banner">
+											<a href="#" target="_self">
+												<img src="assets/img/banner2.png" alt="banner" class="img-responsive" />
+													<h4>What is she</h4>
+											</a>
+										</div>
+
+                    <!-- social -->
+                    <div class="social-network">
+                      <ul class="list-unstyled">
+                        <li>
+                          <a href="#" target="_self">
+                          	<div class="link"><i class="fa fa-facebook"></i></div>
+                          </a>
+                          <p class="text-con">50K</p>
+                        </li>
+                        <li>
+                         	<a href="#" target="_self">
+                          	<div class="link"><i class="fa fa-twitter"></i></div>
+													</a>
+                          <p class="text-con">1K</p>
+                        </li> 
+                        <li>
+                         	<a href="#" target="_self">
+                          	<div class="link"><i class="fa fa-instagram"></i></div>
+													</a>
+                          <p class="text-con">30K</p>
+                        </li>
+                      </ul>
+                    </div>
+                  
+                  <div class="link-bottom">
+                    <ul class="list-unstyled">
+                      <li><a href="#">Advertise</a></li>
+                      <li><a href="#">Contacts</a></li>
+                      <li><a href="#">Privacy</a></li>
+                      <li><a href="">Terms</a></li>
+                    </ul>
+                    <p class="text-center copyright">Copyright © All Rights Reserved</p>
+                  </div>
+                  
+                  </div><!--end ads-->
+                </div>
+              </div><!--end right-panel-sec -->
+              
+						</div><!-- end one piece tab -->
+            
+            <!-- Discussion tab --> 
+            <div role="tabpanel" class="tab-pane h-600" id="discussion">
+              <div class="left-panel-sec">
+                <div class="wrap-panel">
+                  <div class="content-panel">
+                    <img src="assets/img/onepiece.png" alt="" class="w-100">
+                  </div>
+                  <div class="episode-title">
+                    Ep: 275 
+                  </div>
+                  <div class="manga-title">
+                    Manga: 275 
+                  </div>
+                  <div class="last-update">
+                    <div class="episode">
+                      <span>2d 5hr 59m</span>
+                    </div>
+                    <div class="episode">
+                      <span>2d 5hr 59m</span>
+                    </div>
+                  </div>
+                  <div class="content-panel info-table">
+										
+                  	<div class="fill-describe">
+                  		<span class="caption-describe">Score</span>
+                  		<span>:</span>
+                  		<span class="score-left">5/10</span>
+                  	</div>
+                  	<div class="fill-describe">
+                  		<span class="caption-describe">Current Episode</span>
+                  		<span>:</span>
+                  		<span class="score-left">744</span>
+                  	</div>
+                  	<div class="fill-eiscribe">
+                  		<span class="caption-describe">Current Manga</span>
+                  		<span>:</span>
+                  		<span class="score-left">725</span>
+                  	</div>
+										
+                  	<div class="td2">
+											<div class="fill-describe">
+												<span class="caption-describe">English</span>
+												<span>:</span>
+												<span class="score-left">ERASED</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Synonyms</span>
+												<span>:</span>
+												<span class="score-left">The Town Where</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Japanese</span>
+												<span>:</span>
+												<span class="score-left">僕だけが</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Episode</span>
+												<span>:</span>
+												<span class="score-left">12</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Status</span>
+												<span>:</span>
+												<span class="score-left">Currently Airing</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Aired</span>
+												<span>:</span>
+												<span class="score-left">Jan 8, 2016</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Genres</span>
+												<span>:</span>
+												<span class="score-left">Mystery</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Duration</span>
+												<span>:</span>
+												<span class="score-left">23 min/eps</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Rating</span>
+												<span>:</span>
+												<span class="score-left">R - 17+</span>
+											</div>
+                  	</div>
+                  	<div class="btn-more" id="more">More..</div>
+									</div>
+                  
+                  <div class="title link-menu-top">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-book"></i> Synopsis</a>
+                  </div>
+                  <div class="title link-menu">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-pencil-square-o"></i> Write Review</a>
+                  </div>
+                  <div class="title link-menu">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-plus"></i> Add to..</a>
+                  </div>
+                </div><!-- end wrap-panel-->
+              </div><!-- end left-panel-sec -->
+              
+              <div class="right-panel-sec">
+                <div class="row">
+                  <div class="col-md-7 pad-l-20">
+
+                    <!-- tab -->
+                    <div class="row">
+                      
+                      <div class="col-md-8">
+                        <ul id="pop" class="nav pop-tabs" role="tablist" style="margin-top: 10px;"> 
+                          <li role="presentation" class="active">
+                            <a href="#popular-discussion" role="tab" data-toggle="tab" aria-controls="popular-discussion" aria-expanded="true">Popular</a>
+                          </li> 
+                          <li role="presentation" class="mar-lm-5">
+                            <a href="#aaa" role="tab" data-toggle="tab" aria-controls="aaa">News</a>
+                          </li> 
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="tab-content">
+
+                      <!-- popular-->
+                      <div role="tabpanel" class="tab-pane fade in active" id="popular-discussion"> 
+                        <div classs="row">
+                          <div class="col-md-12">
+                    
+                            <div class="wrapper-avatar pad-b-10 w-100">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="profile.html">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                
+                                <div class="media-body">
+                                  <h5><a href="profile.html">ADMIN</a></h5>
+                                  <span class="minute">15min ago to <a href="" class="minute">/a/onepiece</a></span>
+                                </div>
+                                
+                               <!--  <div class="media-body">
+                                  <span><img src="assets/img/icon/post/click.png"></span>&nbsp;&nbsp;
+                                  <span class="linky">One Piece</span>
+                                </div> -->
+
+                                <div class="media-body tag">
+                                  <span class="normal-tag">theory</span>
+                                  <span class="red-tag">spoiler</span>
+                                </div>
+                              </div>
+                                
+                              <!--list 1 -->
+                              <div class="list-pos">
+                                <span class="troll">
+                                  <a href=""><img src="assets/img/icon/post/troll.png" alt="troll"/></a>
+                                </span>
+                                <span class="right-pos">
+                                  <a href="fifth-page-click.html">
+                                  <p>Could anyone give me some advice my friends recomended to me to watch lorem ipsum dolor sit amet and I found that to me</p>
+                                  </a>
+                                  <h5><a href="#">23,975 points </a>&nbsp; -  &nbsp;<a href="#">340 comments</a></h5>
+                                </span>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                            <div class="wrapper-avatar pad-b-10">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="profile.html">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                
+                                <div class="media-body">
+                                  <h5><a href="profile.html">ADMIN</a></h5>
+                                  <span class="minute">15min ago to <a href="" class="minute">/a/onepiece</a></span>
+                                </div>
+                        
+                                <div class="media-body tag">
+                                  <span class="normal-tag">theory</span>
+                                  <span class="red-tag">spoiler</span>
+                                </div>
+                              </div>
+                                
+                              <!--list 1 -->
+                              <div class="list-pos">
+                                <span class="troll">
+                                  <a href=""><img src="assets/img/icon/post/troll.png" alt="troll"/></a>
+                                </span>
+                                <span class="right-pos">
+                                  <a href="fifth-page-click.html">
+                                  <p>Could anyone give me some advice my friends recomended to me to watch lorem ipsum dolor sit amet and I found that to me</p>
+                                  </a>
+                                  <h5><a href="#">23,975 points </a>&nbsp; -  &nbsp;<a href="#">340 comments</a></h5>
+                                </span>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                            <div class="wrapper-avatar pad-b-10">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                
+                                <div class="media-body">
+                                  <h5><a href="profile.html">ADMIN</a></h5>
+                                  <span class="minute">15min ago to <a href="" class="minute">/a/onepiece</a></span>
+                                </div>
+                                
+                              <!--   <div class="media-body">
+                                  <span><img src="assets/img/icon/post/click.png"></span>&nbsp;&nbsp;
+                                  <span class="linky">One Piece</span>
+                                </div> -->
+
+                                <div class="media-body tag">
+                                  <span class="normal-tag">theory</span>
+                                  <span class="red-tag">spoiler</span>
+                                </div>
+                              </div>
+                                
+                              <!--list 1 -->
+                              <div class="list-pos">
+                                <span class="troll">
+                                  <img src="assets/img/icon/post/troll.png" alt="troll"/>
+                                </span>
+                                <span class="right-pos">
+                                  <a href="fifth-page-click.html">
+                                  <p>Could anyone give me some advice my friends recomended to me to watch lorem ipsum dolor sit amet and I found that to me</p>
+                                  </a>
+                                  <h5><a href="#">23,975 points </a>&nbsp; -  &nbsp;<a href="#">340 comments</a></h5>
+                                </span>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                            <div class="wrapper-avatar pad-b-10">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="profile.html">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                
+                                <div class="media-body">
+                                  <h5><a href="profile.html">ADMIN</a></h5>
+                                  <span class="minute">15min ago to <a href="" class="minute">/a/onepiece</a></span>
+                                </div>
+                                
+                              <!--   <div class="media-body">
+                                  <span><img src="assets/img/icon/post/click.png"></span>&nbsp;&nbsp;
+                                  <span class="linky">One Piece</span>
+                                </div> -->
+
+                                <div class="media-body tag">
+                                  <span class="normal-tag">theory</span>
+                                  <span class="red-tag">spoiler</span>
+                                </div>
+                              </div>
+                                
+                              <!--list 1 -->
+                              <div class="list-pos">
+                                <span class="troll">
+                                  <img src="assets/img/icon/post/troll.png" alt="troll"/>
+                                </span>
+                                <span class="right-pos">
+                                  <a href="fifth-page-click.html">
+                                  <p>Could anyone give me some advice my friends recomended to me to watch lorem ipsum dolor sit amet and I found that to me</p>
+                                  </a>
+                                  <h5><a href="#">23,975 points </a>&nbsp; -  &nbsp;<a href="#">340 comments</a></h5>
+                                </span>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                            <div class="wrapper-avatar pad-b-10">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="profile.html">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                
+                                <div class="media-body">
+                                  <h5><a href="profile.html">ADMIN</a></h5>
+                                  <span class="minute">15min ago to <a href="" class="minute">/a/onepiece</a></span>
+                                </div>
+                                
+                               <!--  <div class="media-body">
+                                  <span><img src="assets/img/icon/post/click.png"></span>&nbsp;&nbsp;
+                                  <span class="linky">One Piece</span>
+                                </div> -->
+
+                                <div class="media-body tag">
+                                  <span class="normal-tag">theory</span>
+                                  <span class="red-tag">spoiler</span>
+                                </div>
+                              </div>
+                                
+                              <!--list 1 -->
+                              <div class="list-pos">
+                                <span class="troll">
+                                  <img src="assets/img/icon/post/troll.png" alt="troll"/>
+                                </span>
+                                <span class="right-pos">
+                                  <a href="fifth-page-click.html">
+                                  <p>Could anyone give me some advice my friends recomended to me to watch lorem ipsum dolor sit amet and I found that to me</p>
+                                  </a>
+                                  <h5><a href="#">23,975 points </a>&nbsp; -  &nbsp;<a href="#">340 comments</a></h5>
+                                </span>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                            <div class="wrapper-avatar pad-b-10">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="profile.html">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                
+                                <div class="media-body w-2000">
+                                  <h5><a href="profile.html">ADMIN</a></h5>
+                                  <span class="minute">15min ago to <a href="" class="minute">/a/onepiece</a></span>
+                                </div>
+                                
+                                <div class="media-body tag">
+                                  <span class="normal-tag">theory</span>
+                                  <span class="red-tag">spoiler</span>
+                                </div>
+                              </div>
+                                
+                              <!--list 1 -->
+                              <div class="list-pos">
+                                <span class="troll">
+                                  <img src="assets/img/icon/post/troll.png" alt="troll"/>
+                                </span>
+                                <span class="right-pos">
+                                  <a href="fifth-page-click.html">
+                                  <p>Could anyone give me some advice my friends recomended to me to watch lorem ipsum dolor sit amet and I found that to me</p>
+                                  </a>
+                                  <h5><a href="#">23,975 points </a>&nbsp; -  &nbsp;<a href="#">340 comments</a></h5>
+                                </span>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                          </div> <!--end col-md-12-->
+                        </div> 
+                      </div>
+
+                      <!-- news -->
+                      <div role="tabpanel" class="tab-pane" id="aaa"> 
+                        <p>
+                          .
+                        </p> 
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-5 ads">
+									 	<div class="banner">
+											<a href="#" target="_self">
+												<img src="assets/img/asasa.png" alt="ads" class="img-responsive" />
+											</a>
+									 	</div>
+                    <!--bannner-->
+										<div class="banner">
+											<a href="#" target="_self">
+												<img src="assets/img/idea.png" alt="banner" class="img-responsive" />
+													<h4>Nice Guys</h4>
+											</a>
+										</div>
+										<!--bannner-->
+										<div class="banner">
+											<a href="#" target="_self">
+												<img src="assets/img/banner2.png" alt="banner" class="img-responsive" />
+													<h4>What is she</h4>
+											</a>
+										</div>
+
+                    <!-- social -->
+                    <div class="social-network">
+                      <ul class="list-unstyled">
+                        <li>
+                          <a href="#" target="_self">
+                          	<div class="link"><i class="fa fa-facebook"></i></div>
+                          </a>
+                          <p class="text-con">50K</p>
+                        </li>
+                        <li>
+                         	<a href="#" target="_self">
+                          	 <div class="link"><i class="fa fa-twitter"></i></div>
+                            </a>
+                          <p class="text-con">1K</p>
+                        </li> 
+                        <li>
+                         	<a href="#" target="_self">
+                          	 <div class="link"><i class="fa fa-instagram"></i></div>
+                            </a>
+                          <p class="text-con">30K</p>
+                        </li>
+                      </ul>
+                    </div>
+                  
+                    <div class="link-bottom">
+                      <ul class="list-unstyled">
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="">Terms</a></li>
+                      </ul>
+                      <p class="text-center copyright">Copyright © All Rights Reserved
+                    </div>
+                  </div><!-- end ads -->
+                  
+                </div>
+              </div><!-- end right panel -->
+            </div><!-- end discussion tab -->
+            
+            <!--manga tab-->
+            <div role="tabpanel" class="tab-pane h-600" id="manga">
+              <div class="left-panel-sec">
+                <div class="wrap-panel">
+                  <div class="content-panel">
+                    <img src="assets/img/onepiece.png" alt="" class="w-100">
+                  </div>
+                  <div class="episode-title">
+                    Ep: 275 
+                  </div>
+                  <div class="manga-title">
+                    Manga: 275 
+                  </div>
+                  <div class="last-update">
+                    <div class="episode">
+                      <span>2d 5hr 59m</span>
+                    </div>
+                    <div class="episode">
+                      <span>2d 5hr 59m</span>
+                    </div>
+                  </div>
+                  <div class="content-panel info-table">
+										
+                  	<div class="fill-describe">
+                  		<span class="caption-describe">Score</span>
+                  		<span>:</span>
+                  		<span class="score-left">5/10</span>
+                  	</div>
+                  	<div class="fill-describe">
+                  		<span class="caption-describe">Current Episode</span>
+                  		<span>:</span>
+                  		<span class="score-left">744</span>
+                  	</div>
+                  	<div class="fill-eiscribe">
+                  		<span class="caption-describe">Current Manga</span>
+                  		<span>:</span>
+                  		<span class="score-left">725</span>
+                  	</div>
+										
+                  	<div class="td3">
+											<div class="fill-describe">
+												<span class="caption-describe">English</span>
+												<span>:</span>
+												<span class="score-left">ERASED</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Synonyms</span>
+												<span>:</span>
+												<span class="score-left">The Town Where</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Japanese</span>
+												<span>:</span>
+												<span class="score-left">僕だけが</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Episode</span>
+												<span>:</span>
+												<span class="score-left">12</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Status</span>
+												<span>:</span>
+												<span class="score-left">Currently Airing</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Aired</span>
+												<span>:</span>
+												<span class="score-left">Jan 8, 2016</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Genres</span>
+												<span>:</span>
+												<span class="score-left">Mystery</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Duration</span>
+												<span>:</span>
+												<span class="score-left">23 min/eps</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Rating</span>
+												<span>:</span>
+												<span class="score-left">R - 17+</span>
+											</div>
+                  	</div>
+                  	<div class="btn-more" id="more">More..</div>
+									</div>
+                  
+                  <div class="title link-menu-top">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-book"></i> Synopsis</a>
+                  </div>
+                  <div class="title link-menu">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-pencil-square-o"></i> Write Review</a>
+                  </div>
+                  <div class="title link-menu">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-plus"></i> Add to..</a>
+                  </div>
+                </div><!-- end wrap-panel-->
+              </div><!-- end left-panel-sec -->
+              
+              <div class="right-panel-sec">
+                <div class="row">
+                  <div class="col-md-7 pad-l-20">
+
+                    <!-- tab -->
+                    <div class="row">
+                      
+                      <div class="col-md-8">
+                        <ul id="pop" class="nav pop-tabs" role="tablist" style="margin-top: 10px;"> 
+                          <li role="presentation" class="active">
+                            <a href="#popular-manga" role="tab" data-toggle="tab" aria-controls="popular-manga" aria-expanded="true">Popular</a>
+                          </li> 
+                          <li role="presentation" class="mar-lm-5">
+                            <a href="#news-manga" role="tab" data-toggle="tab" aria-controls="news-manga">News</a>
+                          </li> 
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="tab-content">
+
+                      <!-- popular-->
+                      <div role="tabpanel" class="tab-pane fade in active" id="popular-manga"> 
+                        <div classs="row">
+                          <div class="col-md-12">
+                    
+                            <div class="wrapper-avatar pad-b-10 w-100">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="profile.html">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                
+                                <div class="media-body">
+                                  <h5><a href="profile.html">ADMIN</a></h5>
+                                  <span class="minute">15min ago to <a href="" class="minute">/a/onepiece</a></span>
+                                </div>
+
+                                <div class="media-body tag">
+                                  <span class="normal-tag">theory</span>
+                                  <span class="red-tag">spoiler</span>
+                                </div>
+                              </div>
+                                
+                              <!--list 1 -->
+                              <div class="list-pos">
+                                <span class="troll">
+                                  <a href=""><img src="assets/img/icon/post/troll.png" alt="troll"/></a>
+                                </span>
+                                <span class="right-pos">
+                                  <a href="fifth-page-click.html">
+                                  <p>Could anyone give me some advice my friends recomended to me to watch lorem ipsum dolor sit amet and I found that to me</p>
+                                  </a>
+                                  <h5><a href="#">23,975 points </a>&nbsp; -  &nbsp;<a href="#">340 comments</a></h5>
+                                </span>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                            <div class="wrapper-avatar pad-b-10">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="profile.html">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                
+                                <div class="media-body">
+                                  <h5><a href="profile.html">ADMIN</a></h5>
+                                  <span class="minute">15min ago to <a href="" class="minute">/a/onepiece</a></span>
+                                </div>
+                        
+                                <div class="media-body tag">
+                                  <span class="normal-tag">theory</span>
+                                  <span class="red-tag">spoiler</span>
+                                </div>
+                              </div>
+                                
+                              <!--list 1 -->
+                              <div class="list-pos">
+                                <span class="troll">
+                                  <a href=""><img src="assets/img/icon/post/troll.png" alt="troll"/></a>
+                                </span>
+                                <span class="right-pos">
+                                  <a href="fifth-page-click.html">
+                                  <p>Could anyone give me some advice my friends recomended to me to watch lorem ipsum dolor sit amet and I found that to me</p>
+                                  </a>
+                                  <h5><a href="#">23,975 points </a>&nbsp; -  &nbsp;<a href="#">340 comments</a></h5>
+                                </span>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                            <div class="wrapper-avatar pad-b-10">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                
+                                <div class="media-body">
+                                  <h5><a href="profile.html">ADMIN</a></h5>
+                                  <span class="minute">15min ago to <a href="" class="minute">/a/onepiece</a></span>
+                                </div>
+                                
+                              <!--   <div class="media-body">
+                                  <span><img src="assets/img/icon/post/click.png"></span>&nbsp;&nbsp;
+                                  <span class="linky">One Piece</span>
+                                </div> -->
+
+                                <div class="media-body tag">
+                                  <span class="normal-tag">theory</span>
+                                  <span class="red-tag">spoiler</span>
+                                </div>
+                              </div>
+                                
+                              <!--list 1 -->
+                              <div class="list-pos">
+                                <span class="troll">
+                                  <img src="assets/img/icon/post/troll.png" alt="troll"/>
+                                </span>
+                                <span class="right-pos">
+                                  <a href="fifth-page-click.html">
+                                  <p>Could anyone give me some advice my friends recomended to me to watch lorem ipsum dolor sit amet and I found that to me</p>
+                                  </a>
+                                  <h5><a href="#">23,975 points </a>&nbsp; -  &nbsp;<a href="#">340 comments</a></h5>
+                                </span>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                            <div class="wrapper-avatar pad-b-10">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="profile.html">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                
+                                <div class="media-body">
+                                  <h5><a href="profile.html">ADMIN</a></h5>
+                                  <span class="minute">15min ago to <a href="" class="minute">/a/onepiece</a></span>
+                                </div>
+                                
+                              <!--   <div class="media-body">
+                                  <span><img src="assets/img/icon/post/click.png"></span>&nbsp;&nbsp;
+                                  <span class="linky">One Piece</span>
+                                </div> -->
+
+                                <div class="media-body tag">
+                                  <span class="normal-tag">theory</span>
+                                  <span class="red-tag">spoiler</span>
+                                </div>
+                              </div>
+                                
+                              <!--list 1 -->
+                              <div class="list-pos">
+                                <span class="troll">
+                                  <img src="assets/img/icon/post/troll.png" alt="troll"/>
+                                </span>
+                                <span class="right-pos">
+                                  <a href="fifth-page-click.html">
+                                  <p>Could anyone give me some advice my friends recomended to me to watch lorem ipsum dolor sit amet and I found that to me</p>
+                                  </a>
+                                  <h5><a href="#">23,975 points </a>&nbsp; -  &nbsp;<a href="#">340 comments</a></h5>
+                                </span>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                            <div class="wrapper-avatar pad-b-10">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="profile.html">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                
+                                <div class="media-body">
+                                  <h5><a href="profile.html">ADMIN</a></h5>
+                                  <span class="minute">15min ago to <a href="" class="minute">/a/onepiece</a></span>
+                                </div>
+                                
+                               <!--  <div class="media-body">
+                                  <span><img src="assets/img/icon/post/click.png"></span>&nbsp;&nbsp;
+                                  <span class="linky">One Piece</span>
+                                </div> -->
+
+                                <div class="media-body tag">
+                                  <span class="normal-tag">theory</span>
+                                  <span class="red-tag">spoiler</span>
+                                </div>
+                              </div>
+                                
+                              <!--list 1 -->
+                              <div class="list-pos">
+                                <span class="troll">
+                                  <img src="assets/img/icon/post/troll.png" alt="troll"/>
+                                </span>
+                                <span class="right-pos">
+                                  <a href="fifth-page-click.html">
+                                  <p>Could anyone give me some advice my friends recomended to me to watch lorem ipsum dolor sit amet and I found that to me</p>
+                                  </a>
+                                  <h5><a href="#">23,975 points </a>&nbsp; -  &nbsp;<a href="#">340 comments</a></h5>
+                                </span>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                            <div class="wrapper-avatar pad-b-10">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="profile.html">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                
+                                <div class="media-body w-2000">
+                                  <h5><a href="profile.html">ADMIN</a></h5>
+                                  <span class="minute">15min ago to <a href="" class="minute">/a/onepiece</a></span>
+                                </div>
+                                
+                                <div class="media-body tag">
+                                  <span class="normal-tag">theory</span>
+                                  <span class="red-tag">spoiler</span>
+                                </div>
+                              </div>
+                                
+                              <!--list 1 -->
+                              <div class="list-pos">
+                                <span class="troll">
+                                  <img src="assets/img/icon/post/troll.png" alt="troll"/>
+                                </span>
+                                <span class="right-pos">
+                                  <a href="fifth-page-click.html">
+                                  <p>Could anyone give me some advice my friends recomended to me to watch lorem ipsum dolor sit amet and I found that to me</p>
+                                  </a>
+                                  <h5><a href="#">23,975 points </a>&nbsp; -  &nbsp;<a href="#">340 comments</a></h5>
+                                </span>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                          </div> <!--end col-md-12-->
+                        </div> 
+                      </div>
+
+                      <!-- news -->
+                      <div role="tabpanel" class="tab-pane" id="news-manga"> 
+                        <p>
+                          .
+                        </p> 
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-5 ads">
+                    <div class="banner">
+											<a href="#" target="_self">
+												<img src="assets/img/asasa.png" alt="ads" class="img-responsive" />
+											</a>
+									 	</div>
+                    <!--bannner-->
+										<div class="banner">
+											<a href="#" target="_self">
+												<img src="assets/img/idea.png" alt="banner" class="img-responsive" />
+													<h4>Nice Guys</h4>
+											</a>
+										</div>
+										<!--bannner-->
+										<div class="banner">
+											<a href="#" target="_self">
+												<img src="assets/img/banner2.png" alt="banner" class="img-responsive" />
+													<h4>What is she</h4>
+											</a>
+										</div>
+
+                    <!-- social -->
+                    <div class="social-network">
+                      <ul class="list-unstyled">
+                        <li>
+                          <a href="#" target="_self">
+                          	<div class="link"><i class="fa fa-facebook"></i></div>
+                          </a>
+                          <p class="text-con">50K</p>
+                        </li>
+                        <li>
+                         	<a href="#" target="_self">
+                          	 <div class="link"><i class="fa fa-twitter"></i></div>
+                            </a>
+                          <p class="text-con">1K</p>
+                        </li> 
+                        <li>
+                         	<a href="#" target="_self">
+                          	 <div class="link"><i class="fa fa-instagram"></i></div>
+                            </a>
+                          <p class="text-con">30K</p>
+                        </li>
+                      </ul>
+                    </div>
+                  
+                    <div class="link-bottom">
+                      <ul class="list-unstyled">
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="">Terms</a></li>
+                      </ul>
+                      <p class="text-center copyright">Copyright © All Rights Reserved
+                    </div>
+                  </div><!-- end ads -->
+                  
+                </div>
+              </div><!-- end right panel -->
+            </div><!-- end manga tab -->
+            
+            <!-- theories tab -->
+            <div role="tabpanel" class="tab-pane h-600" id="theories">
+              <div class="left-panel-sec">
+                <div class="wrap-panel">
+                  <div class="content-panel">
+                    <img src="assets/img/onepiece.png" alt="" class="w-100">
+                  </div>
+                  <div class="episode-title">
+                    Ep: 275 
+                  </div>
+                  <div class="manga-title">
+                    Manga: 275 
+                  </div>
+                  <div class="last-update">
+                    <div class="episode">
+                      <span>2d 5hr 59m</span>
+                    </div>
+                    <div class="episode">
+                      <span>2d 5hr 59m</span>
+                    </div>
+                  </div>
+                  <div class="content-panel info-table">
+										
+                  	<div class="fill-describe">
+                  		<span class="caption-describe">Score</span>
+                  		<span>:</span>
+                  		<span class="score-left">5/10</span>
+                  	</div>
+                  	<div class="fill-describe">
+                  		<span class="caption-describe">Current Episode</span>
+                  		<span>:</span>
+                  		<span class="score-left">744</span>
+                  	</div>
+                  	<div class="fill-eiscribe">
+                  		<span class="caption-describe">Current Manga</span>
+                  		<span>:</span>
+                  		<span class="score-left">725</span>
+                  	</div>
+										
+                  	<div class="td4">
+											<div class="fill-describe">
+												<span class="caption-describe">English</span>
+												<span>:</span>
+												<span class="score-left">ERASED</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Synonyms</span>
+												<span>:</span>
+												<span class="score-left">The Town Where</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Japanese</span>
+												<span>:</span>
+												<span class="score-left">僕だけが</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Episode</span>
+												<span>:</span>
+												<span class="score-left">12</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Status</span>
+												<span>:</span>
+												<span class="score-left">Currently Airing</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Aired</span>
+												<span>:</span>
+												<span class="score-left">Jan 8, 2016</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Genres</span>
+												<span>:</span>
+												<span class="score-left">Mystery</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Duration</span>
+												<span>:</span>
+												<span class="score-left">23 min/eps</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Rating</span>
+												<span>:</span>
+												<span class="score-left">R - 17+</span>
+											</div>
+                  	</div>
+                  	<div class="btn-more" id="more">More..</div>
+									</div>
+                  
+                  <div class="title link-menu-top">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-book"></i> Synopsis</a>
+                  </div>
+                  <div class="title link-menu">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-pencil-square-o"></i> Write Review</a>
+                  </div>
+                  <div class="title link-menu">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-plus"></i> Add to..</a>
+                  </div>
+                </div><!-- end wrap-panel-->
+              </div><!-- end left-panel-sec -->
+              
+              <div class="right-panel-sec">
+                <div class="row">
+                  <div class="col-md-7 pad-l-20">
+
+                    <!-- tab -->
+                    <div class="row">
+                      
+                      <div class="col-md-8">
+                        <ul id="pop" class="nav pop-tabs" role="tablist" style="margin-top: 10px;"> 
+                          <li role="presentation" class="active">
+                            <a href="#popular-theories" role="tab" data-toggle="tab" aria-controls="popular-theories" aria-expanded="true">Popular</a>
+                          </li> 
+                          <li role="presentation" class="mar-lm-5">
+                            <a href="#news-theories" role="tab" data-toggle="tab" aria-controls="news-theories">News</a>
+                          </li> 
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="tab-content">
+
+                      <!-- popular-->
+                      <div role="tabpanel" class="tab-pane fade in active" id="popular-theories"> 
+                        <div classs="row">
+                          <div class="col-md-12">
+                    
+                            <div class="wrapper-avatar pad-b-10 w-100">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="profile.html">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                
+                                <div class="media-body">
+                                  <h5><a href="profile.html">ADMIN</a></h5>
+                                  <span class="minute">15min ago to <a href="" class="minute">/a/onepiece</a></span>
+                                </div>
+                                
+                               <!--  <div class="media-body">
+                                  <span><img src="assets/img/icon/post/click.png"></span>&nbsp;&nbsp;
+                                  <span class="linky">One Piece</span>
+                                </div> -->
+
+                                <div class="media-body tag">
+                                  <span class="normal-tag">theory</span>
+                                  <span class="red-tag">spoiler</span>
+                                </div>
+                              </div>
+                                
+                              <!--list 1 -->
+                              <div class="list-pos">
+                                <span class="troll">
+                                  <a href=""><img src="assets/img/icon/post/troll.png" alt="troll"/></a>
+                                </span>
+                                <span class="right-pos">
+                                  <a href="fifth-page-click.html">
+                                  <p>Could anyone give me some advice my friends recomended to me to watch lorem ipsum dolor sit amet and I found that to me</p>
+                                  </a>
+                                  <h5><a href="#">23,975 points </a>&nbsp; -  &nbsp;<a href="#">340 comments</a></h5>
+                                </span>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                            <div class="wrapper-avatar pad-b-10">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="profile.html">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                
+                                <div class="media-body">
+                                  <h5><a href="profile.html">ADMIN</a></h5>
+                                  <span class="minute">15min ago to <a href="" class="minute">/a/onepiece</a></span>
+                                </div>
+                        
+                                <div class="media-body tag">
+                                  <span class="normal-tag">theory</span>
+                                  <span class="red-tag">spoiler</span>
+                                </div>
+                              </div>
+                                
+                              <!--list 1 -->
+                              <div class="list-pos">
+                                <span class="troll">
+                                  <a href=""><img src="assets/img/icon/post/troll.png" alt="troll"/></a>
+                                </span>
+                                <span class="right-pos">
+                                  <a href="fifth-page-click.html">
+                                  <p>Could anyone give me some advice my friends recomended to me to watch lorem ipsum dolor sit amet and I found that to me</p>
+                                  </a>
+                                  <h5><a href="#">23,975 points </a>&nbsp; -  &nbsp;<a href="#">340 comments</a></h5>
+                                </span>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                            <div class="wrapper-avatar pad-b-10">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                
+                                <div class="media-body">
+                                  <h5><a href="profile.html">ADMIN</a></h5>
+                                  <span class="minute">15min ago to <a href="" class="minute">/a/onepiece</a></span>
+                                </div>
+                                
+                              <!--   <div class="media-body">
+                                  <span><img src="assets/img/icon/post/click.png"></span>&nbsp;&nbsp;
+                                  <span class="linky">One Piece</span>
+                                </div> -->
+
+                                <div class="media-body tag">
+                                  <span class="normal-tag">theory</span>
+                                  <span class="red-tag">spoiler</span>
+                                </div>
+                              </div>
+                                
+                              <!--list 1 -->
+                              <div class="list-pos">
+                                <span class="troll">
+                                  <img src="assets/img/icon/post/troll.png" alt="troll"/>
+                                </span>
+                                <span class="right-pos">
+                                  <a href="fifth-page-click.html">
+                                  <p>Could anyone give me some advice my friends recomended to me to watch lorem ipsum dolor sit amet and I found that to me</p>
+                                  </a>
+                                  <h5><a href="#">23,975 points </a>&nbsp; -  &nbsp;<a href="#">340 comments</a></h5>
+                                </span>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                            <div class="wrapper-avatar pad-b-10">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="profile.html">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                
+                                <div class="media-body">
+                                  <h5><a href="profile.html">ADMIN</a></h5>
+                                  <span class="minute">15min ago to <a href="" class="minute">/a/onepiece</a></span>
+                                </div>
+                                
+                              <!--   <div class="media-body">
+                                  <span><img src="assets/img/icon/post/click.png"></span>&nbsp;&nbsp;
+                                  <span class="linky">One Piece</span>
+                                </div> -->
+
+                                <div class="media-body tag">
+                                  <span class="normal-tag">theory</span>
+                                  <span class="red-tag">spoiler</span>
+                                </div>
+                              </div>
+                                
+                              <!--list 1 -->
+                              <div class="list-pos">
+                                <span class="troll">
+                                  <img src="assets/img/icon/post/troll.png" alt="troll"/>
+                                </span>
+                                <span class="right-pos">
+                                  <a href="fifth-page-click.html">
+                                  <p>Could anyone give me some advice my friends recomended to me to watch lorem ipsum dolor sit amet and I found that to me</p>
+                                  </a>
+                                  <h5><a href="#">23,975 points </a>&nbsp; -  &nbsp;<a href="#">340 comments</a></h5>
+                                </span>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                            <div class="wrapper-avatar pad-b-10">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="profile.html">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                
+                                <div class="media-body">
+                                  <h5><a href="profile.html">ADMIN</a></h5>
+                                  <span class="minute">15min ago to <a href="" class="minute">/a/onepiece</a></span>
+                                </div>
+                                
+                               <!--  <div class="media-body">
+                                  <span><img src="assets/img/icon/post/click.png"></span>&nbsp;&nbsp;
+                                  <span class="linky">One Piece</span>
+                                </div> -->
+
+                                <div class="media-body tag">
+                                  <span class="normal-tag">theory</span>
+                                  <span class="red-tag">spoiler</span>
+                                </div>
+                              </div>
+                                
+                              <!--list 1 -->
+                              <div class="list-pos">
+                                <span class="troll">
+                                  <img src="assets/img/icon/post/troll.png" alt="troll"/>
+                                </span>
+                                <span class="right-pos">
+                                  <a href="fifth-page-click.html">
+                                  <p>Could anyone give me some advice my friends recomended to me to watch lorem ipsum dolor sit amet and I found that to me</p>
+                                  </a>
+                                  <h5><a href="#">23,975 points </a>&nbsp; -  &nbsp;<a href="#">340 comments</a></h5>
+                                </span>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                            <div class="wrapper-avatar pad-b-10">
+                              <div class="media info-avatar">
+                                <div class="media-left">
+                                  <a href="profile.html">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                
+                                <div class="media-body w-2000">
+                                  <h5><a href="profile.html">ADMIN</a></h5>
+                                  <span class="minute">15min ago to <a href="" class="minute">/a/onepiece</a></span>
+                                </div>
+                                
+                                <div class="media-body tag">
+                                  <span class="normal-tag">theory</span>
+                                  <span class="red-tag">spoiler</span>
+                                </div>
+                              </div>
+                                
+                              <!--list 1 -->
+                              <div class="list-pos">
+                                <span class="troll">
+                                  <img src="assets/img/icon/post/troll.png" alt="troll"/>
+                                </span>
+                                <span class="right-pos">
+                                  <a href="fifth-page-click.html">
+                                  <p>Could anyone give me some advice my friends recomended to me to watch lorem ipsum dolor sit amet and I found that to me</p>
+                                  </a>
+                                  <h5><a href="#">23,975 points </a>&nbsp; -  &nbsp;<a href="#">340 comments</a></h5>
+                                </span>
+                              </div>
+                            </div><!-- wrapper avatar -->
+
+                          </div> <!--end col-md-12-->
+                        </div> 
+                      </div>
+
+                      <!-- news -->
+                      <div role="tabpanel" class="tab-pane" id="news-theories"> 
+                        <p>
+                          .
+                        </p> 
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-5 ads">
+                    <div class="banner">
+											<a href="#" target="_self">
+												<img src="assets/img/asasa.png" alt="ads" class="img-responsive" />
+											</a>
+									 	</div>
+										<!--bannner-->
+										<div class="banner">
+											<a href="#" target="_self">
+												<img src="assets/img/idea.png" alt="banner" class="img-responsive" />
+													<h4>Nice Guys</h4>
+											</a>
+										</div>
+										<!--bannner-->
+										<div class="banner">
+											<a href="#" target="_self">
+												<img src="assets/img/banner2.png" alt="banner" class="img-responsive" />
+													<h4>What is she</h4>
+											</a>
+										</div>
+
+                    <!-- social -->
+                    <div class="social-network">
+                      <ul class="list-unstyled">
+                        <li>
+                          <a href="#" target="_self">
+                          	<div class="link"><i class="fa fa-facebook"></i></div>
+                          </a>
+                          <p class="text-con">50K</p>
+                        </li>
+                        <li>
+                         	<a href="#" target="_self">
+                          	 <div class="link"><i class="fa fa-twitter"></i></div>
+                            </a>
+                          <p class="text-con">1K</p>
+                        </li> 
+                        <li>
+                         	<a href="#" target="_self">
+                          	 <div class="link"><i class="fa fa-instagram"></i></div>
+                            </a>
+                          <p class="text-con">30K</p>
+                        </li>
+                      </ul>
+                    </div>
+                  
+                    <div class="link-bottom">
+                      <ul class="list-unstyled">
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="">Terms</a></li>
+                      </ul>
+                      <p class="text-center copyright">Copyright © All Rights Reserved
+                    </div>
+                  </div><!-- end ads -->
+                  
+                </div>
+              </div><!-- end right panel -->
+            </div><!-- end theories tab -->
+            
+            <!--Episode tab -->
+            <div role="tabpanel" class="tab-pane h-600" id="episode-sec">
+              <div class="left-panel-sec">
+                <div class="wrap-panel">
+                  <div class="content-panel">
+                    <img src="assets/img/onepiece.png" alt="" class="w-100">
+                  </div>
+                  <div class="episode-title">
+                    Ep: 275 
+                  </div>
+                  <div class="manga-title">
+                    Manga: 275 
+                  </div>
+                  <div class="last-update">
+                    <div class="episode">
+                      <span>2d 5hr 59m</span>
+                    </div>
+                    <div class="episode">
+                      <span>2d 5hr 59m</span>
+                    </div>
+                  </div>
+                  <div class="content-panel info-table">
+										
+                  	<div class="fill-describe">
+                  		<span class="caption-describe">Score</span>
+                  		<span>:</span>
+                  		<span class="score-left">5/10</span>
+                  	</div>
+                  	<div class="fill-describe">
+                  		<span class="caption-describe">Current Episode</span>
+                  		<span>:</span>
+                  		<span class="score-left">744</span>
+                  	</div>
+                  	<div class="fill-eiscribe">
+                  		<span class="caption-describe">Current Manga</span>
+                  		<span>:</span>
+                  		<span class="score-left">725</span>
+                  	</div>
+										
+                  	<div class="td5">
+											<div class="fill-describe">
+												<span class="caption-describe">English</span>
+												<span>:</span>
+												<span class="score-left">ERASED</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Synonyms</span>
+												<span>:</span>
+												<span class="score-left">The Town Where</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Japanese</span>
+												<span>:</span>
+												<span class="score-left">僕だけが</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Episode</span>
+												<span>:</span>
+												<span class="score-left">12</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Status</span>
+												<span>:</span>
+												<span class="score-left">Currently Airing</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Aired</span>
+												<span>:</span>
+												<span class="score-left">Jan 8, 2016</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Genres</span>
+												<span>:</span>
+												<span class="score-left">Mystery</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Duration</span>
+												<span>:</span>
+												<span class="score-left">23 min/eps</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Rating</span>
+												<span>:</span>
+												<span class="score-left">R - 17+</span>
+											</div>
+                  	</div>
+                  	<div class="btn-more" id="more">More..</div>
+									</div>
+                  
+                  <div class="title link-menu-top">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-book"></i> Synopsis</a>
+                  </div>
+                  <div class="title link-menu">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-pencil-square-o"></i> Write Review</a>
+                  </div>
+                  <div class="title link-menu">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-plus"></i> Add to..</a>
+                  </div>
+                </div><!-- end wrap-panel-->
+              </div><!-- end left-panel-sec -->
+              
+              <div class="right-panel-sec">
+                <div class="row">
+                  <div class="col-md-7 pad-l-20">
+
+                    <!-- tab -->
+                    <div class="row">
+                      
+                      <div class="col-md-8">
+                        <ul id="pop" class="nav pop-tabs" role="tablist" style="margin-top: 10px;"> 
+                          <li role="presentation" class="active">
+                            <a href="#episode" role="tab" data-toggle="tab" aria-controls="episode" aria-expanded="true">Episode</a>
+                          </li> 
+                          <li role="presentation" class="mar-lm-5">
+                            <a href="#manga-discussion" role="tab" data-toggle="tab" aria-controls="manga-discussion">Chapter</a>
+                          </li> 
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="tab-content">
+
+                      <!-- popular-->
+                      <div role="tabpanel" class="tab-pane fade in active" id="episode"> 
+                        <div classs="row">
+                          <div class="col-md-12">
+                    
+                            <div class="wrapper-avatar pad-b-10 w-100 bor-none">
+                              <div class="media info-avatar mar-b-30">
+                                <div class="media-left">
+                                  <a href="profile.html">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                
+                                <div class="media-body">
+                                  <h5><a href="profile.html">ADMIN</a></h5>
+                                  <span class="minute">15min ago to <a href="" class="minute">/a/onepiece</a></span>
+                                </div>
+                              </div>
+                                
+                              <!--list 1 -->
+                              <div class="list-pos-episode mar-b-20">
+                                <span class="troll">
+                                  <a href=""><img src="assets/img/icon/post/troll.png" alt="troll"/></a>
+                                </span>
+                                <span class="right-pos">
+																	<span>[EPISODE 730]</span>
+																	<span><a href="fifth-page-click.html">Tears of Miracles! Manshery's Fight!"</a></span>
+                                  <h5>
+																		<a href="#">23,975 </a>points&nbsp; -  &nbsp;
+                                  	<a href="#">340</a> comments
+																	</h5>
+                                </span>
+                              </div>
+                              
+                              <!-- list 2 -->
+                              <div class="list-pos-episode mar-b-20">
+                                <span class="troll">
+                                  <a href=""><img src="assets/img/icon/post/troll.png" alt="troll"/></a>
+                                </span>
+                                <span class="right-pos">
+																	<span>[EPISODE 730]</span>
+																	<span><a href="fifth-page-click.html">Tears of Miracles! Manshery's Fight!"</a></span>
+                                  <h5>
+																		<a href="#">23,975 </a>points&nbsp; -  &nbsp;
+                                  	<a href="#">340</a> comments
+																	</h5>
+                                </span>
+                              </div>
+                              
+                              <!-- list 3 -->
+                              <div class="list-pos-episode mar-b-20">
+                                <span class="troll">
+                                  <a href=""><img src="assets/img/icon/post/troll.png" alt="troll"/></a>
+                                </span>
+                                <span class="right-pos">
+																	<span>[EPISODE 730]</span>
+																	<span><a href="fifth-page-click.html">Tears of Miracles! Manshery's Fight!"</a></span>
+                                  <h5>
+																		<a href="#">23,975 </a>points&nbsp; -  &nbsp;
+                                  	<a href="#">340</a> comments
+																	</h5>
+                                </span>
+                              </div>
+                            </div><!-- wrapper avatar -->
+                          </div> <!--end col-md-12-->
+                        </div> 
+                      </div>
+
+                      <!-- manga -->
+                      <div role="tabpanel" class="tab-pane" id="manga-discussion"> 
+                         <div classs="row">
+                          <div class="col-md-12">
+                    
+                            <div class="wrapper-avatar pad-b-10 w-100 bor-none">
+                              <div class="media info-avatar mar-b-30">
+                                <div class="media-left">
+                                  <a href="profile.html">
+                                    <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                                  </a>
+                                </div>
+                                
+                                <div class="media-body">
+                                  <h5>ADMIN</h5>
+                                  <span class="minute">15min ago to <a href="" class="minute">/a/onepiece</a></span>
+                                </div>
+                              </div>
+                                
+                              <!--list 1 -->
+                              <div class="list-pos-episode mar-b-20">
+                                <span class="troll">
+                                  <a href=""><img src="assets/img/icon/post/troll.png" alt="troll"/></a>
+                                </span>
+                                <span class="right-pos">
+																	<span>[CHAPTER 730]</span>
+																	<span><a href="#">Tears of Miracles! Manshery's Fight!"</a></span>
+                                  <h5>
+																		<a href="#">23,975 </a>points&nbsp; -  &nbsp;
+                                  	<a href="#">340</a> comments
+																	</h5>
+                                </span>
+                              </div>
+                              
+                              <!-- list 2 -->
+                              <div class="list-pos-episode mar-b-20">
+                                <span class="troll">
+                                  <a href=""><img src="assets/img/icon/post/troll.png" alt="troll"/></a>
+                                </span>
+                                <span class="right-pos">
+																	<span>[CHAPTER 730]</span>
+																	<span><a href="#">Tears of Miracles! Manshery's Fight!"</a></span>
+                                  <h5>
+																		<a href="#">23,975 </a>points&nbsp; -  &nbsp;
+                                  	<a href="#">340</a> comments
+																	</h5>
+                                </span>
+                              </div>
+                              
+                              <!-- list 3 -->
+                              <div class="list-pos-episode mar-b-20">
+                                <span class="troll">
+                                  <a href=""><img src="assets/img/icon/post/troll.png" alt="troll"/></a>
+                                </span>
+                                <span class="right-pos">
+																	<span>[CHAPTER 730]</span>
+																	<span><a href="#">Tears of Miracles! Manshery's Fight!"</a></span>
+                                  <h5>
+																		<a href="#">23,975 </a>points&nbsp; -  &nbsp;
+                                  	<a href="#">340</a> comments
+																	</h5>
+                                </span>
+                              </div>
+                            </div><!-- wrapper avatar -->
+                          </div> <!--end col-md-12-->
+                        </div> 
+                      </div>
+                    </div>
+                  </div>
+                  
+                 <div class="col-md-5 ads">
+                    <div class="banner">
+											<a href="#" target="_self">
+												<img src="assets/img/asasa.png" alt="ads" class="img-responsive" />
+											</a>
+									 	</div>
+                    <!--bannner-->
+										<div class="banner">
+											<a href="#" target="_self">
+												<img src="assets/img/idea.png" alt="banner" class="img-responsive" />
+													<h4>Nice Guys</h4>
+											</a>
+										</div>
+										<!--bannner-->
+										<div class="banner">
+											<a href="#" target="_self">
+												<img src="assets/img/banner2.png" alt="banner" class="img-responsive" />
+													<h4>What is she</h4>
+											</a>
+										</div>
+
+                    <!-- social -->
+                    <div class="social-network">
+                      <ul class="list-unstyled">
+                        <li>
+                          <a href="#" target="_self">
+                          	<div class="link"><i class="fa fa-facebook"></i></div>
+                          </a>
+                          <p class="text-con">50K</p>
+                        </li>
+                        <li>
+                         	<a href="#" target="_self">
+                          	 <div class="link"><i class="fa fa-twitter"></i></div>
+                            </a>
+                          <p class="text-con">1K</p>
+                        </li> 
+                        <li>
+                         	<a href="#" target="_self">
+                          	 <div class="link"><i class="fa fa-instagram"></i></div>
+                            </a>
+                          <p class="text-con">30K</p>
+                        </li>
+                      </ul>
+                    </div>
+                  
+                    <div class="link-bottom">
+                      <ul class="list-unstyled">
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="">Terms</a></li>
+                      </ul>
+                      <p class="text-center copyright">Copyright © All Rights Reserved
+                    </div>
+                  </div><!-- end ads -->
+                  
+                </div>
+              </div><!-- end right panel -->
+            </div><!-- end episode tab -->
+						            
+						<!--Review tab -->
+         		<div role="tabpanel" class="tab-pane h-600" id="review-sec">
+         			<div class="left-panel-sec">
+                <div class="wrap-panel">
+                  <div class="content-panel">
+                    <img src="assets/img/onepiece.png" alt="" class="w-100">
+                  </div>
+                  <div class="episode-title">
+                    Ep: 275 
+                  </div>
+                  <div class="manga-title">
+                    Manga: 275 
+                  </div>
+                  <div class="last-update">
+                    <div class="episode">
+                      <span>2d 5hr 59m</span>
+                    </div>
+                    <div class="episode">
+                      <span>2d 5hr 59m</span>
+                    </div>
+                  </div>
+                  <div class="content-panel info-table">
+										
+                  	<div class="fill-describe">
+                  		<span class="caption-describe">Score</span>
+                  		<span>:</span>
+                  		<span class="score-left">5/10</span>
+                  	</div>
+                  	<div class="fill-describe">
+                  		<span class="caption-describe">Current Episode</span>
+                  		<span>:</span>
+                  		<span class="score-left">744</span>
+                  	</div>
+                  	<div class="fill-eiscribe">
+                  		<span class="caption-describe">Current Manga</span>
+                  		<span>:</span>
+                  		<span class="score-left">725</span>
+                  	</div>
+										
+                  	<div class="td6">
+											<div class="fill-describe">
+												<span class="caption-describe">English</span>
+												<span>:</span>
+												<span class="score-left">ERASED</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Synonyms</span>
+												<span>:</span>
+												<span class="score-left">The Town Where</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Japanese</span>
+												<span>:</span>
+												<span class="score-left">僕だけが</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Episode</span>
+												<span>:</span>
+												<span class="score-left">12</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Status</span>
+												<span>:</span>
+												<span class="score-left">Currently Airing</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Aired</span>
+												<span>:</span>
+												<span class="score-left">Jan 8, 2016</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Genres</span>
+												<span>:</span>
+												<span class="score-left">Mystery</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Duration</span>
+												<span>:</span>
+												<span class="score-left">23 min/eps</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Rating</span>
+												<span>:</span>
+												<span class="score-left">R - 17+</span>
+											</div>
+                  	</div>
+                  	<div class="btn-more" id="more">More..</div>
+									</div>
+                  <div class="title link-menu-top">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-book"></i> Synopsis</a>
+                  </div>
+                  <div class="title link-menu">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-pencil-square-o"></i> Write Review</a>
+                  </div>
+                  <div class="title link-menu">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-plus"></i> Add to..</a>
+                  </div>
+                </div><!-- end wrap-panel-->
+              </div><!-- end left-panel-sec -->
+              
+              <div class="right-panel-sec">
+              	<div class="row">
+              		<div class="col-md-12">
+              			<h3>Review</h3>
+              			
+              			<div class="row">
+              				<div class="col-md-6">
+              					<div class="dropdown">
+													<button class="btn btn-dropdown dropdown-toggle" id="review-fiter" type="button" data-toggle="dropdown">Most Helpfull Weighted
+													<span class="caret"></span></button>
+													<ul class="dropdown-menu" role="menu" aria-labelledby="review-filter">
+														<li><a href="#">No Helpfull Weighted</a></li>
+														<li><a href="#">New - old</a></li>
+														<li><a href="#">Old - New</a></li>
+													</ul>
+												</div>
+              				</div>
+              				<div class="col-md-6">
+              					<a class="btn btn-green pull-right" href="#posting-review" aria-controls="background" role="tab" data-toggle="tab">
+              						<i class="fa fa-pencil-square-o"></i>
+              						<span>Post Review</span>
+              					</a>
+              				</div>
+              			</div>	
+									</div>
+									
+									<div class="col-md-6 mar-t-30">
+										<div class="panel panel-default pad-10">
+											<div class="histo-title">
+												Rating Chart
+											</div>
+											
+											<div class="histogram">
+												<ul class="community-rating-wrapper">
+													<li title="48 users rated 0.5" data-tooltip="48 users rated 0.5">
+														<div class="rating-column">
+															<div class="rating-value" style="height: 0.5499541704857929%;"></div>
+														</div>
+													</li>
+													<li title="203 users rated 1" data-tooltip="203 users rated 1">
+														<div class="rating-column">
+															<div class="rating-value" style="height: 2.3258478460128322%;"></div>
+														</div>
+													</li>
+													<li title="129 users rated 1.5" data-tooltip="129 users rated 1.5">
+														<div class="rating-column">
+															<div class="rating-value" style="height: 1.4780018331805682%;"></div>
+														</div>
+													</li>
+													<li title="55 users rated 2" data-tooltip="55 users rated 2">
+														<div class="rating-column">
+															<div class="rating-value" style="height: 0.6301558203483043%;"></div>
+														</div>
+													</li>
+													<li title="131 users rated 2.5" data-tooltip="131 users rated 2.5">
+														<div class="rating-column">
+															<div class="rating-value" style="height: 1.500916590284143%;"></div>
+														</div>
+													</li>
+													<li title="817 users rated 3" data-tooltip="817 users rated 3">
+														<div class="rating-column">
+															<div class="rating-value" style="height: 9.360678276810265%;"></div>
+														</div>
+													</li>
+													<li title="1275 users rated 3.5" data-tooltip="1275 users rated 3.5">
+														<div class="rating-column">
+															<div class="rating-value" style="height: 14.608157653528872%;"></div>
+														</div>
+													</li>
+													<li title="1734 users rated 4" data-tooltip="1734 users rated 4">
+														<div class="rating-column">
+															<div class="rating-value" style="height: 19.867094408799268%;"></div>
+														</div>
+													</li>
+													<li title="2228 users rated 4.5" data-tooltip="2228 users rated 4.5">
+														<div class="rating-column">
+															<div class="rating-value" style="height: 25.52703941338222%;"></div>
+														</div>
+													</li>
+													<li title="8728 users rated 5" data-tooltip="8728 users rated 5">
+														<div class="rating-column">
+															<div class="rating-value" style="height: 100%;"></div>
+														</div>
+													</li>
+												</ul>
+												<div class="rating-legend">
+													<span class="lowest-rating">
+														<i class="fa fa-star-half-o"></i>
+														<i class="fa fa-long-arrow-right"></i>
+													</span>
+													<span class="highest-rating">
+														<i class="fa fa-long-arrow-left"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+													</span>
+												</div>
+												<div class="score-title">
+													<span>Animemoment User’s Scored One Piece:</span>
+													<div class="score">
+														<span class="highest-rating">
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star-o"></i>
+															4.6
+														</span>
+														<span class="score-review">out of 2531 reviews</span>
+													</div>
+												</div>
+											</div><!-- end histogram-->
+										</div>
+									</div>
+									
+									<div class="col-md-6 mar-t-30">
+										<div  class="panel panel-default pad-12">
+											<div class="helpful-title">
+												Most Helpful Review
+											</div>
+											<ul class="helpful">
+												<li>
+													<span class="name-helpful">Dian A.k.a Sanj's</span>
+													<span class="count-helpful">1456</span>
+												</li>
+												<li>
+													<span class="name-helpful">OGWING</span>
+													<span class="count-helpful">1365</span>
+												</li>
+												<li>
+													<span class="name-helpful">Luffy</span>
+													<span class="count-helpful">1245</span>
+												</li>
+												<li>
+													<span class="name-helpful">Saitama Donzu</span>
+													<span class="count-helpful">1195</span>
+												</li>
+												<li>
+													<span class="name-helpful">Kabuto amami</span>
+													<span class="count-helpful">1565</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+									
+									<div class="col-md-12">
+										<div class="media info-avatar avatar-review">
+											
+											<div class="media-left">
+												<a href="#">
+													<img src="assets/img/admin.png" alt="" class="media-object avatar">
+												</a>
+											</div>
+											
+											<div class="media-body">
+												<a href="">
+													<h5 class="username-review">ADMIN</h5>
+													<span class="date-review">
+														Jun 10th, 2016
+													</span>
+												</a>
+												<span class="minute">15min ago to 
+													<a href="" class="minute">/a/onepiece</a>
+												</span>
+												<div class="tag tag-review">
+													<span class="red-tag">Spoiler</span>
+												</div>
+											</div>
+											
+             					
+             					<div class="overall-rating">
+              					<span>Overall Rating:</span>&nbsp;6
+              				</div>
+										</div>
+										
+										<div class="text-review-page mar-t-20">
+											<p>Notice: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare consequat sapien, a lacinia.</p>
+											
+											<p>ligula egestas eu. Aliquam quis purus lorem. Donec tincidunt accumsan ligula, sit amet fermentum magna viverra ut. Mauris porta sagittis dui, id iaculis augue imperdiet vitae. Praesent placerat diam in odio posuereligula Aliquam quis purus lorem. Donec tincidunt accumsan ligula, </p>
+											
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare consequat sapien, 
+												<a href="#read-more" aria-controls="background" role="tab" data-toggle="tab">read more</a>
+											</p>
+										</div>
+										
+										<div class="footer-info">
+											<a href="#">1365</a>
+											 people found this review helpfull
+										</div>
+										
+										<hr/>
+									</div>
+								</div>
+							</div><!-- right-panel-sec -->
+         		</div>
+         		
+						<!--Quotes tab-->
+        		<div role="tabpanel" class="tab-pane h-600" id="quotes-sec">
+        			<div class="left-panel-sec">
+                <div class="wrap-panel">
+                  <div class="content-panel">
+                    <img src="assets/img/onepiece.png" alt="" class="w-100">
+                  </div>
+                  <div class="episode-title">
+                    Ep: 275 
+                  </div>
+                  <div class="manga-title">
+                    Manga: 275 
+                  </div>
+                  <div class="last-update">
+                    <div class="episode">
+                      <span>2d 5hr 59m</span>
+                    </div>
+                    <div class="episode">
+                      <span>2d 5hr 59m</span>
+                    </div>
+                  </div>
+                  <div class="content-panel info-table">
+										
+                  	<div class="fill-describe">
+                  		<span class="caption-describe">Score</span>
+                  		<span>:</span>
+                  		<span class="score-left">5/10</span>
+                  	</div>
+                  	<div class="fill-describe">
+                  		<span class="caption-describe">Current Episode</span>
+                  		<span>:</span>
+                  		<span class="score-left">744</span>
+                  	</div>
+                  	<div class="fill-eiscribe">
+                  		<span class="caption-describe">Current Manga</span>
+                  		<span>:</span>
+                  		<span class="score-left">725</span>
+                  	</div>
+										
+                  	<div class="td1">
+											<div class="fill-describe">
+												<span class="caption-describe">English</span>
+												<span>:</span>
+												<span class="score-left">ERASED</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Synonyms</span>
+												<span>:</span>
+												<span class="score-left">The Town Where</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Japanese</span>
+												<span>:</span>
+												<span class="score-left">僕だけが</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Episode</span>
+												<span>:</span>
+												<span class="score-left">12</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Status</span>
+												<span>:</span>
+												<span class="score-left">Currently Airing</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Aired</span>
+												<span>:</span>
+												<span class="score-left">Jan 8, 2016</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Genres</span>
+												<span>:</span>
+												<span class="score-left">Mystery</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Duration</span>
+												<span>:</span>
+												<span class="score-left">23 min/eps</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Rating</span>
+												<span>:</span>
+												<span class="score-left">R - 17+</span>
+											</div>
+                  	</div>
+                  	<div class="btn-more" id="more">More..</div>
+									</div>
+                  <div class="title link-menu-top">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-book"></i> Synopsis</a>
+                  </div>
+                  <div class="title link-menu">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-pencil-square-o"></i> Write Review</a>
+                  </div>
+                  <div class="title link-menu">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-plus"></i> Add to..</a>
+                  </div>
+                </div><!-- end wrap-panel-->
+              </div><!-- end left-panel-sec -->
+							
+  						<div class="right-panel-sec">
+  							<div class="row">
+									<div class="col-md-7 main-content">
+										<div class="col-md-12 right-inner-addon no-padding"> 
+											<i class="fa fa-search" style="color: #17ae97;"></i>
+											<input type="input" class="form-control" name="find-anime" placeholder="Find your anime" /> 
+										</div>
+										
+										<div class="wrapper-avatar col-md-12 pad-b-10 w-100 bor-none">
+											<div class="media info-avatar">
+												<div class="media-left">
+													<a href="profile.html">
+														<img class="media-object avatar" src="assets/img/admin.png" alt="...">
+													</a>
+												</div>
+
+												<div class="media-body">
+													<h5><a href="profile.html">ADMIN</a></h5>
+													<span class="minute">15min ago</span>
+												</div>
+											</div>
+										</div>
+										
+										<div class="text-quotes">
+											<p>"Hero forget it! We're pirates, I love heroes, but I don't want to become one! Do you even know what it means to be a hero?! let's say you have some meat, okay? Now a pirate would throw a party and eat the meat, but a hero would share it with everyone! I want to eat all the meat!</p>
+										<hr/>
+										</div>
+										<div class="col-md-12 no-padding">
+											<div class="left-point">
+												<div class="like-quote">
+													<a href="#">
+														<span><i class="fa fa-heart"></i>Like</span>
+													</a>
+													&nbsp;-&nbsp;
+													<a href="#">
+														<span><i class="fa fa-commenting-o"></i>Comment</span>
+													</a>
+												</div>
+											</div>
+											<div class="right-point">
+												<a href=""><span>23,975 Points</span></a>
+												&nbsp;-&nbsp;
+												<a href=""><span>23,975 Comment</span></a>
+											</div>
+										</div>
+										
+										<div class="wrapper-avatar col-md-12 pad-b-10 w-100 bor-none">
+											<div class="media info-avatar">
+												<div class="media-left">
+													<a href="profile.html">
+														<img class="media-object avatar" src="assets/img/admin.png" alt="...">
+													</a>
+												</div>
+
+												<div class="media-body">
+													<h5><a href="profile.html">ADMIN</a></h5>
+													<span class="minute">15min ago</span>
+												</div>
+											</div>
+										</div>
+										
+										<div class="text-quotes">
+											<p>"Hero forget it! We're pirates, I love heroes, but I don't want to become one! Do you even know what it means to be a hero?! let's say you have some meat, okay? Now a pirate would throw a party and eat the meat, but a hero would share it with everyone! I want to eat all the meat!</p>
+										<hr/>
+										</div>
+										<div class="col-md-12 no-padding">
+											<div class="left-point">
+												<div class="like-quote">
+													<a href="#">
+														<span><i class="fa fa-heart"></i>Like</span>
+													</a>
+													&nbsp;-&nbsp;
+													<a href="#">
+														<span><i class="fa fa-commenting-o"></i>Comment</span>
+													</a>
+												</div>
+											</div>
+											<div class="right-point">
+												<a href=""><span>23,975 Points</span></a>
+												&nbsp;-&nbsp;
+												<a href=""><span>23,975 Comment</span></a>
+											</div>
+										</div>
+										
+										<div class="wrapper-avatar col-md-12 pad-b-10 w-100 bor-none">
+											<div class="media info-avatar">
+												<div class="media-left">
+													<a href="profile.html">
+														<img class="media-object avatar" src="assets/img/admin.png" alt="...">
+													</a>
+												</div>
+
+												<div class="media-body">
+													<h5><a href="profile.html">ADMIN</a></h5>
+													<span class="minute">15min ago</span>
+												</div>
+											</div>
+										</div>
+										
+										<div class="text-quotes">
+											<p>"Hero forget it! We're pirates, I love heroes, but I don't want to become one! Do you even know what it means to be a hero?! let's say you have some meat, okay? Now a pirate would throw a party and eat the meat, but a hero would share it with everyone! I want to eat all the meat!</p>
+										<hr/>
+										</div>
+										<div class="col-md-12 no-padding">
+											<div class="left-point">
+												<div class="like-quote">
+													<a href="#">
+														<span><i class="fa fa-heart"></i>Like</span>
+													</a>
+													&nbsp;-&nbsp;
+													<a href="#">
+														<span><i class="fa fa-commenting-o"></i>Comment</span>
+													</a>
+												</div>
+											</div>
+											<div class="right-point">
+												<a href=""><span>23,975 Points</span></a>
+												&nbsp;-&nbsp;
+												<a href=""><span>23,975 Comment</span></a>
+											</div>
+										</div>
+										
+										<div class="wrapper-avatar col-md-12 pad-b-10 w-100 bor-none">
+											<div class="media info-avatar">
+												<div class="media-left">
+													<a href="profile.html">
+														<img class="media-object avatar" src="assets/img/admin.png" alt="...">
+													</a>
+												</div>
+
+												<div class="media-body">
+													<h5><a href="profile.html">ADMIN</a></h5>
+													<span class="minute">15min ago</span>
+												</div>
+											</div>
+										</div>
+										
+										<div class="text-quotes">
+											<p>"Hero forget it! We're pirates, I love heroes, but I don't want to become one! Do you even know what it means to be a hero?! let's say you have some meat, okay? Now a pirate would throw a party and eat the meat, but a hero would share it with everyone! I want to eat all the meat!</p>
+										<hr/>
+										</div>
+										<div class="col-md-12 no-padding">
+											<div class="left-point">
+												<div class="like-quote">
+													<a href="#">
+														<span><i class="fa fa-heart"></i>Like</span>
+													</a>
+													&nbsp;-&nbsp;
+													<a href="#">
+														<span><i class="fa fa-commenting-o"></i>Comment</span>
+													</a>
+												</div>
+											</div>
+											<div class="right-point">
+												<a href=""><span>23,975 Points</span></a>
+												&nbsp;-&nbsp;
+												<a href=""><span>23,975 Comment</span></a>
+											</div>
+										</div>
+										
+										<div class="wrapper-avatar col-md-12 pad-b-10 w-100 bor-none">
+											<div class="media info-avatar">
+												<div class="media-left">
+													<a href="profile.html">
+														<img class="media-object avatar" src="assets/img/admin.png" alt="...">
+													</a>
+												</div>
+
+												<div class="media-body">
+													<h5><a href="profile.html">ADMIN</a></h5>
+													<span class="minute">15min ago</span>
+												</div>
+											</div>
+										</div>
+										
+										<div class="text-quotes">
+											<p>"Hero forget it! We're pirates, I love heroes, but I don't want to become one! Do you even know what it means to be a hero?! let's say you have some meat, okay? Now a pirate would throw a party and eat the meat, but a hero would share it with everyone! I want to eat all the meat!</p>
+										<hr/>
+										</div>
+										<div class="col-md-12 no-padding">
+											<div class="left-point">
+												<div class="like-quote">
+													<a href="#">
+														<span><i class="fa fa-heart"></i>Like</span>
+													</a>
+													&nbsp;-&nbsp;
+													<a href="#">
+														<span><i class="fa fa-commenting-o"></i>Comment</span>
+													</a>
+												</div>
+											</div>
+											<div class="right-point">
+												<a href=""><span>23,975 Points</span></a>
+												&nbsp;-&nbsp;
+												<a href=""><span>23,975 Comment</span></a>
+											</div>
+										</div>
+									</div><!-- end main content -->
+									
+									<div class="col-md-5 ads">
+                    <div class="banner">
+											<a href="#" target="_self">
+												<img src="assets/img/asasa.png" alt="ads" class="img-responsive" />
+											</a>
+									 	</div>
+                    <!--bannner-->
+										<div class="banner">
+											<a href="#" target="_self">
+												<img src="assets/img/idea.png" alt="banner" class="img-responsive" />
+													<h4>Nice Guys</h4>
+											</a>
+										</div>
+										<!--bannner-->
+										<div class="banner">
+											<a href="#" target="_self">
+												<img src="assets/img/banner2.png" alt="banner" class="img-responsive" />
+													<h4>What is she</h4>
+											</a>
+										</div>
+
+                    <!-- social -->
+                    <div class="social-network">
+                      <ul class="list-unstyled">
+                        <li>
+                          <a href="#" target="_self">
+                          	<div class="link"><i class="fa fa-facebook"></i></div>
+                          </a>
+                          <p class="text-con">50K</p>
+                        </li>
+                        <li>
+                         	<a href="#" target="_self">
+                          	 <div class="link"><i class="fa fa-twitter"></i></div>
+                            </a>
+                          <p class="text-con">1K</p>
+                        </li> 
+                        <li>
+                         	<a href="#" target="_self">
+                          	 <div class="link"><i class="fa fa-instagram"></i></div>
+                            </a>
+                          <p class="text-con">30K</p>
+                        </li>
+                      </ul>
+                    </div>
+                  
+                    <div class="link-bottom">
+                      <ul class="list-unstyled">
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="">Terms</a></li>
+                      </ul>
+                      <p class="text-center copyright">Copyright © All Rights Reserved
+                    </div>
+                  </div><!-- end ads -->
+								</div>
+  						</div>
+        		</div>
+         		
+         		<!--Read More -->
+         		<div role="tabpanel" class="tab-pane h-600" id="read-more">
+              <div class="left-panel-sec">
+                <div class="wrap-panel">
+                  <div class="content-panel">
+                    <img src="assets/img/onepiece.png" alt="" class="w-100">
+                  </div>
+                  <div class="episode-title">
+                    Ep: 275 
+                  </div>
+                  <div class="manga-title">
+                    Manga: 275 
+                  </div>
+                  <div class="last-update">
+                    <div class="episode">
+                      <span>2d 5hr 59m</span>
+                    </div>
+                    <div class="episode">
+                      <span>2d 5hr 59m</span>
+                    </div>
+                  </div>
+                  <div class="content-panel info-table">
+										
+                  	<div class="fill-describe">
+                  		<span class="caption-describe">Score</span>
+                  		<span>:</span>
+                  		<span class="score-left">5/10</span>
+                  	</div>
+                  	<div class="fill-describe">
+                  		<span class="caption-describe">Current Episode</span>
+                  		<span>:</span>
+                  		<span class="score-left">744</span>
+                  	</div>
+                  	<div class="fill-eiscribe">
+                  		<span class="caption-describe">Current Manga</span>
+                  		<span>:</span>
+                  		<span class="score-left">725</span>
+                  	</div>
+										
+                  	<div class="td1">
+											<div class="fill-describe">
+												<span class="caption-describe">English</span>
+												<span>:</span>
+												<span class="score-left">ERASED</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Synonyms</span>
+												<span>:</span>
+												<span class="score-left">The Town Where</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Japanese</span>
+												<span>:</span>
+												<span class="score-left">僕だけが</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Episode</span>
+												<span>:</span>
+												<span class="score-left">12</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Status</span>
+												<span>:</span>
+												<span class="score-left">Currently Airing</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Aired</span>
+												<span>:</span>
+												<span class="score-left">Jan 8, 2016</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Genres</span>
+												<span>:</span>
+												<span class="score-left">Mystery</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Duration</span>
+												<span>:</span>
+												<span class="score-left">23 min/eps</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Rating</span>
+												<span>:</span>
+												<span class="score-left">R - 17+</span>
+											</div>
+                  	</div>
+                  	<div class="btn-more" id="more">More..</div>
+									</div>
+                  
+                  <div class="title link-menu-top">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-book"></i> Synopsis</a>
+                  </div>
+                  <div class="title link-menu">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-pencil-square-o"></i> Write Review</a>
+                  </div>
+                  <div class="title link-menu">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-plus"></i> Add to..</a>
+                  </div>
+                </div><!-- end wrap-panel-->
+              </div><!-- end left-panel-sec -->
+              
+              <div class="right-panel-sec">
+              	<div class="row">
+              		<div class="col-md-12">
+              			<div class="media info-avatar avatar-view">
+											<div class="media-left">
+												<a href="">
+													<img src="assets/img/admin.png" alt="" class="media-object avatar">
+												</a>
+											</div>
+											<div class="media-body">
+												<a href="">
+													<h5>ADMIN</h5>
+												</a>
+												<span class="minute">15min ago to 
+													<a href="" class="minute">/a/onepiece</a>
+												</span>
+												<div class="tag tag-read-more">
+													<span class="red-tag">Spoiler</span>
+												</div>
+											</div>
+										</div>
+             				<div class="media info-avatar info-like">
+             					<div class="btn-like">
+												<a class="btn btn-green">Like this review</a>
+												<a class="btn btn-gray"><i class="fa fa-thumbs-down"></i></a>
+											</div>
+            					<div class="caption-like">
+            						<span>42 out of 47 users found this review helpful.</span>
+            					</div>
+             				</div>
+              		</div>
+              		
+              		<div class="col-md-12 review-sec"><!--- review fill --->
+              			<div class="title-review">
+              				Hunter X Hunter (2011) Review
+              			</div>
+              			<div class="date-review">
+              				Jun 10th, 2016
+              			</div>
+              			<div class="col-md-12 subtitle-review">
+											I’m going to try keep this as short as I can
+             				</div>
+              			<div class="overall-rating">
+              				<span>Overall Rating:</span>&nbsp;6
+              			</div>
+              			<div class="review-text">
+              				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra </p>
+              				
+              				<p class="mar-t-20">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem</p>
+              				<div class="col-md-12 no-padding chart-read-more">
+              					<div class="col-md-6 no-padding">
+              						<div class="review-story"> 
+              							<a href="#">
+              								<img src="assets/img/plus-circle-o.png">
+              								<span>Story</span>
+														</a>
+              						</div>
+              					</div>
+              					<div class="col-md-6 no-padding pull-right">
+              						<div class="tag tag-green-more">
+              							<span class="green-tag">Story: 5.0</span>
+              						</div>
+              					</div>
+              					
+              					<div class="col-md-6 no-padding">
+              						<div class="review-story"> 
+														<a href="#">
+              								<img src="assets/img/plus-circle-o.png">
+              								<span>Animation</span>
+														</a>
+              						</div>
+              					</div>
+              					<div class="col-md-6 no-padding pull-right">
+              						<div class="tag tag-green-more">
+              							<span class="green-tag">Animation: 5.0</span>
+              						</div>
+              					</div>
+              					
+              					<div class="col-md-6 no-padding">
+              						<div class="review-story"> 
+              							<a href="#">
+              								<img src="assets/img/plus-circle-o.png">
+              								<span>Sound</span>
+														</a>
+              						</div>
+              					</div>
+              					<div class="col-md-6 no-padding pull-right">
+              						<div class="tag tag-green-more">
+              							<span class="green-tag">Music/Sound: 5.0</span>
+              						</div>
+              					</div>
+              					
+              					<div class="col-md-6 no-padding">
+              						<div class="review-story"> 
+														<a href="#">
+              								<img src="assets/img/plus-circle-o.png">
+              								<span>Character</span>
+														</a>
+              						</div>
+              					</div>
+              					<div class="col-md-6 no-padding pull-right">
+              						<div class="tag tag-green-more">
+              							<span class="green-tag">Character: 5.0</span>
+              						</div>
+              					</div>
+              					
+              					<div class="col-md-12 no-padding pull-right">
+              						<div class="tag tag-green-more">
+              							<span class="green-tag">Enjoyment: 5.0</span>
+              						</div>
+              					</div>
+              				</div>
+              				<p class="last-page">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem</p>
+              			</div>
+              		</div><!--- end review fill --->
+              		<div class="col-md-12 mar-t-40">
+              			<div class="slider">
+              				<div class="caption-slider">
+              					<span>More reviews from Dian</span>
+											</div>
+											<hr />
+											<div id="owl-example" class="owl-carousel owl-theme">
+												<div class="image-carousel">
+													<a class="item-carousel" href="#">
+														<img src="assets/img/Naruto.png" alt="cover" >
+														<div class="title-image-carousel">
+															<div class="limit-carousel">Hunter X Hunter Greed island</div>
+														</div>
+													</a>
+												</div>
+												
+												<div class="image-carousel">
+													<a class="item-carousel" href="#">
+														<img src="assets/img/Naruto.png" alt="cover" >
+														<div class="title-image-carousel">
+															<div class="limit-carousel">Hunter X Hunter Greed island</div>
+														</div>
+													</a>
+												</div>
+												
+												<div class="image-carousel">
+													<a class="item-carousel" href="#">
+														<img src="assets/img/OnePunchMan.jpg" alt="cover" >
+														<div class="title-image-carousel">
+															<div class="limit-carousel">One Punch Man</div>
+														</div>
+													</a>
+												</div>
+												
+												<div class="image-carousel">
+													<a class="item-carousel" href="#">
+														<img src="assets/img/Hxh.jpg" alt="cover" >
+														<div class="title-image-carousel">
+															<div class="limit-carousel">Hunter X Hunter Greed island</div>
+														</div>
+													</a>
+												</div>
+												
+												<div class="image-carousel">
+													<a class="item-carousel" href="#">
+														<img src="assets/img/Naruto.png" alt="cover" >
+														<div class="title-image-carousel">
+															<div class="limit-carousel">Naruto Shipuden</div>
+														</div>
+													</a>
+												</div/div>
+												
+												<div class="image-carousel">
+													<a class="item-carousel" href="#">
+														<img src="assets/img/OnePunchMan.jpg" alt="cover" >
+														<div class="title-image-carousel">
+															<div class="limit-carousel">One Punch Man</div>
+														</div>
+													</a>
+												</div>
+												
+												<div class="image-carousel">
+													<a class="item-carousel" href="#">
+														<img src="assets/img/Hxh.jpg" alt="cover" >
+														<div class="title-image-carousel">
+															<div class="limit-carousel">Hunter X Hunter Greed island</div>
+														</div>
+													</a>
+												</div>
+												
+												<div class="image-carousel">
+													<a class="item-carousel" href="#">
+														<img src="assets/img/Naruto.png" alt="cover" >
+														<div class="title-image-carousel">
+															<div class="limit-carousel">Naruto Shipuden</div>
+														</div>
+													</a>
+												</div>
+												
+											</div><!-- owl carousel-->
+             					<hr />
+              			</div><!--slider -->
+              		</div><!--col-md-12 slider-->
+              		
+              		<div class="col-md-12">
+										<div class="text-comment">
+											<div class="wrap-avatar-comment">
+												<a href="#">
+													<img class="media-object avatar" src="assets/img/admin.png" alt="...">
+												</a>
+											</div>
+											<div class="input-text-comment">
+												<textarea class="form-control form-comment" rows="3" placeholder="What's on your mind"></textarea>
+												<a href="" class="pull-right small-btn green-bg">
+														Comment
+													</a>
+											</div>
+										</div>
+
+										<div class="user-comment">
+
+											<div class="media info-avatar">
+												<div class="media-left">
+													<a href="#">
+														<img class="media-object avatar" src="assets/img/admin.png" alt="...">
+													</a>
+												</div>
+
+												<div class="media-body w-100">
+													<a href=""><h5 class="user">Luffy D’monkeys</h5></a>
+													<div class="date">100 Point - <a href=""> 6 Days ago </a>
+													</div>
+												</div>
+											</div>
+
+											<p class="dis-cap comment-field-user">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare consequat sapien, a lacinia ligula egestas eu. Aliquam quis purus lorem. Donec tincidunt accumsan ligula, sit amet fermentum magna viverra ut. Mauris porta sagittis dui, id iaculis augue imperdiet vitae. Praesent placerat diam in odio posuere
+											</p>
+
+											<div class="reply-comment">
+												<a href=""><span>Reply</span></a>
+												<a href=""><img src="assets/img/up-reply.png">
+												</a>
+												<a href=""><img src="assets/img/down-reply.png">
+												</a>
+											</div>
+										</div>
+
+										<div class="comment-to-comment">
+											<div class="user-comment">
+
+												<div class="media info-avatar">
+													<div class="media-left">
+														<a href="#">
+															<img class="media-object avatar" src="assets/img/admin.png" alt="...">
+														</a>
+													</div>
+
+													<div class="media-body w-100">
+														<a href=""><h5 class="user">Luffy D’monkeys</h5></a>
+														<div class="date">100 Point - <a href=""> 6 Days ago </a>
+														</div>
+													</div>
+												</div>
+
+												<p class="dis-cap comment-field-user">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare consequat sapien, a lacinia ligula egestas eu. Aliquam quis purus lorem. Donec tincidunt accumsan ligula, sit amet fermentum magna viverra ut. Mauris porta sagittis dui, id iaculis augue imperdiet vitae. Praesent placerat diam in odio posuere
+												</p>
+
+												<div class="reply-comment">
+													<a href=""><span>Reply</span></a>
+													<a href=""><img src="assets/img/up-reply.png">
+													</a>
+													<a href=""><img src="assets/img/down-reply.png">
+													</a>
+												</div>
+											</div>
+										</div>
+              		</div>
+             	
+              	</div>
+              </div><!-- right panel -->
+						</div>
+         
+         		<!--posting review-->
+         		<div role="tabpanel" class="tab-pane h-600" id="posting-review">
+         			<div class="left-panel-sec">
+                <div class="wrap-panel">
+                  <div class="content-panel">
+                    <img src="assets/img/onepiece.png" alt="" class="w-100">
+                  </div>
+                  <div class="episode-title">
+                    Ep: 275 
+                  </div>
+                  <div class="manga-title">
+                    Manga: 275 
+                  </div>
+                  <div class="last-update">
+                    <div class="episode">
+                      <span>2d 5hr 59m</span>
+                    </div>
+                    <div class="episode">
+                      <span>2d 5hr 59m</span>
+                    </div>
+                  </div>
+                  <div class="content-panel info-table">
+										
+                  	<div class="fill-describe">
+                  		<span class="caption-describe">Score</span>
+                  		<span>:</span>
+                  		<span class="score-left">5/10</span>
+                  	</div>
+                  	<div class="fill-describe">
+                  		<span class="caption-describe">Current Episode</span>
+                  		<span>:</span>
+                  		<span class="score-left">744</span>
+                  	</div>
+                  	<div class="fill-eiscribe">
+                  		<span class="caption-describe">Current Manga</span>
+                  		<span>:</span>
+                  		<span class="score-left">725</span>
+                  	</div>
+										
+                  	<div class="td2">
+											<div class="fill-describe">
+												<span class="caption-describe">English</span>
+												<span>:</span>
+												<span class="score-left">ERASED</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Synonyms</span>
+												<span>:</span>
+												<span class="score-left">The Town Where</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Japanese</span>
+												<span>:</span>
+												<span class="score-left">僕だけが</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Episode</span>
+												<span>:</span>
+												<span class="score-left">12</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Status</span>
+												<span>:</span>
+												<span class="score-left">Currently Airing</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Aired</span>
+												<span>:</span>
+												<span class="score-left">Jan 8, 2016</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Genres</span>
+												<span>:</span>
+												<span class="score-left">Mystery</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Duration</span>
+												<span>:</span>
+												<span class="score-left">23 min/eps</span>
+											</div>
+											<div class="fill-describe">
+												<span class="caption-describe">Rating</span>
+												<span>:</span>
+												<span class="score-left">R - 17+</span>
+											</div>
+                  	</div>
+                  	<div class="btn-more" id="more2">More..</div>
+									</div>
+                  <div class="title link-menu-top">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-book"></i> Synopsis</a>
+                  </div>
+                  <div class="title link-menu">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-pencil-square-o"></i> Write Review</a>
+                  </div>
+                  <div class="title link-menu">
+                    <a href="#" class="link-fifth-left"><i class="fa fa-plus"></i> Add to..</a>
+                  </div>
+                </div><!-- end wrap-panel-->
+              </div><!-- end left-panel-sec -->
+              
+              <div class="right-panel-sec">
+              	<div class="row">
+									<div class="anime-post">
+										<span>Mirai Nikki (TV)</span>
+										<a href="#review-sec" class="btn btn-green btn-back-review" aria-controls="background" role="tab" data-toggle="tab" aria-expanded="true">
+											Back
+										</a>
+									</div>
+              		<div class="col-md-10">
+              			<div class="spoiler-post">
+											Contain Spoiler?
+											<input type="checkbox" name="option" id="spoiler-review" checked/>
+											<label for="spoiler-review">
+												<span class="fa-stack">
+													<i class="fa fa-square-o fa-stack-1x"></i>
+													<i class="fa fa-check fa-stack-1x"></i>
+												</span>
+											</label>
+              			</div>
+              			
+              			<div class="intro-review-post">
+              				<div class="title-intro">
+              					Introduction to your review and thought process
+              				</div>
+              				<textarea class="text-intro" placeholder="e.g. ‘A great modernization of an under-appreciate is fast, fourious, and
+endlessly deep.’"></textarea>
+              			</div>
+              			
+              			<ul class="list-review-post">
+              				<li>
+              					<div class="triger-post">
+              						<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+														<i class="fa fa-plus-circle"></i>
+														<span> Story...</span>
+													</a>
+             						</div>
+             						<a href="#" class="btn btn-circle">1</a>
+             						<a href="#" class="btn btn-circle">2</a>
+             						<a href="#" class="btn btn-circle">3</a>
+             						<a href="#" class="btn btn-circle">4</a>
+             						<a href="#" class="btn btn-circle">5</a>
+             						<a href="#" class="btn btn-circle">6</a>
+             						<a href="#" class="btn btn-circle">7</a>
+             						<a href="#" class="btn btn-circle">8</a>
+             						<a href="#" class="btn btn-circle">9</a>
+             						<a href="#" class="btn btn-circle active">10</a>
+												<div id="collapseOne" class="panel-collapse collapse">
+													<textarea class="text-acor" placeholder="e.g. ‘A great modernization of an under-appreciate is fast, fourious, and endlessly deep.’"></textarea>
+												</div>
+											</li>
+             					<li>
+              					<div class="triger-post">
+              						<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+														<i class="fa fa-plus-circle"></i>
+														<span> Animation...</span>
+													</a>
+             						</div>
+             						<a href="#" class="btn btn-circle">1</a>
+             						<a href="#" class="btn btn-circle">2</a>
+             						<a href="#" class="btn btn-circle">3</a>
+             						<a href="#" class="btn btn-circle">4</a>
+             						<a href="#" class="btn btn-circle">5</a>
+             						<a href="#" class="btn btn-circle">6</a>
+             						<a href="#" class="btn btn-circle">7</a>
+             						<a href="#" class="btn btn-circle">8</a>
+             						<a href="#" class="btn btn-circle">9</a>
+             						<a href="#" class="btn btn-circle active">10</a>
+												<div id="collapseTwo" class="panel-collapse collapse in">
+													<textarea class="text-acor" placeholder="e.g. ‘A great modernization of an under-appreciate is fast, fourious, and endlessly deep.’"></textarea>
+												</div>
+											</li>
+             					<li>
+              					<div class="triger-post">
+              						<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+														<i class="fa fa-plus-circle"></i>
+														<span> Character...</span>
+													</a>
+             						</div>
+             						<a href="#" class="btn btn-circle">1</a>
+             						<a href="#" class="btn btn-circle">2</a>
+             						<a href="#" class="btn btn-circle">3</a>
+             						<a href="#" class="btn btn-circle">4</a>
+             						<a href="#" class="btn btn-circle">5</a>
+             						<a href="#" class="btn btn-circle">6</a>
+             						<a href="#" class="btn btn-circle">7</a>
+             						<a href="#" class="btn btn-circle">8</a>
+             						<a href="#" class="btn btn-circle">9</a>
+             						<a href="#" class="btn btn-circle active">10</a>
+												<div id="collapseThree" class="panel-collapse collapse">
+													<textarea class="text-acor" placeholder="e.g. ‘A great modernization of an under-appreciate is fast, fourious, and endlessly deep.’"></textarea>
+												</div>
+											</li>
+             					<li>
+              					<div class="triger-post">
+              						<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+														<i class="fa fa-plus-circle"></i>
+														<span> Enjoyment...</span>
+													</a>
+             						</div>
+             						<a href="#" class="btn btn-circle">1</a>
+             						<a href="#" class="btn btn-circle">2</a>
+             						<a href="#" class="btn btn-circle">3</a>
+             						<a href="#" class="btn btn-circle">4</a>
+             						<a href="#" class="btn btn-circle">5</a>
+             						<a href="#" class="btn btn-circle">6</a>
+             						<a href="#" class="btn btn-circle">7</a>
+             						<a href="#" class="btn btn-circle">8</a>
+             						<a href="#" class="btn btn-circle">9</a>
+             						<a href="#" class="btn btn-circle active">10</a>
+												<div id="collapseFour" class="panel-collapse collapse">
+													<textarea class="text-acor" placeholder="e.g. ‘A great modernization of an under-appreciate is fast, fourious, and endlessly deep.’"></textarea>
+												</div>
+											</li>
+              			</ul>
+              			
+              			<div class="intro-review-post">
+              				<div class="title-intro">
+              					Recomendation
+              				</div>
+              				<textarea class="text-intro" placeholder="e.g. ‘A great modernization of an under-appreciate is fast, fourious, and
+endlessly deep.’"></textarea>
+              			</div>
+              			<a href="#" class="btn btn-green submit-post">
+             						Submit
+             				</a>
+              			
+              		</div>
+              	</div>
+              </div><!--right panel -->
+         		</div>
+          </div><!-- end tab content -->
+        </div><!-- end row -->
+      </div><!-- end container -->
+
+    </div><!-- end col-md-12 -->
+    
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+		<!-- Include js plugin -->
+		<script src="assets/js/owl.carousel.js"></script>
+
+    <script>
+      $('#fifth a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      })
+      $('#pop a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      })
+    </script>
+    <script>
+			$(document).ready(function() {
+				//Sort random function
+				function random(owlSelector){
+					owlSelector.children().sort(function(){
+							return Math.round(Math.random()) - 0.5;
+					}).each(function(){
+						$(this).appendTo(owlSelector);
+					});
+				}
+
+				$("#owl-example").owlCarousel({
+					navigation: true,
+					navigationText: [
+						"<i class='fa fa-chevron-left'></i>",
+						"<i class='fa fa-chevron-right'></i>"
+						],
+					beforeInit : function(elem){
+						//Parameter elem pointing to $("#owl-demo")
+						random(elem);
+					}
+
+				});
+
+			});
+ 			
+			$('#more').on('click', function (e) {
+        e.preventDefault();
+        var elem = $(this).prevAll('.td')
+        elem.toggle('slow');
+   		 });
+
+		</script>
+    
+  </body>
+</html>
