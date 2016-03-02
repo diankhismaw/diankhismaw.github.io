@@ -60,6 +60,9 @@ img { max-width: 100%; }
 .follow-responsive{
 	display: none;
 }
+.tab-responsive{
+	display: none;
+}
 /*------------------------ 
 			Landing Page 
 ------------------------*/
@@ -319,6 +322,7 @@ i.fa.fa-circle{
 }
 .ads-view{
 	padding-left: 45px;
+	border-top: none !important;
 }
 .banner{
 	margin-top: 0px;
@@ -2546,3 +2550,11 @@ input#anime1, input#anime2, input#anime3, input#anime4{
 		padding-left: 30px;
 	}
 }*/
+.wrap-bottom-avatar{
+	display: none;
+}
+.tab-content-comment{
+	width: 100%;
+	float: left;
+	margin-left: -5px;
+}

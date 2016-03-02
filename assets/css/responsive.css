@@ -27,7 +27,6 @@
 	
 	/*ads side */
 	.ads-view{
-		float: left;
 		margin-top: 60px;
 		border-top: 1px solid #eee;
 		padding:  0px 40px;
@@ -251,19 +250,20 @@
 /*--------------------------------------------------------------
 												Anime Category
 ---------------------------------------------------------------*/
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 992px) and (){
 	
 	.alphabet-nav > a{
 		padding: 4px 7px;
-    	letter-spacing: 5.2px;
+    letter-spacing: 5.2px;
 	}
 }
 
-@media only screen and (min-width: 768px) and (max-width: 990px){
+@media only screen and (min-width: 768px) and (max-width: 991px){
 
 	.alphabet-nav > a {
-	    padding: 4px 4px;
-	    letter-spacing: 3px;
+    padding: 4px 4px;
+    letter-spacing: 3px;
+		cursor: pointer !important;
 	}
 	.right-inner-addon{
 		width: 340px;
@@ -272,54 +272,22 @@
 		padding: 13px 315px;
 	}
 }
-@media only screen and (min-width: 480px) and (max-width: 990px){
-	
+@media only screen and (min-width: 480px) and (max-width: 767px){
 	.follow-responsive{
 		display: inline-block;
 		border-bottom: 1px solid #eee;
-	    width: 100%;
-	    padding: 10px 10px;
+    width: 100%;
+    padding: 10px 10px;
 	}
 	.right-button{
 		display: none;
 	}
-	.btn-trans{
-		padding: 8px 15px;
+	.alphabet-nav{ 
+		display: none; 
 	}
-	.list-place {
-		margin: 0px;
-	    display: inline-block;
-	    margin-top: 105px;
-	    width: 100%;
-	    padding: 0px 25px;
-	}
-	.list-followers{
-		padding: 0px 20px;
-		margin-right: 0px;
-	}
-	.list-followers > a > h5{
-		font-size: 13px;
-	}
-	.list-followers > a > h2{
-		font-size: 16px;
-	}
-	.wrap-item{
-		margin: 0px;
-	}
-	.item{
-		margin: 10px !important;
-	}
-	.show-tabs{
-		display: none;
-	}
-	.hide-tabs{
-		display: inline-block !important;
-	}
-	.single-panel{
-		margin-left: 4px;
-	}
-	.nav.nav-tabs > li > a{
-		padding: 15px 15px;
+	.alphabet-res{ 
+		display: inline-block;
+		float: right;
 	}
 	.right-inner-addon{ 
 		display: none; 
@@ -329,10 +297,72 @@
 	}
 	.right-inner-addon{
 		width: 100%;
-    	margin-bottom: 20px;
+    margin-bottom: 20px;
 	}
 	.right-inner-addon > i{ 
-		padding: 13px 385px; 
+		padding: 13px 400px; 
+	}
+	.wrap-pop{
+		display: inline-block;
+	}
+	.single-panel{
+		border: none;
+	}
+	#myTabs{
+		display: none;
+	}
+	.tab-top{
+		margin-top: 0px;
+		border: none !Important;
+		background: transparent !important;
+	}
+	.tab-content{
+		display: none;
+	}
+	.tab-content-res{
+		display: inline-block;
+	}
+	.tab-responsive {
+		display: inline-block; 
+		width: 100%;
+		margin-top: -9px;
+	}
+	#mySliderTabs{
+		margin-bottom: 40px;
+		display: inline-block;
+		width: 100%;
+		height: 2000px;
+	}
+	.wrap-item{
+		margin: 0px;
+	}
+	.dropdown-res{
+		margin-bottom: 20px;
+		display: inline-block;
+		width: 100%;
+	}
+	.dropdown-left-res{
+		float: left;
+	}
+	.dropdown-left-res > li{
+		list-style: none;
+	}
+	.dropdown-right-res{
+		float: right;
+	}
+	.dropdown-right-res > li{
+		list-style: none;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 479px){
+	.follow-responsive{
+		display: inline-block;
+		border-bottom: 1px solid #eee;
+    width: 100%;
+    padding: 10px 10px;
+	}
+	.right-button{
+		display: none;
 	}
 	.alphabet-nav{ 
 		display: none; 
@@ -340,6 +370,28 @@
 	.alphabet-res{ 
 		display: inline-block;
 		float: right;
+	}
+	.right-inner-addon{ 
+		display: none; 
+	}
+	.inner-res{
+		display: block;
+	}
+	.right-inner-addon{
+		width: 100%;
+    margin-bottom: 20px;
+	}
+	.right-inner-addon > i{ 
+		padding: 13px 255px; 
+	}
+	.wrap-pop{
+		display: inline-block;
+	}
+	.single-panel{
+		border: none;
+	}
+	.ui-slider-tabs-list li{
+		border-top: none;
 	}
 	.btn-trans{
 		padding: 10px 15px;
@@ -352,42 +404,138 @@
 		transition: border ease-in 0.5s;
 		transition: color ease-in 0.5s;
 	}
-	.wrap-pop{
-		display: inline-block;
-	}
-}
-@media only screen and (min-width: 320px) and (max-width: 479px){
-	.alphabet-nav{ 
-		display: none; 
-	}
-	.alphabet-res{ 
-		display: inline-block;
-		float: right;
-	}
-	.right-inner-addon{ 
-		display: none; 
-	}
-	.inner-res{
-		display: block;
-	}
-	.show-tabs{
-		display: none;
-	}
-	.hide-tabs{
-		display: inline-block !important;
-	}
 	.list-place{
 		padding: 0px 0px;
-    	margin-top: 75px;
+    margin-top: 75px;
 	}
 	.list-followers{
-		padding: 0px 8px;
-    	margin-right: 0px;
+		padding: 0px 15px;
+    margin-right: 0px;
 	}
 	.list-followers > a > h5{
 		font-size: 11px;
 	}
 	.list-followers > a > h2{
 		font-size: 12px;
+	}
+	.pop-tabs-category > li > a{
+		padding: 8px;
+	}
+	.tab-content{
+		display: none;
+	}
+	.tab-content-res{
+		display: inline-block;
+	}
+	.tab-responsive {
+		display: inline-block; 
+		width: 100%;
+		margin-top: -9px;
+	}
+	#mySliderTabs{
+		margin-bottom: 40px;
+		display: inline-block;
+		width: 100%;
+		height: 2000px;
+	}
+	#myTabs{
+		display: none;
+	}
+	.tab-top{
+		margin-top: 0px;
+		border: none !Important;
+		background: transparent !important;
+	}
+	.dropdown-res{
+		margin-bottom: 20px;
+		display: inline-block;
+		width: 100%;
+	}
+	.dropdown-left-res{
+		float: left;
+	}
+	.dropdown-left-res > li{
+		list-style: none;
+	}
+	.dropdown-right-res{
+		float: right;
+	}
+	.dropdown-right-res > li{
+		list-style: none;
+	}
+}
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 479px){
+	.wrap-res-avatar{
+		display: inline-block;
+	}
+	.wrap-tag-comment > .tag-minute{
+		display: none;
+	}
+	.up-triangle-hide{
+		display: none;
+	}
+	.up-triangle-res{
+		display: inline-block;
+		float: left;
+		margin-right: 15px;
+	}
+	.wrap-bottom-avatar{
+		display: inline-block;
+	}
+	.wrap-bottom-avatar > .tag-minute{
+		margin-top: 21px;
+	}
+	.wraper-discuss-click{
+		padding: 0px;
+	}
+	.title-discuss-click{
+		padding: 0px;
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+	.ads-view{
+		max-width: 260px;
+	}
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	.wrap-res-avatar{
+		display: inline-block;
+	}
+	.wraper-discuss-click{
+		padding: 0px;
+	}
+	.wrap-tag-comment{
+		width: 100%;
+    padding-left: 47px;
+	}
+	.avatar-comment > a{
+		font-size: 13px;
+	}
+	.wrap-tag-comment > .tag-minute{
+		margin-left: 10px;
+	}
+	.normal-tag{
+		padding: 2px 5px !important;
+	}
+	.red-tag{
+		padding: 2px 5px !important; 
+	}
+	.btn-fb-share{
+		width: 200px;
+	}
+	.btn-tt-share{
+		width: 200px;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+	.wraper-discuss-click{
+		padding: 0px;
+	}
+	.wrap-res-avatar{
+		display: inline-block;
 	}
 }
