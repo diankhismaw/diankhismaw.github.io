@@ -319,6 +319,7 @@ i.fa.fa-circle{
 .ads{
   padding-left: 35px;
   padding-right: 25px;
+  display: inline-block;
 }
 .ads-view{
 	padding-left: 45px;
@@ -1683,7 +1684,11 @@ input[type=radio]:checked + label:before {
   margin-bottom: 20px;
 }
 .alphabet-res{
-	display: none;
+  display: none;
+}
+.list-place-other {
+  margin-top: 417px;
+  margin-left: 0px;
 }
 /*------------------------- 
 		Upload Triger 
@@ -2557,8 +2562,4 @@ input#anime1, input#anime2, input#anime3, input#anime4{
 	width: 100%;
 	float: left;
 	margin-left: -5px;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 0788d62b2d413ff34443096c4df6eb6ae8587fb2
