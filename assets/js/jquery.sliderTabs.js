@@ -1,14 +1,3 @@
-/*
- * jQuery SliderTabs v1.1
- * http://lopatin.github.com/sliderTabs
- *
- * Copyright 2012, Alex Lopatin
- * Free to use under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- *
- */
-
-
  (function( $ ){
 	/*
 	 * The sliderTabs tabs class
@@ -43,7 +32,7 @@
 			transition: 'slide',
 			transitionEasing: 'easeOutCubic',
 			transitionSpeed: 800,
-			width: null
+			width: null,
 		};
 
 		// jQuery objects of important elements
@@ -211,7 +200,7 @@
 			// Panel arrows
 
 			// Mousehweel
-			$container.bind('mousewheel', function(event, delta, deltaX, deltaY) {
+			$container.unbind('mousewheel', function(event, delta, deltaX, deltaY) {
 			    if(delta > 0)
 			    	plugin.next();
 			   	else if(delta < 0)
@@ -738,7 +727,7 @@ $.extend($.easing,
  * Requires: 1.2.2+
  */
 
-/*(function($) {
+(function($) {
 
 var types = ['DOMMouseScroll', 'mousewheel'];
 
@@ -776,7 +765,7 @@ $.fn.extend({
     },
     
     unmousewheel: function(fn) {
-        return this.unbind("mousewheel", fn);
+        return this.bind("mousewheel", fn);
     }
 });
 
@@ -809,7 +798,7 @@ function handler(event) {
     return ($.event.dispatch || $.event.handle).apply(this, args);
 }
 
-})(jQuery);*/
+})(jQuery);
 
 
 
