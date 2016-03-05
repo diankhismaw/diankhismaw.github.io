@@ -9,14 +9,14 @@
 			autoplay: false,
 			tabArrowWidth: 35,
 			classes: {
-				leftTabArrow: '',
-				panel: '',
-				panelActive: '',
-				panelsContainer: '',
-				rightTabArrow: '',
-				tab: '',
-				tabActive: '',	
-				tabsList: ''
+			leftTabArrow: '',
+			panel: '',
+			panelActive: '',
+			panelsContainer: '',
+			rightTabArrow: '',
+			tab: '',
+			tabActive: '',	
+			tabsList: ''
 			},
 			defaultTab: 1,
 			height: null,
@@ -761,11 +761,11 @@ $.event.special.mousewheel = {
 
 $.fn.extend({
     mousewheel: function(fn) {
-        return fn ? this.bind("mousewheel", fn) : this.trigger("mousewheel");
+        return fn ? this.unbind("mousewheel", fn) : this.trigger("mousewheel");
     },
     
     unmousewheel: function(fn) {
-        return this.bind("mousewheel", fn);
+        return this.unbind("mousewheel", fn);
     }
 });
 
