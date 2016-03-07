@@ -1,0 +1,72 @@
+.jssort12 .w {
+    cursor: pointer;
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    top: 0px;
+    left: 0px;
+}
+
+.jssort12 .p {
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    top: 0;
+    left: 0px;
+    padding: 0px;
+    margin: 0px 2px;
+}
+.jssort12{
+  height: 40px;
+}
+.jssort12 .pav .w,
+.jssort12 .pdn .w {
+    border-bottom: 1px solid #fff;
+}
+
+.jssort12 .c {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 28px;
+    text-align: center;
+    color: #a4a4a4;
+    padding: 5px;
+    font-size: 13.0px;
+}
+
+.jssort12 .p .c,
+.jssort12 .pav:hover .c {
+    background-color: #eee;
+}
+
+.jssort12 .pav .c,
+.jssort12 .p:hover .c {
+    background-color: #17ae97;
+    color: #fff;
+}
+.thumb{
+  left: 0px !important;
+}
+.slide-style{
+  position: relative; 
+  margin: 0 auto; 
+  top: 0px; 
+  left: 0px; 
+  width: 600px; 
+  height: 2000px; 
+  overflow: hidden; 
+  visibility: hidden; 
+  background-color: #ffffff;
+}
+.wrap-slide{
+  cursor: default; 
+  position: relative; 
+  top: 50px; 
+  left: 0px !important; 
+  width: 598px; 
+  height: 2000px; 
+  overflow: hidden; 
+}
