@@ -1,3 +1,14 @@
+/*
+ * jQuery SliderTabs v1.1
+ * http://lopatin.github.com/sliderTabs
+ *
+ * Copyright 2012, Alex Lopatin
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ */
+
+
  (function( $ ){
 	/*
 	 * The sliderTabs tabs class
@@ -9,14 +20,14 @@
 			autoplay: false,
 			tabArrowWidth: 35,
 			classes: {
-			leftTabArrow: '',
-			panel: '',
-			panelActive: '',
-			panelsContainer: '',
-			rightTabArrow: '',
-			tab: '',
-			tabActive: '',	
-			tabsList: ''
+				leftTabArrow: '',
+				panel: '',
+				panelActive: '',
+				panelsContainer: '',
+				rightTabArrow: '',
+				tab: '',
+				tabActive: '',	
+				tabsList: ''
 			},
 			defaultTab: 1,
 			height: null,
@@ -761,11 +772,11 @@ $.event.special.mousewheel = {
 
 $.fn.extend({
     mousewheel: function(fn) {
-        return fn ? this.unbind("mousewheel", fn) : this.trigger("mousewheel");
+        return fn ? this.bind("mousewheel", fn) : this.trigger("mousewheel");
     },
     
     unmousewheel: function(fn) {
-        return this.unbind("mousewheel", fn);
+        return this.bind("mousewheel", fn);
     }
 });
 
