@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------
-												View Post
+                          View Post
 ---------------------------------------------------------------*/
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -11,11 +11,15 @@
     width: 538px;
   }
   .navbar-toggle {
-    border: 1px solid #fff;
+    border: none;
     margin: 17px 15px 10px 10px;
   }
   .navbar-toggle > span {
     background-color: #fff;
+  }
+  .navbar-toggle:hover > span{
+    background-color: #e4ac39;
+    transition: background-color 0.3s;
   }
   .wraper-view > h3 {
     padding-left: 50px;
@@ -52,11 +56,15 @@
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .navbar-toggle {
-    border: 1px solid #fff;
+    border: none;
     margin: 17px 15px 10px 10px;
   }
   .navbar-toggle > span {
     background-color: #fff;
+  }
+  .navbar-toggle:hover > span{
+    background-color: #e4ac39;
+    transition: background-color 0.3s;
   }
   .wraper-view {
     display: inline-block;
@@ -122,11 +130,15 @@
 }
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .navbar-toggle {
-    border: 1px solid #fff;
+    border: none;
     margin: 17px 15px 10px 10px;
   }
   .navbar-toggle > span {
     background-color: #fff;
+  }
+  .navbar-toggle:hover > span{
+    background-color: #e4ac39;
+    transition: background-color 0.3s;
   }
   .wraper-view {
     padding-left: 0px;
@@ -317,6 +329,7 @@
     margin-top: 0px;
     border: none !Important;
     background: transparent !important;
+    display: none;
   }
   .tab-content {
     display: none;
@@ -417,7 +430,7 @@
   }
   .list-place {
     padding: 0px 0px;
-    margin-top: 90px;
+    margin-top: 75px;
   }
   .list-place-other {
     margin-top: 418px;
@@ -640,6 +653,7 @@
     padding: 0px 20px;
     margin: 0px;
     border: none;
+    padding: 0px 10px;
   }
   .ads-index {
     width: 81%;
@@ -689,7 +703,7 @@
   .right-panel-sec {
     padding: 0px;
     margin: 0px;
-    width: 54%;
+    width: 100%;
     border: none;
   }
   .link-bottom {
@@ -708,7 +722,88 @@
 /*-----------------------------------------------------------
                     Profile Page
 -------------------------------------------------------------*/
-@media only screen and (min-width: 320px) and (max-width: 767px){
+.edit-cover{
+  display: none;
+}
+@media only screen and (min-width: 320px) and (max-width: 479px){
+  .main-content-res{
+    display: inline-block;
+    padding: 0px;
+  }
+  .main-content-res > .left-panel-sec{
+    width: 100%;
+  }
+  .left-panel-sec > .profile-caption-res{
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  .main-content-res > .right-panel-sec > .row{
+    margin: 0px;
+  }
+  .content-list{
+    padding: 0px;
+  }
+  .ads-profile{
+    padding: 0px;
+    margin-top: 30px;
+    display: inline-block;
+  }
+  .edit-cover{
+    display: block;
+    padding: 0px;
+    margin-top: 28px;
+  }
+  .btn-cover-edit{
+    display: inline-block;
+    float: right;
+    border: 1px solid #17ae97;
+    color: #1BD8BB;
+    font-family: sans-serif;
+    font-size: 13px;
+    padding: 4px 6px;
+  }
+  .btn-cover-edit:hover{
+    color: #fff;
+    background-color: #17a397;
+    transition: background-color .5s ease-in;
+  }
+  .list-followers{
+    padding: 0px 15px;
+    margin-right: 0px;
+  }
+  .edit-cover-480{
+    display: none; 
+  }
+  
+}
+
+@media only screen and (min-width:480px) and (max-width: 767px){
+  .edit-cover{
+    display: none;
+  }
+  .btn-cover-edit{
+    display: inline-block;
+    float: right;
+    border: 1px solid #17ae97;
+    color: #1BD8BB;
+    font-family: sans-serif;
+    font-size: 13px;
+    padding: 4px 6px;
+  }
+  .btn-cover-edit:hover{
+    color: #fff;
+    background-color: #17a397;
+    transition: background-color .5s ease-in;
+  }
+  .edit-cover-480{
+    display: inline-block;
+    padding-top: 6px;
+  }
+  .list-followers{
+    padding: 0px 18px;
+    margin-right: 0px;
+  }
   .main-content-res{
     display: inline-block;
     padding: 0px;
@@ -730,11 +825,13 @@
   .content-list{
     padding: 0px;
   }
-  .ads-profile-res{
+  .ads-profile{
     padding: 0px;
     margin-top: 30px;
+    display: inline-block;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px){
   .left-res-profile{
     width: 220px !important;
@@ -745,9 +842,10 @@
   .content-list{
     padding: 0px;
   }
-  .ads-profile-res{
+  .ads-profile{
     padding: 0px;
     margin-top: 30px;
+    display: inline-block;
   }
 }
 /*------------------------------------------------------------
@@ -756,5 +854,82 @@
 @media only screen and (min-width: 320px) and (max-width: 479px){
   .form-setting input{
     width: 298px; 
+  }
+}
+/*--------------------------------------------------------------
+                    Edit Profile
+----------------------------------------------------------------*/
+@media only screen and (min-width: 320px) and (max-width: 479px){
+  .avatar-middle{
+    width: 65px;
+  }
+  .change-avatar-res{
+    padding-left: 0px;
+    padding-top: 45px;
+  }
+  .btn-choose{
+    padding: 5px;
+  }
+  .status-choose{
+    padding-left: 1px;
+    font-size: 12px;
+  }
+  .title-notice{
+    font-size: 12px;
+  }
+  .form-comment-edit > textarea{
+    width: 300px;
+  }
+  .wrap-socmed{
+    width:300px;
+  }
+  .facebook-connect > img {
+    margin-left: 10px;
+  }
+  .facebook-connect > span {
+    padding-left: 10px;
+  }
+  .left-fifth-res {
+    width: 100% !important;
+  }
+  #popular-fifth{
+    display: inline-block;
+    width: 109%;
+    margin-left: -6px;
+  }
+  .episode-title{
+    text-align: right;
+    padding-right: 30px;
+  }
+  .manga-title{
+    text-align: left;
+    padding-left: 18px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+  .left-fifth-res {
+    width: 100% !important;
+  }
+  .manga-title{
+    padding-left: 17px;
+    text-align: left;
+  }
+  .episode-title{
+    text-align: right;
+    padding-right: 26px;
+  }
+}
+/*-----------------------------------------------------------------
+                  Discussion tab
+-------------------------------------------------------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+  .tag-discuss-fifth{
+    margin-left: 45px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px){
+  .wrap-right-discuss{
+    margin-left: 15px;
   }
 }
