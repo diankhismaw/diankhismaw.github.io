@@ -16,7 +16,7 @@
   padding: 0;
   margin: 0 0 0 0;
   list-style: none;
-  min-width: 250px;
+  min-width: 600px;
 }
 .ui-slider-tabs-list li {
   display: inline-block;
@@ -90,7 +90,7 @@
   position: relative;
   border: 1px solid #cfcfcf;
   z-index: 1;
-  overflow-y: scroll !important;
+  overflow-y: hidden;
   background-color: #fff;
 }
 .ui-slider-tab-content {
@@ -99,6 +99,7 @@
   top: 0;
   left: 0;
   padding: 10px;
+  overflow-x: hidden;
 }
 .ui-slider-left-arrow,
 .ui-slider-right-arrow,
