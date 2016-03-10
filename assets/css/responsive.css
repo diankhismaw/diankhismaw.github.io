@@ -55,6 +55,9 @@
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  .left-panel-hide{
+    display: none;
+  }
   .navbar-toggle {
     border: none;
     margin: 17px 15px 10px 10px;
@@ -129,6 +132,9 @@
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 479px) {
+  .left-panel-hide{
+    display: none;
+  }
   .navbar-toggle {
     border: none;
     margin: 17px 15px 10px 10px;

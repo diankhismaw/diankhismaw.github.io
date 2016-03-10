@@ -1022,7 +1022,7 @@ i.fa.fa-circle{
   color: #17ae97;
 	float: right;
 }
-.td1{
+.td{
 	margin-bottom: 20px;
 	display: none;
 }
@@ -1170,7 +1170,7 @@ input[type=radio]:checked + label:before {
 	width: 100%;
 	float: left;
 	display: block; 
-	margin-top: 15px;
+	margin-top: 40px;
 	margin-bottom: 20px;
 	padding: 15px;
 }
