@@ -39,10 +39,10 @@
 			tabHeight: 40,
 			tabArrows: true,
 			tabSlideLength: 100,
-			tabSlideSpeed: 500,
+			tabSlideSpeed: 100,
 			transition: 'slide',
 			transitionEasing: 'easeOutCubic',
-			transitionSpeed: 800,
+			transitionSpeed: 300,
 			width: null,
 		};
 
@@ -60,7 +60,7 @@
 			$rightPanelArrow;
 
 		// Locks to stop out of sync behavior
-		var selectLock = false,
+		var selectLock = true,
 			heightLock = true;
 		
 		var settings, minMargin;
