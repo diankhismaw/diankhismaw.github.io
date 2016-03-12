@@ -4,7 +4,7 @@
   width: 100%;
   font-family: Arial, sans-serif;
   margin: 0 0 -1px 0;
-  z-index: 50;
+  
 }
 .ui-slider-tabs-list-wrapper.bottom {
   margin: -1px 0 0 0;
@@ -89,9 +89,10 @@
 .ui-slider-tabs-content-container {
   position: relative;
   border: 1px solid #cfcfcf;
-  z-index: 1;
+  
   overflow-y: hidden;
   background-color: #fff;
+  min-height: 3500px !important;
 }
 .ui-slider-tab-content {
   position: absolute;
@@ -99,7 +100,8 @@
   top: 0;
   left: 0;
   padding: 10px;
-  overflow-x: hidden;
+  overflow-x: hidden;'
+  min-height: 3500px !important;
 }
 .ui-slider-left-arrow,
 .ui-slider-right-arrow,

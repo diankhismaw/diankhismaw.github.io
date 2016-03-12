@@ -55,7 +55,7 @@
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .left-panel-hide{
+  .toggle{
     display: none;
   }
   .navbar-toggle {
@@ -443,7 +443,7 @@
     margin-left: -11px;
   }
   .list-followers {
-    padding: 0px 15px;
+    padding: 0px 8px;
     margin-right: 0px;
   }
   .list-followers > a > h5 {
@@ -774,10 +774,6 @@
     background-color: #17a397;
     transition: background-color .5s ease-in;
   }
-  .list-followers{
-    padding: 0px 15px;
-    margin-right: 0px;
-  }
   .edit-cover-480{
     display: none; 
   }
@@ -807,7 +803,7 @@
     padding-top: 6px;
   }
   .list-followers{
-    padding: 0px 18px;
+    padding: 3px 27px;
     margin-right: 0px;
   }
   .main-content-res{
@@ -857,9 +853,79 @@
 /*------------------------------------------------------------
                     Setting Profile
 --------------------------------------------------------------*/
+.others-btn-res{
+  display: none;
+}
 @media only screen and (min-width: 320px) and (max-width: 479px){
+  .others-btn-res{
+    display: inline-block;
+  }
   .form-setting input{
     width: 298px; 
+  }
+  .menu-others-btn{
+    left: 108px;
+    background-color: #fff;
+  }
+  .btn-others{
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 0px 8px;
+  }
+  .btn-others:hover{
+    color: #e4ac39;
+    transition: color .5s ease-in;
+  }
+  .btn-others:focus{
+    color: #fff;
+  }
+  .btn-others:active{
+    box-shadow: none;
+    outline: 0px !important;
+  }
+  .menu-others-btn > li > a{
+    color: #636363;
+    font-size: 14px;
+    font-family: sans-serif;
+  }
+  .menu-others-btn > li > a > i{
+    margin-right: 5px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+  .others-btn-res{
+    display: inline-block;
+  }
+  .menu-others-btn{
+    left: 258px;
+    top: 96%;
+    background-color: #fff;
+  }
+  .btn-others{
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 0px 8px;
+  }
+  .btn-others:hover{
+    color: #e4ac39;
+    transition: color .5s ease-in;
+  }
+  .btn-others:focus{
+    color: #fff;
+  }
+  .btn-others:active{
+    box-shadow: none;
+    outline: 0px !important;
+  }
+  .menu-others-btn > li > a{
+    color: #636363;
+    font-size: 14px;
+    font-family: sans-serif;
+  }
+  .menu-others-btn > li > a > i{
+    margin-right: 5px;
   }
 }
 /*--------------------------------------------------------------
@@ -889,7 +955,7 @@
   .wrap-socmed{
     width:300px;
   }
-  .facebook-connect > img {
+  .facebook-conect > img {
     margin-left: 10px;
   }
   .facebook-connect > span {
@@ -933,9 +999,104 @@
   .tag-discuss-fifth{
     margin-left: 45px;
   }
-}
-@media only screen and (min-width: 320px) and (max-width: 480px){
   .wrap-right-discuss{
     margin-left: 15px;
+  }
+  
+}
+
+/*-----------------------------------------------------------------
+                  Quotes tab
+-------------------------------------------------------------------*/
+@media only screen and (min-width: 320px) and (max-width: 479px){
+  .left-point{
+    padding-left: 0px;
+    width: 100%;
+  }
+  .right-point{
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+  }
+  .comment-point-right{
+    float: right;
+  }
+  .strip{
+    display: none;
+  }
+  .bottom-comment-info{
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+  .right-inner-addon-quotes{
+    width: 520px;
+  }
+  .right-inner-addon-quotes > i {
+    padding: 13px 494px;
+  }
+  .nav.nav-tabs > li > a{
+    padding: 15px 24px;  
+  }
+  .episode{
+    padding: 4px;
+    margin-left: 0px;
+    margin-right: 2px;
+  }
+}
+/*-----------------------------------------------------------------
+                          Review Tab
+-------------------------------------------------------------------*/
+.data-review-res}{
+  display: none;
+}
+@media only screen and (min-width: 320px) and (max-width: 479px){
+  
+  .btn-dropdown-res{
+    width: 100%;
+  }
+  .post-review-res{
+    width: 100%;
+  }
+  .community-rating-wrapper {
+    display: inline-block;
+  }
+  .community-rating-wrapper li{
+    width: 40px;
+    padding-right: 0px;
+    margin-right: 3px;
+    margin-bottom: 10px;
+  }
+  .lowest-rating > i, 
+  .highest-rating > i{
+    font-size: 18px !important;
+  }
+  .highest-rating {
+    padding-top: 2px;
+  }
+  .date-review{
+    display: none;
+  }
+  .date-review-res{
+    display: inline-block;
+    float: left;
+    color: #5A5858 !important
+  }
+  .overall-rating{
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 990px){
+  .most-help-wrapper{
+    width: 50%;
+    margin-top: 0px;
+    text-align: right;
+  }
+  .avatar-review .media-left {
+    width: 16%;
+  }
+  .lowest-rating > i, 
+  .highest-rating > i{
+    font-size: 18px !important;
   }
 }

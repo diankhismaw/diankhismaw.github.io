@@ -61,7 +61,7 @@
 
 		// Locks to stop out of sync behavior
 		var selectLock = true,
-			heightLock = true;
+			heightLock = false;
 		
 		var settings, minMargin;
 
@@ -464,7 +464,7 @@
 			// Then animate css properties
 			panel.animate(panelAnimationCSS($contentDivsContainer.width())['show'][settings.transition], settings.transitionSpeed, settings.transitionEasing, function(){
 				selectLock = false;
-				heightLock = true;
+				heightLock = false;
 				reorderPanels();
 			});
 		};
