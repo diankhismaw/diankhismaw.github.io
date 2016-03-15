@@ -2563,3 +2563,6 @@ input#anime1, input#anime2, input#anime3, input#anime4{
 	float: left;
 	margin-left: -5px;
 }
+.res{
+  display: none;
+}

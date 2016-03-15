@@ -1453,11 +1453,11 @@ if (typeof Object.create !== "function") {
 
         items : 6,
         itemsCustom : false,
-        itemsDesktop : [1199, 4],
-        itemsDesktopSmall : [979, 3],
-        itemsTablet : [768, 2],
+        itemsDesktop : [1199, 6],
+        itemsDesktopSmall : [979, 5],
+        itemsTablet : [768, 3],
         itemsTabletSmall : false,
-        itemsMobile : [479, 1],
+        itemsMobile : [479, 2],
         singleItem : false,
         itemsScaleUp : false,
 

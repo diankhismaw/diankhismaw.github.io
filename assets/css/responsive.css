@@ -331,16 +331,11 @@
   #myTabs {
     display: none;
   }
-  .tab-top {
-    margin-top: 0px;
-    border: none !Important;
-    background: transparent !important;
+
+  .non-res {
     display: none;
   }
-  .tab-content {
-    display: none;
-  }
-  .tab-content-res {
+  .res {
     display: inline-block;
   }
   .tab-responsive {
@@ -455,10 +450,10 @@
   .pop-tabs-category > li > a {
     padding: 8px;
   }
-  .tab-content {
+  .non-res {
     display: none;
   }
-  .tab-content-res {
+  .res {
     display: inline-block;
   }
   .tab-responsive {
@@ -475,12 +470,7 @@
   #myTabs {
     display: none;
   }
-  .tab-top {
-    margin-top: 0px;
-    border: none !Important;
-    background: transparent !important;
-    display: none;
-  }
+
   .dropdown-res {
     margin-bottom: 20px;
     display: inline-block;
@@ -707,7 +697,6 @@
     display: inline-block;
   }
   .right-panel-sec {
-    padding: 0px;
     margin: 0px;
     width: 100%;
     border: none;
@@ -735,6 +724,8 @@
   .main-content-res{
     display: inline-block;
     padding: 0px;
+    width: 105%;
+    margin-top: 40px;
   }
   .main-content-res > .left-panel-sec{
     width: 100%;
@@ -1099,4 +1090,110 @@
   .highest-rating > i{
     font-size: 18px !important;
   }
+}
+
+/*-------------------------------------------------------------------
+                          Read More
+---------------------------------------------------------------------*/
+.date-review-res{
+  display: none;
+}
+.subtitle-review-res{
+  display: none;
+}
+@media only screen and (min-width: 320px) and (max-width: 479px){
+  .review-sec{
+    display: inline-block;
+  }
+  .info-like{
+    float: left;
+  }
+  .btn-like-res{
+  }
+  .btn-gray-res{
+    padding: 3px 30px;
+  }
+  .caption-like{
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .date-review-res{
+    float: left;
+    display: inline-block;
+	font-size: 12px;
+	color: #2f2f2f;
+	margin-top: 25px;
+	font-family: "montserrat";
+  }
+  .overall-rating-res{
+    display: inline-block;
+    width: 50%;
+    margin-top:  25px;
+  }
+  .review-text{
+    display: inline-block;
+  }
+  .subtitle-review{
+    display: none;
+  }
+  .subtitle-review-res{
+    display: inline-block;
+    width: 100%;
+    font-size: 17px;
+    color: #484747;
+    font-family: sans-serif;
+    margin-top: 10px;
+  }
+
+  .owl-item{
+    width: 153px !important;
+  }
+  .title-image-carousel{
+    width: 120px !important;
+  }
+  .tab-pane{
+    display: inline-block;
+    width: 100%;
+  }
+  .res{
+    display: inline-block;
+    width: 100%;
+  }
+  .owl-next{
+    margin-right: -10px;
+  }
+  .tab-content > .active{
+    display: inline-block;
+  }
+  .anime-post{
+    margin: -15px;
+  }
+  .wrapper-inner-post{
+    margin-top: 20px;
+  }
+  .text-intro{
+    width: 100% !important;
+    font-size: 10px;
+  }
+  .text-acor{
+    width: 100% !important;
+    font-size: 10px;
+  }
+  .triger-post{
+    width: 100%;
+  }
+  .btn-circle{
+    margin: 7px;
+  }
+  .submit-post{
+    margin-right: 158px;
+  }
+  .nav.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+    box-shadow: inset 0px 3px 0px 0px rgba(23, 174, 151, 1);
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px;){
+  
 }
