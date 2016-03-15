@@ -1122,10 +1122,9 @@
   .date-review-res{
     float: left;
     display: inline-block;
-	font-size: 12px;
-	color: #2f2f2f;
-	margin-top: 25px;
-	font-family: "montserrat";
+    font-size: 12px;
+    color: #2f2f2f;
+    font-family: "montserrat";
   }
   .overall-rating-res{
     display: inline-block;
