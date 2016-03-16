@@ -410,7 +410,7 @@
     margin-bottom: 20px;
   }
   .right-inner-addon > i {
-    padding: 13px 255px;
+    padding: 13px 245px;
   }
   .wrap-pop {
     display: inline-block;
@@ -726,6 +726,7 @@
     padding: 0px;
     width: 105%;
     margin-top: 40px;
+    background-color: #fff;
   }
   .main-content-res > .left-panel-sec{
     width: 100%;

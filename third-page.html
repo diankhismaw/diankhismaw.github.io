@@ -17,8 +17,6 @@
     <link href="assets/css/font-awesome.css" rel="stylesheet">
     <link href="assets/css/jquery-ui.min.css" rel="stylesheet">
     <link href="assets/css/dropdown-enhancement.css" rel="stylesheet">
-<!--    <link href="assets/css/jquery.sliderTabs.css" rel="stylesheet">-->
-    <link href="assets/css/slide.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
@@ -150,25 +148,11 @@
     <div class="col-md-12 tab-top">
       <div class="container">
         <div class="row">
-          <ul id="myTabs" class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active">
-              <a href="#anime" aria-controls="home" role="tab" data-toggle="tab">
-                <span class="show-tabs">ANIME</span>
-                <i class="fa fa-home hide-tabs"></i>
-              </a>
-            </li>
-            <li role="presentation">
-              <a href="#manga" aria-controls="profile" role="tab" data-toggle="tab">
-                <span class="show-tabs">MANGA</span>
-                <i class="fa fa-home hide-tabs"></i>
-              </a>
-            </li>
-            <li role="presentation">
-              <a href="#manga" aria-controls="profile" role="tab" data-toggle="tab">
-                <span class="show-tabs">FAVORITE</span>
-                <i class="fa fa-home hide-tabs"></i>
-              </a>
-            </li>
+          <div class="draggable-container">
+          <ul class="nav nav-tabs draggable draggable-center" role="tablist">
+            <li role="presentation" class="active"><a href="#anime" aria-controls="anime" role="tab" data-toggle="tab">Anime</a></li>
+            <li role="presentation"><a href="#manga" aria-controls="manga" role="tab" data-toggle="tab">Manga</a></li>
+            <li role="presentation"><a href="#favorite" aria-controls="favorite" role="tab" data-toggle="tab">Favorite</a></li>           
             <li class="dropdown pull-right">
               <a href="#" class="dropdown-toggle dropdown-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                   Anime Status
@@ -206,422 +190,409 @@
               </ul>
             </li>
           </ul>
+        </div>
+  
           <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="anime">
-              <div class="container container-category">
-                <div class="single-panel">
-                  <div class="row alphabet-nav">
-                    <a href=""> # </a>
-                    <a href=""> A </a>
-                    <a href=""> B </a>
-                    <a href=""> C </a>
-                    <a href=""> D </a>
-                    <a href=""> E </a>
-                    <a href=""> F </a>
-                    <a href=""> G </a>
-                    <a href=""> H </a>
-                    <a href=""> I </a>
-                    <a href=""> J </a>
-                    <a href=""> K </a>
-                    <a href=""> L </a>
-                    <a href=""> M </a>
-                    <a href=""> N </a>
-                    <a href=""> O </a>
-                    <a href=""> P </a>
-                    <a href=""> Q </a>
-                    <a href=""> R </a>
-                    <a href=""> S </a>
-                    <a href=""> T </a>
-                    <a href=""> U </a>
-                    <a href=""> V </a>
-                    <a href=""> W </a>
-                    <a href=""> X </a>
-                    <a href=""> Y </a>
-                    <a href="" style="border-right:none;"> Z </a>
-                  </div>
-                  <div class="col-sm-12 right-inner-addon inner-res pull-right no-padding">
-                    <i class="fa fa-search" style="color: #17ae97;"></i>
-                    <input type="input" class="form-control" name="find-anime" placeholder="Find your anime" />
-                  </div>
-
-                  <div class="search-bar col-md-12 col-sm-12">
-                    <div class="col-md-6 col-sm-6 wrap-pop no-padding">
-                      <ul id="pop" class="nav pop-tabs-category" role="tablist">
-                        <li role="presentation" class="active">
-                          <a href="#popular-category" role="tab" data-toggle="tab" aria-controls="popular" aria-expanded="true">Popular</a>
-                        </li>
-                        <li role="presentation" class="mar-lm-5">
-                          <a href="#all" role="tab" data-toggle="tab" aria-controls="news">All</a>
-                        </li>
-                      </ul>
+              <div class="non-res">
+                <div class="container container-category">
+                  <div class="single-panel">
+                    <div class="row alphabet-nav">
+                      <a href=""> # </a>
+                      <a href=""> A </a>
+                      <a href=""> B </a>
+                      <a href=""> C </a>
+                      <a href=""> D </a>
+                      <a href=""> E </a>
+                      <a href=""> F </a>
+                      <a href=""> G </a>
+                      <a href=""> H </a>
+                      <a href=""> I </a>
+                      <a href=""> J </a>
+                      <a href=""> K </a>
+                      <a href=""> L </a>
+                      <a href=""> M </a>
+                      <a href=""> N </a>
+                      <a href=""> O </a>
+                      <a href=""> P </a>
+                      <a href=""> Q </a>
+                      <a href=""> R </a>
+                      <a href=""> S </a>
+                      <a href=""> T </a>
+                      <a href=""> U </a>
+                      <a href=""> V </a>
+                      <a href=""> W </a>
+                      <a href=""> X </a>
+                      <a href=""> Y </a>
+                      <a href="" style="border-right:none;"> Z </a>
                     </div>
-                    <div class="col-md-6 col-sm-6 right-inner-addon pull-right no-padding">
+                    <div class="col-sm-12 right-inner-addon inner-res pull-right no-padding">
                       <i class="fa fa-search" style="color: #17ae97;"></i>
                       <input type="input" class="form-control" name="find-anime" placeholder="Find your anime" />
                     </div>
-                    <div class="dropdown col-sm-6 alphabet-res">
-                      <button class="btn btn-trans dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">A - Z
-                        <span class="caret"></span></button>
-                      <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">A</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">B</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">C</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">D</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">E</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">F</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">G</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">H</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">I</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">J</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">K</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">L</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">M</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">N</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">O</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">P</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Q</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">R</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">S</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">T</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">U</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">V</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">W</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">X</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Y</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Z</a></li>
-                      </ul>
-                    </div>
-                  </div>
 
-                  <div class="tab-content">
-                    <div role="tabpanel" class="content-wrap no-padding tab-pane active" id="popular-category">
-                      <div class="wrap-item">
-                        <a class="item" href="fifth.html">
-                          <img src="assets/img/Naruto.png" alt="cover">
-                          <div class="overlay">
-                            <div class="actions">
-                              <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
-                            </div>
-                          </div>
-                          <div class="episode-image">
-                            <span>Episode 20</span>
-                          </div>
-                          <div class="title-image">
-                            <div class="limit">Naruto Shipuden</div>
-                          </div>
-                        </a>
-
-                        <a class="item" href="fifth.html">
-                          <img src="assets/img/OnePunchMan.jpg" alt="cover">
-                          <div class="overlay">
-                            <div class="actions">
-                              <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
-                            </div>
-                          </div>
-                          <div class="episode-image">
-                            <span>Episode 20</span>
-                          </div>
-                          <div class="title-image">
-                            <div class="limit">One Punch Man</div>
-                          </div>
-                        </a>
-
-                        <a class="item" href="fifth.html">
-                          <img src="assets/img/onepiece.png" alt="cover">
-                          <div class="overlay">
-                            <div class="actions">
-                              <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
-                            </div>
-                          </div>
-                          <div class="episode-image">
-                            <span>Episode 20</span>
-                          </div>
-                          <div class="title-image">
-                            <div class="limit">One Piece Treasure Cruise</div>
-                          </div>
-                        </a>
-
-                        <a class="item" href="fifth.html">
-                          <img src="assets/img/onepiece.png" alt="cover">
-                          <div class="overlay">
-                            <div class="actions">
-                              <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
-                            </div>
-                          </div>
-                          <div class="episode-image">
-                            <span>Episode 20</span>
-                          </div>
-                          <div class="title-image">
-                            <div class="limit">One Piece Treasure Cruise</div>
-                          </div>
-                        </a>
-
-                        <a class="item" href="fifth.html">
-                          <img src="assets/img/onepiece.png" alt="cover">
-                          <div class="overlay">
-                            <div class="actions">
-                              <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
-                            </div>
-                          </div>
-                          <div class="episode-image">
-                            <span>Episode 20</span>
-                          </div>
-                          <div class="title-image">
-                            <div class="limit">One Piece Treasure Cruise</div>
-                          </div>
-                        </a>
-
-                        <a class="item" href="fifth.html">
-                          <img src="assets/img/onepiece.png" alt="cover">
-                          <div class="overlay">
-                            <div class="actions">
-                              <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
-                            </div>
-                          </div>
-                          <div class="episode-image">
-                            <span>Episode 20</span>
-                          </div>
-                          <div class="title-image">
-                            <div class="limit">One Piece Treasure Cruise</div>
-                          </div>
-                        </a>
-
-                        <a class="item" href="fifth.html">
-                          <img src="assets/img/Hxh.jpg" alt="cover">
-                          <div class="overlay">
-                            <div class="actions">
-                              <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
-                            </div>
-                          </div>
-                          <div class="episode-image">
-                            <span>Episode 20</span>
-                          </div>
-                          <div class="title-image">
-                            <div class="limit">Hunter X Hunter Greed Island</div>
-                          </div>
-                        </a>
-
-                        <a class="item" href="fifth.html">
-                          <img src="assets/img/onepiece.png" alt="cover">
-                          <div class="overlay">
-                            <div class="actions">
-                              <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
-                            </div>
-                          </div>
-                          <div class="episode-image">
-                            <span>Episode 20</span>
-                          </div>
-                          <div class="title-image">
-                            <div class="limit">One Piece Treasure Cruise</div>
-                          </div>
-                        </a>
-
-                        <a class="item" href="fifth.html">
-                          <img src="assets/img/onepiece.png" alt="cover">
-                          <div class="overlay">
-                            <div class="actions">
-                              <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
-                            </div>
-                          </div>
-                          <div class="episode-image">
-                            <span>Episode 20</span>
-                          </div>
-                          <div class="title-image">
-                            <div class="limit">One Piece Treasure Cruise</div>
-                          </div>
-                        </a>
-
-                        <a class="item" href="fifth.html">
-                          <img src="assets/img/onepiece.png" alt="cover">
-                          <div class="overlay">
-                            <div class="actions">
-                              <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
-                            </div>
-                          </div>
-                          <div class="episode-image">
-                            <span>Episode 20</span>
-                          </div>
-                          <div class="title-image">
-                            <div class="limit">One Piece Treasure Cruise</div>
-                          </div>
-                        </a>
+                    <div class="search-bar col-md-12 col-sm-12">
+                      <div class="col-md-6 col-sm-6 wrap-pop no-padding">
+                        <ul id="pop" class="nav pop-tabs-category" role="tablist">
+                          <li role="presentation" class="active">
+                            <a href="#popular-category" role="tab" data-toggle="tab" aria-controls="popular" aria-expanded="true">Popular</a>
+                          </li>
+                          <li role="presentation" class="mar-lm-5">
+                            <a href="#all" role="tab" data-toggle="tab" aria-controls="news">All</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6 col-sm-6 right-inner-addon pull-right no-padding">
+                        <i class="fa fa-search" style="color: #17ae97;"></i>
+                        <input type="input" class="form-control" name="find-anime" placeholder="Find your anime" />
+                      </div>
+                      <div class="dropdown col-sm-6 alphabet-res">
+                        <button class="btn btn-trans dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">A - Z
+                          <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">A</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">B</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">C</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">D</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">E</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">F</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">G</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">H</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">I</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">J</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">K</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">L</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">M</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">N</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">O</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">P</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Q</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">R</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">S</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">T</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">U</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">V</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">W</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">X</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Y</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Z</a></li>
+                        </ul>
                       </div>
                     </div>
 
-                    <div role="tabpanel" class="col-md-12 no-padding tab-pane" id="all">
-                      <div class="wrap-item">
-                        <a class="item" href="fifth.html">
-                          <img src="assets/img/onepiece.png" alt="cover">
-                          <div class="overlay">
-                            <div class="actions">
-                              <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                    <div class="tab-content">
+                      <div role="tabpanel" class="content-wrap no-padding tab-pane active" id="popular-category">
+                        <div class="wrap-item">
+                          <a class="item" href="fifth.html">
+                            <img src="assets/img/Naruto.png" alt="cover">
+                            <div class="overlay">
+                              <div class="actions">
+                                <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                              </div>
                             </div>
-                          </div>
-                          <div class="episode-image">
-                            <span>Episode 20</span>
-                          </div>
-                          <div class="title-image">
-                            <div class="limit">One Piece Treasure Cruise</div>
-                          </div>
-                        </a>
+                            <div class="episode-image">
+                              <span>Episode 20</span>
+                            </div>
+                            <div class="title-image">
+                              <div class="limit">Naruto Shipuden</div>
+                            </div>
+                          </a>
 
-                        <a class="item" href="fifth.html">
-                          <img src="assets/img/onepiece.png" alt="cover">
-                          <div class="overlay">
-                            <div class="actions">
-                              <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                          <a class="item" href="fifth.html">
+                            <img src="assets/img/OnePunchMan.jpg" alt="cover">
+                            <div class="overlay">
+                              <div class="actions">
+                                <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                              </div>
                             </div>
-                          </div>
-                          <div class="episode-image">
-                            <span>Episode 20</span>
-                          </div>
-                          <div class="title-image">
-                            <div class="limit">One Piece Treasure Cruise</div>
-                          </div>
-                        </a>
+                            <div class="episode-image">
+                              <span>Episode 20</span>
+                            </div>
+                            <div class="title-image">
+                              <div class="limit">One Punch Man</div>
+                            </div>
+                          </a>
 
-                        <a class="item" href="fifth.html">
-                          <img src="assets/img/OnePunchMan.jpg" alt="cover">
-                          <div class="overlay">
-                            <div class="actions">
-                              <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                          <a class="item" href="fifth.html">
+                            <img src="assets/img/onepiece.png" alt="cover">
+                            <div class="overlay">
+                              <div class="actions">
+                                <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                              </div>
                             </div>
-                          </div>
-                          <div class="episode-image">
-                            <span>Episode 20</span>
-                          </div>
-                          <div class="title-image">
-                            <div class="limit">One Punch Man</div>
-                          </div>
-                        </a>
+                            <div class="episode-image">
+                              <span>Episode 20</span>
+                            </div>
+                            <div class="title-image">
+                              <div class="limit">One Piece Treasure Cruise</div>
+                            </div>
+                          </a>
 
-                        <a class="item" href="fifth.html">
-                          <img src="assets/img/onepiece.png" alt="cover">
-                          <div class="overlay">
-                            <div class="actions">
-                              <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                          <a class="item" href="fifth.html">
+                            <img src="assets/img/onepiece.png" alt="cover">
+                            <div class="overlay">
+                              <div class="actions">
+                                <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                              </div>
                             </div>
-                          </div>
-                          <div class="episode-image">
-                            <span>Episode 20</span>
-                          </div>
-                          <div class="title-image">
-                            <div class="limit">One Piece Treasure Cruise</div>
-                          </div>
-                        </a>
+                            <div class="episode-image">
+                              <span>Episode 20</span>
+                            </div>
+                            <div class="title-image">
+                              <div class="limit">One Piece Treasure Cruise</div>
+                            </div>
+                          </a>
 
-                        <a class="item" href="fifth.html">
-                          <img src="assets/img/onepiece.png" alt="cover">
-                          <div class="overlay">
-                            <div class="actions">
-                              <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                          <a class="item" href="fifth.html">
+                            <img src="assets/img/onepiece.png" alt="cover">
+                            <div class="overlay">
+                              <div class="actions">
+                                <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                              </div>
                             </div>
-                          </div>
-                          <div class="episode-image">
-                            <span>Episode 20</span>
-                          </div>
-                          <div class="title-image">
-                            <div class="limit">One Piece Treasure Cruise</div>
-                          </div>
-                        </a>
+                            <div class="episode-image">
+                              <span>Episode 20</span>
+                            </div>
+                            <div class="title-image">
+                              <div class="limit">One Piece Treasure Cruise</div>
+                            </div>
+                          </a>
 
-                        <a class="item" href="fifth.html">
-                          <img src="assets/img/onepiece.png" alt="cover">
-                          <div class="overlay">
-                            <div class="actions">
-                              <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                          <a class="item" href="fifth.html">
+                            <img src="assets/img/onepiece.png" alt="cover">
+                            <div class="overlay">
+                              <div class="actions">
+                                <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                              </div>
                             </div>
-                          </div>
-                          <div class="episode-image">
-                            <span>Episode 20</span>
-                          </div>
-                          <div class="title-image">
-                            <div class="limit">One Piece Treasure Cruise</div>
-                          </div>
-                        </a>
+                            <div class="episode-image">
+                              <span>Episode 20</span>
+                            </div>
+                            <div class="title-image">
+                              <div class="limit">One Piece Treasure Cruise</div>
+                            </div>
+                          </a>
 
-                        <a class="item" href="fifth.html">
-                          <img src="assets/img/Hxh.jpg" alt="cover">
-                          <div class="overlay">
-                            <div class="actions">
-                              <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                          <a class="item" href="fifth.html">
+                            <img src="assets/img/Hxh.jpg" alt="cover">
+                            <div class="overlay">
+                              <div class="actions">
+                                <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                              </div>
                             </div>
-                          </div>
-                          <div class="episode-image">
-                            <span>Episode 20</span>
-                          </div>
-                          <div class="title-image">
-                            <div class="limit">Hunter X Hunter Greed Island</div>
-                          </div>
-                        </a>
+                            <div class="episode-image">
+                              <span>Episode 20</span>
+                            </div>
+                            <div class="title-image">
+                              <div class="limit">Hunter X Hunter Greed Island</div>
+                            </div>
+                          </a>
 
-                        <a class="item" href="fifth.html">
-                          <img src="assets/img/onepiece.png" alt="cover">
-                          <div class="overlay">
-                            <div class="actions">
-                              <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                          <a class="item" href="fifth.html">
+                            <img src="assets/img/onepiece.png" alt="cover">
+                            <div class="overlay">
+                              <div class="actions">
+                                <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                              </div>
                             </div>
-                          </div>
-                          <div class="episode-image">
-                            <span>Episode 20</span>
-                          </div>
-                          <div class="title-image">
-                            <div class="limit">One Piece Treasure Cruise</div>
-                          </div>
-                        </a>
+                            <div class="episode-image">
+                              <span>Episode 20</span>
+                            </div>
+                            <div class="title-image">
+                              <div class="limit">One Piece Treasure Cruise</div>
+                            </div>
+                          </a>
 
-                        <a class="item" href="fifth.html">
-                          <img src="assets/img/onepiece.png" alt="cover">
-                          <div class="overlay">
-                            <div class="actions">
-                              <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                          <a class="item" href="fifth.html">
+                            <img src="assets/img/onepiece.png" alt="cover">
+                            <div class="overlay">
+                              <div class="actions">
+                                <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                              </div>
                             </div>
-                          </div>
-                          <div class="episode-image">
-                            <span>Episode 20</span>
-                          </div>
-                          <div class="title-image">
-                            <div class="limit">One Piece Treasure Cruise</div>
-                          </div>
-                        </a>
+                            <div class="episode-image">
+                              <span>Episode 20</span>
+                            </div>
+                            <div class="title-image">
+                              <div class="limit">One Piece Treasure Cruise</div>
+                            </div>
+                          </a>
 
-                        <a class="item" href="fifth.html">
-                          <img src="assets/img/Hxh.jpg" alt="cover">
-                          <div class="overlay">
-                            <div class="actions">
-                              <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                          <a class="item" href="fifth.html">
+                            <img src="assets/img/onepiece.png" alt="cover">
+                            <div class="overlay">
+                              <div class="actions">
+                                <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                              </div>
                             </div>
-                          </div>
-                          <div class="episode-image">
-                            <span>Episode 20</span>
-                          </div>
-                          <div class="title-image">
-                            <div class="limit">Hunter X Hunter Greed Island</div>
-                          </div>
-                        </a>
+                            <div class="episode-image">
+                              <span>Episode 20</span>
+                            </div>
+                            <div class="title-image">
+                              <div class="limit">One Piece Treasure Cruise</div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div role="tabpanel" class="col-md-12 no-padding tab-pane" id="all">
+                        <div class="wrap-item">
+                          <a class="item" href="fifth.html">
+                            <img src="assets/img/onepiece.png" alt="cover">
+                            <div class="overlay">
+                              <div class="actions">
+                                <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                              </div>
+                            </div>
+                            <div class="episode-image">
+                              <span>Episode 20</span>
+                            </div>
+                            <div class="title-image">
+                              <div class="limit">One Piece Treasure Cruise</div>
+                            </div>
+                          </a>
+
+                          <a class="item" href="fifth.html">
+                            <img src="assets/img/onepiece.png" alt="cover">
+                            <div class="overlay">
+                              <div class="actions">
+                                <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                              </div>
+                            </div>
+                            <div class="episode-image">
+                              <span>Episode 20</span>
+                            </div>
+                            <div class="title-image">
+                              <div class="limit">One Piece Treasure Cruise</div>
+                            </div>
+                          </a>
+
+                          <a class="item" href="fifth.html">
+                            <img src="assets/img/OnePunchMan.jpg" alt="cover">
+                            <div class="overlay">
+                              <div class="actions">
+                                <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                              </div>
+                            </div>
+                            <div class="episode-image">
+                              <span>Episode 20</span>
+                            </div>
+                            <div class="title-image">
+                              <div class="limit">One Punch Man</div>
+                            </div>
+                          </a>
+
+                          <a class="item" href="fifth.html">
+                            <img src="assets/img/onepiece.png" alt="cover">
+                            <div class="overlay">
+                              <div class="actions">
+                                <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                              </div>
+                            </div>
+                            <div class="episode-image">
+                              <span>Episode 20</span>
+                            </div>
+                            <div class="title-image">
+                              <div class="limit">One Piece Treasure Cruise</div>
+                            </div>
+                          </a>
+
+                          <a class="item" href="fifth.html">
+                            <img src="assets/img/onepiece.png" alt="cover">
+                            <div class="overlay">
+                              <div class="actions">
+                                <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                              </div>
+                            </div>
+                            <div class="episode-image">
+                              <span>Episode 20</span>
+                            </div>
+                            <div class="title-image">
+                              <div class="limit">One Piece Treasure Cruise</div>
+                            </div>
+                          </a>
+
+                          <a class="item" href="fifth.html">
+                            <img src="assets/img/onepiece.png" alt="cover">
+                            <div class="overlay">
+                              <div class="actions">
+                                <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                              </div>
+                            </div>
+                            <div class="episode-image">
+                              <span>Episode 20</span>
+                            </div>
+                            <div class="title-image">
+                              <div class="limit">One Piece Treasure Cruise</div>
+                            </div>
+                          </a>
+
+                          <a class="item" href="fifth.html">
+                            <img src="assets/img/Hxh.jpg" alt="cover">
+                            <div class="overlay">
+                              <div class="actions">
+                                <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                              </div>
+                            </div>
+                            <div class="episode-image">
+                              <span>Episode 20</span>
+                            </div>
+                            <div class="title-image">
+                              <div class="limit">Hunter X Hunter Greed Island</div>
+                            </div>
+                          </a>
+
+                          <a class="item" href="fifth.html">
+                            <img src="assets/img/onepiece.png" alt="cover">
+                            <div class="overlay">
+                              <div class="actions">
+                                <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                              </div>
+                            </div>
+                            <div class="episode-image">
+                              <span>Episode 20</span>
+                            </div>
+                            <div class="title-image">
+                              <div class="limit">One Piece Treasure Cruise</div>
+                            </div>
+                          </a>
+
+                          <a class="item" href="fifth.html">
+                            <img src="assets/img/onepiece.png" alt="cover">
+                            <div class="overlay">
+                              <div class="actions">
+                                <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                              </div>
+                            </div>
+                            <div class="episode-image">
+                              <span>Episode 20</span>
+                            </div>
+                            <div class="title-image">
+                              <div class="limit">One Piece Treasure Cruise</div>
+                            </div>
+                          </a>
+
+                          <a class="item" href="fifth.html">
+                            <img src="assets/img/Hxh.jpg" alt="cover">
+                            <div class="overlay">
+                              <div class="actions">
+                                <span data-toggle="queue" data-id="31160" class="blue action"><i class="fa fa-star"></i></span>
+                              </div>
+                            </div>
+                            <div class="episode-image">
+                              <span>Episode 20</span>
+                            </div>
+                            <div class="title-image">
+                              <div class="limit">Hunter X Hunter Greed Island</div>
+                            </div>
+                          </a>
+                        </div>
                       </div>
                     </div>
-                  </div>
+</div>
                 </div>
               </div>
-            </div>
-            <div role="tabpanel" class="tab-pane" id="manga">
-              <div class="h-600"></div>
-            </div>
-            <div role="tabpanel" class="tab-pane" id="FAVORITE">
-              <div class="h-600"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="tab-responsive">
-      <div id="jssor_1" class="slide-style">
-        <div data-u="slides" class="wrap-slide" style="left: 0px !important;">
-          <div style="display: none;">
-            <div class="wrap-slider-outer">
-              <div style="margin: 0px; overflow: hidden; color: #000;">
+              <div class="res">
                 <div class="container container-category">
                   <div class="single-panel">
                     <div class="dropdown-res">
@@ -686,8 +657,9 @@
                         <input type="input" class="form-control" name="find-anime" placeholder="Find your anime" />
                       </div>
                       <div class="dropdown col-sm-6 alphabet-res">
-                        <button class="btn btn-trans dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">A - Z
-                          <span class="caret"></span></button>
+                        <button class="btn btn-trans dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+                          A - Z  <span class="caret"></span>
+                        </button>
                         <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
                           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">A</a></li>
                           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">B</a></li>
@@ -1030,140 +1002,244 @@
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
-            <div data-u="thumb">ANIME</div>
-          </div>
-
-          <div style="display: none;">
-            <div style="position: absolute; top: 0px; left: 0px; width: 598px; height: 299px;">
-              <div style="margin: 10px; overflow: hidden; color: #000;">Slide 2 content, place any html here.</div>
+            <div role="tabpanel" class="tab-pane" id="manga">
+              <div class="h-600">Manga tab</div>
             </div>
-            <div data-u="thumb" style="left: 0px;">Manga</div>
-          </div>
-          <div style="display: none;">
-            <div style="position: absolute; top: 0px; left: 0px; width: 598px; height: 299px;">
-              <div style="margin: 10px; overflow: hidden; color: #000;">Slide 2 content, place any html here.</div>
+            <div role="tabpanel" class="tab-pane" id="favorite">
+              <div class="h-600">Favorite tab</div>
             </div>
-            <div data-u="thumb" style="left: 0px;">Favorite</div>
-          </div>
-          <div style="display: none;">
-            <div style="position: absolute; top: 0px; left: 0px; width: 598px; height: 299px;">
-              <div style="margin: 10px; overflow: hidden; color: #000;">Slide 2 content, place any html here.</div>
-            </div>
-            <div data-u="thumb" style="left: 0px;">OTHERS</div>
-          </div>
-          <div style="display: none;">
-            <div style="position: absolute; top: 0px; left: 0px; width: 598px; height: 299px;">
-              <div style="margin: 10px; overflow: hidden; color: #000;">Slide 2 content, place any html here.</div>
-            </div>
-            <div data-u="thumb" style="left: 0px;">OTHERS</div>
-          </div>
-          <div style="display: none;">
-            <div style="position: absolute; top: 0px; left: 0px; width: 598px; height: 299px;">
-              <div style="margin: 10px; overflow: hidden; color: #000;">Slide 2 content, place any html here.</div>
-            </div>
-            <div data-u="thumb" style="left: 0px;">OTHERS</div>
-          </div>
-          <div style="display: none;">
-            <div style="position: absolute; top: 0px; left: 0px; width: 598px; height: 299px;">
-              <div style="margin: 10px; overflow: hidden; color: #000;">Slide 2 content, place any html here.</div>
-            </div>
-            <div data-u="thumb" style="left: 0px;">OTHERS</div>
-          </div>
-          <div style="display: none;">
-            <div style="position: absolute; top: 0px; left: 0px; width: 598px; height: 299px;">
-              <div style="margin: 10px; overflow: hidden; color: #000;">Slide 2 content, place any html here.</div>
-            </div>
-            <div data-u="thumb" style="left: 0px;">OTHERS</div>
           </div>
         </div>
-        <!-- Thumbnail Navigator -->
-        <div data-u="thumbnavigator" class="jssort12" style="position:absolute;left:0px;top:0px;width:500px;height:40px;">
-          <!-- Thumbnail Item Skin Begin -->
-          <div data-u="slides" class="wrap-slide" style="cursor: default; top: 0px; left: 0px;">
-            <div data-u="prototype" class="p">
-              <div class="w">
-                <div data-u="thumbnailtemplate" class="c"></div>
-              </div>
-            </div>
-          </div>
-          <!-- Thumbnail Item Skin End -->
-        </div>
-        <a href="http://www.jssor.com" style="display:none">Slideshow Maker</a>
       </div>
     </div>
     
-    <!-- Bootstrap core JavaScript==================================================-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="assets/js/autosize.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/dropdown-enhancement.js"></script>
-<!--    <script src="assets/js/jquery.sliderTabs.js"></script>-->
-    <script src="assets/js/jssor.slider.min.js"></script>
-    <script>
-      autosize(document.querySelectorAll('textarea'));
-      $('#myTabs a').click(function(e) {
-        e.preventDefault() $(this).tab('show')
-      })
-      $('#pop a').click(function(e) {
-        e.preventDefault() $(this).tab('show')
-      })
+    
+    
+      <!-- Bootstrap core JavaScript==================================================-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="assets/js/autosize.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/dropdown-enhancement.js"></script>
+      <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+      <script>
+        autosize(document.querySelectorAll('textarea'));
+        $('#myTabs a').click(function(e) {
+          e.preventDefault() $(this).tab('show')
+        })
+        $('#pop a').click(function(e) {
+          e.preventDefault() $(this).tab('show')
+        })
 
-      var options = [];
+        var options = [];
 
-      $('.dropdown-menu a').on('click', function(event) {
+        $('.dropdown-menu a').on('click', function(event) {
 
-        var $target = $(event.currentTarget),
-          val = $target.attr('data-value'),
-          $inp = $target.find('input'),
-          idx;
+          var $target = $(event.currentTarget),
+            val = $target.attr('data-value'),
+            $inp = $target.find('input'),
+            idx;
 
-        if ((idx = options.indexOf(val)) > -1) {
-          options.splice(idx, 1);
-          setTimeout(function() {
-            $inp.prop('checked', false)
-          }, 0);
-        } else {
-          options.push(val);
-          setTimeout(function() {
-            $inp.prop('checked', true)
-          }, 0);
-        }
+          if ((idx = options.indexOf(val)) > -1) {
+            options.splice(idx, 1);
+            setTimeout(function() {
+              $inp.prop('checked', false)
+            }, 0);
+          } else {
+            options.push(val);
+            setTimeout(function() {
+              $inp.prop('checked', true)
+            }, 0);
+          }
 
-        $(event.target).blur();
+          $(event.target).blur();
 
-        console.log(options);
-        return false;
+          console.log(options);
+          return false;
+        });
+      </script>
+    
+      <script>    
+      // calculate and set .draggable width
+
+      $.fn.draggable_nav_calc = function(options) {
+        return this.each( function(i) {
+          var $element = $(this);
+          if ($element.is(":visible")) {
+            // x or y
+            if (options.axis === "x") {
+              // calculate
+              var navWidth = 1;
+              $element.find("> *").each( function(i) {
+                navWidth += $(this).outerWidth(true);
+              });
+              // set width
+              var parentWidth = $element.parent().width();
+              if (navWidth > parentWidth) {
+                $element.css("width", navWidth);
+              } else {
+                $element.css("width", parentWidth);
+              }
+            } else if (options.axis === "y") {
+              // calculate
+              var navHeight = 1;
+              $element.find("> *").each( function(i) {
+                navHeight += $(this).outerHeight(true);
+              });
+              // set height
+              var parentHeight = $element.parent().width();
+              if (navHeight > parentHeight) {
+                $element.css("height", navHeight);
+              } else {
+                $element.css("height", parentHeight);
+              }
+            }
+          }
+        });
+      };
+
+      // check inside bounds
+
+      $.fn.draggable_nav_check = function() {
+        return this.each( function(i) {
+          var $element = $(this);
+          // calculate
+          var w = $element.width();
+          var pw = $element.parent().width();
+          var maxPosLeft = 0;
+          if (w > pw) {
+            maxPosLeft = - (w - pw);
+          }
+          var h = $element.height();
+          var ph = $element.parent().height();
+          var maxPosTop = 0;
+          if (h > ph) {
+            maxPosTop = h - ph;
+          }
+          // horizontal
+          var left = parseInt($element[0].style.left);
+          if (left > 0) {
+            $element.css("left", 0);
+          } else if (left < maxPosLeft) {
+            $element.css("left", maxPosLeft);
+          }
+          // vertical
+          var top = parseInt($element[0].style.top);
+          if (top > 0) {
+            $element.css("top", 0);
+          } else if (top < maxPosTop) {
+            $element.css("top", maxPosTop);
+          }
+        });
+      };
+
+      // init draggable nav
+
+      $.fn.draggable_nav = function(options) {
+        return this.each( function(i) {
+          var $element = $(this);
+          // calculate first time, after delay to fix resize bugs
+          window.setTimeout( function(e) {
+            $element.draggable_nav_calc(options);
+          }, 100);
+          // on shown tabs recalculate
+          $element.find('[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+            $element.draggable_nav_calc(options);
+          });
+          // on resize recalculate
+          function draggable_nav_resize_after() {
+            clearTimeout($element.data("draggable_nav_timeout"));
+            var timeout = window.setTimeout( function(e) {
+              $element.draggable_nav_calc(options);
+              $element.draggable_nav_check();
+            }, 0);
+            $element.data("draggable_nav_timeout", timeout);
+          }
+          $(window).on('resize', draggable_nav_resize_after);
+          $(window).on('scroll', draggable_nav_resize_after);
+          // center clicked element
+          if ($element.hasClass("draggable-center")) {
+            $element.find('li a[data-toggle="tab"]').on("shown.bs.tab", function(e) {
+              var $container = $(this).parents(".draggable-container");
+              var $li = $(this).parents("li");
+              if (options.axis === "x") {
+                  var left = - $li.position().left + $container.outerWidth() / 2 - $li.outerWidth() / 2;
+                  $element.css("left", left);
+              } else if (options.axis === "y") {
+                  var top = - $li.position().top + $container.outerWidth() / 2 - $li.outerWidth() / 2;
+                  $element.css("top", top);
+              }
+              // put inside bounds
+              $element.draggable_nav_check();
+            });
+          }
+        });
+      };
+      $(".draggable").draggable_nav({
+        axis: 'x' // only horizontally
       });
+
+      // jquery ui draggable
+
+      $(".draggable").draggable({
+        axis: 'x', // only horizontally
+        drag: function(e, ui) {
+          var $element = ui.helper;
+          // calculate
+          var w = $element.width();
+          var pw = $element.parent().width();
+          var maxPosLeft = 0;
+          if (w > pw) {
+            maxPosLeft = - (w - pw);
+          }
+          var h = $element.height();
+          var ph = $element.parent().height();
+          var maxPosTop = 0;
+          if (h > ph) {
+            maxPosTop = h - ph;
+          }
+          // horizontal
+          if (ui.position.left > 0) {
+            ui.position.left = 0;
+          } else if (ui.position.left < maxPosLeft) {
+            ui.position.left = maxPosLeft;
+          }
+          // vertical
+          if (ui.position.top > 0) {
+            ui.position.top = 0;
+          } else if (ui.position.top < maxPosTop) {
+            ui.position.top = maxPosTop;
+          }
+        }
+      });
+
+      // jquey draggable also on touch devices
+      // http://stackoverflow.com/questions/5186441/javascript-drag-and-drop-for-touch-devices
+
+      function touchHandler(e) {
+        var touch = e.originalEvent.changedTouches[0];
+        var simulatedEvent = document.createEvent("MouseEvent");
+          simulatedEvent.initMouseEvent({
+          touchstart: "mousedown",
+          touchmove: "mousemove",
+          touchend: "mouseup"
+        }[e.type], true, true, window, 1,
+          touch.screenX, touch.screenY,
+          touch.clientX, touch.clientY, false,
+          false, false, false, 0, null);
+        touch.target.dispatchEvent(simulatedEvent);
+      }
+      function preventPageScroll(e) {
+          e.preventDefault();
+      }
+      function initTouchHandler($element) {
+        $element.on("touchstart touchmove touchend touchcancel", touchHandler);
+        $element.on("touchmove", preventPageScroll);
+      }
+      initTouchHandler($(".draggable"));
     </script>
     
-    <script>
-      jQuery(document).ready(function($) {
-
-        var jssor_1_options = {
-          $AutoPlay: false,
-          $ThumbnailNavigatorOptions: {
-            $Class: $JssorThumbnailNavigator$,
-            $Cols: 5,
-            $Align: 200,
-            $NoDrag: true
-          }
-        };
-
-        var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-      });
-    </script>
-<!--
-    <script>
-      var slider = $("div#mySliderTabs").sliderTabs({
-        autoplay: false,
-        position: "top",
-        mousewheel: true
-      });
-    </script>
--->
   </body>
 
 </html>

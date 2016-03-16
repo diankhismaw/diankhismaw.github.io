@@ -160,10 +160,9 @@ i.fa.fa-star{
 
 @media only screen and (min-width: 320px) and (max-width: 479px){ 
   .item{
-    margin: 10px 0px;
-    width: 125px;
+    width: 120px;
     height: 190px;
-    margin-right: 14px;
+    margin: 9px 7px;
   }
   .wrap-item{
     margin: 0px;
