@@ -98,6 +98,10 @@
   background: #0B7363;
   color: #fff;
 }
+.btn-more-detail:hover{
+  background: #0B7363;
+  color: #fff;
+}
 .btn-choose:hover{
   color: #f4f4f4;
 }

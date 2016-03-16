@@ -241,6 +241,7 @@
   }
   .form-comment {
     min-height: 90px;
+    width: 98%;
   }
   .small-btn {
     padding: 4px 15px !Important;
@@ -382,6 +383,9 @@
   .ui-slider-left-arrow {
     height: 44px !important;
   }
+  .hide-dropdown-res{
+    display: none !important;
+  }
 }
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .follow-responsive {
@@ -494,6 +498,9 @@
   .ui-slider-right-arrow,
   .ui-slider-left-arrow {
     height: 44px !important;
+  }
+  .hide-dropdown-res{
+    display: none !important;
   }
 }
 
@@ -721,12 +728,17 @@
   display: none;
 }
 @media only screen and (min-width: 320px) and (max-width: 479px){
+  .left-panel-sec{
+    margin-top: 0px;
+    width: 100%;
+  }
   .main-content-res{
     display: inline-block;
     padding: 0px;
     width: 105%;
     margin-top: 40px;
     background-color: #fff;
+    margin-left: -3px;
   }
   .main-content-res > .left-panel-sec{
     width: 100%;
@@ -853,7 +865,7 @@
     display: inline-block;
   }
   .form-setting input{
-    width: 298px; 
+    width: 280px; 
   }
   .menu-others-btn{
     left: 108px;
@@ -945,13 +957,13 @@
     width: 300px;
   }
   .wrap-socmed{
-    width:300px;
+    width:100%;
   }
   .facebook-conect > img {
-    margin-left: 10px;
+    margin-left: 5px;
   }
-  .facebook-connect > span {
-    padding-left: 10px;
+  .facebook-conect > span {
+    padding-left: 5px;
   }
   .left-fifth-res {
     width: 100% !important;
@@ -1043,7 +1055,14 @@
   display: none;
 }
 @media only screen and (min-width: 320px) and (max-width: 479px){
-  
+  .btn-more-detail{
+    background: #17ae97;
+    padding: 8px 30px;
+    color: #fff;
+    margin: 6px 11px;
+    width: 280px;
+    text-align: center;
+  }
   .btn-dropdown-res{
     width: 100%;
   }
@@ -1192,6 +1211,9 @@
   }
   .nav.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
     box-shadow: inset 0px 3px 0px 0px rgba(23, 174, 151, 1);
+  }
+  .hidden{
+    display: none;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px;){

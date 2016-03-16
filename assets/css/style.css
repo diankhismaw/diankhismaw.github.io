@@ -1022,7 +1022,10 @@ i.fa.fa-circle{
   color: #17ae97;
 	float: right;
 }
-.td{
+.td, .td1, .td2, .td3, .td4,
+.td5, .td6, .td7, .td8, .td9,
+td10, .td11, .td12, .td13, .td14,
+d15, .td16, .td17, .td18{
 	margin-bottom: 20px;
 	display: none;
 }
@@ -2566,3 +2569,5 @@ input#anime1, input#anime2, input#anime3, input#anime4{
 .res{
   display: none;
 }
+
+
