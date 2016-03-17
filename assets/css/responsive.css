@@ -735,10 +735,9 @@
   .main-content-res{
     display: inline-block;
     padding: 0px;
-    width: 105%;
+    width: 102%;
     margin-top: 40px;
     background-color: #fff;
-    margin-left: -3px;
   }
   .main-content-res > .left-panel-sec{
     width: 100%;
@@ -936,6 +935,12 @@
                     Edit Profile
 ----------------------------------------------------------------*/
 @media only screen and (min-width: 320px) and (max-width: 479px){
+  .title-section{
+    font-size: 17px;
+  }
+  .btn-back-review{
+    padding: 5px 20px;
+  }
   .avatar-middle{
     width: 65px;
   }
@@ -1060,7 +1065,7 @@
     padding: 8px 30px;
     color: #fff;
     margin: 6px 11px;
-    width: 280px;
+    width: 94%;
     text-align: center;
   }
   .btn-dropdown-res{

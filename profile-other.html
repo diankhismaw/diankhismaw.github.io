@@ -214,11 +214,7 @@
               </a>
             </li>
             <li class="right-button">
-              <button type="button" class="btn btn-green dropdown-toggle" id="edit-cover" data-toggle="dropdown">Edit &nbsp;&nbsp; <i class="fa fa-camera"></i></button>
-              <ul class="dropdown-menu edit-cover-nores" role="menu" aria-labelledby="edit-cover">
-                <li><a href="#"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Change cover photo</a></li>
-                <li><a href="#"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Change profile picture</a></li>
-              </ul>
+              <button type="button" class="btn btn-green">Unfollow</button>
               &nbsp;
               <button type="button" class="btn btn-trans">Message</button>
             </li>
@@ -233,7 +229,7 @@
               </ul>
             </li>
           </ul>
-
+          
         </div>
         <!-- end col-md-12 -->
       </div>
@@ -259,7 +255,7 @@
         <div class="tab-content">
           <div role="tabpanel" class="tab-pane active" id="profile">
             <div class="non-res">
-              <div class="left-panel-sec">
+              <div class="left-panel-sec left-res-profile">
 
               <div class="wrap-panel">
                 <img src="assets/img/luffy.png" alt="luffy" class="img-circle center-block user-big" />
@@ -267,10 +263,10 @@
                   <a href="edit-profile.html"><i class="fa fa-pencil-square-o"></i> Edit Profile</a>
                 </div>
                 <div class="title link-menu">
-                  <a href="setting-profile.html" class="active-link"><i class="fa fa-cog"></i> Settings</a>
+                  <a href="setting-profile.html"><i class="fa fa-cog"></i> Settings</a>
                 </div>
                 <div class="content-panel">
-                  <table class="table info-table">
+                  <table class="table info-table mar-t-30">
                     <tbody>
                       <tr>
                         <td>Name</td>
@@ -395,84 +391,126 @@
                   <a href="#">
                     <img class="distance-avatar avatar-small" src="assets/img/luffy.png" alt="...">
                   </a>
+
                 </div>
               </div>
-
             </div>
 
-              <div class="right-panel-sec">
+              <div class="right-panel-sec right-res-profile">
               <div class="row">
-                <div class="col-md-12 no-padding">
-                  <div class="title-section">
-                    <span>Setting Profile</span>
-                    <a href="profile.html" class="btn btn-green btn-back-review">Back</a>
-                  </div>
-                </div>
                 <div class="col-md-7 main-content">
-                  <h4 class="green-col">About D'luffy</h4>
+                  <h4 class="green-col"> About D'luffy</h4>
                   <hr />
+                  <p class="min-sec">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean lorem commodo ligula eget dolor. Aenean massa. Cum sociis natoque</p>
 
-                  <form class="form-setting">
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Username</label>
-                      <input type="text" class="form-control" placeholder="MonkeyD’luffy07">
+                  <br>
+                  <div class="head-title mar-t-30">
+                    <div class="pull-left">
+                      <h4 class="green-col">RED_TEUSDAY’S COMMENT</h4>
                     </div>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Email</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1">
-                      <p>Email will not be displayed publicity</p>
+                    <div class="pull-right">
+                      <span>350 Comments</span>
                     </div>
+                  </div>
 
-                    <div class="col-md-6">
-                      <div class="spoiler-title">Show NFSW Post</div>
-                      <div class="onoffswitch">
-                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-                        <label class="onoffswitch-label" for="myonoffswitch">
-                          <span class="onoffswitch-inner"></span>
-                          <span class="onoffswitch-switch"></span>
-                        </label>
+                  <div class="pull-right">
+                    <nav>
+                      <ul class="pagination pagination-green">
+                        <li>
+                          <a href="#" aria-label="Previous">
+                            <i class="fa fa-chevron-left"></i>
+                          </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#" class="active">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                          <a href="#" aria-label="Next">
+                            <i class="fa fa-chevron-right"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+
+                  <div class="content-list">
+                    <div class="wrapper-avatar w-100 bor-none pad-b-10">
+                      <div class="media info-avatar">
+                        <div class="media-left">
+                          <a href="#">
+                            <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                          </a>
+                        </div>
+
+                        <div class="media-body w-100">
+                          <a href=""><h5 class="navy-col">Luffy D’monkeys</h5></a>
+                          <a href="">
+                            <div class="date">Nov 21, 2014 1:30 PM</div>
+                          </a>
+                        </div>
                       </div>
+                      <p class="mar-lm-10 dis-cap">
+                        Comment here Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet
+                      </p>
                     </div>
+                    <!-- wrapper avatar -->
 
-                    <div class="col-md-6">
-                      <div class="spoiler-title">Show Spoiler Post</div>
-                      <div class="onoffswitch">
-                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="onoffswitch" checked>
-                        <label class="onoffswitch-label" for="onoffswitch">
-                          <span class="onoffswitch-inner"></span>
-                          <span class="onoffswitch-switch"></span>
-                        </label>
+                    <div class="wrapper-avatar w-100 bor-none pad-b-10">
+                      <div class="media info-avatar">
+                        <div class="media-left">
+                          <a href="#">
+                            <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                          </a>
+                        </div>
+
+                        <div class="media-body w-100">
+                          <a href=""><h5 class="navy-col">Luffy D’monkeys</h5></a>
+                          <a href="">
+                            <div class="date">Nov 21, 2014 1:30 PM</div>
+                          </a>
+                        </div>
                       </div>
+                      <p class="mar-lm-10 dis-cap">
+                        Comment here Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet
+                      </p>
                     </div>
+                    <!-- wrapper avatar -->
 
-                    <button type="submit" class="btn btn-green mar-t-50 pull-right">Save Changes</button>
+                    <div class="wrapper-avatar w-100 bor-none pad-b-10">
+                      <div class="media info-avatar">
+                        <div class="media-left">
+                          <a href="#">
+                            <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                          </a>
+                        </div>
+
+                        <div class="media-body w-100">
+                          <a href=""><h5 class="navy-col">Luffy D’monkeys</h5></a>
+                          <a href="">
+                            <div class="date">Nov 21, 2014 1:30 PM</div>
+                          </a>
+                        </div>
+                      </div>
+                      <p class="mar-lm-10 dis-cap">
+                        Comment here Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet
+                      </p>
+                    </div>
+                    <!-- wrapper avatar -->
+
+                  </div>
+                  <!-- content list -->
+                  <form class="">
+                    <textarea class="form-control form-comment" rows="3" placeholder="What's on your mind"></textarea>
+                    <a href="" class="pull-right small-btn green-bg">
+                        Comment
+                      </a>
                   </form>
-
-                  <div class="clearfix"></div>
-
-                  <h4 class="green-col mar-t-40">Password</h4>
-                  <hr />
-                  <form class="form-setting">
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Old Password</label>
-                      <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">New Password</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1">
-                    </div>
-                    <div class="form-group mar-b-30">
-                      <label for="exampleInputEmail1">Re-Type New Password</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1">
-                    </div>
-
-                    <button type="submit" class="btn btn-green pull-right">Save Changes</button>
-                  </form>
-
 
                 </div>
 
-                <div class="col-md-5 ads">
+                <div class="col-md-5 col-sm-12 ads">
                   <div class="banner">
                     <a href="#" target="_self">
                       <img src="assets/img/asasa.png" alt="ads" class="img-responsive" />
@@ -534,215 +572,258 @@
             </div>
             <div class="res">
               <div class="col-xs-12 main-content-res">
-                <div class="col-md-12 no-padding">
-                  <div class="title-section">
-                    <span>Setting Profile</span>
-                    <a href="profile.html" class="btn btn-green btn-back-review">Back</a>
-                  </div>
-                </div>
                 <div class="left-panel-sec">
-                  <div class="wrap-panel profile-caption-res" style="border-top: 0px;">
-                    <img src="assets/img/luffy.png" alt="luffy" class="img-circle center-block user-big" />
-                    <div class="title link-menu">
-                      <a href="edit-profile.html"><i class="fa fa-pencil-square-o"></i> Edit Profile</a>
-                    </div>
-                    <div class="title link-menu">
-                      <a href="setting-profile.html"><i class="fa fa-cog"></i> Settings</a>
-                    </div>
-                    <div class="content-panel">
-                      <table class="table info-table mar-t-30">
-                        <tbody>
-                          <tr>
-                            <td>Name</td>
-                            <td>:</td>
-                            <td> D’luffy (Admin)</td>
-                          </tr>
-                          <tr>
-                            <td>Last online</td>
-                            <td>:</td>
-                            <td>20 mins ago</td>
-                          </tr>
-                          <tr>
-                            <td>Gender</td>
-                            <td>:</td>
-                            <td>Male</td>
-                          </tr>
-                          <tr>
-                            <td>Birthday</td>
-                            <td>:</td>
-                            <td>June 10, 1996</td>
-                          </tr>
-                          <tr>
-                            <td>Location</td>
-                            <td>:</td>
-                            <td>Bandung</td>
-                          </tr>
-                          <tr>
-                            <td>Join Date</td>
-                            <td>:</td>
-                            <td>July 9, 2014</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+
+                <div class="wrap-panel profile-caption-res">
+                  <img src="assets/img/luffy.png" alt="luffy" class="img-circle center-block user-big" />
+                  <div class="title link-menu">
+                    <a href="edit-profile.html"><i class="fa fa-pencil-square-o"></i> Edit Profile</a>
                   </div>
-                  <!--end wrap-panel-->
-
-                  <div class="clearfix"></div>
-
-                  <!--tab-->
-                  <div class="wrap-panel profile-caption-res mar-t-10">
-
-                    <!--tab list-->
-                    <ul id="reviewTab" class="nav tab-post" role="tablist">
-                      <li role="presentation" class="active">
-                        <a href="#review" role="tab" data-toggle="tab" aria-controls="review" aria-expanded="true">
-                          <span class="text-center">My Review</span>
-                        </a>
-                      </li>
-                      <li role="presentation">
-                        <a href="#post" class="active" role="tab" data-toggle="tab" aria-controls="post">
-                          <span class="text-center">Post <i class="fa fa-pencil-square-o"></i></span>
-                        </a>
-                      </li>
-                    </ul>
-
-                    <!-- Tab panes -->
-                    <div class="tab-content pad-10" style="display: inline-block;">
-                      <div role="tabpanel" class="tab-pane active" id="review">
-
-                        <table class="table info-review">
-                          <tr>
-                            <td><a href="">One Piece</a></td>
-                            <td class="text-right"><span>7.5</span>/10</td>
-                          </tr>
-                          <tr>
-                            <td><a href="">Shokuguki no So...</a></td>
-                            <td class="text-right"><span>8</span>/10</td>
-                          </tr>
-                          <tr>
-                            <td><a href="">One Piece</a></td>
-                            <td class="text-right"><span>7.5</span>/10</td>
-                          </tr>
-                          <tr>
-                            <td><a href="">Shokuguki no So...</a></td>
-                            <td class="text-right"><span>8</span>/10</td>
-                          </tr>
-                          <tr>
-                            <td class="bor-none"><a href="">One Piece</a></td>
-                            <td class="text-right bor-none"><span>7.5</span>/10</td>
-                          </tr>
-                        </table>
-                        <a href="#" class="navy-col pull-right mar-b-10 pad-r-10" style="font-size:13px;">More..</a>
-
-                      </div>
-
-                      <div role="tabpanel" class="tab-pane" id="post">
-                        <h2>testingsss</h2>
-                      </div>
-
-                    </div>
+                  <div class="title link-menu">
+                    <a href="setting-profile.html"><i class="fa fa-cog"></i> Settings</a>
                   </div>
-
-                  <div class="wrap-panel profile-caption-res mar-t-10">
-                    <a href="#">
-                      <div class="follower-title pad-l-10 pad-b-10">
-                        Followers
-                      </div>
-                    </a>
-                    <div class="follower-list clearfix">
-                      <a href="#">
-                        <img class="distance-avatar avatar-small" src="assets/img/luffy.png" alt="...">
-                      </a>
-                      <a href="#">
-                        <img class="distance-avatar avatar-small" src="assets/img/luffy.png" alt="...">
-                      </a>
-                      <a href="#">
-                        <img class="distance-avatar avatar-small" src="assets/img/luffy.png" alt="...">
-                      </a>
-                      <a href="#">
-                        <img class="distance-avatar avatar-small" src="assets/img/luffy.png" alt="...">
-                      </a>
-                      <a href="#">
-                        <img class="distance-avatar avatar-small" src="assets/img/luffy.png" alt="...">
-                      </a>
-                      <a href="#">
-                        <img class="distance-avatar avatar-small" src="assets/img/luffy.png" alt="...">
-                      </a>
-                      <a href="#">
-                        <img class="distance-avatar avatar-small" src="assets/img/luffy.png" alt="...">
-                      </a>
-                      <a href="#">
-                        <img class="distance-avatar avatar-small" src="assets/img/luffy.png" alt="...">
-                      </a>
-
-                    </div>
+                  <div class="content-panel">
+                    <table class="table info-table mar-t-30">
+                      <tbody>
+                        <tr>
+                          <td>Name</td>
+                          <td>:</td>
+                          <td> D’luffy (Admin)</td>
+                        </tr>
+                        <tr>
+                          <td>Last online</td>
+                          <td>:</td>
+                          <td>20 mins ago</td>
+                        </tr>
+                        <tr>
+                          <td>Gender</td>
+                          <td>:</td>
+                          <td>Male</td>
+                        </tr>
+                        <tr>
+                          <td>Birthday</td>
+                          <td>:</td>
+                          <td>June 10, 1996</td>
+                        </tr>
+                        <tr>
+                          <td>Location</td>
+                          <td>:</td>
+                          <td>Bandung</td>
+                        </tr>
+                        <tr>
+                          <td>Join Date</td>
+                          <td>:</td>
+                          <td>July 9, 2014</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
+                <!--end wrap-panel-->
+
+                <div class="clearfix"></div>
+
+                <!--tab-->
+                <div class="wrap-panel profile-caption-res mar-t-10">
+
+                  <!--tab list-->
+                  <ul id="reviewTab" class="nav tab-post" role="tablist">
+                    <li role="presentation" class="active">
+                      <a href="#review" role="tab" data-toggle="tab" aria-controls="review" aria-expanded="true">
+                        <span class="text-center">My Review</span>
+                      </a>
+                    </li>
+                    <li role="presentation">
+                      <a href="#post" class="active" role="tab" data-toggle="tab" aria-controls="post">
+                        <span class="text-center">Post <i class="fa fa-pencil-square-o"></i></span>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <!-- Tab panes -->
+                  <div class="tab-content pad-10" style="display: inline-block;">
+                    <div role="tabpanel" class="tab-pane active" id="review">
+
+                      <table class="table info-review">
+                        <tr>
+                          <td><a href="">One Piece</a></td>
+                          <td class="text-right"><span>7.5</span>/10</td>
+                        </tr>
+                        <tr>
+                          <td><a href="">Shokuguki no So...</a></td>
+                          <td class="text-right"><span>8</span>/10</td>
+                        </tr>
+                        <tr>
+                          <td><a href="">One Piece</a></td>
+                          <td class="text-right"><span>7.5</span>/10</td>
+                        </tr>
+                        <tr>
+                          <td><a href="">Shokuguki no So...</a></td>
+                          <td class="text-right"><span>8</span>/10</td>
+                        </tr>
+                        <tr>
+                          <td class="bor-none"><a href="">One Piece</a></td>
+                          <td class="text-right bor-none"><span>7.5</span>/10</td>
+                        </tr>
+                      </table>
+                      <a href="#" class="navy-col pull-right mar-b-10 pad-r-10" style="font-size:13px;">More..</a>
+
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="post">
+                      <h2>testingsss</h2>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="wrap-panel profile-caption-res mar-t-10">
+                  <a href="#">
+                    <div class="follower-title pad-l-10 pad-b-10">
+                      Followers
+                    </div>
+                  </a>
+                  <div class="follower-list clearfix">
+                    <a href="#">
+                      <img class="distance-avatar avatar-small" src="assets/img/luffy.png" alt="...">
+                    </a>
+                    <a href="#">
+                      <img class="distance-avatar avatar-small" src="assets/img/luffy.png" alt="...">
+                    </a>
+                    <a href="#">
+                      <img class="distance-avatar avatar-small" src="assets/img/luffy.png" alt="...">
+                    </a>
+                    <a href="#">
+                      <img class="distance-avatar avatar-small" src="assets/img/luffy.png" alt="...">
+                    </a>
+                    <a href="#">
+                      <img class="distance-avatar avatar-small" src="assets/img/luffy.png" alt="...">
+                    </a>
+                    <a href="#">
+                      <img class="distance-avatar avatar-small" src="assets/img/luffy.png" alt="...">
+                    </a>
+                    <a href="#">
+                      <img class="distance-avatar avatar-small" src="assets/img/luffy.png" alt="...">
+                    </a>
+                    <a href="#">
+                      <img class="distance-avatar avatar-small" src="assets/img/luffy.png" alt="...">
+                    </a>
+
+                  </div>
+                </div>
+              </div>
 
                 <div class="right-panel-sec">
                   <div class="row">
-                    <div class="col-md-7 main-content-res">
-                      <h4 class="green-col">About D'luffy</h4>
+                    <div class="col-md-7 main-content no-padding" style="display:inline-block;">
+                      <h4 class="green-col"> About D'luffy</h4>
                       <hr />
+                      <p class="min-sec">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean lorem commodo ligula eget dolor. Aenean massa. Cum sociis natoque</p>
 
-                      <form class="form-setting">
-                        <div class="form-group">
-                          <label for="exampleInputEmail1">Username</label>
-                          <input type="text" class="form-control" placeholder="MonkeyD’luffy07">
+                      <br>
+                      <div class="head-title mar-t-30">
+                        <div class="pull-left">
+                          <h4 class="green-col">RED_TEUSDAY’S COMMENT</h4>
                         </div>
-                        <div class="form-group">
-                          <label for="exampleInputEmail1">Email</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1">
-                          <p>Email will not be displayed publicity</p>
+                        <div class="pull-right">
+                          <span>350 Comments</span>
                         </div>
+                      </div>
 
-                        <div class="col-md-6 col-xs-6 no-padding">
-                          <div class="spoiler-title">Show NFSW Post</div>
-                          <div class="onoffswitch">
-                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch-res" checked>
-                            <label class="onoffswitch-label" for="myonoffswitch-res">
-                              <span class="onoffswitch-inner"></span>
-                              <span class="onoffswitch-switch"></span>
-                            </label>
+                      <div class="pull-right">
+                        <nav>
+                          <ul class="pagination pagination-green">
+                            <li>
+                              <a href="#" aria-label="Previous">
+                                <i class="fa fa-chevron-left"></i>
+                              </a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#" class="active">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                              <a href="#" aria-label="Next">
+                                <i class="fa fa-chevron-right"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+
+                      <div class="content-list">
+                        <div class="wrapper-avatar w-100 bor-none pad-b-10">
+                          <div class="media info-avatar">
+                            <div class="media-left">
+                              <a href="#">
+                                <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                              </a>
+                            </div>
+
+                            <div class="media-body w-100">
+                              <a href=""><h5 class="navy-col">Luffy D’monkeys</h5></a>
+                              <a href="">
+                                <div class="date">Nov 21, 2014 1:30 PM</div>
+                              </a>
+                            </div>
                           </div>
+                          <p class="mar-lm-10 dis-cap">
+                            Comment here Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet
+                          </p>
                         </div>
+                        <!-- wrapper avatar -->
 
-                        <div class="col-md-6 col-xs-6 no-padding">
-                          <div class="spoiler-title">Show Spoiler Post</div>
-                          <div class="onoffswitch">
-                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="onoffswitch-res" checked>
-                            <label class="onoffswitch-label" for="onoffswitch-res">
-                              <span class="onoffswitch-inner"></span>
-                              <span class="onoffswitch-switch"></span>
-                            </label>
+                        <div class="wrapper-avatar w-100 bor-none pad-b-10">
+                          <div class="media info-avatar">
+                            <div class="media-left">
+                              <a href="#">
+                                <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                              </a>
+                            </div>
+
+                            <div class="media-body w-100">
+                              <a href=""><h5 class="navy-col">Luffy D’monkeys</h5></a>
+                              <a href="">
+                                <div class="date">Nov 21, 2014 1:30 PM</div>
+                              </a>
+                            </div>
                           </div>
+                          <p class="mar-lm-10 dis-cap">
+                            Comment here Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet
+                          </p>
                         </div>
+                        <!-- wrapper avatar -->
 
-                        <button type="submit" class="btn btn-green mar-t-50 pull-right">Save Changes</button>
+                        <div class="wrapper-avatar w-100 bor-none pad-b-10">
+                          <div class="media info-avatar">
+                            <div class="media-left">
+                              <a href="#">
+                                <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                              </a>
+                            </div>
+
+                            <div class="media-body w-100">
+                              <a href=""><h5 class="navy-col">Luffy D’monkeys</h5></a>
+                              <a href="">
+                                <div class="date">Nov 21, 2014 1:30 PM</div>
+                              </a>
+                            </div>
+                          </div>
+                          <p class="mar-lm-10 dis-cap">
+                            Comment here Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet
+                          </p>
+                        </div>
+                        <!-- wrapper avatar -->
+
+                      </div>
+                      <!-- content list -->
+                      <form class="">
+                        <textarea class="form-control form-comment" rows="3" placeholder="What's on your mind"></textarea>
+                        <a href="" class="pull-right small-btn green-bg">
+                            Comment
+                          </a>
                       </form>
-
-                      <div class="clearfix"></div>
-
-                      <h4 class="green-col mar-t-40">Password</h4>
-                      <hr />
-                      <form class="form-setting">
-                        <div class="form-group">
-                          <label for="exampleInputEmail1">Old Password</label>
-                          <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group">
-                          <label for="exampleInputEmail1">New Password</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1">
-                        </div>
-                        <div class="form-group mar-b-30">
-                          <label for="exampleInputEmail1">Re-Type New Password</label>
-                          <input type="text" class="form-control" id="exampleInputEmail1">
-                        </div>
-
-                        <button type="submit" class="btn btn-green pull-right">Save Changes</button>
-                      </form>
-
 
                     </div>
 
@@ -822,8 +903,10 @@
     </div>
     <!-- end row -->
   </div>
+  
+  
+    
   <!-- end container -->
-
 
   <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -1020,13 +1103,7 @@
       $(this).tab('show')
     })
   </script>
-  <script>
-    var slider = $("div#mySliderTabs").sliderTabs({
-      autoplay: false,
-      position: "top",
-      mousewheel: true
-    });
-  </script>
+  
 </body>
 
 </html>

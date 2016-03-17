@@ -131,11 +131,27 @@
           <li><a href="#contact">News</a></li>
         </ul>
 
-        <ul class="nav navbar-nav navbar-right menu">
+      <ul class="nav navbar-nav navbar-right menu">
           <li>
-            <a href="../navbar/">
-              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            <a href="#" data-toggle="collapse" data-target="#search-collapse">
+              <span class="glyphicon glyphicon-search" aria-hidden="true" ></span>
             </a>
+          </li>
+          <li id="noti_Container">
+           <div id="noti_Counter"></div>   <!--SHOW NOTIFICATIONS COUNT.-->
+            
+            <div id="noti_Button">
+              <a href="#">
+                <span class="fa fa-bell-o" aria-hidden="true"></span>
+              </a>
+            </div>    
+
+            <!--THE NOTIFICAIONS DROPDOWN BOX.-->
+            <div id="notifications">
+              <h3 class="notif-title">Notifications</h3>
+              <div style="height:300px;"></div>
+              <div class="seeAll"><a href="#">See All</a></div>
+            </div>
           </li>
           <li class="active">
             <a href="profile.html">Luffy D'monkeys</a>
@@ -148,7 +164,14 @@
       <!--/.nav-collapse -->
     </div>
   </nav>
-
+  <div id="search-collapse" class="collapse" style="position: absolute; right: 213px;">
+    <div class="container no-padding">
+      <div class="input-group pull-right w-form-search">
+        <input type="text" class="form-control" name="test" placeholder="Search for snippets and hit enter" style="height: 40px;">
+      </div>
+    </div>
+  </div>
+  
   <div class="background-cover">
     <div class="overlay-cover"></div>
     <div class="bottom-cover"></div>
@@ -191,14 +214,12 @@
                 <h2>990</h2>
               </a>
             </li>
-            <li class="edit-cover-480">
-              <div class="btn btn-cover-edit">
-                <i class="fa fa-camera"></i>
-                <span>Edit Cover</span>
-              </div>
-            </li>
             <li class="right-button">
-              <button type="button" class="btn btn-green">Unfollow</button>
+              <button type="button" class="btn btn-green dropdown-toggle" id="edit-cover" data-toggle="dropdown">Edit &nbsp;&nbsp; <i class="fa fa-camera"></i></button>
+              <ul class="dropdown-menu edit-cover-nores" role="menu" aria-labelledby="edit-cover">
+                <li><a href="#"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Change cover photo</a></li>
+                <li><a href="#"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Change profile picture</a></li>
+              </ul>
               &nbsp;
               <button type="button" class="btn btn-trans">Message</button>
             </li>
@@ -224,7 +245,7 @@
   <!-- end background-cover -->
 
 
-  <div class="col-md-12 tab-top">
+  <div class="col-md-12 tab-top no-padding">
     <div class="container">
       <div class="row">
         <div class="draggable-container">
@@ -243,9 +264,6 @@
 
               <div class="wrap-panel">
                 <img src="assets/img/luffy.png" alt="luffy" class="img-circle center-block user-big" />
-                <div class="title link-menu-top">
-                  <a href="profile.html"><i class="fa fa-user"></i> Profile</a>
-                </div>
                 <div class="title link-menu">
                   <a href="edit-profile.html" class="active-link"><i class="fa fa-pencil-square-o"></i> Edit Profile</a>
                 </div>
@@ -385,6 +403,12 @@
 
               <div class="right-panel-sec">
                 <div class="row">
+                  <div class="col-md-12 no-padding">
+                    <div class="title-section">
+                      <span>Edit Profile</span>
+                      <a href="profile.html" class="btn btn-green btn-back-review">Back</a>
+                    </div>
+                  </div>
                   <div class="col-md-7 main-content">
                     <div class="main-title">
                       Avatar
@@ -605,12 +629,15 @@
             </div>
             <div class="res">
               <div class="col-xs-12 main-content-res">
+                <div class="col-md-12 no-padding">
+                  <div class="title-section">
+                    <span>Edit Profile</span>
+                    <a href="profile.html" class="btn btn-green btn-back-review">Back</a>
+                  </div>
+                </div>
                 <div class="left-panel-sec" style="margin-top: 0px;">
-                  <div class="wrap-panel profile-caption-res">
+                  <div class="wrap-panel profile-caption-res" style="border-top: 0px;">
                     <img src="assets/img/luffy.png" alt="luffy" class="img-circle center-block user-big" />
-                    <div class="title link-menu-top">
-                      <a href="profile.html" ><i class="fa fa-user"></i> Profile</a>
-                    </div>
                     <div class="title link-menu">
                       <a href="edit-profile.html" class="active-link"><i class="fa fa-pencil-square-o"></i> Edit Profile</a>
                     </div>
@@ -762,7 +789,7 @@
                         <span class="status-choose pad-l-10">No file choosen</span>
                         <div class="title-notice pad-t-6">JPG, GIF or PNG, Max size: 2MB</div>
                       </div>
-                      <div class="col-md-12 col-xs-12 no-padding mar-t-30" style="margin-left: -5px;">
+                      <div class="col-md-12 col-xs-12 no-padding mar-t-30">
                         <form class="form-setting">
                           <div class="form-group">
                             <div class="sub-title">Your Name</div>
@@ -970,7 +997,14 @@
               </div>
             </div>
           </div>
-
+          
+          <div role="tabpanel" class="tab-pane" id="favorite-profile">
+            test1
+          </div>
+          
+          <div role="tabpanel" class="tab-pane" id="logout">
+            test2
+          </div>
         </div>
       </div>
     </div>
@@ -984,6 +1018,7 @@
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/jquery.sliderTabs.js"></script>
   <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <script src="assets/js/trigger.js"></script>
   <script>    
     // calculate and set .draggable width
 

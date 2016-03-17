@@ -654,9 +654,25 @@
 
           <ul class="nav navbar-nav navbar-right menu">
             <li>
-              <a href="../navbar/">
-                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+              <a href="#" data-toggle="collapse" data-target="#search-collapse">
+                <span class="glyphicon glyphicon-search" aria-hidden="true" ></span>
               </a>
+            </li>
+            <li id="noti_Container">
+             <div id="noti_Counter"></div>   <!--SHOW NOTIFICATIONS COUNT.-->
+
+              <div id="noti_Button">
+                <a href="#">
+                  <span class="fa fa-bell-o" aria-hidden="true"></span>
+                </a>
+              </div>    
+
+              <!--THE NOTIFICAIONS DROPDOWN BOX.-->
+              <div id="notifications">
+                <h3 class="notif-title">Notifications</h3>
+                <div style="height:300px;"></div>
+                <div class="seeAll"><a href="#">See All</a></div>
+              </div>
             </li>
             <li class="active">
               <a href="profile.html">Luffy D'monkeys</a>
@@ -669,7 +685,14 @@
         <!--/.nav-collapse -->
       </div>
     </nav>
-
+    <div id="search-collapse" class="collapse" style="position: absolute; right: 213px;">
+      <div class="container no-padding">
+        <div class="input-group pull-right w-form-search">
+          <input type="text" class="form-control" name="test" placeholder="Search for snippets and hit enter" style="height: 40px;">
+        </div>
+      </div>
+    </div>
+    
     <div class="background-cover">
       <div class="overlay-cover"></div>
       <div class="bottom-cover"></div>
@@ -702,7 +725,7 @@
       </div>    <!-- end container -->
     </div>    <!-- end background-cover -->
 
-    <div class="col-md-12 tab-top">
+    <div class="col-md-12 tab-top no-padding">
       <div class="container">
         <div class="row">
           <div class="draggable-container">
@@ -1700,10 +1723,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="assets/js/autosize.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-<!--
-    <script src="assets/js/jquery.sliderTabs.js"></script>
-    <script src="assets/js/jssor.slider.min.js"></script>
--->
+    <script src="assets/js/trigger.js"></script>
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 
     <script>
