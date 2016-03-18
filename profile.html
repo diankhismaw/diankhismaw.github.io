@@ -131,11 +131,16 @@
         </ul>
 
         <ul class="nav navbar-nav navbar-right menu">
-          <li>
+          <li class="hide-search-res">
             <a href="#" data-toggle="collapse" data-target="#search-collapse">
               <span class="glyphicon glyphicon-search" aria-hidden="true" ></span>
             </a>
           </li>
+          <li class="search-res">  
+           <input type="text" class="search-query mac-style" placeholder="Search">
+            <button type="submit" class="btn btn-search-res"><i class="glyphicon glyphicon-search"></i></button>
+          </li>
+          
           <li id="noti_Container">
            <div id="noti_Counter"></div>   <!--SHOW NOTIFICATIONS COUNT.-->
             
@@ -148,14 +153,79 @@
             <!--THE NOTIFICAIONS DROPDOWN BOX.-->
             <div id="notifications">
               <h3 class="notif-title">Notifications</h3>
-              <div style="height:300px;"></div>
-              <div class="seeAll"><a href="#">See All</a></div>
+              <div style="height:auto;">
+                <div class="notif-fill">
+                  <div class="ava-notif">
+                    <img src="assets/img/luffy.png">
+                  </div>
+                  
+                  <div class="middle-section">
+                    <div class="username-notif">
+                      <span>Monkey D'luffy</span>
+                      <span>Upvote your post.</span>
+                      <div class="date-notif">
+                        23 Days ago
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="post-notif">
+                    <img src="assets/img/cute.jpg">
+                  </div>
+                </div>
+                
+                <div class="notif-fill">
+                  <div class="ava-notif">
+                    <img src="assets/img/luffy.png">
+                  </div>
+                  
+                  <div class="middle-section">
+                    <div class="username-notif">
+                      <span>Monkey D'luffy</span>
+                      <span>Upvote your post.</span>
+                      <div class="date-notif">
+                        23 Days ago
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="post-notif">
+                    <img src="assets/img/cute.jpg">
+                  </div>
+                </div>
+                
+                <div class="notif-fill">
+                  <div class="ava-notif">
+                    <img src="assets/img/luffy.png">
+                  </div>
+                  
+                  <div class="middle-section">
+                    <div class="username-notif">
+                      <span>Monkey D'luffy</span>
+                      <span>Upvote your post.</span>
+                      <div class="date-notif">
+                        23 Days ago
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="post-notif">
+                    <img src="assets/img/cute.jpg">
+                  </div>
+                </div>
+              </div>
+              <div class="btn btn-see-all seeAll"><a href="#">See All</a></div>
             </div>
           </li>
+          
           <li class="active">
-            <a href="profile.html">Luffy D'monkeys</a>
+            <a href="profile.html" style="padding-top: 4px; padding-bottom: 2px;">
+              <div class="profile-picture-nav">
+                <img src="assets/img/luffy.png">
+              </div>
+            </a>
           </li>
-          <li class="mar-t-10 upload-triger">
+          <li class="upload-triger">
             <a href="#" data-toggle="modal" data-target="#upload" type="button" class="btn btn-green">Upload</a>
           </li>
         </ul>
@@ -163,6 +233,8 @@
       <!--/.nav-collapse -->
     </div>
   </nav>
+  
+  <!-- Search Box -->
   <div id="search-collapse" class="collapse" style="position: absolute; right: 213px;">
     <div class="container no-padding">
       <div class="input-group pull-right w-form-search">
@@ -170,7 +242,9 @@
       </div>
     </div>
   </div>
-
+  <!-- End Search Box -->
+  
+  <!-- Background Cover -->
   <div class="background-cover">
     <div class="overlay-cover"></div>
     <div class="bottom-cover"></div>
@@ -266,7 +340,7 @@
                 <div class="title link-menu">
                   <a href="edit-profile.html"><i class="fa fa-pencil-square-o"></i> Edit Profile</a>
                 </div>
-                <div class="title link-menu">
+                <div class="title link-menu" style="margin-top: -1px;">
                   <a href="setting-profile.html"><i class="fa fa-cog"></i> Settings</a>
                 </div>
                 <div class="content-panel">
@@ -583,7 +657,7 @@
                   <div class="title link-menu">
                     <a href="edit-profile.html"><i class="fa fa-pencil-square-o"></i> Edit Profile</a>
                   </div>
-                  <div class="title link-menu">
+                  <div class="title link-menu" style="margin-top: -1px;">
                     <a href="setting-profile.html"><i class="fa fa-cog"></i> Settings</a>
                   </div>
                   <div class="content-panel">
