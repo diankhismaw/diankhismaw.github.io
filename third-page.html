@@ -214,13 +214,31 @@
   </div>
   <!-- End Search Box -->
 
+  <!-- Background Cover -->
   <div class="background-cover">
     <div class="overlay-cover"></div>
     <div class="bottom-cover"></div>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <ul class="text-center list-unstyled list-place-other row">
+
+          <div class="img-profile">
+            <img src="assets/img/luffy.png" alt="logo-big" />
+          </div>
+
+          <div class="info-account">
+            <div class="name-user">Dian Khisma Wijaya</div>
+            <div class="bio">
+              I’m young web designer, try to make you laugh at here, be awesome with me and have fun together
+            </div>
+            <div class="nation">
+              <i class="fa fa-circle"></i>
+              <a href="#"> Indonesia</a>
+              <i class="fa fa-circle"></i>
+            </div>
+          </div>
+          
+          <ul class="text-center list-unstyled list-place row">
             <li class="list-followers">
               <a href="#">
                 <h5>FOLLLOWING</h5>
@@ -239,8 +257,28 @@
                 <h2>990</h2>
               </a>
             </li>
+            <li class="right-button">
+              
+              <button class="btn btn-dropdown btn-others dropdown-toggle" id="others-profile" type="button" data-toggle="dropdown">
+                <i class="fa fa-ellipsis-v"></i>
+              </button>
+              <ul class="dropdown-menu edit-cover-nores" role="menu" aria-labelledby="edit-cover">
+                <li><a href="#"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Change cover photo</a></li>
+                <li><a href="#"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Change profile picture</a></li>
+              </ul>
+            </li>
+            <li class="others-btn-res">
+              <button class="btn btn-dropdown btn-others dropdown-toggle" id="others-profile" type="button" data-toggle="dropdown">
+                <i class="fa fa-ellipsis-v"></i>
+              </button>
+              <ul class="dropdown-menu menu-others-btn" role="menu" aria-labelledby="others-profile">
+                <li><a href="#"><i class="fa fa-picture-o"></i>Change cover photo</a></li>
+                <li><a href="#"><i class="fa fa-picture-o"></i>Change profile picture</a></li>
+                <li><a href="#"><i class="fa fa-envelope-o"></i>Message</a></li>
+              </ul>
+            </li>
           </ul>
-
+          
         </div>
         <!-- end col-md-12 -->
       </div>
@@ -258,18 +296,18 @@
             <li role="presentation" class="active"><a href="#anime" aria-controls="anime" role="tab" data-toggle="tab">Anime</a></li>
             <li role="presentation"><a href="#manga" aria-controls="manga" role="tab" data-toggle="tab">Manga</a></li>
             <li role="presentation"><a href="#favorite" aria-controls="favorite" role="tab" data-toggle="tab">Favorite</a></li>
-            <li class="dropdown hide-dropdown-res pull-right">
+            <li class="dropdown hide-dropdown-res pull-right" style="margin-right: 3px;">
               <a href="#" class="dropdown-toggle dropdown-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                    Anime Status
-                                    <span class="caret"></span>
-                                </a>
+                Anime Status
+                <span class="caret"></span>
+              </a>
               <ul class="dropdown-menu">
                 <li><a href="#">Available</a></li>
                 <li><a href="#">Available</a></li>
                 <li><a href="#">Available</a></li>
               </ul>
             </li>
-            <li class="dropdown hide-dropdown-res pull-right">
+            <li class="dropdown hide-dropdown-res pull-right" style="margin-right: 3px;">
               <a data-toggle="dropdown" class="btn dropdown-toggle dropdown-nav">Genre <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li>

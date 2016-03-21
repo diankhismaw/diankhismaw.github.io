@@ -244,6 +244,7 @@
   </div>
   <!-- end search box -->
   
+  <!-- Background Cover -->
   <div class="background-cover">
     <div class="overlay-cover"></div>
     <div class="bottom-cover"></div>
@@ -287,13 +288,16 @@
               </a>
             </li>
             <li class="right-button">
-              <button type="button" class="btn btn-green dropdown-toggle" id="edit-cover" data-toggle="dropdown">Edit &nbsp;&nbsp; <i class="fa fa-camera"></i></button>
+              <button type="button" class="btn btn-green">Message</button>
+              &nbsp;
+              
+              <button class="btn btn-dropdown btn-others dropdown-toggle" id="others-profile" type="button" data-toggle="dropdown">
+                <i class="fa fa-ellipsis-v"></i>
+              </button>
               <ul class="dropdown-menu edit-cover-nores" role="menu" aria-labelledby="edit-cover">
                 <li><a href="#"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Change cover photo</a></li>
                 <li><a href="#"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Change profile picture</a></li>
               </ul>
-              &nbsp;
-              <button type="button" class="btn btn-trans">Message</button>
             </li>
             <li class="others-btn-res">
               <button class="btn btn-dropdown btn-others dropdown-toggle" id="others-profile" type="button" data-toggle="dropdown">
@@ -306,7 +310,7 @@
               </ul>
             </li>
           </ul>
-
+          
         </div>
         <!-- end col-md-12 -->
       </div>
@@ -612,14 +616,15 @@
                     <a href="profile.html" class="btn btn-green btn-back-review">Back</a>
                   </div>
                 </div>
-                <div class="left-panel-sec">
+                <a href="#" class="btn btn-more-detail" onclick="toggler('leftProfile3');"> More info </a>
+                <div id="leftProfile3" class="left-panel-sec left-panel-hide">
                   <div class="wrap-panel profile-caption-res" style="border-top: 0px;">
                     <img src="assets/img/luffy.png" alt="luffy" class="img-circle center-block user-big" />
                     <div class="title link-menu">
                       <a href="edit-profile.html"><i class="fa fa-pencil-square-o"></i> Edit Profile</a>
                     </div>
                     <div class="title link-menu" style="margin-top: -1px;">
-                      <a href="setting-profile.html"><i class="fa fa-cog"></i> Settings</a>
+                      <a href="setting-profile.html" class="active-link"><i class="fa fa-cog"></i> Settings</a>
                     </div>
                     <div class="content-panel">
                       <table class="table info-table mar-t-30">
@@ -1098,6 +1103,11 @@
       position: "top",
       mousewheel: true
     });
+  </script>
+  <script>
+    function toggler(divId) {
+      $("#" + divId).toggle();
+    }
   </script>
 </body>
 

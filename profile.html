@@ -288,13 +288,16 @@
               </a>
             </li>
             <li class="right-button">
-              <button type="button" class="btn btn-green dropdown-toggle" id="edit-cover" data-toggle="dropdown">Edit &nbsp;&nbsp; <i class="fa fa-camera"></i></button>
+              <button type="button" class="btn btn-green">Message</button>
+              &nbsp;
+              
+              <button class="btn btn-dropdown btn-others dropdown-toggle" id="others-profile" type="button" data-toggle="dropdown">
+                <i class="fa fa-ellipsis-v"></i>
+              </button>
               <ul class="dropdown-menu edit-cover-nores" role="menu" aria-labelledby="edit-cover">
                 <li><a href="#"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Change cover photo</a></li>
                 <li><a href="#"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Change profile picture</a></li>
               </ul>
-              &nbsp;
-              <button type="button" class="btn btn-trans">Message</button>
             </li>
             <li class="others-btn-res">
               <button class="btn btn-dropdown btn-others dropdown-toggle" id="others-profile" type="button" data-toggle="dropdown">
@@ -650,8 +653,9 @@
             </div>
             <div class="res">
               <div class="col-xs-12 main-content-res">
-                <div class="left-panel-sec">
-
+                <a href="#" class="btn btn-more-detail" onclick="toggler('leftProfile');"> More info </a>
+                <div id="leftProfile" class="left-panel-sec left-panel-hide">
+                  
                 <div class="wrap-panel profile-caption-res">
                   <img src="assets/img/luffy.png" alt="luffy" class="img-circle center-block user-big" />
                   <div class="title link-menu">
@@ -1180,6 +1184,12 @@
       e.preventDefault()
       $(this).tab('show')
     })
+  </script>
+  
+  <script>
+   function toggler(divId) {
+    $("#" + divId).toggle();
+   }
   </script>
   
 </body>

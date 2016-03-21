@@ -782,8 +782,9 @@ i.fa.fa-circle {
 .link-menu {
   border-bottom: 1px solid #e5e5e5;
   padding-bottom: 12px !important;
+  margin-bottom: -1px;
 }
-.link-menu-top {
+. link-menu-top {
   border-bottom: 1px solid #e5e5e5;
   border-top: 1px solid #e5e5e5;
   margin-bottom: 1px;
@@ -1256,7 +1257,7 @@ input[type=radio]:checked + label:before {
   display: block;
   margin-top: 40px;
   margin-bottom: 20px;
-  padding: 15px;
+  padding: 10px;
 }
 .ads-view {
   padding-left: 45px;
@@ -1685,7 +1686,6 @@ input[type=radio]:checked + label:before {
   display: none !important;
 }
 .container-category {
-  margin: 0px -5px;
   padding: 0px !important;
 }
 .dropdown-nav {
@@ -2372,7 +2372,7 @@ input#anime4 {
 --------------------------------*/
 
 .anime-post {
-  margin-top: -19px;
+  margin-top: -15px;
   background: #f9f9f9;
   padding: 10px 15px;
   font-size: 15px;
@@ -2706,7 +2706,7 @@ input#anime4 {
   width: 320px;
 }
 .edit-cover-nores {
-  left: 804px;
+  left: 930px;
 }
 
 /*---------------------------------------------------------
@@ -2723,7 +2723,7 @@ input#anime4 {
   width: 22px;
   height: 22px;
   line-height: 22px;
-  margin: 12px 5px 0 10px;
+  margin: 10px 15px 0 10px;
   cursor: pointer;
 }
 #noti_Button > a > span {
@@ -2744,7 +2744,7 @@ input#anime4 {
   font-size: 11px;
   font-weight: normal;
   padding: 0px 2px;
-  margin: 4px 0px 0px 22px;
+  margin: 2px 0px 0px 21px;
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -2906,5 +2906,8 @@ input#anime4 {
   width: 30px;
 }
 .profile-picture-nav > img{
-  border-radius: 4px;
+  border-radius: 100%;
+}
+.hide-search-res{
+  margin-right: 10px;
 }

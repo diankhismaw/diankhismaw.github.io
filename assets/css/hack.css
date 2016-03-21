@@ -6,8 +6,9 @@
   color: #fff;
   margin-bottom: 0px;
 }
-#search-collapse{
-  padding-top: 13px !important;
+#search-collapse {
+  padding-top: 0px !important;
+  margin-right: 102px;
 }
 .navbar-brand > img {
   width: 30px;
@@ -15,7 +16,7 @@
 .nav > li > a {
   color: #fff;
   font-size: 13px;
-  padding: 10px 10px;
+  padding: 11px 10px;
 }
 .navbar-brand {
   height: 40px;

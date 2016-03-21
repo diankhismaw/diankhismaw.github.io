@@ -645,6 +645,9 @@
   .wrap-main {
     margin-top: 40px;
   }
+  .wrap-panel {
+    width: 100% !important;
+  }
   .banner img {
     width: 100%;
   }
@@ -682,6 +685,9 @@
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .wrap-main {
     padding: 0px;
+  }
+  .wrap-panel {
+    width: 100% !important;
   }
   .wrapper-avatar {
     margin-left: 0px;
