@@ -582,7 +582,13 @@ i.fa.fa-circle {
 /*------------------------------- 
 			      Fifth Page 
 -------------------------------*/
-
+.wrap-btn-thread{
+  text-align: right;
+  padding-top: 22px;
+}
+.btn-thread > i{
+  color: #17ae97;
+}
 .tag {
   float: left;
   margin-left: 70px;
@@ -1698,12 +1704,12 @@ input[type=radio]:checked + label:before {
 /* alphabet nav*/
 
 .alphabet-nav {
-  margin-top: -15px;
+  margin-top: -10px;
   margin-bottom: 20px;
   border-bottom: 1px solid #efefef;
 }
 .alphabet-nav > a {
-  padding: 4px 11px;
+  padding: 5px 11px;
   border-right: 1px solid #efefef;
   text-align: center;
   display: inline-block;
@@ -2910,4 +2916,36 @@ input#anime4 {
 }
 .hide-search-res{
   margin-right: 10px;
+}
+.accor-readmore{
+  margin: 28px 0px 0px;
+  padding: 0px;
+}
+.panel-body.review-spec {
+  padding: 7px;
+  font-size: 14px;
+  color: #6B6B6B;
+  padding-left: 34px;
+}
+
+
+/*---------------------------------------------------------
+                        Padding Login 
+-----------------------------------------------------------*/
+
+.padding-login {
+  padding: 8px 12px !important;
+  cursor: pointer;
+}
+.cricles-page-login{
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.cricles-page-signup{
+  margin-top: 40px;
+}
+.panel-login-page{
+  width: 60%;
+  margin: 150px auto;
+  float: none;
 }

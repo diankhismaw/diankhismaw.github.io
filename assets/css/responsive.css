@@ -1284,3 +1284,35 @@
     margin-top: -8px;
   }
 }
+/*------------------------------------------------
+                  Login and Sign up Page
+--------------------------------------------------*/
+@media only screen and (min-width: 320px) and (max-width: 479px){
+  .panel-login-page{
+    width: 100%;
+  }
+  .social-hide-res{
+    display: none;
+  }
+  .btn-res{
+    width: 100%;
+  }
+  .social-show-res{
+    display: inline-block;
+  }
+  .cricles-page-signup{
+    margin-top: 5px;
+    margin-left: 103px;
+  }
+  .bottom-connect{
+    margin-bottom: 20px;
+  }
+  .connect-r-gp{
+    width: 225px;
+    padding: 10px 0px;
+  }
+  .connect-r-fb{
+    width: 225px;
+    padding: 10px 0px;
+  }
+}

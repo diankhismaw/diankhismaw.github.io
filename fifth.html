@@ -106,7 +106,7 @@
   <!-- end modal -->
 
   <!-- Static navbar -->
-  <nav class="navbar navbar-chocolate navbar-static-top">
+  <nav class="navbar navbar-chocolate navbar-static-top navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -450,10 +450,15 @@
 
                       <div class="col-md-4">
                         <div class="trolls" style="margin-top: 20px;">
-                          <a href="">
+                          <a href="#" class="btn dropdown-toggle" id="allThings" type="button" data-toggle="dropdown">
                             <span class="linky">All The Things</span>
                             <span>&nbsp;&nbsp;&nbsp;<img src="assets/img/icon/post/dropdown.png"></span>
                           </a>
+                          <ul class="dropdown-menu" role="menu" aria-labelledby="allThings">
+                            <li><a href="#">Art</a></li>
+                            <li><a href="#">Gif</a></li>
+                            <li><a href="#">Manga</a></li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -971,10 +976,15 @@
 
                         <div class="col-md-4">
                           <div class="trolls" style="margin-top: 20px;">
-                            <a href="">
+                            <a href="#" class="btn dropdown-toggle" id="allThings" type="button" data-toggle="dropdown">
                               <span class="linky">All The Things</span>
                               <span>&nbsp;&nbsp;&nbsp;<img src="assets/img/icon/post/dropdown.png"></span>
                             </a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="allThings">
+                              <li><a href="#">Art</a></li>
+                              <li><a href="#">Gif</a></li>
+                              <li><a href="#">Manga</a></li>
+                            </ul>
                           </div>
                         </div>
                       </div>
@@ -1479,7 +1489,7 @@
                     <!-- tab -->
                     <div class="row">
 
-                      <div class="col-md-8">
+                      <div class="col-md-8 col-xs-8">
                         <ul id="pop" class="nav pop-tabs" role="tablist" style="margin-top: 10px;">
                           <li role="presentation" class="mar-rm-5">
                             <a href="#pinned" role="tab" data-toggle="tab" aria-controls="pinned">Pinned <i class="fa fa-bookmark"></i></a>
@@ -1491,6 +1501,13 @@
                             <a href="#aaa" role="tab" data-toggle="tab" aria-controls="aaa">News</a>
                           </li>
                         </ul>
+                      </div>
+                      
+                      <div class="col-md-4 col-xs-4 wrap-btn-thread">
+                        <a href="#" class="btn-thread">
+                          <i class="fa fa-plus-circle"></i>
+                          New Thread
+                        </a>
                       </div>
                     </div>
 
@@ -1936,6 +1953,13 @@
                             </li>
                           </ul>
                         </div>
+                        
+                        <div class="col-md-12 col-xs-12 wrap-btn-thread" style="text-align:left;">
+                          <a href="#" class="btn-thread">
+                            <i class="fa fa-plus-circle"></i>
+                            New Thread
+                          </a>
+                        </div>
                       </div>
 
                       <div class="tab-content" style="display:inline-block;">
@@ -2374,6 +2398,13 @@
                           </li>
                         </ul>
                       </div>
+                      
+                      <div class="col-md-4 wrap-btn-thread">
+                        <a href="#" class="btn-thread">
+                          <i class="fa fa-plus-circle"></i>
+                          New Thread
+                        </a>
+                      </div>
                     </div>
 
                     <div class="tab-content">
@@ -2809,6 +2840,13 @@
                               <a href="#news-manga-res" role="tab" data-toggle="tab" aria-controls="news-manga-res">News</a>
                             </li>
                           </ul>
+                        </div>
+                        
+                        <div class="col-xs-12 wrap-btn-thread" style="text-align:left;">
+                          <a href="#" class="btn-thread">
+                            <i class="fa fa-plus-circle"></i>
+                            New Thread
+                          </a>
                         </div>
                       </div>
 
@@ -3253,6 +3291,13 @@
                           </li>
                         </ul>
                       </div>
+                      
+                      <div class="col-md-4 col-xs-4 wrap-btn-thread">
+                        <a href="#" class="btn-thread">
+                          <i class="fa fa-plus-circle"></i>
+                          New Thread
+                        </a>
+                      </div>
                     </div>
 
                     <div class="tab-content">
@@ -3693,6 +3738,13 @@
                               <a href="#news-theories-res" role="tab" data-toggle="tab" aria-controls="news-theories-res">News</a>
                             </li>
                           </ul>
+                        </div>
+                        
+                        <div class="col-xs-12 wrap-btn-thread" style="text-align:left;">
+                          <a href="#" class="btn-thread">
+                            <i class="fa fa-plus-circle"></i>
+                            New Thread
+                          </a>
                         </div>
                       </div>
 
@@ -6166,10 +6218,11 @@
                       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra </p>
 
                       <p class="mar-t-20">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem</p>
-                      <div class="col-md-12 no-padding chart-read-more">
+
+                      <div class="col-md-12 no-padding mar-b-10">
                         <div class="col-md-6 no-padding">
                           <div class="review-story">
-                            <a href="#">
+                            <a href="#collapse1" data-toggle="collapse" data-parent="#accordion">
                               <img src="assets/img/plus-circle-o.png">
                               <span>Story</span>
                             </a>
@@ -6180,10 +6233,16 @@
                             <span class="green-tag">Story: 5.0</span>
                           </div>
                         </div>
-
+                        <div id="collapse1" class="panel-collapse accor-readmore collapse">
+                          <div class="panel-body review-spec">
+                            Lorem ipsum about your Story
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 no-padding mar-b-10">
                         <div class="col-md-6 no-padding">
                           <div class="review-story">
-                            <a href="#">
+                            <a href="#collapse2" data-toggle="collapse" data-parent="#accordion">
                               <img src="assets/img/plus-circle-o.png">
                               <span>Animation</span>
                             </a>
@@ -6194,10 +6253,16 @@
                             <span class="green-tag">Animation: 5.0</span>
                           </div>
                         </div>
-
+                        <div id="collapse2" class="panel-collapse accor-readmore collapse">
+                          <div class="panel-body review-spec">
+                            Lorem ipsum about your Animation
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 no-padding mar-b-10">
                         <div class="col-md-6 no-padding">
                           <div class="review-story">
-                            <a href="#">
+                            <a href="#collapse3" data-toggle="collapse" data-parent="#accordion">
                               <img src="assets/img/plus-circle-o.png">
                               <span>Sound</span>
                             </a>
@@ -6208,10 +6273,16 @@
                             <span class="green-tag">Music/Sound: 5.0</span>
                           </div>
                         </div>
-
+                        <div id="collapse3" class="panel-collapse accor-readmore collapse">
+                          <div class="panel-body review-spec">
+                            Lorem ipsum about your Music/Sound
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 no-padding mar-b-10">
                         <div class="col-md-6 no-padding">
                           <div class="review-story">
-                            <a href="#">
+                            <a href="#collapse4" data-toggle="collapse" data-parent="#accordion">
                               <img src="assets/img/plus-circle-o.png">
                               <span>Character</span>
                             </a>
@@ -6222,13 +6293,33 @@
                             <span class="green-tag">Character: 5.0</span>
                           </div>
                         </div>
-
-                        <div class="col-md-12 no-padding pull-right">
+                        <div id="collapse4" class="panel-collapse accor-readmore collapse">
+                          <div class="panel-body review-spec">
+                            Lorem ipsum about your Character
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 no-padding mar-b-10">
+                        <div class="col-md-6 no-padding">
+                          <div class="review-story">
+                            <a href="#collapse5" data-toggle="collapse" data-parent="#accordion">
+                              <img src="assets/img/plus-circle-o.png">
+                              <span>Enjoyment</span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-md-6 no-padding pull-right">
                           <div class="tag tag-green-more">
                             <span class="green-tag">Enjoyment: 5.0</span>
                           </div>
                         </div>
+                        <div id="collapse5" class="panel-collapse accor-readmore collapse">
+                          <div class="panel-body review-spec">
+                            Lorem ipsum about your Enjoyment
+                          </div>
+                        </div>
                       </div>
+                      
                       <p class="last-page">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem</p>
                     </div>
                   </div>
@@ -6562,6 +6653,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra </p>
 
                         <p class="mar-t-20">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem</p>
+<!--
                         <div class="col-xs-12 no-padding chart-read-more">
                           <div class="col-xs-6 no-padding mar-b-15">
                             <div class="review-story">
@@ -6618,13 +6710,126 @@
                               <span class="green-tag">Character: 5.0</span>
                             </div>
                           </div>
-
-                          <div class="col-xs-12 no-padding pull-right mar-b-15">
+                          
+                          <div class="col-xs-6 no-padding mar-b-15">
+                            <div class="review-story">
+                              <a href="#">
+                                <img src="assets/img/plus-circle-o.png">
+                                <span>Enjoyment</span>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="col-xs-6 no-padding pull-right mar-b-15">
                             <div class="tag tag-green-more">
                               <span class="green-tag">Enjoyment: 5.0</span>
                             </div>
                           </div>
                         </div>
+                        
+-->
+                        <div class="col-xs-12 no-padding chart-read-more">
+                          <div class="col-md-12 no-padding mar-b-10" style="display: inline-block; width: 100%;">
+                            <div class="col-md-6 col-xs-6 no-padding">
+                              <div class="review-story">
+                                <a href="#collapse1" data-toggle="collapse" data-parent="#accordion">
+                                  <img src="assets/img/plus-circle-o.png">
+                                  <span>Story</span>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-md-6 col-xs-6 no-padding pull-right">
+                              <div class="tag tag-green-more">
+                                <span class="green-tag">Story: 5.0</span>
+                              </div>
+                            </div>
+                            <div id="collapse1" class="panel-collapse accor-readmore collapse">
+                              <div class="panel-body review-spec">
+                                Lorem ipsum about your Story
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12 no-padding mar-b-10" style="display: inline-block; width: 100%;">
+                            <div class="col-md-6 col-xs-6 no-padding">
+                              <div class="review-story">
+                                <a href="#collapse2" data-toggle="collapse" data-parent="#accordion">
+                                  <img src="assets/img/plus-circle-o.png">
+                                  <span>Animation</span>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-md-6 col-xs-6 no-padding pull-right">
+                              <div class="tag tag-green-more">
+                                <span class="green-tag">Animation: 5.0</span>
+                              </div>
+                            </div>
+                            <div id="collapse2" class="panel-collapse accor-readmore collapse">
+                              <div class="panel-body review-spec">
+                                Lorem ipsum about your Animation
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12 no-padding mar-b-10" style="display: inline-block; width: 100%;">
+                            <div class="col-md-6 col-xs-6 no-padding">
+                              <div class="review-story">
+                                <a href="#collapse3" data-toggle="collapse" data-parent="#accordion">
+                                  <img src="assets/img/plus-circle-o.png">
+                                  <span>Sound</span>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-md-6 col-xs-6 no-padding pull-right">
+                              <div class="tag tag-green-more">
+                                <span class="green-tag">Music/Sound: 5.0</span>
+                              </div>
+                            </div>
+                            <div id="collapse3" class="panel-collapse accor-readmore collapse">
+                              <div class="panel-body review-spec">
+                                Lorem ipsum about your Music/Sound
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12 no-padding mar-b-10" style="display: inline-block; width: 100%;">
+                            <div class="col-md-6 col-xs-6 no-padding">
+                              <div class="review-story">
+                                <a href="#collapse4" data-toggle="collapse" data-parent="#accordion">
+                                  <img src="assets/img/plus-circle-o.png">
+                                  <span>Character</span>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-md-6 col-xs-6 no-padding pull-right">
+                              <div class="tag tag-green-more">
+                                <span class="green-tag">Character: 5.0</span>
+                              </div>
+                            </div>
+                            <div id="collapse4" class="panel-collapse accor-readmore collapse">
+                              <div class="panel-body review-spec">
+                                Lorem ipsum about your Character
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12 no-padding mar-b-10" style="display: inline-block; width: 100%;">
+                            <div class="col-md-6 col-xs-6 no-padding">
+                              <div class="review-story">
+                                <a href="#collapse5" data-toggle="collapse" data-parent="#accordion">
+                                  <img src="assets/img/plus-circle-o.png">
+                                  <span>Enjoyment</span>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-md-6 col-xs-6 no-padding pull-right">
+                              <div class="tag tag-green-more">
+                                <span class="green-tag">Enjoyment: 5.0</span>
+                              </div>
+                            </div>
+                            <div id="collapse5" class="panel-collapse accor-readmore collapse">
+                              <div class="panel-body review-spec">
+                                Lorem ipsum about your Enjoyment
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
                         <p class="last-page">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem</p>
                       </div>
                     </div>
@@ -6726,8 +6931,8 @@
                         <div class="input-text-comment">
                           <textarea class="form-control form-comment" rows="3" placeholder="What's on your mind"></textarea>
                           <a href="" class="pull-right small-btn green-bg">
-                                                            Comment
-                                                        </a>
+                            Comment
+                          </a>
                         </div>
                       </div>
 
@@ -6914,9 +7119,9 @@
                       <input type="checkbox" name="option" id="spoiler-review" checked/>
                       <label for="spoiler-review">
                         <span class="fa-stack">
-                                                      <i class="fa fa-square-o fa-stack-1x"></i>
-                                                      <i class="fa fa-check fa-stack-1x"></i>
-                                                  </span>
+                          <i class="fa fa-square-o fa-stack-1x"></i>
+                          <i class="fa fa-check fa-stack-1x"></i>
+                        </span>
                       </label>
                     </div>
 
