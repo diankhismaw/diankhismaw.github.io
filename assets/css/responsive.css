@@ -438,7 +438,8 @@
   }
   .list-place {
     padding: 0px 0px;
-    margin-top: 75px;
+    margin-top: 35px;
+    margin-left: -10px;
   }
   .list-place-other {
     margin-top: 418px;

@@ -128,14 +128,15 @@ img {
 }
 .bio {
   font-size: 16px;
-  line-height: 16px;
+  line-height: 25px;
   margin-top: 10px;
 }
 .list-unstyled {
   margin-bottom: 0px;
 }
 .list-place {
-  margin-top: 100px;
+  margin-top: 82px;
+  margin-left: 0px;
 }
 .list-followers {
   display: inline-block;
@@ -350,7 +351,8 @@ i.fa.fa-circle {
   width: 100%;
 }
 .social-network ul {
-  margin-left: 15px;
+  display: inline-block;
+  margin-left: 0px;
 }
 .social-network li {
   padding: 10px;
@@ -381,7 +383,7 @@ i.fa.fa-circle {
 }
 .link-bottom ul {
   display: inline-table;
-  width: 90%;
+  width: 100%;
   text-align: center;
 }
 .link-bottom li {
@@ -773,9 +775,9 @@ i.fa.fa-circle {
   font-weight: 300;
 }
 .modal-content .close {
-  color: #dddddd;
-  font-size: 30px;
+  font-size: 35px;
   padding-right: 10px;
+  font-family: sans-serif;
 }
 
 /* profile */
@@ -1793,7 +1795,7 @@ input[type=radio]:checked + label:before {
   display: none;
 }
 .list-place-other {
-  margin-top: 417px;
+  margin-top: 413px;
   margin-left: 0px;
 }
 
@@ -1852,7 +1854,9 @@ input[type=radio]:checked + label:before {
   font-family: sans-serif;
 }
 .upload-bottom {
-  padding: 0px 20px;
+  padding: 0px 52px;
+  display: inline-block;
+  width: 100%;
 }
 .panel-bottom {
   padding: 0px;
@@ -2029,7 +2033,7 @@ input#anime4 {
   list-style: none;
 }
 .wrap-filter-credit > label {
-  margin-left: 74px;
+  margin-left: 60px;
   margin-bottom: 20px;
 }
 .socmed-credit {
@@ -2949,3 +2953,10 @@ input#anime4 {
   margin: 150px auto;
   float: none;
 }
+
+
+
+
+
+
+
