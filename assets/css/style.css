@@ -91,18 +91,18 @@ img {
   width: 100%;
   height: 60px;
   background: rgba(26, 26, 26, 0.70);
-  margin-top: 410px;
+  margin-top: 467px;
   position: absolute;
 }
 .overlay-cover {
   width: 100%;
-  height: 470px;
+  height: 527px;
   padding: 0px;
   background: rgba(19, 19, 19, 0.65);
   position: absolute;
 }
 .img-profile {
-  margin-top: 62px;
+  margin-top: 122px;
 }
 .img-profile > img {
   width: 150px;
@@ -342,7 +342,12 @@ i.fa.fa-circle {
   line-height: 24px;
   margin: 0px;
 }
-
+.overlay-other{
+  height: 470px;
+}
+.bottom-cover-other{
+  margin-top: 410px;
+}
 /* social */
 
 .social-network {
@@ -1256,7 +1261,10 @@ input[type=radio]:checked + label:before {
 /*------------------------------
 		VIEW POST PAGE
 --------------------------------*/
-
+.wrap-tab-comment{
+  margin-left: 20px;
+  display: inline-block !important;
+}
 .single-panel {
   background: #fff;
   border: 1px solid #DDDDDD;

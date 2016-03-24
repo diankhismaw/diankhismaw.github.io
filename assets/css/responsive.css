@@ -391,6 +391,9 @@
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 479px) {
+  #popular-category-res{
+    margin-left: 2px;
+  }
   .follow-responsive {
     display: inline-block;
     width: 100%;
@@ -417,7 +420,7 @@
     margin-bottom: 20px;
   }
   .right-inner-addon > i {
-    padding: 13px 245px;
+    padding: 13px 269px;
   }
   .wrap-pop {
     display: inline-block;
@@ -1256,6 +1259,9 @@
   .tab-content > .active{
     display: inline-block;
   }
+  .wrap-tab-comment{
+    margin-left: 6px;
+  }
   .anime-post{
     margin: -15px;
   }
@@ -1299,6 +1305,10 @@
   display: none;
 }
 @media only screen and (min-width: 320px) and (max-width: 479px){
+  .username-notif{
+    width: 100px;
+    margin-top: -7px;
+  }
   .username-notif-page {
     display: inline-block;
     width: 84%;
