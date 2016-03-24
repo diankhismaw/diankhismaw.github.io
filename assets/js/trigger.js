@@ -161,3 +161,40 @@ $(document).ready(function () {
       return false;       // DO NOTHING WHEN CONTAINER IS CLICKED.
   });
 });
+
+$(document).ready(function () {
+  // ANIMATEDLY DISPLAY THE NOTIFICATION COUNTER.
+  $('#noti_Counter_res')
+      .css({ opacity: 0 })
+      .text('7')              // ADD DYNAMIC VALUE (YOU CAN EXTRACT DATA FROM DATABASE OR XML).
+      .css({ top: '-10px' })
+      .animate({ top: '-2px', opacity: 1 }, 500);
+
+  $('#noti_Button_res').click(function () {
+
+      // TOGGLE (SHOW OR HIDE) NOTIFICATION WINDOW.
+      $('#notifications_res').fadeToggle('fast', 'linear', function () {
+          if ($('#notifications_res').is(':hidden')) {
+              $('#noti_Button_res').css('color', '#E4AC38');
+          }
+      });
+
+      $('#noti_Counter_res').fadeOut('slow');                 // HIDE THE COUNTER.
+
+      return false;
+  });
+
+  // HIDE NOTIFICATIONS WHEN CLICKED ANYWHERE ON THE PAGE.
+  $(document).click(function () {
+      $('#notifications_res').hide();
+
+      // CHECK IF NOTIFICATION COUNTER IS HIDDEN.
+      if ($('#noti_Counter_res').is(':hidden')) {
+          // CHANGE BACKGROUND COLOR OF THE BUTTON.
+      }
+  });
+
+  $('#notifications_res').click(function () {
+      return false;       // DO NOTHING WHEN CONTAINER IS CLICKED.
+  });
+});
