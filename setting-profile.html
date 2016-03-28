@@ -21,6 +21,7 @@
   <link href="assets/css/hack.css" rel="stylesheet">
   <link href="assets/css/font-awesome.css" rel="stylesheet">
   <link href="assets/css/jquery-ui.min.css" rel="stylesheet">
+  <link href="assets/css/cropper.min.css" rel="stylesheet">
   <link href="assets/css/responsive.css" rel="stylesheet">
   <link href="assets/css/pop-up.css" rel="stylesheet">
 
@@ -1477,7 +1478,7 @@
                 <i class="fa fa-ellipsis-v"></i>
               </button>
               <ul class="dropdown-menu edit-cover-nores" role="menu" aria-labelledby="edit-cover">
-                <li><a href="#"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Change cover photo</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#crop-cover"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Change cover photo</a></li>
                 <li><a href="#"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Change profile picture</a></li>
               </ul>
             </li>
@@ -1486,7 +1487,7 @@
                 <i class="fa fa-ellipsis-v"></i>
               </button>
               <ul class="dropdown-menu menu-others-btn" role="menu" aria-labelledby="others-profile">
-                <li><a href="#"><i class="fa fa-picture-o"></i>Change cover photo</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#crop-cover"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Change cover photo</a></li>
                 <li><a href="#"><i class="fa fa-picture-o"></i>Change profile picture</a></li>
                 <li><a href="#"><i class="fa fa-envelope-o"></i>Message</a></li>
               </ul>
@@ -1501,6 +1502,27 @@
     <!-- end container -->
   </div>
   <!-- end background-cover -->
+  
+  <!-- Crop cover -->
+  <div class="modal fade" id="crop-cover" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"> Crop Cover Image</h4>
+        </div>
+        <div class="modal-body">
+          <div class="img-container">
+            <img src="assets/img/cover.jpg" alt="Picture">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-green">upload</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Crop -->
 
   <div class="col-md-12 tab-top no-padding">
     <div class="container">
@@ -2094,6 +2116,8 @@
   <script src="assets/js/trigger.js"></script>
   <script src="assets/js/jquery.leanModal.min.js"></script>
   <script src="assets/js/pop-up.js"></script>
+  <script src="assets/js/cropper.min.js"></script>
+  <script src="assets/js/main.js"></script>
   <script>    
     // calculate and set .draggable width
 
