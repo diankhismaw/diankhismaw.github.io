@@ -146,11 +146,10 @@
   color: #17ae97;
   transition: color 0.5s ease-in-out;
 }
-
-.btn-green {
-  background: #17ae97;
+.btn-red {
+  background: #b63c54;
   padding: 8px 30px;
-  color: #fff;
+  color: #fff !important;
 }
 .btn-green:focus {
   background: #17ae97 !important;
@@ -239,7 +238,7 @@
 }
 .medium-btn {
   padding: 5px 10px 4px 10px;
-  
+  ;
 }
 .medium-btn i {
   padding-right: 5px;
@@ -351,7 +350,7 @@
   padding: 0px 8px;
 }
 .btn-others:hover {
-  color: #e4ac39;
+  color: #8DC6FF;
   transition: color .5s ease-in;
 }
 .btn-others:focus{
