@@ -1,7 +1,7 @@
 /* hack bootstrap */
 
 .navbar-red {
-  background: #e4f1fe;
+  background: rgba(91, 107, 142, 0.88);
   height: 50px;
   color: #fff;
   margin-bottom: 0px;
@@ -18,12 +18,12 @@
   width: 30px;
 }
 .nav > li > a {
-  color: #22313F;
+  color: #E6F0F4;
   font-size: 13px;
   padding: 11px 10px;
 }
 .nav > li > a > .caret{
-  color: #b63c54;
+  color: #2E3950;
   margin-left: 10px;
 }
 .navbar-brand {

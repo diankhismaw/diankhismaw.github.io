@@ -3212,4 +3212,8 @@ body {
   content: "♥";
 }
 
-
+.jcrop-holder div {
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+}

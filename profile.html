@@ -24,6 +24,7 @@
   <link href="assets/css/pop-up.css" rel="stylesheet">
   <link href="assets/css/cropper.min.css" rel="stylesheet">
   <link href="assets/css/responsive.css" rel="stylesheet">
+  <link href="assets/css/jquery.Jcrop.min.css" rel="stylesheet">
 
   <!-- Google Font -->
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -1479,7 +1480,7 @@
               </button>
               <ul class="dropdown-menu edit-cover-nores" role="menu" aria-labelledby="edit-cover">
                 <li><a href="#" data-toggle="modal" data-target="#crop-cover"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Change cover photo</a></li>
-                <li><a href="#"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Change profile picture</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#edit-profile-picture"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Change profile picture</a></li>
               </ul>
             </li>
             <li class="others-btn-res">
@@ -1488,7 +1489,7 @@
               </button>
               <ul class="dropdown-menu menu-others-btn" role="menu" aria-labelledby="others-profile">
                 <li><a href="#" data-toggle="modal" data-target="#crop-cover"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Change cover photo</a></li>
-                <li><a href="#"><i class="fa fa-picture-o"></i>Change profile picture</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#edit-profile-picture"><i class="fa fa-picture-o"></i>Change profile picture</a></li>
                 <li><a href="#"><i class="fa fa-envelope-o"></i>Message</a></li>
               </ul>
             </li>
@@ -1523,6 +1524,26 @@
     </div>
   </div>
   <!-- End Crop -->
+  
+  <!-- Crop Profile Picture -->
+  <div class="modal fade" id="edit-profile-picture" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Crop Cover Image</h4>
+        </div>
+        <div class="modal-body">
+          <div style="width: 100%; display: inline-block:">
+            <img src="assets/img/cover.jpg" class="cropImage" id="target" alt="jcrop Circle Area Example" style="max-width: 100%; max-height: 100%;"/>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-green">Upload</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="col-md-12 tab-top no-padding">
     <div class="container">
@@ -2200,11 +2221,41 @@
   <script src="assets/js/autosize.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <script src="assets/js/jquery.Jcrop.min.js"></script>
   <script src="assets/js/trigger.js"></script>
   <script src="assets/js/jquery.leanModal.min.js"></script>
   <script src="assets/js/pop-up.js"></script>
   <script src="assets/js/cropper.min.js"></script>
   <script src="assets/js/main.js"></script>
+  
+  <script type="text/javascript">
+    jQuery(function($) {
+        $('#target').Jcrop({
+          bgfade: true,
+          aspectRatio: 1,
+          bgOpacity: 0.5,
+          minSize: 50,
+          boxWidth: 520,
+          boxHeight: 400,
+//          onSelect: applyCoords,
+//          onChange: applyCoords,
+        setSelect:   [100, 0, 600,600],
+        allowSelect: false,
+        onSelect: storeCoords
+        });
+    });
+//    function applyCoords(c){
+//      $("#coords").val("X : " + c.x + ", Y : " + c.y + ", X2 : " + c.x2+ ", Y2 : " + c.y2+ ", W : " + c.w+ ", H : " + c.h)
+//    }
+      function storeCoords(c) {
+          jQuery('#X').val(c.x);
+          jQuery('#Y').val(c.y);
+          jQuery('#W').val(c.w);
+          jQuery('#H').val(c.h);
+      };
+    
+
+  </script>
   
   <script>    
     // calculate and set .draggable width
@@ -2400,6 +2451,7 @@
    }
   </script>
   
+ 
 </body>
 
 </html>
