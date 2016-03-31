@@ -55,7 +55,7 @@
 }
 .menu > li > a:hover,
 .menu > li > a:focus {
-  color: #b63c54;
+  color: rgba(249, 252, 255, 0.71);
   background: transparent;
 }
 hr {

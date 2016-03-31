@@ -2747,7 +2747,7 @@ input#anime4 {
   color: #E6F0F4;
 }
 #noti_Button:hover > a > span {
-  color: #b63c54;
+  color: rgba(249, 252, 255, 0.71);
   transition: all 0.5s ease-in;
 }
 
