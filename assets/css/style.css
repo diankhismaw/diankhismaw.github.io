@@ -68,9 +68,43 @@ img {
 }
 
 /*------------------------ 
-			Landing Page 
+      Landing Page 
 ------------------------*/
-
+.left-side-album{
+  width: 310px;
+  display: inline-block;
+  float: left;
+  margin-right: 7px;
+  padding-top: 6px;
+}
+.right-side-album{
+  width: 30%;
+  display: inline-block;
+}
+.top-album{
+  padding-top: 5px;
+  position: relative;
+  width: 130px;
+}
+.overlay-album{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 5px;
+  color: #FFF;
+  display: table;
+  height: 130px;
+  background: rgba(0, 0, 0, 0.4);
+}
+.caption-album{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.top-album > img{
+  height: 130px;
+}
 .main-content {
   padding-left: 20px;
 }
@@ -441,7 +475,7 @@ i.fa.fa-circle {
   padding-bottom: 30px;
   display: block;
   border-bottom: 1px solid #ededed;
-  width: 460px;
+  width: 470px;
 }
 .avatar {
   width: 50px;
@@ -1191,7 +1225,7 @@ input[type=radio] {
 }
 input[type=radio]:checked + label:before {
   content: "\2022";
-  color: #808282;
+  color: #17ae97;
   font-size: 35px;
   text-align: center;
   line-height: 13px;
@@ -1261,6 +1295,17 @@ input[type=radio]:checked + label:before {
 /*------------------------------
 		VIEW POST PAGE
 --------------------------------*/
+.wrapper-view-posting{
+  margin: 0 auto;
+  width: 600px;
+}
+.description-view-posting{
+  font-size: 14px;
+  word-spacing: 6px;
+  margin-top: 15px;
+  color: #A2A2A2;
+  font-family: sans-serif;
+}
 .wrap-tab-comment{
   margin-left: 20px;
   display: inline-block !important;
@@ -2085,6 +2130,14 @@ input#anime4 {
   height: 182px !important;
   color: #abadad;
 }
+.title-polling-upload{
+  width: 100%;
+  resize: none !important;
+  border: none;
+  font-size: 14px;
+  height: 115px !important;
+  color: #abadad;
+}
 .char-length {
   font-size: 12px;
   color: #727575;
@@ -2094,6 +2147,11 @@ input#anime4 {
   font-size: 12px;
   color: #727575;
   padding-top: 170px;
+}
+.char-length-polling{
+  font-size: 12px;
+  color: #727575;
+  padding-top: 0px;
 }
 
 /*-------------------------------------
@@ -2112,7 +2170,7 @@ input#anime4 {
 
 .text-album {
   width: 60%;
-  margin-left: 35px;
+  margin-left: 25px;
   border: none;
   font-size: 14px;
   padding-top: 64px;
@@ -3216,4 +3274,62 @@ body {
   -webkit-border-radius: 50% !important;
   -moz-border-radius: 50% !important;
   border-radius: 50% !important;
+}
+
+.am-wrapper{
+	float:left;
+	position:relative;
+	overflow:hidden;
+
+}
+.am-wrapper img{
+	position:absolute;
+	outline:none;
+}
+.am-container{
+	width: 470px;
+	display: inline-block;
+}
+.list-answer{
+  padding: 0px;
+  list-style: none;
+}
+.list-answer > li {
+  display: inline-block;
+  width: 100%;
+}
+.radio-voting{
+  display: inline-block;
+  float: left;
+  margin-top: 6px;
+  margin-bottom: 2px;
+}
+.answer1{
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 10px;
+  color: #636161;
+  letter-spacing: 0.5px;
+  font-family: sans-serif;
+}
+.title-voting-click{
+  padding-bottom: 15px;
+  font-size: 18px;
+  font-family: sans-serif;
+  padding-top: 30px;
+  color: #3a3a3a;
+}
+.button-vote-wrapper{
+  text-align: right;
+  margin-bottom: 20px;
+}
+.btn-voting{
+  background: #17ae97;
+  padding: 6px 40px;
+  color: #fff;
+}
+.btn-review{
+  background: rgba(23, 174, 151, 0.66);
+  color: #fff;
+  padding: 6px 30px;
 }

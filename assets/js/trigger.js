@@ -125,6 +125,9 @@ $('#more18').on('click', function(e) {
 });
 
 
+
+
+
 $(document).ready(function () {
   // ANIMATEDLY DISPLAY THE NOTIFICATION COUNTER.
   $('#noti_Counter')
@@ -142,7 +145,7 @@ $(document).ready(function () {
           }
       });
 
-      $('#noti_Counter').fadeOut('slow');                 // HIDE THE COUNTER.
+      $('#noti_Counter').fadeOut('slow');// HIDE THE COUNTER.
 
       return false;
   });
@@ -155,10 +158,6 @@ $(document).ready(function () {
       if ($('#noti_Counter').is(':hidden')) {
           // CHANGE BACKGROUND COLOR OF THE BUTTON.
       }
-  });
-
-  $('#notifications').click(function () {
-      return false;       // DO NOTHING WHEN CONTAINER IS CLICKED.
   });
 });
 
@@ -192,9 +191,5 @@ $(document).ready(function () {
       if ($('#noti_Counter_res').is(':hidden')) {
           // CHANGE BACKGROUND COLOR OF THE BUTTON.
       }
-  });
-
-  $('#notifications_res').click(function () {
-      return false;       // DO NOTHING WHEN CONTAINER IS CLICKED.
   });
 });
