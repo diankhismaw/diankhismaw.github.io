@@ -546,7 +546,7 @@
     margin-bottom: 20px;
   }
   .ads-view {
-    max-width: 260px;
+    max-width: 300px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -1464,5 +1464,9 @@
     width: 100%;
     padding-left: 0px;
     display: inline-block;
+  }
+  .total-result{
+    padding-left: 0px;
+    margin-bottom: 40px;
   }
 }
