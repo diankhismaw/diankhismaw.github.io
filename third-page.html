@@ -25,51 +25,6 @@
 </head>
 
 <body>
-  <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="assets/img/close.png" alt="close" /></button>
-        <div class="modal-header bor-none">
-          <h2 class="modal-title mar-t-40" id="myModalLabel">Login to Your Account</h2>
-          <p class="grey-color-xs">You can connect with a social network</p>
-          <div class="connect-social">
-            <div class="col-md-5">
-              <div class="wrap-fb pull-right">
-                <div class="connect-l-fb"> <i class="fa fa-facebook"></i> </div>
-                <div class="connect-r-fb"> Facebook </div>
-              </div>
-            </div>
-            <div class="col-md-2">
-              <div class="center-block"> <span class="circles">OR</span> </div>
-            </div>
-            <div class="col-md-5">
-              <div class="wrap-gp pull-left">
-                <div class="connect-l-gp"> <img src="assets/img/gplus.png" alt=""> </div>
-                <div class="connect-r-gp"> Google </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <p class="text-left black-col">Login with your Email Address</p>
-          <form>
-            <div class="form-group text-left">
-              <label for="exampleInputEmail1">Username</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"> </div>
-            <div class="form-group text-left">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-              <p class="text-right link-log">Forgot the password?</p>
-            </div>
-            <button type="submit" class="btn btn-login-green pull-left">Login</button>
-            <div class="clearfix"></div>
-            <p class="link-log text-left">Didn’t have an account? <a href="#">Sign up</a></p>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  
   <div id="modal" class="popupContainer" style="display:none;">
     <header class="popupHeader">
       <span class="modal_close"><i class="fa fa-times"></i></span>
@@ -326,6 +281,15 @@
           </div>
 
           <div class="panel panel-default">
+            <div class="panel-body-discuss panel-body">
+              <div class="panel-content col-md-12 no-padding">
+                <textarea placeholder="Describe your post" class="title-polling-upload"></textarea>
+                <span class="pull-right char-length-polling">239</span>
+              </div>
+            </div>
+          </div>
+<!--
+          <div class="panel panel-default">
             <div class="panel-body">
               <div class="panel-content col-md-12 no-padding">
                 <a href="">
@@ -338,7 +302,9 @@
               </div>
             </div>
           </div>
+-->
 
+<!--
           <div class="panel panel-default">
             <div class="panel-body">
               <div class="panel-content">
@@ -352,7 +318,10 @@
               </div>
             </div>
           </div>
-
+-->
+         
+          
+<!--
           <div class="wrap-filter-post">
             spoiler instead
             <input type="checkbox" name="option" id="check3" checked/>
@@ -363,6 +332,7 @@
               </span>
             </label>
           </div>
+-->
           <div class="col-md-12 wrap-btn-step">
             <a href="#" class="btn btn-green pull-right" id="next-album">Next</a>
             <a href="#" class="btn btn-back pull-right" id="back-album">Back</a>
@@ -377,23 +347,10 @@
           <hr/>
           <p class="grey-color-xs img-subtitle">An accurate, discriptive title can help people discover your post</p>
 
-          <div class="panel panel-default mar-t-10">
-            <div class="panel-body">
-              <div class="panel-content col-md-12 no-padding">
-                <a href="">
-                  <div class="img-panel">
-                    <img src="">
-                  </div>
-                </a>
-                <textarea placeholder="Give a title here..." class="text-album"></textarea>
-              </div>
-            </div>
-          </div>
-
           <div class="panel panel-default mar-b-10">
             <div class="panel-body-discuss panel-body">
               <div class="panel-content col-md-12 no-padding">
-                <input type="text" placeholder="Give a Title Here..." class="title-discuss-input">
+                <input type="text" placeholder="Type your question..." class="title-discuss-input">
                 <span class="pull-right char-length">150</span>
               </div>
             </div>
@@ -402,7 +359,7 @@
           <div class="panel panel-default mar-b-10">
             <div class="panel-body-discuss panel-body">
               <div class="panel-content col-md-12 no-padding">
-                <input type="text" placeholder="Give a Title Here..." class="title-discuss-input">
+                <input type="text" placeholder="Enter poll option..." class="title-discuss-input">
                 <span class="pull-right char-length">150</span>
               </div>
             </div>
@@ -416,9 +373,27 @@
               </div>
             </div>
           </div>
-
-          <div class="wrap-filter-post no-padding">
-            <a href="#">Add another one</a>
+          
+          <div class="panel panel-default mar-b-20">
+            <div class="panel-body-discuss panel-body">
+              <div class="panel-content col-md-12 no-padding">
+                <input type="text" placeholder="Give a Title Here..." class="title-discuss-input">
+                <span class="pull-right char-length">150</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="wrap-filter-post no-padding mar-b-20">
+            <a href="#"><i class="fa fa-plus-circle" style="color: #17ae97; margin-right: 10px;"></i>Add another one</a>
+          </div>
+          
+          <div class="panel panel-default">
+            <div class="panel-body-discuss panel-body">
+              <div class="panel-content col-md-12 no-padding">
+                <textarea placeholder="Describe your post" class="title-polling-upload"></textarea>
+                <span class="pull-right char-length-polling">239</span>
+              </div>
+            </div>
           </div>
 
           <div class="col-md-12 mar-t-20 wrap-btn-step">
@@ -511,8 +486,8 @@
                       <p>e.g lol, joke, prank, fail</p>
                     </div>
                     <div class="radio radio-category">
-                      <input id="funny" type="radio" name="AccountType" value="category">
-                      <label for="funny" style="margin-right:0px;"></label>
+                      <input id="funny-discuss" type="radio" name="AccountType" value="category">
+                      <label for="funny-discuss" style="margin-right:0px;"></label>
                     </div>
                   </li>
 
@@ -525,8 +500,8 @@
                       <p>e.g eww, dafuq, OMG</p>
                     </div>
                     <div class="radio radio-category">
-                      <input id="wtf" type="radio" name="AccountType" value="category">
-                      <label for="wtf" style="margin-right:0px;"></label>
+                      <input id="wtf-discuss" type="radio" name="AccountType" value="category">
+                      <label for="wtf-discuss" style="margin-right:0px;"></label>
                     </div>
                   </li>
 
@@ -539,8 +514,8 @@
                       <p>e.g GTAV, One Piece</p>
                     </div>
                     <div class="radio radio-category">
-                      <input id="geek" type="radio" name="AccountType" value="category">
-                      <label for="geek" style="margin-right:0px;"></label>
+                      <input id="geek-discuss" type="radio" name="AccountType" value="category">
+                      <label for="geek-discuss" style="margin-right:0px;"></label>
                     </div>
                   </li>
                 </ul>
@@ -575,8 +550,8 @@
                       <p>e.g lol, joke, prank, fail</p>
                     </div>
                     <div class="radio radio-category">
-                      <input id="funny" type="radio" name="AccountType" value="category">
-                      <label for="funny" style="margin-right:0px;"></label>
+                      <input id="funny-link" type="radio" name="AccountType" value="category">
+                      <label for="funny-link" style="margin-right:0px;"></label>
                     </div>
                   </li>
 
@@ -589,8 +564,8 @@
                       <p>e.g eww, dafuq, OMG</p>
                     </div>
                     <div class="radio radio-category">
-                      <input id="wtf" type="radio" name="AccountType" value="category">
-                      <label for="wtf" style="margin-right:0px;"></label>
+                      <input id="wtf-link" type="radio" name="AccountType" value="category">
+                      <label for="wtf-link" style="margin-right:0px;"></label>
                     </div>
                   </li>
 
@@ -603,8 +578,8 @@
                       <p>e.g GTAV, One Piece</p>
                     </div>
                     <div class="radio radio-category">
-                      <input id="geek" type="radio" name="AccountType" value="category">
-                      <label for="geek" style="margin-right:0px;"></label>
+                      <input id="geek-link" type="radio" name="AccountType" value="category">
+                      <label for="geek-link" style="margin-right:0px;"></label>
                     </div>
                   </li>
                 </ul>
@@ -639,8 +614,8 @@
                       <p>e.g lol, joke, prank, fail</p>
                     </div>
                     <div class="radio radio-category">
-                      <input id="funny" type="radio" name="AccountType" value="category">
-                      <label for="funny" style="margin-right:0px;"></label>
+                      <input id="funny-album" type="radio" name="AccountType" value="category">
+                      <label for="funny-album" style="margin-right:0px;"></label>
                     </div>
                   </li>
 
@@ -653,8 +628,8 @@
                       <p>e.g eww, dafuq, OMG</p>
                     </div>
                     <div class="radio radio-category">
-                      <input id="wtf" type="radio" name="AccountType" value="category">
-                      <label for="wtf" style="margin-right:0px;"></label>
+                      <input id="wtf-album" type="radio" name="AccountType" value="category">
+                      <label for="wtf-album" style="margin-right:0px;"></label>
                     </div>
                   </li>
 
@@ -667,8 +642,8 @@
                       <p>e.g GTAV, One Piece</p>
                     </div>
                     <div class="radio radio-category">
-                      <input id="geek" type="radio" name="AccountType" value="category">
-                      <label for="geek" style="margin-right:0px;"></label>
+                      <input id="geek-album" type="radio" name="AccountType" value="category">
+                      <label for="geek-album" style="margin-right:0px;"></label>
                     </div>
                   </li>
                 </ul>
@@ -703,8 +678,8 @@
                       <p>e.g lol, joke, prank, fail</p>
                     </div>
                     <div class="radio radio-category">
-                      <input id="funny" type="radio" name="AccountType" value="category">
-                      <label for="funny" style="margin-right:0px;"></label>
+                      <input id="funny-rating" type="radio" name="AccountType" value="category">
+                      <label for="funny-rating" style="margin-right:0px;"></label>
                     </div>
                   </li>
 
@@ -717,8 +692,8 @@
                       <p>e.g eww, dafuq, OMG</p>
                     </div>
                     <div class="radio radio-category">
-                      <input id="wtf" type="radio" name="AccountType" value="category">
-                      <label for="wtf" style="margin-right:0px;"></label>
+                      <input id="wtf-rating" type="radio" name="AccountType" value="category">
+                      <label for="wtf-rating" style="margin-right:0px;"></label>
                     </div>
                   </li>
 
@@ -731,8 +706,8 @@
                       <p>e.g GTAV, One Piece</p>
                     </div>
                     <div class="radio radio-category">
-                      <input id="geek" type="radio" name="AccountType" value="category">
-                      <label for="geek" style="margin-right:0px;"></label>
+                      <input id="geek-rating" type="radio" name="AccountType" value="category">
+                      <label for="geek-rating" style="margin-right:0px;"></label>
                     </div>
                   </li>
                 </ul>
@@ -772,9 +747,9 @@
                       <input type="checkbox" name="option" id="anime1" checked/>
                       <label for="anime1">
                         <span class="fa-stack">
-                              <i class="fa fa-square-o fa-stack-1x"></i>
-                              <i class="fa fa-check fa-stack-1x"></i>
-                          </span>
+                          <i class="fa fa-square-o fa-stack-1x"></i>
+                          <i class="fa fa-check fa-stack-1x"></i>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -790,9 +765,9 @@
                       <input type="checkbox" name="option" id="anime2" />
                       <label for="anime2">
                         <span class="fa-stack">
-                              <i class="fa fa-square-o fa-stack-1x"></i>
-                              <i class="fa fa-check fa-stack-1x"></i>
-                          </span>
+                          <i class="fa fa-square-o fa-stack-1x"></i>
+                          <i class="fa fa-check fa-stack-1x"></i>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -808,9 +783,9 @@
                       <input type="checkbox" name="option" id="anime3" checked/>
                       <label for="anime3">
                         <span class="fa-stack">
-                              <i class="fa fa-square-o fa-stack-1x"></i>
-                              <i class="fa fa-check fa-stack-1x"></i>
-                          </span>
+                          <i class="fa fa-square-o fa-stack-1x"></i>
+                          <i class="fa fa-check fa-stack-1x"></i>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -826,9 +801,9 @@
                       <input type="checkbox" name="option" id="anime4" />
                       <label for="anime4">
                         <span class="fa-stack">
-                              <i class="fa fa-square-o fa-stack-1x"></i>
-                              <i class="fa fa-check fa-stack-1x"></i>
-                          </span>
+                          <i class="fa fa-square-o fa-stack-1x"></i>
+                          <i class="fa fa-check fa-stack-1x"></i>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -866,8 +841,8 @@
                       <span>One Piece</span>
                     </div>
                     <div class="wrap-filter-post anime-check">
-                      <input type="checkbox" name="option" id="anime1" checked/>
-                      <label for="anime1">
+                      <input type="checkbox" name="option" id="anime1-discuss" checked/>
+                      <label for="anime1-discuss">
                         <span class="fa-stack">
                               <i class="fa fa-square-o fa-stack-1x"></i>
                               <i class="fa fa-check fa-stack-1x"></i>
@@ -884,8 +859,8 @@
                       <span>One Piece</span>
                     </div>
                     <div class="wrap-filter-post anime-check">
-                      <input type="checkbox" name="option" id="anime2" />
-                      <label for="anime2">
+                      <input type="checkbox" name="option" id="anime2-discuss" />
+                      <label for="anime2-discuss">
                         <span class="fa-stack">
                               <i class="fa fa-square-o fa-stack-1x"></i>
                               <i class="fa fa-check fa-stack-1x"></i>
@@ -902,8 +877,8 @@
                       <span>One Piece</span>
                     </div>
                     <div class="wrap-filter-post anime-check">
-                      <input type="checkbox" name="option" id="anime3" checked/>
-                      <label for="anime3">
+                      <input type="checkbox" name="option" id="anime3-discuss" checked/>
+                      <label for="anime3-discuss">
                         <span class="fa-stack">
                               <i class="fa fa-square-o fa-stack-1x"></i>
                               <i class="fa fa-check fa-stack-1x"></i>
@@ -920,12 +895,12 @@
                       <span>One Piece</span>
                     </div>
                     <div class="wrap-filter-post anime-check">
-                      <input type="checkbox" name="option" id="anime4" />
-                      <label for="anime4">
+                      <input type="checkbox" name="option" id="anime4-discuss" />
+                      <label for="anime4-discuss">
                         <span class="fa-stack">
-                              <i class="fa fa-square-o fa-stack-1x"></i>
-                              <i class="fa fa-check fa-stack-1x"></i>
-                          </span>
+                          <i class="fa fa-square-o fa-stack-1x"></i>
+                          <i class="fa fa-check fa-stack-1x"></i>
+                        </span>
                       </label>
                     </div>
                   </li>
@@ -963,8 +938,8 @@
                       <span>One Piece</span>
                     </div>
                     <div class="wrap-filter-post anime-check">
-                      <input type="checkbox" name="option" id="anime1" checked/>
-                      <label for="anime1">
+                      <input type="checkbox" name="option" id="anime1-link" checked/>
+                      <label for="anime1-link">
                         <span class="fa-stack">
                               <i class="fa fa-square-o fa-stack-1x"></i>
                               <i class="fa fa-check fa-stack-1x"></i>
@@ -981,8 +956,8 @@
                       <span>One Piece</span>
                     </div>
                     <div class="wrap-filter-post anime-check">
-                      <input type="checkbox" name="option" id="anime2" />
-                      <label for="anime2">
+                      <input type="checkbox" name="option" id="anime2-link" />
+                      <label for="anime2-link">
                         <span class="fa-stack">
                               <i class="fa fa-square-o fa-stack-1x"></i>
                               <i class="fa fa-check fa-stack-1x"></i>
@@ -999,8 +974,8 @@
                       <span>One Piece</span>
                     </div>
                     <div class="wrap-filter-post anime-check">
-                      <input type="checkbox" name="option" id="anime3" checked/>
-                      <label for="anime3">
+                      <input type="checkbox" name="option" id="anime3-link" checked/>
+                      <label for="anime3-link">
                         <span class="fa-stack">
                               <i class="fa fa-square-o fa-stack-1x"></i>
                               <i class="fa fa-check fa-stack-1x"></i>
@@ -1017,8 +992,8 @@
                       <span>One Piece</span>
                     </div>
                     <div class="wrap-filter-post anime-check">
-                      <input type="checkbox" name="option" id="anime4" />
-                      <label for="anime4">
+                      <input type="checkbox" name="option" id="anime4-link" />
+                      <label for="anime4-link">
                         <span class="fa-stack">
                               <i class="fa fa-square-o fa-stack-1x"></i>
                               <i class="fa fa-check fa-stack-1x"></i>
@@ -1060,8 +1035,8 @@
                       <span>One Piece</span>
                     </div>
                     <div class="wrap-filter-post anime-check">
-                      <input type="checkbox" name="option" id="anime1" checked/>
-                      <label for="anime1">
+                      <input type="checkbox" name="option" id="anime1-album" checked/>
+                      <label for="anime1-album">
                         <span class="fa-stack">
                               <i class="fa fa-square-o fa-stack-1x"></i>
                               <i class="fa fa-check fa-stack-1x"></i>
@@ -1078,8 +1053,8 @@
                       <span>One Piece</span>
                     </div>
                     <div class="wrap-filter-post anime-check">
-                      <input type="checkbox" name="option" id="anime2" />
-                      <label for="anime2">
+                      <input type="checkbox" name="option" id="anime2-album" />
+                      <label for="anime2-album">
                         <span class="fa-stack">
                               <i class="fa fa-square-o fa-stack-1x"></i>
                               <i class="fa fa-check fa-stack-1x"></i>
@@ -1096,8 +1071,8 @@
                       <span>One Piece</span>
                     </div>
                     <div class="wrap-filter-post anime-check">
-                      <input type="checkbox" name="option" id="anime3" checked/>
-                      <label for="anime3">
+                      <input type="checkbox" name="option" id="anime3-album" checked/>
+                      <label for="anime3-album">
                         <span class="fa-stack">
                               <i class="fa fa-square-o fa-stack-1x"></i>
                               <i class="fa fa-check fa-stack-1x"></i>
@@ -1114,8 +1089,8 @@
                       <span>One Piece</span>
                     </div>
                     <div class="wrap-filter-post anime-check">
-                      <input type="checkbox" name="option" id="anime4" />
-                      <label for="anime4">
+                      <input type="checkbox" name="option" id="anime4-album" />
+                      <label for="anime4-album">
                         <span class="fa-stack">
                               <i class="fa fa-square-o fa-stack-1x"></i>
                               <i class="fa fa-check fa-stack-1x"></i>
@@ -1157,8 +1132,8 @@
                       <span>One Piece</span>
                     </div>
                     <div class="wrap-filter-post anime-check">
-                      <input type="checkbox" name="option" id="anime1" checked/>
-                      <label for="anime1">
+                      <input type="checkbox" name="option" id="anime1-rating" checked/>
+                      <label for="anime1-rating">
                         <span class="fa-stack">
                               <i class="fa fa-square-o fa-stack-1x"></i>
                               <i class="fa fa-check fa-stack-1x"></i>
@@ -1175,8 +1150,8 @@
                       <span>One Piece</span>
                     </div>
                     <div class="wrap-filter-post anime-check">
-                      <input type="checkbox" name="option" id="anime2" />
-                      <label for="anime2">
+                      <input type="checkbox" name="option" id="anime2-rating" />
+                      <label for="anime2-rating">
                         <span class="fa-stack">
                               <i class="fa fa-square-o fa-stack-1x"></i>
                               <i class="fa fa-check fa-stack-1x"></i>
@@ -1193,8 +1168,8 @@
                       <span>One Piece</span>
                     </div>
                     <div class="wrap-filter-post anime-check">
-                      <input type="checkbox" name="option" id="anime3" checked/>
-                      <label for="anime3">
+                      <input type="checkbox" name="option" id="anime3-rating" checked/>
+                      <label for="anime3-rating">
                         <span class="fa-stack">
                               <i class="fa fa-square-o fa-stack-1x"></i>
                               <i class="fa fa-check fa-stack-1x"></i>
@@ -1211,8 +1186,8 @@
                       <span>One Piece</span>
                     </div>
                     <div class="wrap-filter-post anime-check">
-                      <input type="checkbox" name="option" id="anime4" />
-                      <label for="anime4">
+                      <input type="checkbox" name="option" id="anime4-rating" />
+                      <label for="anime4-rating">
                         <span class="fa-stack">
                               <i class="fa fa-square-o fa-stack-1x"></i>
                               <i class="fa fa-check fa-stack-1x"></i>
@@ -1367,6 +1342,7 @@
 
             <!--THE NOTIFICAIONS DROPDOWN BOX.-->
             <div id="notifications">
+              <a href="notif.html">Hello</a>
               <h3 class="notif-title">Notifications</h3>
               <div style="height:auto;">
                 <div class="notif-fill">
@@ -1450,7 +1426,7 @@
     </div>
   </nav>
   
-  <!-- Search Box -->
+  <!-- Search box -->
   <div id="search-collapse" class="collapse" style="position: absolute; right: 213px;">
     <div class="container no-padding">
       <div class="input-group pull-right w-form-search">
@@ -1458,62 +1434,64 @@
       </div>
     </div>
   </div>
-  <!-- End Search Box -->
+  <!-- Search Box -->
 
   <!-- Background Cover -->
   <div class="background-cover">
-    <div class="overlay-cover overlay-other"></div>
-    <div class="bottom-cover bottom-cover-other"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">  
-          <ul class="text-center list-unstyled list-place-other row">
-            <li class="list-followers">
-              <a href="#">
-                <h5>FOLLLOWING</h5>
-                <h2>4.500</h2>
-              </a>
-            </li>
-            <li class="list-followers">
-              <a href="#">
-                <h5>FOLLOWERS</h5>
-                <h2>1.278</h2>
-              </a>
-            </li>
-            <li class="list-followers">
-              <a href="#">
-                <h5>POST COUNT</h5>
-                <h2>990</h2>
-              </a>
-            </li>
-            <li class="right-button">
-              
-              <button class="btn btn-dropdown btn-others dropdown-toggle" id="others-profile" type="button" data-toggle="dropdown">
-                <i class="fa fa-ellipsis-v"></i>
-              </button>
-              <ul class="dropdown-menu edit-cover-nores" role="menu" aria-labelledby="edit-cover">
-                <li><a href="#"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Change cover photo</a></li>
-                <li><a href="#"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Change profile picture</a></li>
+    <div class="overlay-cover overlay-other">
+      <div class="bottom-cover bottom-cover-other">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">  
+              <ul class="text-center list-unstyled list-place-other row">
+                <li class="list-followers">
+                  <a href="#">
+                    <h5>FOLLLOWING</h5>
+                    <h2>4.500</h2>
+                  </a>
+                </li>
+                <li class="list-followers">
+                  <a href="#">
+                    <h5>FOLLOWERS</h5>
+                    <h2>1.278</h2>
+                  </a>
+                </li>
+                <li class="list-followers">
+                  <a href="#">
+                    <h5>POST COUNT</h5>
+                    <h2>990</h2>
+                  </a>
+                </li>
+                <li class="right-button">
+
+                  <button class="btn btn-dropdown btn-others dropdown-toggle" id="others-profile" type="button" data-toggle="dropdown">
+                    <i class="fa fa-ellipsis-v"></i>
+                  </button>
+                  <ul class="dropdown-menu edit-cover-nores" role="menu" aria-labelledby="edit-cover">
+                    <li><a href="#"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Change cover photo</a></li>
+                    <li><a href="#"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;Change profile picture</a></li>
+                  </ul>
+                </li>
+                <li class="others-btn-res">
+                  <button class="btn btn-dropdown btn-others dropdown-toggle" id="others-profile" type="button" data-toggle="dropdown">
+                    <i class="fa fa-ellipsis-v"></i>
+                  </button>
+                  <ul class="dropdown-menu menu-others-btn" role="menu" aria-labelledby="others-profile">
+                    <li><a href="#"><i class="fa fa-picture-o"></i>Change cover photo</a></li>
+                    <li><a href="#"><i class="fa fa-picture-o"></i>Change profile picture</a></li>
+                    <li><a href="#"><i class="fa fa-envelope-o"></i>Message</a></li>
+                  </ul>
+                </li>
               </ul>
-            </li>
-            <li class="others-btn-res">
-              <button class="btn btn-dropdown btn-others dropdown-toggle" id="others-profile" type="button" data-toggle="dropdown">
-                <i class="fa fa-ellipsis-v"></i>
-              </button>
-              <ul class="dropdown-menu menu-others-btn" role="menu" aria-labelledby="others-profile">
-                <li><a href="#"><i class="fa fa-picture-o"></i>Change cover photo</a></li>
-                <li><a href="#"><i class="fa fa-picture-o"></i>Change profile picture</a></li>
-                <li><a href="#"><i class="fa fa-envelope-o"></i>Message</a></li>
-              </ul>
-            </li>
-          </ul>
-          
+
+            </div>
+            <!-- end col-md-12 -->
+          </div>
+          <!-- end row -->
         </div>
-        <!-- end col-md-12 -->
+        <!-- end container -->
       </div>
-      <!-- end row -->
     </div>
-    <!-- end container -->
   </div>
   <!-- end background-cover -->
 
