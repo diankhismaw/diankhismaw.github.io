@@ -1440,4 +1440,28 @@
     width: 225px;
     padding: 10px 0px;
   }
+  .up-triangle-vote{
+    width: 15% !important;
+  }
+  .wrapper-view-posting{
+    display: inline;
+  }
+  .text-album{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .count-right{
+    width: 100%;
+    text-align: right;
+  }
+  .item-result{
+    padding-left: 0px;
+  }
+  .wrapper-progress-bar{
+    padding-left: 0px;
+  }
+  .wrapper-progress-bar > span{
+    width: 100%;
+    padding-left: 0px;
+  }
 }
