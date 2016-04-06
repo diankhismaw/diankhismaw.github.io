@@ -441,12 +441,15 @@
   }
   .list-place {
     padding: 0px 0px;
-    margin-top: 35px;
+    margin-top: 8px;
     margin-left: -10px;
   }
-  .list-place-other {
-    margin-top: 418px;
-    margin-left: -11px;
+ .list-place-other {
+    margin-top: 8px;
+    margin-left: 0px;
+  }
+  .bottom-cover-other{
+    bottom: 0px;
   }
   .list-followers {
     padding: 0px 8px;
@@ -794,7 +797,12 @@
   .edit-cover-480{
     display: none; 
   }
-  
+  .bio{
+    font-size: 14px;
+  }
+  .img-profile{
+    margin-top: 92px;
+  }
 }
 
 @media only screen and (min-width:480px) and (max-width: 767px){
@@ -888,14 +896,16 @@
     width: 280px; 
   }
   .menu-others-btn{
-    left: 108px;
+    left: 90px;
     background-color: #fff;
+    top: -130%;
   }
   .btn-others{
     border: none;
     color: #fff;
     font-size: 20px;
     padding: 0px 8px;
+    margin-right: 0px;
   }
   .btn-others:hover{
     color: #e4ac39;

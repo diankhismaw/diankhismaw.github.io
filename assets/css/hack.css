@@ -54,3 +54,7 @@
 hr {
   margin-top: 10px !important;
 }
+.row-custom{
+  margin-left: -10px;
+  margin-right: -10px;
+}
