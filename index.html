@@ -1224,7 +1224,7 @@
   
   <!-- Static navbar -->
   <nav class="navbar navbar-chocolate navbar-static-top navbar-fixed-top">
-    <div class="container">
+    <div class="container custom-navbar-width">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
@@ -1735,8 +1735,8 @@
                                 <a href="profile.html"><h5>ADMIN</h5></a>
                                 <span class="minute">15min ago to <a href="" class="minute">/a/onepiece</a></span>
                                 <div class="tag   tag-index">
-                                  <span id="credit2" onClick="javascript:changeText(2)" class="normal-tag">Credit</span>
-                                  <a href="" class="fb-1">
+                                  <span id="album1" onClick="javascript:changeText(1)" class="normal-tag">album</span>
+                                  <a href="" class="socmed-1">
                                     <img src="assets/img/tt-credit.png">
                                   </a>
                                 </div>
@@ -1746,24 +1746,30 @@
                             <h3><a href="view-post.html">Rest and Peace ACE !</a></h3>
                             <div class="album-wraper-index">
                               <div class="left-side-album">
-                                <a href="view-post.html">
+                                <a href="view-post-description.html">
                                   <img src="assets/img/Naruto.png" alt="ace" class="img-responsive" />
                                 </a>
                               </div>
                               <div class="right-side-album">
                                 <div class="top-album">
-                                  <img src="assets/img/luffy.png" class="img-responsive">
+                                  <a href="view-post-description.html">
+                                    <img src="assets/img/luffy.png" class="img-responsive">
+                                  </a>
                                 </div>
                                 <div class="top-album">
-                                  <img src="assets/img/luffy.png" class="img-responsive">
+                                  <a href="view-post-description.html">
+                                    <img src="assets/img/luffy.png" class="img-responsive">
+                                  </a>
                                 </div>
                                 <div class="top-album">
-                                  <img src="assets/img/luffy.png" class="img-responsive">
-                                  <div class="overlay-album">
-                                    <div class="caption-album">
-                                      +&nbsp;135
+                                  <a href="view-post-description.html">
+                                    <img src="assets/img/luffy.png" class="img-responsive">
+                                    <div class="overlay-album">
+                                      <div class="caption-album">
+                                        +&nbsp;135
+                                      </div>
                                     </div>
-                                  </div>
+                                  </a>
                                 </div>
                               </div>
                             </div>
@@ -2673,6 +2679,18 @@
         $('#credit' + idElement).parent().children().eq(1).removeClass('show-social');
         $('#credit' + idElement).parent().children().eq(1).addClass('fb-1');
         $('#credit' + idElement).text('Credit');
+      }
+    }
+    
+    function changeText(idElement) {
+      if ($('#album' + idElement).text() === 'album') {
+        $('#album' + idElement).parent().children().eq(1).removeClass('socmed-1');
+        $('#album' + idElement).parent().children().eq(1).addClass('show-social-album');
+        $('#album' + idElement).text('Dian Khisma wijaya');
+      } else {
+        $('#album' + idElement).parent().children().eq(1).removeClass('show-social-album');
+        $('#album' + idElement).parent().children().eq(1).addClass('socmed-1');
+        $('#album' + idElement).text('album');
       }
     }
   </script>

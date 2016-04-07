@@ -73,7 +73,11 @@ img {
 .tab-responsive {
   display: none;
 }
-
+.custom-navbar-width{
+  padding: 0px;
+  margin-left: 279px;
+  width: 1121px;
+}
 /*------------------------ 
       Landing Page 
 ------------------------*/
@@ -312,10 +316,10 @@ i.fa.fa-circle {
   margin-left: 0px !important;
   margin-bottom: 10px;
 }
-.fb-1 {
+.fb-1, .socmed-1 {
   display: none;
 }
-.show-social {
+.show-social, .show-social-album {
   display: inline-block;
 }
 .tag.tag-index > a >img {
@@ -323,6 +327,10 @@ i.fa.fa-circle {
 }
 .tag.tag-index {
   cursor: pointer;
+}
+.tag-vote{
+  margin-top: -3px !important;
+  padding-left: 15px;
 }
 .fa.fa-facebook-official {
   font-size: 20px;
