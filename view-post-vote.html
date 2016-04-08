@@ -1566,10 +1566,7 @@
                     <a href="#">1 Comments</a>
                   </div>
                   <div class="tag   tag-index tag-vote">
-                    <span id="credit2" onClick="javascript:changeText(2)" class="normal-tag">Poll</span>
-                    <a href="" class="fb-1">
-                      <img src="assets/img/tt-credit.png">
-                    </a>
+                    <span id="credit2" class="normal-tag tag-poll">Poll</span>
                   </div>
                 </div>
               </div>
@@ -1670,7 +1667,7 @@
 
         <div class="tab-content-comment">
           <!-- popular-->
-          <div role="tabpanel" class="tab-pane active wrap-tab-comment" id="popular">
+          <div role="tabpanel" class="tab-pane active wrap-tab-comment tab-comment-vote" id="popular">
             <div class="text-comment">
               <div class="wrap-avatar-comment">
                 <a href="#">
@@ -1829,17 +1826,4 @@
   <script src="assets/js/jquery.leanModal.min.js"></script>
   <script src="assets/js/pop-up.js"></script>
   
-  <script>
-    function changeText(idElement) {
-      if ($('#credit' + idElement).text() === 'poll') {
-        $('#credit' + idElement).parent().children().eq(1).removeClass('fb-1');
-        $('#credit' + idElement).parent().children().eq(1).addClass('show-social');
-        $('#credit' + idElement).text('Dian Khisma wijaya');
-      } else {
-        $('#credit' + idElement).parent().children().eq(1).removeClass('show-social');
-        $('#credit' + idElement).parent().children().eq(1).addClass('fb-1');
-        $('#credit' + idElement).text('poll');
-      }
-    }
-  </script>
 </body>

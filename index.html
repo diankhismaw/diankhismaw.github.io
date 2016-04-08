@@ -300,51 +300,7 @@
               </div>
             </div>
           </div>
-<!--
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <div class="panel-content col-md-12 no-padding">
-                <a href="">
-                  <div class="img-panel">
-                    <img src="assets/img/luffy.png">
-                  </div>
-                </a>
-                <textarea placeholder="Give a title here..." class="text-album"></textarea>
-                <span class="pull-right count-right">500</span>
-              </div>
-            </div>
-          </div>
--->
 
-<!--
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <div class="panel-content">
-                <div class="col-md-12 no-padding">
-                  <textarea placeholder="Describe your post with tags!" class="txt-area-tags"></textarea>
-                </div>
-                <div class="hastag-view">
-                  <a class="btn btn-grey" href="#" role="button">#Anime <i class="fa fa-close"></i></a>
-                  <a class="btn btn-grey" href="#" role="button">#onepiece <i class="fa fa-close"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
--->
-         
-          
-<!--
-          <div class="wrap-filter-post">
-            spoiler instead
-            <input type="checkbox" name="option" id="check3" checked/>
-            <label for="check3">
-              <span class="fa-stack">
-                <i class="fa fa-square-o fa-stack-1x"></i>
-                <i class="fa fa-check fa-stack-1x"></i>
-              </span>
-            </label>
-          </div>
--->
           <div class="col-md-12 wrap-btn-step">
             <a href="#" class="btn btn-green pull-right" id="next-album">Next</a>
             <a href="#" class="btn btn-back pull-right" id="back-album">Back</a>
@@ -1223,8 +1179,8 @@
   </div>
   
   <!-- Static navbar -->
-  <nav class="navbar navbar-chocolate navbar-static-top navbar-fixed-top">
-    <div class="container custom-navbar-width">
+  <nav class="navbar navbar-chocolate navbar-fixed-top">
+    <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
@@ -1523,7 +1479,7 @@
             <div class="non-res">
               <div class="left-panel-sec white-bg">
 
-                <div class="wrap-panel" style="border-top: 0px;">
+                <div class="wrap-panel">
                   <div class="title">
                     <p>NEWS</p>
                   </div>
@@ -1735,7 +1691,7 @@
                                 <a href="profile.html"><h5>ADMIN</h5></a>
                                 <span class="minute">15min ago to <a href="" class="minute">/a/onepiece</a></span>
                                 <div class="tag   tag-index">
-                                  <span id="album1" onClick="javascript:changeText(1)" class="normal-tag">album</span>
+                                  <span id="album1" class="normal-tag tag-album">album</span>
                                   <a href="" class="socmed-1">
                                     <img src="assets/img/tt-credit.png">
                                   </a>
@@ -2682,17 +2638,6 @@
       }
     }
     
-    function changeText(idElement) {
-      if ($('#album' + idElement).text() === 'album') {
-        $('#album' + idElement).parent().children().eq(1).removeClass('socmed-1');
-        $('#album' + idElement).parent().children().eq(1).addClass('show-social-album');
-        $('#album' + idElement).text('Dian Khisma wijaya');
-      } else {
-        $('#album' + idElement).parent().children().eq(1).removeClass('show-social-album');
-        $('#album' + idElement).parent().children().eq(1).addClass('socmed-1');
-        $('#album' + idElement).text('album');
-      }
-    }
   </script>
 
   <script>

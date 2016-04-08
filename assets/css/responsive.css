@@ -599,6 +599,7 @@
   .left-panel-sec {
     width: 180px;
   }
+  
   .wrap-panel {
     width: 100% !important;
   }
@@ -650,6 +651,7 @@
     padding: 0px 10px;
     padding-left: 20px;
   }
+  
   .wrap-main {
     margin-top: 40px;
   }
@@ -693,6 +695,13 @@
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .wrap-main {
     padding: 0px;
+  }
+  .main-content{
+    padding-left: 10px;
+    display: inline-block;
+  }
+  .tab-content{
+    padding-left: 0px;
   }
   .wrap-panel {
     width: 100% !important;

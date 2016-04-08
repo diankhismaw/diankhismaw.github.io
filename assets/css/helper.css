@@ -72,6 +72,9 @@
 .pad-r-none {
   padding-right: 0;
 }
+.pad-b-none{
+  padding-bottom: 0px !important;
+}
 .pad-r-10 {
   padding-right: 10px;
 }
@@ -146,7 +149,14 @@
   color: #17ae97;
   transition: color 0.5s ease-in-out;
 }
-
+.tag-album{
+  border: 1px solid #17ae97 !important;
+  color: #17ae97 !important;
+}
+.tag-poll{
+  border: 1px solid #e4ac39 !important;
+  color: #e4ac39 !important;
+}
 .btn-green {
   background: #17ae97;
   padding: 8px 30px;

@@ -26,6 +26,12 @@
 .navbar-collapse {
   margin-top: 5px;
 }
+.menu{
+  margin-right: -12px;
+}
+.menu-category{
+  margin-right: -3px;
+}
 .w-2000 {
   width: 2000px;
 }
