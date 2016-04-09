@@ -38,6 +38,8 @@ body {
   font-size: 16px;
   line-height: 1.7;
   background-color: #fff;
+  display: inline-block;
+  height: auto;
 }
 a {
   color: #2f2f2f;
