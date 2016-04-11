@@ -93,7 +93,7 @@
     </div><!-- end modal -->
     
     <!-- Static navbar -->
-    <nav class="navbar navbar-chocolate navbar-static-top">
+    <nav class="navbar navbar-chocolate navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -102,7 +102,84 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">
+          <div id="noti_Container_res">
+            <div id="noti_Counter_res"></div>
+            <!--SHOW NOTIFICATIONS COUNT.-->
+
+            <div id="noti_Button_res">
+              <a href="#">
+                <span class="fa fa-bell-o" aria-hidden="true"></span>
+              </a>
+            </div>
+
+            <!--THE NOTIFICAIONS DROPDOWN BOX.-->
+            <div id="notifications_res">
+              <h3 class="notif-title">Notifications</h3>
+              <div style="height:auto;">
+                <div class="notif-fill">
+                  <div class="ava-notif">
+                    <img src="assets/img/luffy.png">
+                  </div>
+
+                  <div class="middle-section">
+                    <div class="username-notif">
+                      <span>Monkey D'luffy</span>
+                      <span>Upvote your post.</span>
+                      <div class="date-notif">
+                        23 Days ago
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="post-notif">
+                    <img src="assets/img/cute.jpg">
+                  </div>
+                </div>
+
+                <div class="notif-fill">
+                  <div class="ava-notif">
+                    <img src="assets/img/luffy.png">
+                  </div>
+
+                  <div class="middle-section">
+                    <div class="username-notif">
+                      <span>Monkey D'luffy</span>
+                      <span>Upvote your post.</span>
+                      <div class="date-notif">
+                        23 Days ago
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="post-notif">
+                    <img src="assets/img/cute.jpg">
+                  </div>
+                </div>
+
+                <div class="notif-fill">
+                  <div class="ava-notif">
+                    <img src="assets/img/luffy.png">
+                  </div>
+
+                  <div class="middle-section">
+                    <div class="username-notif">
+                      <span>Monkey D'luffy</span>
+                      <span>Upvote your post.</span>
+                      <div class="date-notif">
+                        23 Days ago
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="post-notif">
+                    <img src="assets/img/cute.jpg">
+                  </div>
+                </div>
+              </div>
+              <div class="btn btn-see-all seeAll"><a href="notif.html">See All</a></div>
+            </div>
+          </div>
+          <a class="navbar-brand" href="index.html">
             <img src="assets/img/logo-simple.png" alt="logo" />
           </a>
         </div>
@@ -111,34 +188,123 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Discussion<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
+                <li><a class="res-caption-nav" href="#">Action</a></li>
+                <li><a class="res-caption-nav" href="#">Another action</a></li>
+                <li><a class="res-caption-nav" href="#">Something else here</a></li>
                 <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+                <li class="dropdown-header separator-nav">Nav header</li>
+                <li><a class="res-caption-nav" href="#">Separated link</a></li>
+                <li><a class="res-caption-nav" href="#">One more separated link</a></li>
               </ul>
             </li>
-            <li><a href="#about">Anime</a></li>
+            <li><a href="third-page.html">Anime</a></li>
             <li><a href="#contact">News</a></li>
           </ul>
+
           <ul class="nav navbar-nav navbar-right menu">
-            
-            <li>
-              <a href="../navbar/">
+            <li class="hide-search-res">
+              <a href="#" data-toggle="collapse" data-target="#search-collapse">
                 <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
               </a>
             </li>
-            <li class="active">
-              <a data-toggle="modal" href="#" data-target="#login">Login</a>
-            </li>
-            <li class="mar-t-10">
-              <button type="button" class="btn btn-green">Sign Up</button>
+            <li class="search-res">
+              <input type="text" class="search-query mac-style" placeholder="Search">
+              <button type="submit" class="btn btn-search-res"><i class="glyphicon glyphicon-search"></i></button>
             </li>
 
+            <li id="noti_Container">
+              <div id="noti_Counter"></div>
+              <!--SHOW NOTIFICATIONS COUNT.-->
+
+              <div id="noti_Button">
+                <a href="#">
+                  <span class="fa fa-bell-o" aria-hidden="true"></span>
+                </a>
+              </div>
+
+              <!--THE NOTIFICAIONS DROPDOWN BOX.-->
+              <div id="notifications">
+                <a href="notif.html">Hello</a>
+                <h3 class="notif-title">Notifications</h3>
+                <div style="height:auto;">
+                  <div class="notif-fill">
+                    <div class="ava-notif">
+                      <img src="assets/img/luffy.png">
+                    </div>
+
+                    <div class="middle-section">
+                      <div class="username-notif">
+                        <span>Monkey D'luffy</span>
+                        <span>Upvote your post.</span>
+                        <div class="date-notif">
+                          23 Days ago
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="post-notif">
+                      <img src="assets/img/cute.jpg">
+                    </div>
+                  </div>
+
+                  <div class="notif-fill">
+                    <div class="ava-notif">
+                      <img src="assets/img/luffy.png">
+                    </div>
+
+                    <div class="middle-section">
+                      <div class="username-notif">
+                        <span>Monkey D'luffy</span>
+                        <span>Upvote your post.</span>
+                        <div class="date-notif">
+                          23 Days ago
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="post-notif">
+                      <img src="assets/img/cute.jpg">
+                    </div>
+                  </div>
+
+                  <div class="notif-fill">
+                    <div class="ava-notif">
+                      <img src="assets/img/luffy.png">
+                    </div>
+
+                    <div class="middle-section">
+                      <div class="username-notif">
+                        <span>Monkey D'luffy</span>
+                        <span>Upvote your post.</span>
+                        <div class="date-notif">
+                          23 Days ago
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="post-notif">
+                      <img src="assets/img/cute.jpg">
+                    </div>
+                  </div>
+                </div>
+                <div class="btn btn-see-all seeAll"><a href="notif.html">See All</a></div>
+              </div>
+            </li>
+
+            <li class="active">
+              <a href="profile.html" style="padding-top: 4px; padding-bottom: 2px; margin-bottom: 30px;">
+                <div class="profile-picture-nav">
+                  <img src="assets/img/luffy.png"> &nbsp;
+                </div>
+                <div class="res-username">Dian Khisma Wijaya</div>
+              </a>
+            </li>
+            <li class="upload-triger">
+              <a id="modal_trigger" href="#modal" class="btn btn-green">Upload</a>
+            </li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
+        <!--/.nav-collapse -->
       </div>
     </nav>
     

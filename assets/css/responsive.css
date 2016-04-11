@@ -909,6 +909,11 @@
     background-color: #fff;
     top: -130%;
   }
+  .menu-others-profile{
+    left: 130px;
+    background-color: #fff;
+    top: -49%;
+  }
   .btn-others{
     border: none;
     color: #fff;

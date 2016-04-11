@@ -38,6 +38,8 @@ body {
   font-size: 16px;
   line-height: 1.7;
   background-color: #fff;
+  display: inline-block;
+  height: auto;
 }
 a {
   color: #2f2f2f;
@@ -1357,6 +1359,10 @@ input[type=radio]:checked + label:before {
   margin-bottom: 20px;
   padding: 10px;
 }
+.single-panel-view{
+  width: 99%;
+  margin-left: 9px;
+}
 .ads-view {
   padding-left: 45px;
 }
@@ -1586,6 +1592,10 @@ input[type=radio]:checked + label:before {
 }
 .draggable-container{
   padding: 0px 10px;
+  z-index: 99;
+}
+.draggable-center{
+  z-index: 99;
 }
 .tab-content {
   width: 100%;
@@ -1788,8 +1798,8 @@ input[type=radio]:checked + label:before {
   display: none !important;
 }
 .container-category {
-  padding-right: 21px !important;
   padding-left: 0px !important;
+  padding-right: 12px;
 }
 .dropdown-nav {
   color: #17ae97;
