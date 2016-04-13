@@ -150,7 +150,7 @@
     transition: background-color 0.3s;
   }
   .wraper-view {
-    padding-left: 0px;
+    padding: 0px;
     display: inline-block;
   }
   .wraper-view > h3 {
@@ -420,13 +420,16 @@
     margin-bottom: 20px;
   }
   .right-inner-addon > i {
-    padding: 13px 269px;
+    padding: 13px 263px;
   }
   .wrap-pop {
     display: inline-block;
   }
   .single-panel {
     border: none;
+  }
+  .single-panel-view{
+    margin-left: 2px;
   }
   .btn-trans {
     padding: 10px 15px;
@@ -718,6 +721,14 @@
     width: 100%;
     padding-left: 15px;
   }
+  .media-body-vote{
+    padding-left: 8px;
+  }
+  .tag-vote{
+    padding-left: 13px;
+    margin-top: 10px !important;
+    width: 100%;
+  }
   .social-btn {
     display: inline-block;
     float: left !important;
@@ -761,7 +772,7 @@
   .main-content-res{
     display: inline-block;
     padding: 0px;
-    width: 102%;
+    width: 100%;
     margin-top: 40px;
     background-color: #fff;
   }
@@ -1022,6 +1033,9 @@
     display: inline-block;
     width: 109%;
     margin-left: -6px;
+  }
+  .col-res-wrapper{
+    padding-left: 0px;
   }
   .episode-title{
     text-align: right;
