@@ -395,9 +395,7 @@
   .container-category{
     padding-right: 0px;
   }
-  #popular-category-res{
-    margin-left: 2px;
-  }
+  
   .follow-responsive {
     display: inline-block;
     width: 100%;
@@ -412,6 +410,11 @@
   .alphabet-res {
     display: inline-block;
     float: right;
+    padding: 0px;
+  }
+  .centered-content{
+    max-width: 290px;
+    margin: 0 auto;
   }
   .right-inner-addon {
     display: none;
@@ -424,7 +427,9 @@
     margin-bottom: 20px;
   }
   .right-inner-addon > i {
-    padding: 13px 263px;
+    position: absolute;
+    left: 14px;
+    top: 12px;
   }
   .wrap-pop {
     display: inline-block;
@@ -556,7 +561,7 @@
     margin-bottom: 20px;
   }
   .ads-view {
-    max-width: 300px;
+    max-width: 100%;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {

@@ -1887,11 +1887,12 @@ input[type=radio]:checked + label:before {
   text-align: right;
   padding: 19px 10px;
   color: #17ae97;
+  width: 100%
 }
 .right-inner-addon i {
   position: absolute;
-  right: 0px;
-  padding: 13px 425px;
+  left: 14px;
+  top: 12px;
   pointer-events: none;
 }
 .wraper-category {
