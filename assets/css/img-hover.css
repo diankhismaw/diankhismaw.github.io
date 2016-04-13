@@ -162,9 +162,11 @@ i.fa.fa-star{
   .item{
     width: 125px;
     height: 190px;
-    margin: 9px 9px;
+    margin: 9px 6px;
   }
   .wrap-item{
     margin: 0px;
+    display: inline-block;
+    padding: 0px 10px;
   }
 }
