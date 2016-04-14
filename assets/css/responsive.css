@@ -265,6 +265,9 @@
     padding: 0px;
     display: inline-block;
   }
+  .ads{
+    padding: 0px;
+  }
   .link-bottom li {
     margin-left: 5px;
   }
@@ -412,10 +415,7 @@
     float: right;
     padding: 0px;
   }
-  .centered-content{
-    max-width: 275px;
-    margin: 0 auto;
-  }
+  
   .right-inner-addon {
     display: none;
   }
@@ -747,6 +747,9 @@
     padding: 0px;
     margin-top: 30px;
     display: inline-block;
+  }
+  .wrap-ads{
+    max-width: 100%;
   }
   .right-panel-sec {
     margin: 0px;
@@ -1520,5 +1523,49 @@
   .total-result{
     padding-left: 0px;
     margin-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 387px){
+  .centered-content{
+    max-width: 286px;
+    margin: 0 auto;
+  }
+  .item{
+    width: 125px;
+    height: 190px;
+    margin: 9px;
+  }
+}
+@media only screen and (min-width: 388px) and (max-width: 414px){
+  .centered-content{
+    max-width: 370px;
+    margin: 0 auto;
+  }
+  .item{
+    width: 112px;
+    height: 177px;
+    margin: 9px 5px;
+  }
+}
+@media only screen and (min-width: 415px) and (max-width: 444px){
+  .centered-content{
+    max-width: 393px;
+    margin: 0 auto;
+  }
+  .item{
+    width: 125px;
+    height: 190px;
+    margin: 8px 3px;
+  }
+}
+@media only screen and (min-width: 445px) and (max-width: 479px){
+  .centered-content{
+    max-width: 423px;
+    margin: 0 auto;
+  }
+  .item{
+    width: 125px;
+    height: 190px;
+    margin: 8px 8px;
   }
 }

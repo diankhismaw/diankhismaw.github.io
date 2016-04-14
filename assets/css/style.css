@@ -83,7 +83,10 @@ img {
 /*------------------------ 
       Landing Page 
 ------------------------*/
-
+.wrap-ads{
+  max-width: 300px;
+  margin: 0 auto;
+}
 .left-side-album {
   width: 310px;
   display: inline-block;
@@ -380,11 +383,12 @@ i.fa.fa-circle {
 }
 .ads {
   padding-left: 35px;
-  padding-right: 25px;
+  padding-right: 0px;
   display: inline-block;
 }
 .ads-view {
   padding-left: 45px;
+  padding-right: 0px;
   border-top: none !important;
 }
 .banner {
@@ -1363,9 +1367,7 @@ input[type=radio]:checked + label:before {
   width: 99%;
   margin-left: 9px;
 }
-.ads-view {
-  padding-left: 45px;
-}
+
 .view-post {
   width: 100%;
 }
@@ -1790,7 +1792,15 @@ input[type=radio]:checked + label:before {
 /*-------------------------------- 
           Third Page 
 ----------------------------------*/
-
+.list-anime-category{
+  padding-left: 0px;
+  list-style: none;
+  display: block;
+}
+.list-anime-category > li{
+  display: inline-block;
+  float: left;
+}
 .show-tabs {
   display: inline-block;
 }
