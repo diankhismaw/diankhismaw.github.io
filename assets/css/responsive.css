@@ -395,6 +395,10 @@
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 479px) {
+  .trolls {
+    margin-top: 15px;
+    padding-left: 12px;
+  }
   .container-category{
     padding-right: 0px;
   }
