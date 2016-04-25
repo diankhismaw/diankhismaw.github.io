@@ -448,7 +448,7 @@ i.fa.fa-circle {
   color: #77bcf1;
 }
 .social-network .fa-instagram {
-  color: #125688;
+  color: #627AB3;
 }
 .social-network .text-con {
   color: #afafaf;
@@ -2344,7 +2344,7 @@ input#anime4 {
 }
 .field-discuss > p {
   font-size: 14px;
-  color: #a2a0a0;
+  color: #656362;
   font-family: sans-serif;
   word-spacing: 1px;
 }
@@ -3401,4 +3401,8 @@ body {
   margin-top: 20px;
   padding-left: 340px;
   color: #17ae97;
+}
+.link:hover {
+  transition: box-shadow 0.5s ease-in-out;
+  box-shadow: 0px 0px 4px 0px #5A5A5A;
 }
