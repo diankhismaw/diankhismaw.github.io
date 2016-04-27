@@ -1617,55 +1617,23 @@
           </ul>
           <hr/>
 
-        </div>
-
-        <div class="tab-content">
-          <!-- popular-->
-          <div role="tabpanel" class="tab-pane active wrap-tab-comment" id="popular">
-            <div class="text-comment">
-              <div class="wrap-avatar-comment">
-                <a href="#">
-                  <img class="media-object avatar" src="assets/img/admin.png" alt="...">
-                </a>
-              </div>
-              <div class="input-text-comment">
-                <textarea class="form-control form-comment" rows="3" placeholder="What's on your mind"></textarea>
-                <a href="" class="pull-right small-btn green-bg">
-										Comment
-									</a>
-              </div>
-            </div>
-
-            <div class="user-comment">
-
-              <div class="media info-avatar">
-                <div class="media-left media-comment">
+          <div class="tab-content">
+            <!-- popular-->
+            <div role="tabpanel" class="tab-pane active wrap-tab-comment" id="popular">
+              <div class="text-comment">
+                <div class="wrap-avatar-comment">
                   <a href="#">
                     <img class="media-object avatar" src="assets/img/admin.png" alt="...">
                   </a>
                 </div>
-
-                <div class="media-body w-100">
-                  <a href=""><h5 class="user">Luffy D’monkeys</h5></a>
-                  <div class="date">100 Point - <a href=""> 6 Days ago </a>
-                  </div>
+                <div class="input-text-comment">
+                  <textarea class="form-control form-comment" rows="3" placeholder="What's on your mind"></textarea>
+                  <a href="" class="pull-right small-btn green-bg">
+                                          Comment
+                                      </a>
                 </div>
               </div>
 
-              <p class="dis-cap comment-field-user">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare consequat sapien, a lacinia ligula egestas eu. Aliquam quis purus lorem. Donec tincidunt accumsan ligula, sit amet fermentum magna viverra ut. Mauris porta sagittis dui, id iaculis augue imperdiet vitae. Praesent placerat diam in odio posuere
-              </p>
-
-              <div class="reply-comment">
-                <a href=""><span>Reply</span></a>
-                <a href=""><img src="assets/img/up-reply.png">
-                </a>
-                <a href=""><img src="assets/img/down-reply.png">
-                </a>
-              </div>
-            </div>
-
-            <div class="comment-to-comment">
               <div class="user-comment">
 
                 <div class="media info-avatar">
@@ -1687,20 +1655,63 @@
                 </p>
 
                 <div class="reply-comment">
-                  <a href=""><span>Reply</span></a>
-                  <a href=""><img src="assets/img/up-reply.png">
+                  <a href="" class="hvr-bounce-in"><img src="assets/img/up-reply.png" onmouseover="this.src='assets/img/up-reply-hover.png'" onmouseout="this.src='assets/img/up-reply.png'">
                   </a>
-                  <a href=""><img src="assets/img/down-reply.png">
+                  <a href="" class="hvr-bounce-in"><img src="assets/img/down-reply.png" onmouseover="this.src='assets/img/down-reply-hover.png'" onmouseout="this.src='assets/img/down-reply.png'">
                   </a>
+                  <a class="trigger-reply" href="javascript:void(0)" onfocus="this.blur();"><span>Reply</span></a>
+                  <div class="comment-container">
+                    <textarea class="comment-box form-control form-comment" placeholder="Comment reply"></textarea>
+                    <a href="" class="pull-right small-btn green-bg">
+                      Comment
+                    </a>
+                  </div>
                 </div>
               </div>
+
+              <div class="comment-to-comment">
+                <div class="user-comment">
+
+                  <div class="media info-avatar">
+                    <div class="media-left media-comment">
+                      <a href="#">
+                        <img class="media-object avatar" src="assets/img/admin.png" alt="...">
+                      </a>
+                    </div>
+
+                    <div class="media-body w-100">
+                      <a href=""><h5 class="user">Luffy D’monkeys</h5></a>
+                      <div class="date">100 Point - <a href=""> 6 Days ago </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p class="dis-cap comment-field-user">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare consequat sapien, a lacinia ligula egestas eu. Aliquam quis purus lorem. Donec tincidunt accumsan ligula, sit amet fermentum magna viverra ut. Mauris porta sagittis dui, id iaculis augue imperdiet vitae. Praesent placerat diam in odio posuere
+                  </p>
+
+                  <div class="reply-comment">
+                    <a href="" class="hvr-bounce-in"><img src="assets/img/up-reply.png" onmouseover="this.src='assets/img/up-reply-hover.png'" onmouseout="this.src='assets/img/up-reply.png'">
+                    </a>
+                    <a href="" class="hvr-bounce-in"><img src="assets/img/down-reply.png" onmouseover="this.src='assets/img/down-reply-hover.png'" onmouseout="this.src='assets/img/down-reply.png'">
+                    </a>
+                    <a class="trigger-reply" href="javascript:void(0)" onfocus="this.blur();"><span>Reply</span></a>
+                    <div class="comment-container">
+                      <textarea class="comment-box form-control form-comment" placeholder="Comment reply"></textarea>
+                      <a href="" class="pull-right small-btn green-bg">
+                        Comment
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
+            <!-- tab panel -->
 
-          </div>
-          <!-- tab panel -->
-
-          <div role="tabpanel" class="tab-pane" id="news">
-            mdlsamdlasm
+            <div role="tabpanel" class="tab-pane" id="news">
+              mdlsamdlasm
+            </div>
           </div>
         </div>
       </div>
@@ -1772,5 +1783,13 @@
   <script src="assets/js/trigger.js"></script>
   <script src="assets/js/jquery.leanModal.min.js"></script>
   <script src="assets/js/pop-up.js"></script>
+  <script>
+    $(function(){
+        $('.comment-container').hide();
+        $('.trigger-reply').on("click", function(e) {
+            $(this).toggleClass("trigger_active").next('.comment-container').slideToggle('slow');
+        });
+    });
+  </script>
 </body>
 </html>

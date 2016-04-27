@@ -193,3 +193,17 @@ $(document).ready(function () {
       }
   });
 });
+
+function changeImage(link, type) {
+  window.test=link;
+  src=$(link).attr('src');
+  
+  $(link).parents('.troll').find('img').first().attr('src','assets/img/up-triangle.png');
+  $(link).parents('.troll').find('img').last().attr('src','assets/img/down-triangle.png');
+  
+  if (src=='assets/img/'+type+'-triangle.png'){
+    $(link).attr('src','assets/img/'+type+'-triangle-hover.png');
+  } else {
+    $(link).attr('src','assets/img/'+type+'-triangle.png');
+  }
+}
