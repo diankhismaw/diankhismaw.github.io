@@ -354,6 +354,10 @@ i.fa.fa-circle {
   background: #eeeeee !important;
   margin-top: 100px;
 }
+.tab-not-login {
+  background: #eeeeee !important;
+  margin-top: 140px;
+}
 .tab-top > li.active > a {}
 .form-comment-home {
   background: #fafafa;
@@ -639,7 +643,13 @@ i.fa.fa-circle {
   color: #cacbcb;
 }
 .dropdown-genre{
-  margin-right: -4px !important;
+  margin-right: -6px !important;
+}
+.dropdown-menu-list {
+  right: -5px !important;
+}
+.dropdown-anime {
+  width: 98%;
 }
 .banner img {
   width: 300px;
@@ -3411,9 +3421,15 @@ body {
   padding-left: 340px;
   color: #17ae97;
 }
-.link:hover {
+a:hover > .link {
+  -moz-transition: box-shadow 0.5s ease-in-out;
+  -webkit-transition: box-shadow 0.5s ease-in-out;
+  -o-transition: box-shadow 0.5s ease-in-out;
   transition: box-shadow 0.5s ease-in-out;
   box-shadow: 0px 0px 4px 0px #17ae97;
+}
+a:hover > .text-con{
+  color: #17ae97;
 }
 .trigger-reply {
   float: left;
