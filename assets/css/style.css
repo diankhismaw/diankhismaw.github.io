@@ -91,7 +91,7 @@ img {
   width: 310px;
   display: inline-block;
   float: left;
-  margin-right: 7px;
+  margin-right: 3px;
   padding-top: 6px;
 }
 .right-side-album {
@@ -99,7 +99,7 @@ img {
   display: inline-block;
 }
 .top-album {
-  padding-top: 5px;
+  padding-top: 6px;
   position: relative;
   width: 130px;
 }
@@ -108,7 +108,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  margin-top: 5px;
+  margin-top: 6px;
   color: #FFF;
   display: table;
   height: 130px;
