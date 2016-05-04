@@ -193,13 +193,17 @@
 
 @media only screen and (min-width: 320px) and (max-width: 479px){
   .popupContainer{
-    width: 95%;
+		width: 95%;
     height: auto;
-    left: 160px !important;
+    left: 50% !important;
     border-radius: 0px;
     overflow-x: hidden;
     margin-bottom: 40px;
+    margin-left: -158px !important;
   }
+	.upload {
+		width: 100%;
+	}
   .upload-image{
     width: 284px;
   }
