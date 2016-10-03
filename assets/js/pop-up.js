@@ -4,33 +4,44 @@ $("#modal_trigger").leanModal({
   closeButton: ".modal_close"
 });
 
+$("#modal-trigger-test").leanModal({
+	top: 200,
+	overlay: 0.6,
+	closeButton:".modal_close"
+});
+
+$("#modal-add-panel").leanModal({
+	top: 200,
+	overlay: 0.6,
+	closeButton:".modal_close"
+});
+$("#modal-add-list").leanModal({
+	top: 200,
+	overlay: 0.6,
+	closeButton:".modal_close"
+});
+
 $(function () {
   // Choose Upload type
-  $("#choose-image").click(function () {
+  $(".choose-image").click(function () {
     $(".upload").hide();
     $(".image-upload").show();
     return false;
   });
 
-  $("#choose-discuss").click(function () {
+  $(".choose-discuss").click(function () {
     $(".upload").hide();
     $(".discuss-upload").show();
     return false;
   });
 
-  $("#choose-link").click(function () {
-    $(".upload").hide();
-    $(".link-upload").show();
-    return false;
-  });
-
-  $("#choose-album").click(function () {
+  $(".choose-album").click(function () {
     $(".upload").hide();
     $(".album-upload").show();
     return false;
   });
 
-  $("#choose-rating").click(function () {
+  $(".choose-rating").click(function () {
     $(".upload").hide();
     $(".rating-upload").show();
     return false;
@@ -42,7 +53,7 @@ $(function () {
     $(".upload-category-image").show();
   });
 
-  $("#back-image").click(function () {
+  $(".back-image").click(function () {
     $(".image-upload").hide();
     $(".upload").show();
   });
@@ -68,7 +79,7 @@ $(function () {
     $(".upload-category-discuss").show();
   });
 
-  $("#back-discuss").click(function () {
+  $(".back-discuss").click(function () {
     $(".discuss-upload").hide();
     $(".upload").show();
   });
@@ -120,7 +131,7 @@ $(function () {
     $(".upload-category-album").show();
   });
 
-  $("#back-album").click(function () {
+  $(".back-album").click(function () {
     $(".album-upload").hide();
     $(".upload").show();
   });
@@ -146,7 +157,7 @@ $(function () {
     $(".upload-category-rating").show();
   });
 
-  $("#back-rating").click(function () {
+  $(".back-rating").click(function () {
     $(".rating-upload").hide();
     $(".upload").show();
   });

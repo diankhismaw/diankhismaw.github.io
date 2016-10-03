@@ -19,6 +19,28 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
   border-radius: 8px;
 }
+.popupContainer-panel {
+	position: absolute !important;
+  width: 600px;
+  height: auto;
+  left: 45%;
+  top: 760px !important;
+  background: #FFF;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+  border-radius: 8px;
+}
+.popupContainer-panelAdd {
+	position: absolute !important;
+  width: 400px;
+  height: auto;
+  left: 50%;
+  top: 760px !important;
+  background: #FFF;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+  border-radius: 8px;
+}
 #modal_trigger {
   width: 100px;
   display: block;
@@ -58,8 +80,7 @@
 /* Social Login Form */
 
 .upload {
-  display: inline-block;
-  margin-bottom: 20px;
+  margin: 0 auto;
 }
 .upload .social_box {
   display: block;
@@ -185,10 +206,13 @@
 #modal{
   overflow-y: auto;
 }
-
+.modal-panel {
+	display: inline-block !important;
+	width: 25px !important;
+}
 
 /*--------------------------------------------------------------
-                          Responsive 
+                          Responsive
 ----------------------------------------------------------------*/
 
 @media only screen and (min-width: 320px) and (max-width: 479px){
