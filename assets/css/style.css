@@ -857,9 +857,7 @@ i.fa.fa-circle {
 .dropdown-anime {
   width: 98%;
 }
-.banner img {
-  width: 300px;
-}
+
 .nav-tabs {
   border-bottom: transparent !important;
   margin-top: -50px;
@@ -4837,7 +4835,7 @@ figure:hover img{
 }
 .news-articel-right {
 	display: inline-block;
-	max-width: 610px;
+	max-width: 80%;
 }
 .title-articel {
 	font-size: 14px;
@@ -4968,7 +4966,6 @@ figure:hover img{
 }
 .default-side {
 	margin: 0px auto;
-	width: 300px;
 }
 .info-interview {
 	display: inline-block;

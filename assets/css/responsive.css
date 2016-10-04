@@ -1,5 +1,17 @@
-
-@media only screen and (min-width: 320px) and (max-width: 765px) {
+@media (max-width: 991px) {
+  .detail-featured-title {
+    width: 100%;
+    display: block;
+  }
+  .news-articel-right {
+    max-width: 80%;
+  }
+  .news-detail .articel .image-articel {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
   .navbar-right {
     margin: 7.5px -15px;
     padding: 10px;
@@ -54,7 +66,126 @@
   .tab-content{
     padding-left: 0px;
   }
+  .single-panel {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .text-articel.hidden-xs {
+    display: block !important;
+  }
+  .information-articel.hidden-xs {
+    display: none !important;
+  }
+  .text-articel.visible-xs {
+    display: none !important;
+  }
+  .information-articel.visible-xs {
+    display: block !important;
+  }
+  .news-articel-right {
+    max-width: 70%;
+  }
+  .title-articel {
+    padding-top: 0px;
+  }
+  .input-text-comment {
+    width: 80%;
+    margin-left: 10px;
+  }
+  .form-comment {
+    min-height: 60px;
+    width: 100%;
+  }
+  .wrap-comment-field {
+    margin-top: 0px;
+    padding-left: 60px;
+    min-width: 0px;
+  }
+  .media-body {
+    width: 100%;
+    padding-left: 10px;
+  }
+  .wrap-comment-field .img-comment {
+    width: 245px;
+    margin-bottom: 20px;
+  }
+  .single-panel-view .col-md-9 {
+    padding: 0px;
+  }
+  .news-detail .avatar-view {
+    padding-left: 0px;
+    margin-top: 0px;
+  }
+  .news-detail .media-left {
+    vertical-align: top;
+    width: 19%;
+    padding-right: 0px;
+  }
+  .news-detail .tag-minute .count-view {
+    position: absolute;
+    right: 10px;
+  }
+  .news-detail .articel {
+    padding: 0px 10px;
+  }
 }
+@media (max-width: 520px) {
+  .information-featured .info-interview {
+    vertical-align: middle;
+  }
+  .information-featured {
+    margin-top: 0px;
+  }
+  .user-comment p {
+    margin-left: 0px;
+  }
+  .reply-comment {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 418px) {
+  .text-articel.hidden-xs {
+    display: none !important;
+  }
+  .information-articel.hidden-xs {
+    display: none !important;
+  }
+  .text-articel.visible-xs {
+    display: block !important;
+  }
+  .information-articel.visible-xs {
+    display: block !important;
+  }
+  .wrap-comment-field {
+    margin-top: 0px;
+    padding-left: 50px;
+    min-width: 0px;
+  }
+  .comment-to-comment .media-body {
+    width: 100%;
+    padding-left: 0px;
+  }
+ .older-replies {
+    margin-left: 50px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .wrap-profile {
@@ -151,9 +282,6 @@
   }
   .text-articel {
     margin-top: 10px;
-  }
-  .news-articel-right {
-    max-width: 210px;
   }
   .ads-view-news {
     padding: 0px;
@@ -310,9 +438,6 @@
   .btn-tt-share {
     width: 165px;
   }
-  .input-text-comment {
-    width: 538px;
-  }
   .navbar-toggle {
     border: none;
     margin: 8px 4px 4px 10px;
@@ -427,9 +552,6 @@
     padding: 3px 0px;
     padding-left: 20px;
   }
-  .input-text-comment {
-    width: 334px;
-  }
   .banner h4 {
     font-size: 14px;
   }
@@ -535,25 +657,11 @@
     height: 1px;
     margin-top: -2px !important;
   }
-  .input-text-comment {
-    margin-left: 0px;
-    width: 100%;
-  }
-  .form-comment {
-    min-height: 90px;
-    width: 100%;
-  }
   .small-btn {
     padding: 4px 15px !Important;
   }
   .media-comment {
     width: 26% !important;
-  }
-  .user-comment p {
-    margin-left: 10px;
-  }
-  .reply-comment {
-    margin-left: 10px;
   }
   .comment-to-comment {
     margin-left: 15px;
@@ -1012,10 +1120,6 @@
     padding: 0px;
     width: 21% !Important;
   }
-  .media-body {
-    width: 100%;
-    padding-left: 15px;
-  }
   .media-body-vote{
     padding-left: 8px;
   }
@@ -1307,9 +1411,6 @@
   }
   .title-notice{
     font-size: 12px;
-  }
-  .form-comment-edit > textarea{
-    width: 300px;
   }
   .wrap-socmed{
     width:100%;
@@ -1846,10 +1947,6 @@
 	.news-detail .col-md-9 {
 		padding: 0px !important;
 	}
-	.news-detail .avatar-view {
-		padding-left: 0px;
-		margin-top: 0px;
-	}
 	.news-detail .avatar-view .media-left {
 		width: 14% !important;
 	}
@@ -1874,9 +1971,5 @@
 	}
 	.news-detail .articel .point-title .char-name {
 		font-size: 16px;
-	}
-	.news-detail .articel .image-articel {
-		width: 90%;
-		height: auto;
 	}
 }

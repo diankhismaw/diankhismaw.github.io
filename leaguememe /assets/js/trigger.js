@@ -194,3 +194,34 @@ $('#discussionBack').on('click', function(){
   $('#contentDiscussion').show();
   $('#uploadDiscussion').hide();
 });
+// Gamechat Tab
+$('#gamechatThread').on('click', function() {
+  $('#contentGamechat').hide();
+  $('#uploadGamechat').show();
+  $(this).hide();
+  $('#gamechatBack').show();
+});
+$('#gamechatBack').on('click', function(){
+  $(this).hide();
+  $('#gamechatThread').show();
+  $('#contentGamechat').show();
+  $('#uploadGamechat').hide();
+});
+
+editArticel = function(selector, type) {
+  $(selector).on('click', function() {
+    if (type == 'edit') {
+      $('.btn-edit-detail').hide();
+      $('.btn-save-detail').show();
+    } else {
+      $('.btn-edit-detail').show();
+      $('.btn-save-detail').hide();
+    }
+
+    $('.field-discuss').toggle();
+    $('.panel-post-editor').toggle();
+  });
+};
+
+editArticel('.btn-edit-detail', 'edit');
+editArticel('.btn-save-detail', 'save');

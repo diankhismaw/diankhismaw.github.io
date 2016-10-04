@@ -356,7 +356,7 @@ editArticel = function(selector, type) {
     }
 
     $('.field-discuss').toggle();
-    $('.panel-discuss-editor').toggle();
+    $('.panel-post-editor').toggle();
   });
 };
 

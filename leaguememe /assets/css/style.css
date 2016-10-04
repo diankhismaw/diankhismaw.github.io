@@ -1969,7 +1969,7 @@ input[type=radio]:checked + label:before {
 }
 .wrap-comment-field {
 	display: inline-block;
-	margin-top: -10px;
+	margin-top: 0px;
 	padding-left: 60px;
 	min-width: 700px;
 	position: relative;
@@ -2016,8 +2016,8 @@ input[type=radio]:checked + label:before {
 }
 .older-replies {
 	width: 86%;
-	background: #ECFEFB;
-	border-left: 5px solid #72CDC1;
+  background: #fff0f3;
+  border-left: 5px solid #b83c54;
 	padding: 6px;
 	color: #7F7F7F;
 	font-size: 14px;
@@ -2383,7 +2383,7 @@ input[type=radio]:checked + label:before {
 }
 .title-dialogue {
   display: inline-block;
-  width: 63%;
+  width: 62%;
   margin-left: 10px;
 }
 .title-dialogue select {
@@ -2412,18 +2412,35 @@ input[type=radio]:checked + label:before {
 .title-dialogue hr {
   margin: 0px !important;
 }
-.dialogue-upload .count-right{
+.dialogue-upload {
+  display: inline-block;
+  width: 100%;
+  margin: 0px;
+}
+#uploadGamechat .league-dialogue {
+  margin: 10px 0px 20px 0px;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  color: #949393;
+  letter-spacing: 1px;
+}
+#uploadGamechat .dialogue-upload .count-right{
   font-size: 13px;
   color: #a6a6a6;
   position: absolute;
+  top: inherit;
   right: 0px;
   bottom: 0px;
+}
+#uploadGamechat .title-dialogue {
+  width: 60%;
 }
 .dialogue-upload .panel-body {
   border-bottom: 1px solid #ddd;
 }
 .dialogue-upload .wrap-filter-post {
   padding-left: 0px;
+  border-top: none;
 }
 .dialogue-upload .wrap-filter-post .fa-plus-circle {
   color: #b83c54;
@@ -2643,10 +2660,13 @@ input[type=radio]:checked + label:before {
 }
 .txt-area-tags {
   border: none;
-  width: 100% !important;
+  width: 63% !important;
   resize: none !important;
   font-size: 14px;
   color: #7D7D7D;
+}
+.panel-discuss-editor {
+  position: relative;
 }
 .hastag-view-upload {
   margin-top: -10px;
@@ -2905,10 +2925,6 @@ input#anime-list4 {
 .table-left {
   margin-left: 6px;
 }
-.tag-minute {
-  margin-left: 18px;
-  margin-top: -2px;
-}
 .rating {
   color: #a2a0a0;
   font-size: 11px;
@@ -2930,7 +2946,8 @@ input#anime-list4 {
 .avatar-fifth-page {
   float: left;
   width: 480px;
-	margin-top: 15px !important
+	margin-top: 15px !important;
+  margin-bottom: 20px !important;
 }
 .wrap-tag-comment {
   float: left;
@@ -3034,7 +3051,14 @@ input#anime-list4 {
   width: 100%;
 }
 .outer-member-event .info-avatar {
-  margin-bottom: 15px !important;
+  display: inline-block;
+  width: auto;
+  margin: 10px 14px !important;
+}
+.outer-member-event .col-md-12 {
+  max-width: 90%;
+  margin: 0 auto;
+  float: none;
 }
 .outer-member-event .info-avatar .avatar {
   width: 40px;
@@ -3102,7 +3126,7 @@ input#anime-list4 {
   margin-right: 0px;
 }
 .normal-tag {
-  margin-top: 3px;
+  margin-top: 0px;
   border: 1px solid #dfdfdf;
   color: #999999;
   padding: 2px 15px;
@@ -4486,12 +4510,14 @@ a:hover > .text-con{
 }
 .info-avatar-discuss {
 	margin-bottom: 0px !important;
+  margin-top: 0px !important;
 }
 .media-left-discuss {
 	width: 20% !important;
 }
 .avatar-discuss {
 	width: 45px !important;
+  height: 45px !important;
 }
 .info-avatar h5 {
   font-size: 14px;
@@ -4723,6 +4749,15 @@ figure:hover img{
 .wrap-date-thumb > a {
 	color: #a2a2a2;
 }
+.tag {
+  float: left;
+  margin-left: 70px;
+  margin-top: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 .tag-minute-thumb {
 	display: inline-block;
 	margin: 0px;
@@ -4733,6 +4768,7 @@ figure:hover img{
 	vertical-align: middle;
 }
 .tag-minute-thumb .normal-tag {
+  margin-top: 0px;
   border: 1px solid #dfdfdf;
   color: #999999;
   padding: 2px 15px;
@@ -5888,6 +5924,11 @@ figure:hover img{
   right: 10px;
   top: 5px;
 }
+.dialogue-upload .panel-content .count-right {
+  top: inherit;
+  bottom: 0px;
+}
+
 .album-upload .panel-default {
   padding: 10px 0px;
   position: relative;
@@ -5952,6 +5993,11 @@ figure:hover img{
   display: block;
   margin-top: 10px;
 }
+
+.tag-minute {
+  margin-left: 18px;
+  margin-top: -2px;
+}
 .right-pos {
   display: block;
   margin-left: 15px;
@@ -6003,4 +6049,46 @@ figure:hover img{
   font-size: 12px;
   color: #727575;
   padding-top: 7px;
+}
+.block-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 26px;
+  border-bottom: 2px solid #B83C54;
+  display: inline-block;
+  width: 100%;
+}
+.block-title > span {
+  line-height: 17px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  padding: 7px 12px 4px 12px;
+  background-color: #B83C54;
+  color: #fff;
+}
+.panel-post-editor {
+  position: relative;
+  display: none;
+  min-height: 220px;
+}
+.btn-edit-detail {
+  background: #7d7d7d;
+  color: #fff;
+  border: none;
+  width: 100%;
+  margin: 5px 0px;
+}
+.btn-delete-detail {
+  background: #d64d4d;
+  border: none;
+  width: 100%;
+  margin: 5px 0px;
+}
+.btn-save-detail {
+  background: #17ae97;
+  border: none;
+  width: 100%;
+  margin: 5px 0px;
 }
