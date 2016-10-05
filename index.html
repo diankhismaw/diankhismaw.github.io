@@ -1110,7 +1110,7 @@
             </ul>
           </li>
 
-          <li class="separator-search"></li>
+          <li class="separator-search hidden-xs"></li>
 
           <li id="noti_Container">
             <div id="noti_Counter"></div>
@@ -1284,10 +1284,10 @@
           <div role="tabpanel" class="tab-pane active" id="moment">
             <div class="non-res">
               <div class="left-panel-sec">
-                <a href="javascript:void(0)" class="btn btn-new-thread">
+                <a href="javascript:void(0)" class="btn btn-new-thread" id="onePieceThread">
                   <i class="fa fa-plus-circle"> </i> Create Discussion
                 </a>
-                <a href="javascript:void(0)" class="btn btn-back-thread" style="display: none;">
+                <a href="javascript:void(0)" class="btn btn-back-thread" style="display: none;" id="onePieceBack">
                   Back
                 </a>
                 <div class="wrap-panel">
@@ -1368,12 +1368,17 @@
               </div>
 
               <div class="right-panel-sec">
-                <div class="row wrap-tab-content">
+                <div class="row wrap-tab-content" id="contentOnePiece">
                   <div class="col-md-7 main-content">
 
                     <!-- tab -->
                     <div class="col-md-8 no-padding">
                       <ul id="pop" class="nav pop-tabs" role="tablist" style="margin-top:10px;">
+                        <li role="presentation" style="margin-left: 0px; margin-right: -5px;">
+                          <a href="#bookmarks" role="tab" data-toggle="tab" aria-controls="bookmarks">
+                            <i class="fa fa-bookmark"></i>
+                          </a>
+                        </li>
                         <li role="presentation" class="active">
                           <a href="#popular" role="tab" data-toggle="tab" aria-controls="popular" aria-expanded="true">Popular</a>
                         </li>
@@ -1501,7 +1506,7 @@
                                 <div class="media-body w-2000">
                                   <a href="profile.html"><h5>ADMIN</h5></a>
                                   <span class="minute">15min ago to <a href="" class="minute">/a/onepiece</a></span>
-                                  <div class="tag   tag-index">
+                                  <div class="tag tag-index">
                                     <span id="album1" class="normal-tag tag-album">album</span>
                                     <a href="" class="socmed-1">
                                       <img src="assets/img/tt-credit.png">
@@ -1511,34 +1516,9 @@
                               </div>
 
                               <h3><a href="view-post.html">Rest and Peace ACE !</a></h3>
-                              <div class="album-wraper-index">
-                                <div class="left-side-album">
-                                  <a href="view-post-description.html">
-                                    <img src="assets/img/Naruto.png" alt="ace" class="img-responsive" />
-                                  </a>
-                                </div>
-                                <div class="right-side-album">
-                                  <div class="top-album">
-                                    <a href="view-post-description.html">
-                                      <img src="assets/img/luffy.png" class="img-responsive">
-                                    </a>
-                                  </div>
-                                  <div class="top-album">
-                                    <a href="view-post-description.html">
-                                      <img src="assets/img/luffy.png" class="img-responsive">
-                                    </a>
-                                  </div>
-                                  <div class="top-album">
-                                    <a href="view-post-description.html">
-                                      <img src="assets/img/luffy.png" class="img-responsive">
-                                      <div class="overlay-album">
-                                        <div class="caption-album">
-                                          +&nbsp;135
-                                        </div>
-                                      </div>
-                                    </a>
-                                  </div>
-                                </div>
+                              <div href="view-post.html" class="wrap-avatar-img">
+                                <img src="assets/img/img-1.png" alt="ace" class="img-responsive meme-big" />
+                                <a class="album-more" target="_blank">View Album (50)<span class="shadow"></span></a>
                               </div>
 
                               <!--like-->
@@ -1850,9 +1830,9 @@
                   </div>
                   <!--end ads-->
                 </div>
-                <div class="upload-page" style="display: none;">
+                <div class="upload-page" style="display: none;" id="uploadOnePiece">
                   <div class="col-md-7 main-content">
-                    <div class="upload">
+                    <div class="upload" >
                       <h2 class="modal-title-upload mar-t-20" id="myModalLabel">Pictures & Album > One Piece</h2>
                       <hr/>
                       <p class="grey-color-xs">Everything uploaded must be related to One Piece</p>

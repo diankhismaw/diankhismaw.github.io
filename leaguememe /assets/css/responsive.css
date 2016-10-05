@@ -1,4 +1,4 @@
-@media (max-width: 1120px) {
+@media (max-width: 1199px) {
   .wrap-tab-comment {
     margin-left: 0px;
     display: block !important;
@@ -16,8 +16,52 @@
   .wrap-comment-field {
     min-width: 0px;
   }
+  #profile-page .main-content {
+    width: 100%;
+  }
+  #profile-page .show-anime-review .right-side {
+    padding-left: 0px;
+  }
+  #profile-page .background-textarea {
+    padding-left: 80px;
+  }
+  .value-box {
+    bottom: 10px;
+  }
+  .news-detail .articel .image-articel {
+    width: 100%;
+    height: auto;
+  }
+
 }
+/* --------------------------------------------------------- */
+
 @media (max-width: 991px) {
+  #fifth-page-click .col-sm-8{
+    padding: 0px 20px 0px 0px !important
+  }
+  #fifth-page-click .media-left-discuss {
+    width: 24% !important;
+  }
+  .tab-content {
+    padding-left: 0px;
+  }
+  .right-res-profile {
+    width: 100%;
+  }
+  .link-bottom li {
+    margin-left: 6px;
+  }
+  .social-network li {
+    padding: 8px;
+  }
+  .ui.half-hidden-covers.list {
+    max-width: 100%;
+  }
+  .ui.half-hidden-covers.list .item {
+    width: 140px;
+    margin-right: -5.05%;
+  }
   .single-panel-view .col-md-8 {
     padding: 0px;
   }
@@ -91,6 +135,21 @@
     vertical-align: middle;
     width: 13%;
   }
+  #profile-page .info-avatar .media-left {
+    vertical-align: top;
+  }
+  #profile-page .background-textarea {
+    padding-left: 0px;
+  }
+  #profile-page .input-text-comment {
+    margin-left: 0px;
+    display: block;
+    margin: 0 auto;
+    padding-left: 20px;
+  }
+  #profile-page .value-box {
+    bottom: 10px;
+  }
   .avatar {
     width: 40px;
     height: 40px;
@@ -108,6 +167,8 @@
     display: block;
   }
 }
+/* --------------------------------------------------------- */
+
 @media (max-width: 767px) {
   .tab-content {
     width: 100%;
@@ -115,6 +176,10 @@
     padding: 0px;
   }
   #moment .btn-new-thread {
+    width: 100%;
+    margin-top: 20px;
+  }
+  #moment .btn-back-thread {
     width: 100%;
     margin-top: 20px;
   }
@@ -183,7 +248,7 @@
     padding: 0px;
   }
   .patch-note .title-toggle:after {
-    width: 55px;
+    width: 100%;
     top: 10px;
     height: 1px;
     left: 240px;
@@ -208,13 +273,6 @@
   .patch-note .wrap-balance .img-circle {
     width: 50px;
     height: 50px;
-  }
-  .patch-note .wrap-balance .wrap-name {
-    padding-left: 0px;
-    max-width: 230px;
-    padding-top: 0px;
-    margin-left: 10px;
-    margin-bottom: 0px;
   }
   .patch-note .wrap-balance .wrap-name .char-name {
     margin-bottom: 10px;
@@ -280,19 +338,8 @@
     width: 120%;
     top: 147px;
   }
-  .ui.half-hidden-covers.list .item {
-    float: left;
-    padding: 0px;
-    width: 100px;
-    margin-right: -10.05%;
-    z-index: 0;
-    -webkit-transition: margin .3s;
-    transition: margin .2s;
-    margin-left: 0px;
-    margin-bottom: 40px;
-  }
   .show-anime .more-panel {
-    margin-top: -20px;
+    margin-top: 0px;
     padding-top: 0px;
   }
   .aboutme {
@@ -312,6 +359,12 @@
   .info-avatar .media-profile img {
     width: 50px;
     height: 50px;
+  }
+  #profile-page .info-avatar .media-profile {
+    vertical-align: top;
+  }
+  #profile-page .info-avatar .media-profile {
+    width: 10%;
   }
   .content-list .dis-cap {
     padding: 0px;
@@ -371,8 +424,12 @@
     max-width: 80%;
     margin-left: 0px;
   }
-  .form-comment {
+  #profile-page .input-text-comment {
     width: 100%;
+    padding-left: 0px;
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
   }
   .pop-view > li.active > a,
   .pop-view > li.active > a:hover {
@@ -466,14 +523,211 @@
   .title-articel {
     padding-top: 0px;
   }
+  .information-featured {
+    margin-top: 0px;
+  }
+  #fifth-page-click .wrap-res-avatar {
+    margin-bottom: 20px;
+  }
+  #fifth-page-click .wrap-tag-comment {
+    margin-top: 0px;
+  }
+  .navbar-collapse {
+    background: #252323;
+    max-height: 400px !important;
+  }
+  #noti_Container_res {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-top: 4px;
+    right: -20px;
+  }
+  #notifications_res {
+    display: none;
+    width: 303px;
+    position: absolute;
+    top: 46px;
+    z-index: 9;
+    left: -228px;
+    background: #FFF;
+    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .20);
+  }
+  .username-notif{
+    width: 100%;
+    margin-top: -7px;
+  }
+  .username-notif-page {
+    display: inline-block;
+    width: 84%;
+    margin-top: -8px;
+  }
+  #noti_Container{
+    display: none;
+  }
+
+
+  #noti_Container_res {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-top: 4px;
+    right: -20px;
+  }
+
+  /* A CIRCLE LIKE BUTTON IN THE TOP MENU. */
+
+  #noti_Button_res {
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    margin: 10px 15px 0 10px;
+    cursor: pointer;
+  }
+  #noti_Button_res > a > span {
+    color: #fff;
+  }
+  #noti_Button_res:hover > a > span {
+    color: #e4ac39;
+    transition: all 0.5s ease-in;
+  }
+
+  /* THE POPULAR RED NOTIFICATIONS COUNTER. */
+
+  #noti_Counter_res {
+    display: block;
+    position: absolute;
+    background: #E1141E;
+    color: #FFF;
+    font-size: 11px;
+    font-weight: normal;
+    padding: 0px 2px;
+    margin: 2px 0px 0px 21px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    z-index: 1;
+  }
+
+  /* THE NOTIFICAIONS WINDOW. THIS REMAINS HIDDEN WHEN THE PAGE LOADS. */
+
+
+  /* AN ARROW LIKE STRUCTURE JUST OVER THE NOTIFICATIONS WINDOW */
+
+  #notifications_res:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    color: transparent;
+    border: 10px solid #CCC;
+    border-color: transparent transparent #FFF;
+    margin-top: -20px;
+    margin-left: 237px;
+  }
+  .ava-notif,
+  .post-notif {
+    vertical-align: top;
+  }
+  .ads-view {
+    padding: 0px;
+    display: inline-block;
+  }
+  .box-center {
+    max-width: 100%;
+  }
+  .patch-note .wrap-balance .wrap-name {
+    max-width: 80%;
+  }
+  .upload-page .upload-image {
+    width: 100%;
+  }
+  #contentOnePiece .main-content {
+    padding: 0px;
+  }
+  #contentOnePiece .main-content .wrapper-avatar {
+    margin: 0px;
+    width: 100%;
+  }
+  .choose-dialogue {
+    padding: 0px;
+  }
+  #index-page .info-avatar .media-left {
+    width: 20%;
+    vertical-align: top;
+  }
 }
+/* --------------------------------------------------------- */
 
 @media (max-width: 560px) {
+  .patch-note .wrap-balance .wrap-name {
+    padding-left: 0px;
+    max-width: 230px;
+    padding-top: 0px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+  }
   .outer-member-event .info-avatar {
     margin: 10px 4px !important;
   }
   .media-body {
     padding-left: 0px;
+  }
+  #profile-page .media-body {
+    padding-left: 10px;
+  }
+  .ui.half-hidden-covers.list .item {
+    float: left;
+    padding: 0px;
+    width: 110px;
+    margin-right: -7.05%;
+    z-index: 0;
+    -webkit-transition: margin .3s;
+    transition: margin .2s;
+    margin-left: 0px;
+    margin-bottom: 40px;
+  }
+  #profile-page .info-avatar .media-profile {
+    width: 13%;
+  }
+  #profile-page .input-text-comment {
+    padding-left: 0px;
+    width: 100%;
+    max-width: 100%;
+  }
+  #sortable > li {
+    width: 100%;
+  }
+  .wrap-text-panel > a {
+    position: absolute;
+    right: 10px;
+  }
+  .title-edit-panel {
+    max-width: 100%;
+  }
+  .upload-page .img-panel {
+    width: 95px;
+    height: auto;
+  }
+  .upload-page .panel-content .title-img-upload {
+    width: 75%;
+  }
+  .upload-page .panel-content .count-right {
+    right: 25px;
+  }
+}
+/* --------------------------------------------------------- */
+
+@media (max-width: 479px) {
+  .upload-page .panel-content .count-right {
+    right: 15px;
+  }
+  .avatar-fifth-page .media-body {
+    width: 70%;
+  }
+  #fifth-page-click .tag-minute {
+    margin-left: 120px;
+    margin-top: 3px;
   }
 }
 @media (max-width: 418px) {
@@ -495,8 +749,22 @@
   .image-link {
     width: 70px;
   }
+  .input-text-comment {
+    width: 85%;
+    padding-left: 10px;
+  }
+  #profile-page .input-text-comment {
+    padding-left: 0px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .form-comment {
+    display: block;
+  }
+  #profile-page .info-avatar .media-profile {
+    width: 18%;
+  }
 }
-
 
 
 
@@ -635,9 +903,6 @@
   .left-panel-hide{
     display: none;
   }
-  .navbar-collapse{
-     background: #3e3a3a;
-  }
   .navbar-toggle {
     border: none;
     margin: 8px 4px 4px 10px;
@@ -740,10 +1005,6 @@
   }
   .comment-to-comment {
     margin-left: 15px;
-  }
-  .ads-view {
-    padding: 0px;
-    display: inline-block;
   }
   .ads{
     padding: 0px;
@@ -1028,15 +1289,6 @@
   .wrap-tag-comment > .tag-minute {
     display: none;
   }
-  .up-triangle-hide {
-    display: none;
-  }
-  .media-left.up-triangle-res {
-    display: inline-block;
-    float: left;
-    width: 15% !Important;
-    margin-right: 15px;
-  }
   .wrap-bottom-avatar {
     display: inline-block;
   }
@@ -1050,9 +1302,6 @@
     padding: 0px;
     font-size: 14px;
     margin-bottom: 20px;
-  }
-  .ads-view {
-    max-width: 100%;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -1136,9 +1385,6 @@
   }
   .wrap-panel {
     width: 100% !important;
-  }
-  .right-panel-sec {
-    width: 74%;
   }
   .ads {
     padding-left: 25px;
@@ -1362,9 +1608,6 @@
 @media only screen and (min-width: 768px) and (max-width: 991px){
   .left-res-profile{
     width: 220px !important;
-  }
-  .right-res-profile {
-    width: 69%;
   }
   .content-list{
     padding: 0px;
@@ -1822,92 +2065,9 @@
 /*------------------------------------------------
                   Notif Page
 --------------------------------------------------*/
-#noti_Container_res{
-  display: none;
-}
+
 @media only screen and (min-width: 320px) and (max-width: 479px){
-  .username-notif{
-    width: 100px;
-    margin-top: -7px;
-  }
-  .username-notif-page {
-    display: inline-block;
-    width: 84%;
-    margin-top: -8px;
-  }
-  #noti_Container{
-    display: none;
-  }
 
-
-  #noti_Container_res {
-    position: relative;
-    display: inline-block;
-    float: right;
-    margin-top: 4px;
-    right: -20px;
-  }
-
-  /* A CIRCLE LIKE BUTTON IN THE TOP MENU. */
-
-  #noti_Button_res {
-    width: 22px;
-    height: 22px;
-    line-height: 22px;
-    margin: 10px 15px 0 10px;
-    cursor: pointer;
-  }
-  #noti_Button_res > a > span {
-    color: #fff;
-  }
-  #noti_Button_res:hover > a > span {
-    color: #e4ac39;
-    transition: all 0.5s ease-in;
-  }
-
-  /* THE POPULAR RED NOTIFICATIONS COUNTER. */
-
-  #noti_Counter_res {
-    display: block;
-    position: absolute;
-    background: #E1141E;
-    color: #FFF;
-    font-size: 11px;
-    font-weight: normal;
-    padding: 0px 2px;
-    margin: 2px 0px 0px 21px;
-    border-radius: 2px;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    z-index: 1;
-  }
-
-  /* THE NOTIFICAIONS WINDOW. THIS REMAINS HIDDEN WHEN THE PAGE LOADS. */
-
-  #notifications_res {
-    display: none;
-    width: 303px;
-    position: absolute;
-    top: 46px;
-    z-index: 9;
-    left: -228px;
-    background: #FFF;
-    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .20);
-  }
-
-  /* AN ARROW LIKE STRUCTURE JUST OVER THE NOTIFICATIONS WINDOW */
-
-  #notifications_res:before {
-    content: '';
-    display: block;
-    width: 0;
-    height: 0;
-    color: transparent;
-    border: 10px solid #CCC;
-    border-color: transparent transparent #FFF;
-    margin-top: -20px;
-    margin-left: 237px;
-  }
 }
 /*------------------------------------------------
                   Login and Sign up Page

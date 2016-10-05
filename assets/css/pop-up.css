@@ -215,16 +215,7 @@
                           Responsive
 ----------------------------------------------------------------*/
 
-@media only screen and (min-width: 320px) and (max-width: 479px){
-  .popupContainer{
-		width: 95%;
-    height: auto;
-    left: 50% !important;
-    border-radius: 0px;
-    overflow-x: hidden;
-    margin-bottom: 40px;
-    margin-left: -158px !important;
-  }
+@media (max-width: 480px;) {
 	.upload {
 		width: 100%;
 	}
@@ -268,5 +259,16 @@
     margin: 0px;
     margin-left: 2px;
     width: 47px;
+  }
+}
+@media (max-width: 320px) {
+  .popupContainer{
+    width: 95%;
+    height: auto;
+    left: 50% !important;
+    border-radius: 0px;
+    overflow-x: hidden;
+    margin-bottom: 40px;
+    margin-left: -152px !important;
   }
 }
