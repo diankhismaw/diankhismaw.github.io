@@ -1593,6 +1593,10 @@ input[type=radio]:checked + label:before {
 .tab-comment-vote{
   margin-left: 19px;
 }
+#fifth-page-click .single-panel {
+  width: 99%;
+  margin-left: 10px;
+}
 .single-panel {
   background: #fff;
   border: 1px solid #DDDDDD;
@@ -1605,7 +1609,7 @@ input[type=radio]:checked + label:before {
 }
 .single-panel-view{
   width: 99%;
-  margin-left: 9px;
+  margin-left: 10px;
 }
 
 .view-post {
@@ -2353,11 +2357,17 @@ input[type=radio]:checked + label:before {
   margin-top: 3px;
   margin-left: 0px;
 }
-
+.btn:hover, .btn:focus, .btn.focus {
+  color: #fff;
+}
 /*-------------------------
 		Upload Triger
 ---------------------------*/
-.left-panel-sec .btn-new-thread {
+.search-res{
+  display: none !important;
+  position: relative;
+}
+.btn-new-thread {
   width: 100%;
   background: #fff;
   color: #a5a1a2;
@@ -2369,7 +2379,7 @@ input[type=radio]:checked + label:before {
   padding: 6px 15px;
   font-family: 'Helvetica', sans-serif;
 }
-.left-panel-sec .btn-back-thread {
+.btn-back-thread {
   width: 100%;
   background: #B2BCBB;
   color: #fff;
@@ -2382,7 +2392,7 @@ input[type=radio]:checked + label:before {
   padding: 6px 15px;
   font-family: 'Helvetica', sans-serif;
 }
-.left-panel-sec .btn-new-thread .fa {
+.btn-new-thread .fa {
   color: #B83C54;
   padding-right: 5px;
 }
@@ -2870,7 +2880,10 @@ input#anime-list4 {
 /*------------------------------------
        fifth page when click
 -------------------------------------*/
-
+/*#fifth-page-click .container {
+  padding-left: 10px;
+  padding-right: 0px
+}*/
 
 /* left side */
 

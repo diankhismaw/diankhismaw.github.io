@@ -169,41 +169,41 @@ toggleEventClick('#linkTableContent', '.wrap-table-content', '.list-table-conten
 // Index Uploading
 
 // -- Leaguememe Tabs --
-$('#onePieceThread').on('click', function() {
+$('.onePieceThread').on('click', function() {
   $('#contentOnePiece').hide();
   $('#uploadOnePiece').show();
   $(this).hide();
-  $('#onePieceBack').show();
+  $('.onePieceBack').show();
 });
-$('#onePieceBack').on('click', function(){
+$('.onePieceBack').on('click', function(){
   $(this).hide();
-  $('#onePieceThread').show();
+  $('.onePieceThread').show();
   $('#contentOnePiece').show();
   $('#uploadOnePiece').hide();
 });
 // Discussion Tab
-$('#discussionThread').on('click', function() {
+$('.discussionThread').on('click', function() {
   $('#contentDiscussion').hide();
   $('#uploadDiscussion').show();
   $(this).hide();
-  $('#discussionBack').show();
+  $('.discussionBack').show();
 });
-$('#discussionBack').on('click', function(){
+$('.discussionBack').on('click', function(){
   $(this).hide();
-  $('#discussionThread').show();
+  $('.discussionThread').show();
   $('#contentDiscussion').show();
   $('#uploadDiscussion').hide();
 });
 // Gamechat Tab
-$('#gamechatThread').on('click', function() {
+$('.gamechatThread').on('click', function() {
   $('#contentGamechat').hide();
   $('#uploadGamechat').show();
   $(this).hide();
-  $('#gamechatBack').show();
+  $('.gamechatBack').show();
 });
-$('#gamechatBack').on('click', function(){
+$('.gamechatBack').on('click', function(){
   $(this).hide();
-  $('#gamechatThread').show();
+  $('.gamechatThread').show();
   $('#contentGamechat').show();
   $('#uploadGamechat').hide();
 });

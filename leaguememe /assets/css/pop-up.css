@@ -10,7 +10,7 @@
 }
 .popupContainer {
   position: absolute !important;
-  width: 600px;
+  max-width: 600px;
   height: auto;
   left: 45%;
   top: 110px !important;
@@ -21,7 +21,7 @@
 }
 .popupContainer-panel {
 	position: absolute !important;
-  width: 600px;
+  max-width: 600px;
   height: auto;
   left: 45%;
   top: 760px !important;
@@ -32,7 +32,7 @@
 }
 .popupContainer-panelAdd {
 	position: absolute !important;
-  width: 400px;
+  max-width: 400px;
   height: auto;
   left: 50%;
   top: 760px !important;
@@ -217,7 +217,7 @@
                           Responsive
 ----------------------------------------------------------------*/
 
-@media only screen and (min-width: 320px) and (max-width: 479px){
+/*@media only screen and (min-width: 320px) and (max-width: 479px){
   .popupContainer{
 		width: 95%;
     height: auto;
@@ -271,4 +271,4 @@
     margin-left: 2px;
     width: 47px;
   }
-}
+}*/

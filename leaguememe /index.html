@@ -1376,7 +1376,7 @@
           <ul class="nav nav-tabs draggable draggable-center" role="tablist">
             <li role="presentation" class="active"><a href="#moment" aria-controls="home" role="tab" data-toggle="tab">Leaguememe</a></li>
             <li role="presentation"><a href="#discussion" aria-controls="profile" role="tab" data-toggle="tab">Discussion</a></li>
-            <li role="presentation"><a href="#news" aria-controls="profile" role="tab" data-toggle="tab">News</a></li>
+            <li role="presentation"><a href="#news-outer" aria-controls="profile" role="tab" data-toggle="tab">News</a></li>
             <li role="presentation"><a href="#gameChat" aria-controls="profile" role="tab" data-toggle="tab">Gamechat</a></li>
             <li role="presentation"><a href="#event" aria-controls="profile" role="tab" data-toggle="tab">Event</a></li>
           </ul>
@@ -1386,11 +1386,11 @@
         <div class="tab-content">
           <!-- Leaguememe Tab -->
           <div role="tabpanel" class="tab-pane active" id="moment">
-            <div class="left-panel-sec">
-              <a href="javascript:void(0)" class="btn btn-new-thread" id="onePieceThread">
+            <div class="left-panel-sec hidden-xs">
+              <a href="javascript:void(0)" class="btn btn-new-thread onePieceThread">
                 <i class="fa fa-plus-circle"> </i> Upload Pics
               </a>
-              <a href="javascript:void(0)" class="btn btn-back-thread" style="display: none;" id="onePieceBack">
+              <a href="javascript:void(0)" class="btn btn-back-thread onePieceBack" style="display: none;" >
                 Back
               </a>
               <div class="wrap-panel">
@@ -1469,13 +1469,99 @@
               </div>
               <!-- end wrap-panel-->
             </div>
+            <div class="left-res visible-xs">
+              <a href="javascript:void(0)" class="btn btn-new-thread onePieceThread">
+                <i class="fa fa-plus-circle"> </i> Upload Pics
+              </a>
+              <a href="javascript:void(0)" class="btn btn-back-thread onePieceBack" style="display: none;" >
+                Back
+              </a>
+              <a href="javscript:void(0)" class="btn btn-more-detail" onclick="toggler('index1');"> More info </a>
+              <div id="index1" class="left-panel-sec white-bg left-panel-hide">
+                <div class="wrap-panel" style="border-top: 0px;">
+                  <div class="title">
+                    <p>NEWS</p>
+                  </div>
+                  <div class="content-panel">
+                    <ul class="list-unstyled">
+                      <li><a href="">LINK 1</a>
+                      </li>
+                      <li><a href="">LINK 2</a>
+                      </li>
+                      <li><a href="">LINK 3</a>
+                      </li>
+                      <li><a href="">LINK 4</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end wrap-panel-->
+
+                <div class="wrap-panel uns-list">
+                  <div class="title">
+                    <p>RECENT DISCUSSION</p>
+                  </div>
+                  <div class="content-panel">
+                    <ul class="list-unstyled">
+                      <li><a href="">ONE PIECE</a>
+                      </li>
+                      <li><a href="">NARUTO</a>
+                      </li>
+                      <li><a href="">DORAEMON</a>
+                      </li>
+                      <li><a href="">BLEACH</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end wrap-panel-->
+
+                <div class="wrap-panel uns-list">
+                  <div class="title">
+                    <p>LIKES</p>
+                  </div>
+                  <div class="content-panel">
+                    <ul class="list-unstyled">
+                      <li><a href="">ONE PIECE</a>
+                      </li>
+                      <li><a href="">NARUTO</a>
+                      </li>
+                      <li><a href="">DORAEMON</a>
+                      </li>
+                      <li><a href="">BLEACH</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end wrap-panel-->
+
+                <div class="wrap-panel uns-list" style="border-bottom: 1px solid #e1e1e1;">
+                  <div class="title">
+                    <p>GROUP</p>
+                  </div>
+                  <div class="content-panel">
+                    <ul class="list-unstyled">
+                      <li><a href="">ONE PIECE</a>
+                      </li>
+                      <li><a href="">NARUTO</a>
+                      </li>
+                      <li><a href="">DORAEMON</a>
+                      </li>
+                      <li><a href="">BLEACH</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end wrap-panel-->
+              </div>
+            </div>
 
             <div class="right-panel-sec">
               <div class="row wrap-tab-content" id="contentOnePiece">
-                <div class="col-md-7 col-xs-12 col-sm-7 main-content">
+                <div class="col-md-7 col-xs-12 col-sm-12 main-content">
 
                   <!-- tab -->
-                  <div class="col-md-8 col-xs-6 no-padding">
+                  <div class="col-md-8 col-xs-6 col-sm-7 no-padding">
                     <ul id="pop" class="nav pop-tabs" role="tablist" style="margin-top:10px;">
                       <li role="presentation" style="margin-left: 0px; margin-right: -5px;">
                         <a href="#bookmarks" role="tab" data-toggle="tab" aria-controls="bookmarks">
@@ -1491,7 +1577,7 @@
                     </ul>
                   </div>
 
-                  <div class="col-md-4 col-xs-6">
+                  <div class="col-md-4 col-xs-6 col-sm-5">
                     <div class="trolls" style="margin-top: 20px;">
                       <a href="javascript:void(0)" class="btn dropdown-toggle" id="allThings" type="button" data-toggle="dropdown">
                         <span class="linky">All The Things</span>
@@ -1860,7 +1946,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-5 col-xs-12 col-sm-5 ads">
+                <div class="col-md-5 col-xs-12 col-sm-12 ads">
                   <div class="box-center">
                     <div class="banner">
                       <a href="javascript:void(0)" target="_self">
@@ -1926,7 +2012,7 @@
                 <!--end ads-->
               </div>
               <div class="upload-page" id="uploadOnePiece" style="display: none;">
-                <div class="col-md-7 main-content">
+                <div class="col-md-7 col-xs-12 col-sm-12 main-content">
                   <div class="upload">
                     <h2 class="modal-title-upload mar-t-20" id="myModalLabel">Pictures & Album > One Piece</h2>
                     <hr/>
@@ -2196,7 +2282,7 @@
                   </div>
 
                 </div>
-                <div class="col-md-5 col-sm-12 ads">
+                <div class="col-md-5 col-xs-12 col-sm-12 ads">
                   <div class="box-center">
                     <div class="banner">
                       <div class="title-recent-discuss">
@@ -2271,11 +2357,11 @@
 
           <!-- Discussion Tab -->
           <div role="tabpanel" class="tab-pane" id="discussion">
-            <div class="left-panel-sec">
-              <a href="javascript:void(0)" class="btn btn-new-thread" id="discussionThread">
+            <div class="left-panel-sec hidden-xs">
+              <a href="javascript:void(0)" class="btn btn-new-thread discussionThread">
                 <i class="fa fa-plus-circle"> </i> Create Discussion
               </a>
-              <a href="javascript:void(0)" class="btn btn-back-thread" style="display: none;" id="discussionBack">
+              <a href="javascript:void(0)" class="btn btn-back-thread discussionBack" style="display: none;">
                 Back
               </a>
               <div class="wrap-panel">
@@ -2354,30 +2440,111 @@
               </div>
               <!-- end wrap-panel-->
             </div>
-            <!-- end left-panel-sec -->
+            <div class="left-res visible-xs">
+              <a href="javascript:void(0)" class="btn btn-new-thread discussionThread">
+                <i class="fa fa-plus-circle"> </i> Upload Pics
+              </a>
+              <a href="javascript:void(0)" class="btn btn-back-thread discussionBack" style="display: none;" >
+                Back
+              </a>
+              <a href="javscript:void(0)" class="btn btn-more-detail" onclick="toggler('index2');"> More info </a>
+              <div id="index2" class="left-panel-sec white-bg left-panel-hide">
+                <div class="wrap-panel" style="border-top: 0px;">
+                  <div class="title">
+                    <p>NEWS</p>
+                  </div>
+                  <div class="content-panel">
+                    <ul class="list-unstyled">
+                      <li><a href="">LINK 1</a>
+                      </li>
+                      <li><a href="">LINK 2</a>
+                      </li>
+                      <li><a href="">LINK 3</a>
+                      </li>
+                      <li><a href="">LINK 4</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end wrap-panel-->
+
+                <div class="wrap-panel uns-list">
+                  <div class="title">
+                    <p>RECENT DISCUSSION</p>
+                  </div>
+                  <div class="content-panel">
+                    <ul class="list-unstyled">
+                      <li><a href="">ONE PIECE</a>
+                      </li>
+                      <li><a href="">NARUTO</a>
+                      </li>
+                      <li><a href="">DORAEMON</a>
+                      </li>
+                      <li><a href="">BLEACH</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end wrap-panel-->
+
+                <div class="wrap-panel uns-list">
+                  <div class="title">
+                    <p>LIKES</p>
+                  </div>
+                  <div class="content-panel">
+                    <ul class="list-unstyled">
+                      <li><a href="">ONE PIECE</a>
+                      </li>
+                      <li><a href="">NARUTO</a>
+                      </li>
+                      <li><a href="">DORAEMON</a>
+                      </li>
+                      <li><a href="">BLEACH</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end wrap-panel-->
+
+                <div class="wrap-panel uns-list" style="border-bottom: 1px solid #e1e1e1;">
+                  <div class="title">
+                    <p>GROUP</p>
+                  </div>
+                  <div class="content-panel">
+                    <ul class="list-unstyled">
+                      <li><a href="">ONE PIECE</a>
+                      </li>
+                      <li><a href="">NARUTO</a>
+                      </li>
+                      <li><a href="">DORAEMON</a>
+                      </li>
+                      <li><a href="">BLEACH</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end wrap-panel-->
+              </div>
+            </div>
 
             <div class="right-panel-sec">
               <div class="row wrap-tab-content" id="contentDiscussion">
-                <div class="col-md-7 pad-l-20">
+                <div class="col-md-7 col-xs-12 col-sm-12 main-content">
 
                   <!-- tab -->
-                  <div class="row">
-
-                    <div class="col-md-8 col-xs-8">
-                      <ul id="pop" class="nav pop-tabs" role="tablist" style="margin-top: 10px;">
-                        <li role="presentation" class="mar-rm-5">
-                          <a href="#pinned" role="tab" data-toggle="tab" aria-controls="pinned"><i class="fa fa-bookmark"></i></a>
-                        </li>
-                        <li role="presentation" class="active">
-                          <a href="#popular-discussion" role="tab" data-toggle="tab" aria-controls="popular-discussion" aria-expanded="true">Popular</a>
-                        </li>
-                        <li role="presentation" class="mar-lm-5">
-                          <a href="#aaa" role="tab" data-toggle="tab" aria-controls="aaa">News</a>
-                        </li>
-                      </ul>
-                    </div>
+                  <div class="col-md-8 col-xs-6 col-sm-7 no-padding">
+                    <ul id="pop" class="nav pop-tabs" role="tablist" style="margin-top: 10px;">
+                      <li role="presentation" class="mar-rm-5">
+                        <a href="#pinned" role="tab" data-toggle="tab" aria-controls="pinned"><i class="fa fa-bookmark"></i></a>
+                      </li>
+                      <li role="presentation" class="active">
+                        <a href="#popular-discussion" role="tab" data-toggle="tab" aria-controls="popular-discussion" aria-expanded="true">Popular</a>
+                      </li>
+                      <li role="presentation" class="mar-lm-5">
+                        <a href="#aaa" role="tab" data-toggle="tab" aria-controls="aaa">News</a>
+                      </li>
+                    </ul>
                   </div>
-
                   <div class="tab-content">
 
                     <!-- Pinned -->
@@ -2635,7 +2802,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-5 col-sm-12 ads">
+                <div class="col-md-5 col-xs-12 col-sm-12 ads">
                   <div class="box-center">
                     <div class="banner">
                       <a href="#" target="_self">
@@ -2696,7 +2863,7 @@
               </div>
 
               <div class="upload-page" id="uploadDiscussion" style="display: none;">
-                <div class="col-md-7 main-content">
+                <div class="col-md-7 col-xs-12 col-sm-12 main-content">
                   <div class="upload">
                     <h2 class="modal-title-upload mar-t-20" id="myModalLabel">Discussion Board & Poll > One Piece</h2>
                     <hr/>
@@ -2864,7 +3031,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-5 col-sm-12 ads">
+                <div class="col-md-5 col-xs-12 col-sm-12 ads">
                   <div class="box-center">
                     <div class="banner">
                       <div class="title-recent-discuss">
@@ -2938,12 +3105,19 @@
           </div>
           <!-- end Discussion Tab -->
 
+          <!-- News Tab -->
+          <div role="tabpanel" class="tab-pane" id="news-outer">
+            Hello I'm blank please fill me with something
+          </div>
+          <!-- End News Tab -->
+
+          <!-- Gamechat Tab -->
           <div role="tabpanel" class="tab-pane" id="gameChat">
-            <div class="left-panel-sec">
-              <a href="javascript:void(0)" class="btn btn-new-thread" id="gamechatThread">
+            <div class="left-panel-sec hidden-xs ">
+              <a href="javascript:void(0)" class="btn btn-new-thread gamechatThread">
                 <i class="fa fa-plus-circle"> </i> Gamechat
               </a>
-              <a href="javascript:void(0)" class="btn btn-back-thread" style="display: none;" id="gamechatBack">
+              <a href="javascript:void(0)" class="btn btn-back-thread gamechatBack" style="display: none;">
                 Back
               </a>
               <div class="wrap-panel">
@@ -3022,6 +3196,92 @@
               </div>
               <!-- end wrap-panel-->
             </div>
+            <div class="left-res visible-xs">
+              <a href="javascript:void(0)" class="btn btn-new-thread gamechatThread">
+                <i class="fa fa-plus-circle"> </i> Upload Pics
+              </a>
+              <a href="javascript:void(0)" class="btn btn-back-thread gamechatBack" style="display: none;" >
+                Back
+              </a>
+              <a href="javscript:void(0)" class="btn btn-more-detail" onclick="toggler('index3');"> More info </a>
+              <div id="index3" class="left-panel-sec white-bg left-panel-hide">
+                <div class="wrap-panel" style="border-top: 0px;">
+                  <div class="title">
+                    <p>NEWS</p>
+                  </div>
+                  <div class="content-panel">
+                    <ul class="list-unstyled">
+                      <li><a href="">LINK 1</a>
+                      </li>
+                      <li><a href="">LINK 2</a>
+                      </li>
+                      <li><a href="">LINK 3</a>
+                      </li>
+                      <li><a href="">LINK 4</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end wrap-panel-->
+
+                <div class="wrap-panel uns-list">
+                  <div class="title">
+                    <p>RECENT DISCUSSION</p>
+                  </div>
+                  <div class="content-panel">
+                    <ul class="list-unstyled">
+                      <li><a href="">ONE PIECE</a>
+                      </li>
+                      <li><a href="">NARUTO</a>
+                      </li>
+                      <li><a href="">DORAEMON</a>
+                      </li>
+                      <li><a href="">BLEACH</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end wrap-panel-->
+
+                <div class="wrap-panel uns-list">
+                  <div class="title">
+                    <p>LIKES</p>
+                  </div>
+                  <div class="content-panel">
+                    <ul class="list-unstyled">
+                      <li><a href="">ONE PIECE</a>
+                      </li>
+                      <li><a href="">NARUTO</a>
+                      </li>
+                      <li><a href="">DORAEMON</a>
+                      </li>
+                      <li><a href="">BLEACH</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end wrap-panel-->
+
+                <div class="wrap-panel uns-list" style="border-bottom: 1px solid #e1e1e1;">
+                  <div class="title">
+                    <p>GROUP</p>
+                  </div>
+                  <div class="content-panel">
+                    <ul class="list-unstyled">
+                      <li><a href="">ONE PIECE</a>
+                      </li>
+                      <li><a href="">NARUTO</a>
+                      </li>
+                      <li><a href="">DORAEMON</a>
+                      </li>
+                      <li><a href="">BLEACH</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end wrap-panel-->
+              </div>
+            </div>
 
             <div class="right-panel-sec">
               <div class="row wrap-tab-content" id="contentGamechat">
@@ -3030,6 +3290,11 @@
                   <!-- tab -->
                   <div class="col-md-8 col-xs-6 no-padding">
                     <ul id="pop" class="nav pop-tabs" role="tablist" style="margin-top:10px;">
+                      <li role="presentation" style="margin-left: 0px; margin-right: -5px;">
+                        <a href="#bookmarks" role="tab" data-toggle="tab" aria-controls="bookmarks">
+                          <i class="fa fa-bookmark"></i>
+                        </a>
+                      </li>
                       <li role="presentation" class="active">
                         <a href="#popular" role="tab" data-toggle="tab" aria-controls="popular" aria-expanded="true">Popular</a>
                       </li>
@@ -3634,10 +3899,11 @@
               </div>
             </div>
           </div>
+          <!-- End Gamechat Tab -->
 
           <!-- Event Tab -->
           <div role="tabpanel" class="tab-pane" id="event">
-            <div class="left-panel-sec">
+            <div class="left-panel-sec hidden-xs ">
               <div class="wrap-panel">
                 <div class="title">
                   <p>NEWS</p>
@@ -3714,9 +3980,89 @@
               </div>
               <!-- end wrap-panel-->
             </div>
+            <div class="left-res visible-xs">
+              <a href="javscript:void(0)" class="btn btn-more-detail" onclick="toggler('index4');"> More info </a>
+              <div id="index4" class="left-panel-sec white-bg left-panel-hide">
+                <div class="wrap-panel" style="border-top: 0px;">
+                  <div class="title">
+                    <p>NEWS</p>
+                  </div>
+                  <div class="content-panel">
+                    <ul class="list-unstyled">
+                      <li><a href="">LINK 1</a>
+                      </li>
+                      <li><a href="">LINK 2</a>
+                      </li>
+                      <li><a href="">LINK 3</a>
+                      </li>
+                      <li><a href="">LINK 4</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end wrap-panel-->
+
+                <div class="wrap-panel uns-list">
+                  <div class="title">
+                    <p>RECENT DISCUSSION</p>
+                  </div>
+                  <div class="content-panel">
+                    <ul class="list-unstyled">
+                      <li><a href="">ONE PIECE</a>
+                      </li>
+                      <li><a href="">NARUTO</a>
+                      </li>
+                      <li><a href="">DORAEMON</a>
+                      </li>
+                      <li><a href="">BLEACH</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end wrap-panel-->
+
+                <div class="wrap-panel uns-list">
+                  <div class="title">
+                    <p>LIKES</p>
+                  </div>
+                  <div class="content-panel">
+                    <ul class="list-unstyled">
+                      <li><a href="">ONE PIECE</a>
+                      </li>
+                      <li><a href="">NARUTO</a>
+                      </li>
+                      <li><a href="">DORAEMON</a>
+                      </li>
+                      <li><a href="">BLEACH</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end wrap-panel-->
+
+                <div class="wrap-panel uns-list" style="border-bottom: 1px solid #e1e1e1;">
+                  <div class="title">
+                    <p>GROUP</p>
+                  </div>
+                  <div class="content-panel">
+                    <ul class="list-unstyled">
+                      <li><a href="">ONE PIECE</a>
+                      </li>
+                      <li><a href="">NARUTO</a>
+                      </li>
+                      <li><a href="">DORAEMON</a>
+                      </li>
+                      <li><a href="">BLEACH</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end wrap-panel-->
+              </div>
+            </div>
             <div class="right-panel-sec">
               <div class="row wrap-tab-content">
-                <div class="col-md-7 main-content">
+                <div class="col-md-7 col-xs-12 main-content">
                   <!--wrapper avatar-->
                   <div class="wrapper-avatar">
                     <h3><a href="view-post-vote.html">Ancient War International</a></h3>
