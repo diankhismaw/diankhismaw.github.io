@@ -212,63 +212,113 @@
 	display: inline-block !important;
 	width: 25px !important;
 }
-
+.modal-album {
+  margin-right: 9px;
+}
+.modal-polling {
+  margin-right: 0px;
+}
+.modal-dialogue {
+  width: 100%;
+  margin: 10px 0px 0px 0px;
+}
+.modal-dialogue img {
+  width: 70px;
+}
+#modal-album .delete-panel {
+  position: absolute;
+  top: -2px;
+  right: 6px;
+  color: #aaaaaa;
+  font-size: 16px;
+}
+#modal-album .panel-default {
+  padding: 10px 0px;
+  position: relative;
+}
+#modal-polling .panel-default {
+  position: relative;
+}
+#modal-dialogue .panel-content .count-right {
+  top: inherit;
+  bottom: 10px;
+}
+#modal-dialogue .league-dialogue {
+  margin-top: 0px;
+}
+#upload .upload-top {
+  padding: 0px 52px;
+  display: inline-block;
+  width: 100%;
+}
 /*--------------------------------------------------------------
                           Responsive
 ----------------------------------------------------------------*/
 
-/*@media only screen and (min-width: 320px) and (max-width: 479px){
-  .popupContainer{
-		width: 95%;
-    height: auto;
-    left: 50% !important;
-    border-radius: 0px;
-    overflow-x: hidden;
-    margin-bottom: 40px;
-    margin-left: -152px !important;
-  }
-	.upload {
-		width: 100%;
-	}
-  .upload-image{
-    width: 284px;
-  }
-  .popupBody{
-    padding: 0px 10px;
-  }
-  .upload-bottom{
+@media (max-width: 768px) {
+  #upload .upload-bottom,
+  #upload .upload-top {
     padding: 0px;
   }
-  .panel-bottom{
+  #upload .upload-bottom .panel-bottom {
     width: 100%;
-  }
-  #lean_overlay{
-    z-index: 9999;
-  }
-  .modal-header{
-    padding: 0px;
-  }
-  .name-author > input{
-    width: 100%;
-  }
-  .socmed-credit > img{
-    width: 26px;
-  }
-  .wrap-btn-step{
-    display: inline-block;
-    width: 100%;
-    padding: 0px;
     margin-bottom: 10px;
   }
-  .panel-body-discuss{
-    padding: 5px 5px;
+  .upload-triger {
+    display: inline-block !important;
+    width: 100%;
+    padding: 0px 8px;
   }
-  .genre{
-    padding: 0px;
+  #modal-dialogue .img-panel {
+    width: 125px;
+    height: auto;
   }
-  .img-filter{
-    margin: 0px;
-    margin-left: 2px;
-    width: 47px;
+  #modal-dialogue .title-dialogue {
+    width: 70%;
   }
-}*/
+  .panel-discuss-editor {
+    margin-top: 60px;
+    max-width: 100%;
+  }
+  .upload-page .panel-discuss-editor {
+    margin-top: 60px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 580px) {
+  #modal-image .img-panel {
+    width: 135px;
+    height: auto;
+  }
+}
+@media (max-width: 525px) {
+  .panel-discuss-editor {
+    margin-top: 100px;
+  }
+  .upload-page .panel-discuss-editor {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 480px) {
+  #modal-image .img-panel {
+    width: 100%;
+  }
+  #modal-dialogue .img-panel {
+    width: 100%;
+  }
+  #modal-dialogue .title-dialogue {
+    margin-left: 0px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  #modal-dialogue .title-dialogue textarea {
+    padding-left: 5px;
+  }
+  #modal-image .title-img-upload {
+    width: 100%;
+    margin-top: 10px;
+  }
+  #modal-image .panel-content .count-right {
+    top: 160px;
+  }
+}

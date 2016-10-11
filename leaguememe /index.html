@@ -177,66 +177,6 @@
           </div>
         </div>
       </div>
-      <!-- Discussion Upload -->
-      <div class="discuss-upload">
-        <div class="modal-header bor-none">
-          <h2 class="modal-title-upload mar-t-20" id="myModalLabel">Create a discussion thread</h2>
-          <hr/>
-          <p class="grey-color-xs img-subtitle">Have a question or anything you want to discuss?</p>
-          <div class="panel panel-default">
-            <div class="panel-body-discuss panel-body">
-              <div class="panel-content col-md-12 no-padding">
-                <input type="text" placeholder="Give Title Here..." class="title-discuss-input"> <span class="pull-right char-length">150</span> </div>
-            </div>
-          </div>
-          <!--end panel -->
-
-          <div class="panel panel-default panel-discuss-editor mar-t-50">
-            <div class="tinymce" id="discuss-edit">Describe Your post</div>
-            <span class="char-length-editor">250</span>
-          </div>
-          <!--end panel -->
-
-          <div class="panel panel-default panel-discuss-check">
-            <div class="wrap-filter-post">
-              Add spoiler tag
-              <input type="checkbox" name="option" id="check-album2" checked/>
-              <label for="check-album2">
-                <span class="fa-stack">
-                    <i class="fa fa-square-o fa-stack-1x"></i>
-                    <i class="fa fa-check fa-stack-1x"></i>
-                  </span>
-              </label>
-            </div>
-            <div class="wrap-filter-post">
-              Credit the author
-              <input type="checkbox" name="option" id="check-album3" value="credit" checked/>
-              <label for="check-album3">
-                <span class="fa-stack">
-                    <i class="fa fa-square-o fa-stack-1x"></i>
-                    <i class="fa fa-check fa-stack-1x"></i>
-                  </span>
-              </label>
-            </div>
-
-            <div class="credit">
-              <div class="socmed-credit">
-                <img src="assets/img/fb-credit.png">
-                <img src="assets/img/tt-credit.png">
-                <img src="assets/img/ig-credit.png">
-              </div>
-              <div class="name-author">
-                <input type="text" placeholder="Name of Creditor">
-                <input type="text" placeholder="http://">
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12 wrap-btn-step">
-            <a href="javascript:void(0)" class="btn btn-red pull-right" id="next-discuss">Next</a>
-            <a href="javascript:void(0)" class="btn btn-back pull-right back-discuss">Back</a>
-          </div>
-        </div>
-      </div>
       <!-- Album Upload -->
       <div class="album-upload">
         <div class="modal-header bor-none">
@@ -362,56 +302,6 @@
           <div class="col-md-12 wrap-btn-step">
             <a href="javascript:void(0)" class="btn btn-red pull-right" id="next-album">Next</a>
             <a href="javascript:void(0)" class="btn btn-back pull-right back-album">Back</a>
-          </div>
-        </div>
-      </div>
-      <!-- Rating upload -->
-      <div class="rating-upload">
-        <div class="modal-header bor-none">
-          <h2 class="modal-title-upload" id="myModalLabel">Create a poll</h2>
-          <hr/>
-          <p class="grey-color-xs img-subtitle">Got a question or something fun to discuss? Let's hear it!</p>
-          <div class="panel panel-default mar-b-40">
-            <div class="panel-body-discuss panel-body">
-              <div class="panel-content col-md-12 no-padding">
-                <input type="text" placeholder="Type your question..." class="title-discuss-input"> <span class="pull-right char-length">150</span> </div>
-            </div>
-          </div>
-
-          <div class="panel panel-default mar-b-0">
-            <div class="panel-body-discuss panel-body">
-              <div class="panel-content col-md-12 no-padding">
-                <input type="text" placeholder="Enter poll option..." class="title-discuss-input"> <span class="pull-right char-length">50</span> </div>
-            </div>
-          </div>
-          <div class="panel panel-default mar-b-0">
-            <div class="panel-body-discuss panel-body">
-              <div class="panel-content col-md-12 no-padding">
-                <input type="text" placeholder="Enter poll option..." class="title-discuss-input"> <span class="pull-right char-length">50</span> </div>
-            </div>
-          </div>
-          <div class="panel panel-default mar-b-0">
-            <div class="panel-body-discuss panel-body">
-              <div class="panel-content col-md-12 no-padding">
-                <input type="text" placeholder="Enter poll option..." class="title-discuss-input"> <span class="pull-right char-length">50</span> </div>
-            </div>
-          </div>
-          <div class="panel panel-default mar-b-0">
-            <div class="panel-body-discuss panel-body">
-              <div class="panel-content col-md-12 no-padding">
-                <input type="text" placeholder="Enter poll option..." class="title-discuss-input"> <span class="pull-right char-length">50</span> </div>
-            </div>
-          </div>
-          <div class="wrap-filter-post">
-            <a href="javascript:void(0)"> <i class="fa fa-plus-circle"></i> &nbsp; Add another one</a>
-          </div>
-          <div class="panel panel-default mar-t-50">
-            <div class="tinymce" id="rating-edit">Describe Your post</div>
-            <span class="char-length-editor">250</span>
-          </div>
-          <div class="col-md-12 mar-t-20 wrap-btn-step">
-            <a href="javascript:void(0)" class="btn btn-red pull-right" id="next-rating">Next</a>
-            <a href="javascript:void(0)" class="btn btn-back pull-right back-rating">Back</a>
           </div>
         </div>
       </div>
@@ -1079,6 +969,515 @@
 
     </section>
   </div>
+  <!-- Modal upload-->
+  <div class="modal fade" id="upload" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="assets/img/close.png" alt="close" />
+        </button>
+        <div class="modal-header bor-none">
+          <h2 class="modal-title-upload mar-t-20" id="myModalLabel">Upload Post</h2>
+          <hr/>
+          <p class="grey-color-xs">Choose how you want to upload</p>
+          <div class="upload-top">
+            <a href="javascript:void(0)" data-toggle="modal" data-target="#modal-image" data-dismiss="modal">
+              <div class="upload-image panel panel-default">
+                <div class="panel-body"> <img src="assets/img/upload-image.png"> </div>
+                <div class="panel-title"> <span>Choose or drag picture here</span> </div>
+              </div>
+            </a>
+            <!--upload image-->
+            <a href="javascript:void(0)" data-toggle="modal" data-target="#modal-discuss" data-dismiss="modal">
+              <div class="upload-image panel panel-default">
+                <div class="panel-body"> <img src="assets/img/upload-discussion.png"> </div>
+                <div class="panel-title"> <span>Choose or drag files discussion here</span> </div>
+              </div>
+            </a>
+            <!--upload discussion-->
+          </div>
+          <!-- upload top -->
+          <div class="upload-bottom">
+            <!-- upload album-->
+            <a href="javascript:void(0)" data-toggle="modal" data-target="#modal-album" data-dismiss="modal">
+              <div class="col-md-6 col-xs-12 panel panel-bottom modal-album">
+                <div class="panel-body"> <img src="assets/img/add-album.png"> </div>
+                <div class="panel-title">
+                  <span>Add Album</span>
+                  <p> Hold ctrl for multiple image </p>
+                </div>
+              </div>
+            </a>
+            <!-- upload polling-->
+            <a href="javascript:void(0)" data-toggle="modal" data-target="#modal-polling" data-dismiss="modal">
+              <div class="col-md-6 col-xs-12 panel panel-bottom modal-polling">
+                <div class="panel-body"> <img src="assets/img/rating.png"> </div>
+                <div class="panel-title"> <span>Make a poll</span> </div>
+              </div>
+            </a>
+            <!-- upload link-->
+            <a href="javascript:void(0)" data-toggle="modal" data-target="#modal-dialogue" data-dismiss="modal">
+              <div class="col-md-12 col-xs-12 panel panel-bottom modal-dialogue">
+                <div class="panel-body"> <img src="assets/img/commenting.png"> </div>
+                <div class="panel-title">
+                  <span>Game Dialogue</span>
+                  <p>Read something funny in game? Post it here</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal Upload -->
+
+  <!-- Modal upload image -->
+  <div class="modal fade" id="modal-image" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="assets/img/close.png" alt="close" />
+        </button>
+        <div class="modal-header bor-none">
+          <h2 class="modal-title-upload mar-t-20" id="myModalLabel">Submit a picture</h2>
+          <hr/>
+          <p class="grey-color-xs img-subtitle">Be as accurate as possible with your submission to help people discover your post!</p>
+
+          <div class="panel panel-default bor-radius-0">
+            <div class="panel-body">
+              <div class="panel-content col-md-12 no-padding">
+                <a href="">
+                  <div class="img-panel">
+                    <img src="assets/img/luffy.png">
+                  </div>
+                </a>
+                <input type="text" placeholder="Title" class="title-img-upload">
+                <div class="pull-right count-right">
+                  <span>139</span>
+                </div>
+                <textarea placeholder="Describe your post with tags!" class="txt-area-tags"></textarea>
+                <div class="hastag-view-upload">
+                  <a class="btn btn-grey" href="javascript:void(0)" role="button">#Anime <i class="fa fa-close"></i></a>
+                  <a class="btn btn-grey" href="javascript:void(0)" role="button">#onepiece <i class="fa fa-close"></i></a>
+                  <a class="btn btn-grey" href="javascript:void(0)" role="button">#onepiece <i class="fa fa-close"></i></a>
+                  <a class="btn btn-grey" href="javascript:void(0)" role="button">#Anime <i class="fa fa-close"></i></a>
+                  <a class="btn btn-grey" href="javascript:void(0)" role="button">#Anime <i class="fa fa-close"></i></a>
+                  <a class="btn btn-grey" href="javascript:void(0)" role="button">#onepiece <i class="fa fa-close"></i></a>
+                  <a class="btn btn-grey" href="javascript:void(0)" role="button">#onepiece <i class="fa fa-close"></i></a>
+                  <a class="btn btn-grey" href="javascript:void(0)" role="button">#Anime <i class="fa fa-close"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="wrap-filter-post">
+              This Post Not safe For Work
+              <input type="checkbox" name="option" id="check1" checked/>
+              <label for="check1">
+                <span class="fa-stack">
+                    <i class="fa fa-square-o fa-stack-1x"></i>
+                    <i class="fa fa-check fa-stack-1x"></i>
+                  </span>
+              </label>
+            </div>
+            <div class="wrap-filter-post">
+              Add spoiler tag
+              <input type="checkbox" name="option" id="check3" checked/>
+              <label for="check3">
+                <span class="fa-stack">
+                    <i class="fa fa-square-o fa-stack-1x"></i>
+                    <i class="fa fa-check fa-stack-1x"></i>
+                  </span>
+              </label>
+            </div>
+            <div class="wrap-filter-post">
+              Credit the author
+              <input type="checkbox" name="option" id="check2" value="credit" checked/>
+              <label for="check2">
+                <span class="fa-stack">
+                    <i class="fa fa-square-o fa-stack-1x"></i>
+                    <i class="fa fa-check fa-stack-1x"></i>
+                  </span>
+              </label>
+            </div>
+
+            <div class="credit">
+              <div class="socmed-credit">
+                <img src="assets/img/fb-credit.png">
+                <img src="assets/img/tt-credit.png">
+                <img src="assets/img/ig-credit.png">
+              </div>
+              <div class="name-author">
+                <input type="text" placeholder="Name of Creditor">
+                <input type="text" placeholder="http://">
+              </div>
+            </div>
+          </div>
+          <!--end panel -->
+          <div class="col-md-12 wrap-btn-step">
+            <a href="javascript:void(0)" class="btn btn-red pull-right" id="next-image">Next</a>
+            <a href="javascript:void(0)" class="btn btn-back pull-right back-image" data-toggle="modal" data-target="#upload" data-dismiss="modal">Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal Image -->
+
+  <!-- Modal Discuss -->
+  <div class="modal fade" id="modal-discuss" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="assets/img/close.png" alt="close" />
+        </button>
+        <div class="modal-header bor-none">
+          <h2 class="modal-title-upload mar-t-20" id="myModalLabel">Create a discussion thread</h2>
+          <hr/>
+          <p class="grey-color-xs img-subtitle">Have a question or anything you want to discuss?</p>
+          <div class="panel panel-default">
+            <div class="panel-body-discuss panel-body">
+              <div class="panel-content col-md-12 no-padding">
+                <input type="text" placeholder="Give Title Here..." class="title-discuss-input"> <span class="pull-right char-length">150</span> </div>
+            </div>
+          </div>
+          <!--end panel -->
+
+          <div class="panel panel-default panel-discuss-editor mar-t-50">
+            <div class="tinymce" id="discuss-edit">Describe Your post</div>
+            <span class="char-length-editor">250</span>
+          </div>
+          <!--end panel -->
+
+          <div class="panel panel-default panel-discuss-check">
+            <div class="wrap-filter-post">
+              Add spoiler tag
+              <input type="checkbox" name="option" id="check-album2" checked/>
+              <label for="check-album2">
+                <span class="fa-stack">
+                    <i class="fa fa-square-o fa-stack-1x"></i>
+                    <i class="fa fa-check fa-stack-1x"></i>
+                  </span>
+              </label>
+            </div>
+            <div class="wrap-filter-post">
+              Credit the author
+              <input type="checkbox" name="option" id="check-album3" value="credit" checked/>
+              <label for="check-album3">
+                <span class="fa-stack">
+                    <i class="fa fa-square-o fa-stack-1x"></i>
+                    <i class="fa fa-check fa-stack-1x"></i>
+                  </span>
+              </label>
+            </div>
+
+            <div class="credit">
+              <div class="socmed-credit">
+                <img src="assets/img/fb-credit.png">
+                <img src="assets/img/tt-credit.png">
+                <img src="assets/img/ig-credit.png">
+              </div>
+              <div class="name-author">
+                <input type="text" placeholder="Name of Creditor">
+                <input type="text" placeholder="http://">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 wrap-btn-step">
+            <a href="javascript:void(0)" class="btn btn-red pull-right" id="next-discuss">Next</a>
+            <a href="javascript:void(0)" class="btn btn-back pull-right back-image" data-toggle="modal" data-target="#upload" data-dismiss="modal">Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal Discuss -->
+
+  <!-- Modal Album -->
+  <div class="modal fade" id="modal-album" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="assets/img/close.png" alt="close" />
+        </button>
+        <div class="modal-header bor-none">
+          <h2 class="modal-title-upload" id="myModalLabel">Create an album</h2>
+          <hr/>
+          <p class="grey-color-xs img-subtitle">Share your album (cosplay, art, comics, and more) with everyone!</p>
+          <div class="panel panel-default">
+            <div class="panel-body-discuss panel-body">
+              <div class="panel-content col-md-12 no-padding">
+                <input type="text" placeholder="Give a Title Here..." class="title-discuss-input"> <span class="pull-right char-length">150</span> </div>
+            </div>
+          </div>
+          <!--end panel -->
+
+          <div class="panel panel-default bor-radius-0">
+            <span class="delete-panel"><i class="fa fa-times"></i></span>
+            <div class="panel-body">
+              <div class="panel-content col-md-12 no-padding">
+                <a href="">
+                  <div class="img-panel">
+                    <img src="assets/img/luffy.png">
+                  </div>
+                </a>
+                <input type="text" placeholder="Title" class="title-img-upload">
+                <div class="pull-right count-right">
+                  <span>139</span>
+                </div>
+                <textarea placeholder="Describe your post with tags!" class="txt-area-tags"></textarea>
+                <div class="hastag-view-upload">
+                  <a class="btn btn-grey" href="javascript:void(0)" role="button">#Anime <i class="fa fa-close"></i></a>
+                  <a class="btn btn-grey" href="javascript:void(0)" role="button">#onepiece <i class="fa fa-close"></i></a>
+                  <a class="btn btn-grey" href="javascript:void(0)" role="button">#onepiece <i class="fa fa-close"></i></a>
+                  <a class="btn btn-grey" href="javascript:void(0)" role="button">#onepiece <i class="fa fa-close"></i></a>
+                  <a class="btn btn-grey" href="javascript:void(0)" role="button">#onepiece <i class="fa fa-close"></i></a>
+                  <a class="btn btn-grey" href="javascript:void(0)" role="button">#Anime <i class="fa fa-close"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="wrap-filter-post">
+              <input type="text" maxlength="250" class="textarea-resize" placeholder="Describe your post">
+              <div class="count-right">
+                <span>250</span>
+              </div>
+            </div>
+          </div>
+          <!-- END PANEL -->
+
+          <div class="panel panel-default bor-radius-0">
+            <span class="delete-panel"><i class="fa fa-times"></i></span>
+            <div class="panel-body">
+              <div class="panel-content col-md-12 no-padding">
+                <a href="">
+                  <div class="img-panel">
+                    <img src="assets/img/luffy.png">
+                  </div>
+                </a>
+                <input type="text" placeholder="Title" class="title-img-upload">
+                <div class="pull-right count-right">
+                  <span>139</span>
+                </div>
+                <textarea placeholder="Describe your post with tags!" class="txt-area-tags"></textarea>
+              </div>
+            </div>
+            <div class="wrap-filter-post">
+              <input type="text" maxlength="250" class="textarea-resize" placeholder="Describe your post">
+              <div class="count-right">
+                <span>250</span>
+              </div>
+            </div>
+          </div>
+          <!-- END PANEL -->
+
+          <a class="wrap-add-album" href="javascript:void(0)">
+            <i class="fa fa-plus-circle"></i>
+            <span>Add another one (select multiple image by holding CTRL)</span>
+          </a>
+
+          <div class="panel panel-default panel-checkbox">
+            <div class="wrap-filter-post">
+              This Post Not safe For Work
+              <input type="checkbox" name="option" id="check-album1" checked/>
+              <label for="check-album1">
+                <span class="fa-stack">
+                    <i class="fa fa-square-o fa-stack-1x"></i>
+                    <i class="fa fa-check fa-stack-1x"></i>
+                  </span>
+              </label>
+            </div>
+            <div class="wrap-filter-post">
+              Add spoiler tag
+              <input type="checkbox" name="option" id="check-album2" checked/>
+              <label for="check-album2">
+                <span class="fa-stack">
+                    <i class="fa fa-square-o fa-stack-1x"></i>
+                    <i class="fa fa-check fa-stack-1x"></i>
+                  </span>
+              </label>
+            </div>
+            <div class="wrap-filter-post">
+              Credit the author
+              <input type="checkbox" name="option" id="check-album3" value="credit" checked/>
+              <label for="check-album3">
+                <span class="fa-stack">
+                    <i class="fa fa-square-o fa-stack-1x"></i>
+                    <i class="fa fa-check fa-stack-1x"></i>
+                  </span>
+              </label>
+            </div>
+
+            <div class="credit">
+              <div class="socmed-credit">
+                <img src="assets/img/fb-credit.png">
+                <img src="assets/img/tt-credit.png">
+                <img src="assets/img/ig-credit.png">
+              </div>
+              <div class="name-author">
+                <input type="text" placeholder="Name of Creditor">
+                <input type="text" placeholder="http://">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 wrap-btn-step">
+            <a href="javascript:void(0)" class="btn btn-red pull-right" id="next-album">Next</a>
+            <a href="javascript:void(0)" class="btn btn-back pull-right back-image" data-toggle="modal" data-target="#upload" data-dismiss="modal">Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal Album -->
+
+  <!-- Modal Rating -->
+  <div class="modal fade" id="modal-polling" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="assets/img/close.png" alt="close" />
+        </button>
+        <div class="modal-header bor-none">
+          <h2 class="modal-title-upload" id="myModalLabel">Create a poll</h2>
+          <hr/>
+          <p class="grey-color-xs img-subtitle">Got a question or something fun to discuss? Let's hear it!</p>
+          <div class="panel panel-default mar-b-40">
+            <div class="panel-body-discuss panel-body">
+              <div class="panel-content col-md-12 no-padding">
+                <input type="text" placeholder="Type your question..." class="title-discuss-input"> <span class="pull-right char-length">150</span> </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default mar-b-0">
+            <div class="panel-body-discuss panel-body">
+              <div class="panel-content col-md-12 no-padding">
+                <input type="text" placeholder="Enter poll option..." class="title-discuss-input"> <span class="pull-right char-length">50</span> </div>
+            </div>
+          </div>
+          <div class="panel panel-default mar-b-0">
+            <div class="panel-body-discuss panel-body">
+              <div class="panel-content col-md-12 no-padding">
+                <input type="text" placeholder="Enter poll option..." class="title-discuss-input"> <span class="pull-right char-length">50</span> </div>
+            </div>
+          </div>
+          <div class="panel panel-default mar-b-0">
+            <div class="panel-body-discuss panel-body">
+              <div class="panel-content col-md-12 no-padding">
+                <input type="text" placeholder="Enter poll option..." class="title-discuss-input"> <span class="pull-right char-length">50</span> </div>
+            </div>
+          </div>
+          <div class="panel panel-default mar-b-0">
+            <div class="panel-body-discuss panel-body">
+              <div class="panel-content col-md-12 no-padding">
+                <input type="text" placeholder="Enter poll option..." class="title-discuss-input"> <span class="pull-right char-length">50</span> </div>
+            </div>
+          </div>
+          <div class="wrap-filter-post">
+            <a href="javascript:void(0)"> <i class="fa fa-plus-circle"></i> &nbsp; Add another one</a>
+          </div>
+          <div class="panel panel-default mar-t-50">
+            <div class="tinymce" id="rating-edit">Describe Your post</div>
+            <span class="char-length-editor">250</span>
+          </div>
+          <div class="col-md-12 mar-t-20 wrap-btn-step">
+            <a href="javascript:void(0)" class="btn btn-red pull-right" id="next-rating">Next</a>
+            <a href="javascript:void(0)" class="btn btn-back pull-right back-image" data-toggle="modal" data-target="#upload" data-dismiss="modal">Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal Rating -->
+
+  <!-- Modal Dialogue -->
+  <div class="modal fade" id="modal-dialogue" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="assets/img/close.png" alt="close" />
+        </button>
+        <div class="modal-header bor-none">
+          <h3 class="league-dialogue">
+            LEAGUE DIALOGUE
+          </h3>
+          <h2 class="modal-title-upload mar-t-20" id="myModalLabel">Give your post a Title</h2>
+          <hr/>
+          <p class="grey-color-xs img-subtitle">Had a funny conversation with someone in game? POST IT HERE!</p>
+
+          <div class="panel panel-default bor-radius-0">
+            <div class="panel-body">
+              <div class="panel-content col-md-12 no-padding">
+                <a href="">
+                  <div class="img-panel">
+                    <img src="assets/img/luffy.png">
+                  </div>
+                </a>
+                <div class="title-dialogue">
+                  <select>
+                    <option value="volvo">Here a title</option>
+                    <option value="saab">lalalala</option>
+                    <option value="mercedes">Medusa got a rampage</option>
+                    <option value="audi">Anti Mage teach</option>
+                  </select>
+                  <hr>
+                  <textarea placeholder="Dialogue" maxlength="150">Dialogue</textarea>
+                </div>
+                <div class="count-right">
+                  <span>150</span>
+                </div>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="panel-content col-md-12 no-padding">
+                <a href="">
+                  <div class="img-panel">
+                    <img src="assets/img/luffy.png">
+                  </div>
+                </a>
+                <div class="title-dialogue">
+                  <select>
+                    <option value="volvo">Here a title</option>
+                    <option value="saab">lalalala</option>
+                    <option value="mercedes">Medusa got a rampage</option>
+                    <option value="audi">Anti Mage teach</option>
+                  </select>
+                  <hr>
+                  <textarea placeholder="Dialogue" maxlength="150">Dialogue</textarea>
+                </div>
+                <div class="count-right">
+                  <span>150</span>
+                </div>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="panel-content col-md-12 no-padding">
+                <a href="">
+                  <div class="img-panel">
+                    <img src="assets/img/luffy.png">
+                  </div>
+                </a>
+                <div class="title-dialogue">
+                  <select>
+                    <option value="volvo">Here a title</option>
+                    <option value="saab">lalalala</option>
+                    <option value="mercedes">Medusa got a rampage</option>
+                    <option value="audi">Anti Mage teach</option>
+                  </select>
+                  <hr>
+                  <textarea placeholder="Dialogue" maxlength="150">Dialogue</textarea>
+                </div>
+                <div class="count-right">
+                  <span>150</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end panel -->
+          <div class="wrap-filter-post">
+            <a href="javascript:void(0)"> <i class="fa fa-plus-circle"></i> &nbsp; Add another one</a>
+          </div>
+          <div class="col-md-12 wrap-btn-step">
+            <a href="javascript:void(0)" class="btn btn-red pull-right" id="next-image">Next</a>
+            <a href="javascript:void(0)" class="btn btn-back pull-right back-image" data-toggle="modal" data-target="#upload" data-dismiss="modal">Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal Dialogue -->
 
   <!-- Static navbar -->
   <nav class="navbar navbar-custom navbar-fixed-top">
@@ -1296,7 +1695,7 @@
 					</li>
 
           <li class="upload-triger">
-            <a id="modal_trigger" href="#modal" class="btn btn-red">Upload</a>
+            <a data-toggle="modal" href="#" data-target="#upload" class="btn btn-red">Upload</a>
           </li>
         </ul>
       </div>
@@ -1937,12 +2336,6 @@
                       </div>
                     </div>
 
-                    <!-- news -->
-                    <div role="tabpanel" class="tab-pane" id="news">
-                      <p>
-                        Hello World!
-                      </p>
-                    </div>
                   </div>
                 </div>
 
@@ -2442,7 +2835,7 @@
             </div>
             <div class="left-res visible-xs">
               <a href="javascript:void(0)" class="btn btn-new-thread discussionThread">
-                <i class="fa fa-plus-circle"> </i> Upload Pics
+                <i class="fa fa-plus-circle"> </i> Create Discussion
               </a>
               <a href="javascript:void(0)" class="btn btn-back-thread discussionBack" style="display: none;" >
                 Back
@@ -2889,7 +3282,7 @@
 
                   <div class="discuss-upload">
                     <div class="modal-header bor-none">
-                      <h2 class="modal-title-upload mar-t-20" id="myModalLabel">Discussion > Onne Piece</h2>
+                      <h2 class="modal-title-upload mar-t-20" id="myModalLabel">Discussion > One Piece</h2>
                       <hr/>
                       <p class="grey-color-xs">Talk about general one piece stuff here</p>
                       <div class="panel panel-default">
@@ -3198,7 +3591,7 @@
             </div>
             <div class="left-res visible-xs">
               <a href="javascript:void(0)" class="btn btn-new-thread gamechatThread">
-                <i class="fa fa-plus-circle"> </i> Upload Pics
+                <i class="fa fa-plus-circle"> </i> Gamechat
               </a>
               <a href="javascript:void(0)" class="btn btn-back-thread gamechatBack" style="display: none;" >
                 Back
@@ -3662,13 +4055,6 @@
                         <!--end col-md-12-->
 
                       </div>
-                    </div>
-
-                    <!-- news -->
-                    <div role="tabpanel" class="tab-pane" id="news">
-                      <p>
-                        Hello World!
-                      </p>
                     </div>
                   </div>
                 </div>

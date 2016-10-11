@@ -171,6 +171,10 @@ img {
 #noti_Container_res{
   display: none;
 }
+.modal-content {
+    overflow-y: auto;
+    max-height: 800px;
+}
 /* profile */
 
 .background-cover {
