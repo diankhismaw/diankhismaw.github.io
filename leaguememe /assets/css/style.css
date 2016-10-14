@@ -1835,7 +1835,7 @@ input[type=radio]:checked + label:before {
   display: inline-block;
   font-size: 14px;
 	font-family: 'Lato', sans-serif;
-  border-bottom: 2px solid #ECB73B;
+  border-bottom: 2px solid #b83c54;
   background: transparent;
   color: #8c8e8f !important;
 	padding: 5px 10px !important;

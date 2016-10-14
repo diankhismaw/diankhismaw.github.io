@@ -184,6 +184,9 @@
   #profile-page .value-box {
     bottom: 10px;
   }
+  #profile-page .value-box-click {
+    bottom: 40px;
+  }
   .avatar {
     width: 40px;
     height: 40px;
@@ -275,11 +278,11 @@
   }
   .custom-list-nav {
     margin-left: 10px;
-    width: 100%;
+    width: 95%;
   }
   #dropdown_list_nav {
     position: absolute;
-    right: 0px;
+    right: 10px;
     top: 4px;
   }
   .btn-search-res {
@@ -1326,7 +1329,7 @@
   }
   .btn-trans:hover {
     color: #fff;
-    background-color: #17ae97;
+    background-color: #B83C54;
     border: none;
     transition: background-color ease-in 0.5s;
     transition: border ease-in 0.5s;
@@ -1639,7 +1642,7 @@
   .btn-cover-edit{
     display: inline-block;
     float: right;
-    border: 1px solid #17ae97;
+    border: 1px solid #B83C54;
     color: #1BD8BB;
     font-family: sans-serif;
     font-size: 13px;
@@ -1672,7 +1675,7 @@
   .btn-cover-edit{
     display: inline-block;
     float: right;
-    border: 1px solid #17ae97;
+    border: 1px solid #B83C54;
     color: #1BD8BB;
     font-family: sans-serif;
     font-size: 13px;
@@ -2016,7 +2019,7 @@
   .search-query:focus{
     width: 291px;
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(23, 174, 151, 0.52);
-    border: 1px solid #17ae97 !important;
+    border: 1px solid #B83C54 !important;
   }
   .profile-picture-nav{
     float: left;
@@ -2127,7 +2130,7 @@
     margin-right: 158px;
   }
   .nav.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
-    box-shadow: inset 0px 3px 0px 0px rgba(23, 174, 151, 1);
+    box-shadow: inset 0px 3px 0px 0px rgb(67, 131, 195);
   }
   .hidden{
     display: none;
