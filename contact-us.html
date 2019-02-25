@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>LOGISLY</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about-us.css">
+    <link rel="stylesheet" href="css/contact-us.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-transparent navbar-fixed">
+      <div class="container">
+        <div class="navbar-header">  
+          <a href="home.html" class="navbar-brand">
+            <img src="img/logo-color.png">
+          </a> 
+          <div class="phone-nav hidden-xs">
+            <!-- <div class="wrap-phone">
+              <span class="number">0811 373 456</span>  
+            </div> -->
+            <div class="wrap-phone">
+              <span class="number">0817 0373 4008</span>  
+            </div>
+          </div>  
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse pull-right" id="navbar">
+          <ul class="nav navbar-nav">
+            <li><a href="about-us.html">TENTANG KAMI</a></li>
+            <li><a href="#">UNTUK TRANSPORTIR</a></li>
+            <li><a href="#">UNTUK CARGO OWNER</a></li>
+            <li><a href="contact-us.html">KONTAK</a></li>
+            <!-- <li><a href="#">DAFTAR</a></li> -->
+            <li><a href="#">LOGIN</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="header-home header-about header-contact">
+      <div class="container">
+        <div class="row">
+          <div class="wrap-content">
+            <div class="wrap-title">
+              <h1>Hubungi Kami</h1>
+            </div>
+            <span class="border"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="sec-contact">
+    	<div class="container">
+    		<div class="row">
+          <div class="wrap-content">
+            <div class="col-md-5">
+              <div class="box-info">
+                <div class="sec-top">
+                  <h3>Kontak Kami</h3>
+                  <ul>
+                    <li>
+                      <span class="phone">0817-0373-4008</span>
+                    </li>
+                    <li>
+                      <span class="email">Hello@logisly.com</span>
+                    </li>
+                    <li>
+                      <span class="whatsapp">0817-0373-4008</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="sec-bot">
+                  <h3>Kantor</h3>
+                  <p>Equity Tower, Sudirman No.22, RT.5/RW.3, <br> Senayan, Central Business District, <br>South Jakarta City, Jakarta 12190</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-7">
+              <div class="box-form">
+                <div class="desc">
+                  Isi formulir untuk demo, partnership dan informasi lainnya mengenai logisly
+                </div>
+                <div class="wrap-form">
+                  <div class="input">
+                    <input type="text" name="nama" class="form-group" placeholder="Nama">
+                  </div>
+                  <div class="input">
+                    <input type="text" name="email" class="form-group" placeholder="No. Telpon">
+                  </div>
+                  <div class="input">
+                    <input type="text" name="pesan" class="form-group" placeholder="Email">
+                  </div>
+                  <div class="input">
+                    <textarea placeholder="Pesan"></textarea>
+                  </div>
+                </div>
+                <div class="wrap-btn">
+                  <button type="submit" class="btn btn-tosca">Kirim Pesan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    	</div>
+    </section>
+    <div class="container-fluid wrap-copyright">
+      <div class="copyright">
+        ©Copyright 2019 PT Logistik Pintar Indonesia. All Rights Reserved.​
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".toggle-password").click(function() {
+          $(this).toggleClass("fa-eye fa-eye-slash");
+          var input = $($(this).attr("toggle"));
+          if (input.attr("type") == "password") {
+            input.attr("type", "text");
+          } else {
+            input.attr("type", "password");
+          }
+        });
+
+        var scroll_pos = 0;
+          $(document).scroll(function() { 
+              scroll_pos = $(this).scrollTop();
+              if(scroll_pos > 60) {
+                  $(".navbar-transparent").css('background', 'black');
+              } else {
+                  $(".navbar-transparent").css('background', 'transparent');
+              }
+          });
+      });
+    </script>
+  </body>
+</html>

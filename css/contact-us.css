@@ -1,0 +1,267 @@
+body {
+	background: url('../img/bg-kontak.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: relative;
+	background-attachment: 100%;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 16px;
+  font-family: 'prox';
+  color: rgba(0, 0, 0, .38);
+  letter-spacing: .5px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-size: 16px;
+  font-family: 'prox';
+  color: rgba(0, 0, 0, .38);
+  letter-spacing: .5px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-size: 16px;
+  font-family: 'prox';
+  color: rgba(0, 0, 0, .38);
+  letter-spacing: .5px;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-size: 16px;
+  font-family: 'prox';
+  color: rgba(0, 0, 0, .38);
+  letter-spacing: .5px;
+}
+.header-contact {
+	background: none;
+}
+
+.header-contact:before, 
+.header-contact:after {
+	display: none;
+}
+.header-contact .border {
+	margin-bottom: 95px;
+}
+.sec-contact {
+	padding-bottom: 200px;
+}
+.sec-contact .wrap-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.sec-contact .box-info {
+	width: 443px;
+  height: 357px;
+  border-radius: 10px;
+  border: solid 4px var(--white);
+  color: var(--white);
+  padding: 35px;
+  font-family: 'prox-reg';
+  letter-spacing: .5px;
+}
+.sec-contact .sec-top {
+	margin-bottom: 25px;
+}
+.sec-contact .sec-top h3, 
+.sec-contact .sec-bot h3 {
+  font-size: 30px;
+  font-family: 'prox-bold';
+  text-transform: uppercase;
+  line-height: 34px;
+  margin-bottom: 14px;
+  margin-top: 0px;
+}
+.sec-contact .sec-bot h3 {
+	margin-bottom: 0px;
+}
+.sec-contact .sec-top ul li {
+	margin-bottom: 0px;
+	display: block;
+}
+.sec-contact .sec-top ul li span,
+.sec-contact .sec-bot p {
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 10px;
+	position: relative;
+	padding-left: 40px;
+	display: inline-block;
+	width: 100%;
+	font-family: 'prox-reg';
+	letter-spacing: .5px;
+}
+.sec-contact .sec-bot p {
+	padding-left: 0px;
+	text-transform: capitalize;
+	line-height: 1.44;
+}
+.sec-contact .sec-top ul li span.phone:before,
+.sec-contact .sec-top ul li span.whatsapp:before,
+.sec-contact .sec-top ul li span.email:before {
+	content: '';
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background: url('../img/phone.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	left: 0px;
+	top: 0px;
+}
+.sec-contact .sec-top ul li span.whatsapp:before {
+	background:transparent;
+	background: url('../img/whatsapp-logo.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.sec-contact .sec-top ul li span.email:before {
+	background:transparent;
+	background: url('../img/email.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.sec-contact .box-form {
+  width: 634px;
+  height: 594px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.13);
+  background-color: #ffffff;
+  padding: 56px 48px;
+}
+.sec-contact .box-form .desc {
+	height: 87px;
+  font-family: 'prox-reg';
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: .5px;
+  color: #757575;
+}
+.sec-contact .input {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.sec-contact input.form-group {
+  width: 538px;
+  height: 40px;
+  border-radius: 4px;
+  border: solid 1px #cccccc;
+  padding-left: 16px;
+  color: #000;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 0px;
+}
+.sec-contact textarea {
+	width: 538px;
+  height: 100px;
+  border-radius: 4px;
+  border: solid 1px #cccccc;
+  padding-left: 16px;
+  padding-top: 11px;
+}
+.sec-contact .wrap-btn {
+	margin-top: 25px;
+	margin-bottom: 0px;
+}
+.sec-contact .btn-tosca {
+	width: 142px;
+  height: 48px;
+  font-size: 16px;
+  line-height: 1.88;
+}
+/*--------- responsive---------*/
+	@media (max-width: 1900px) {
+		.sec-contact {
+			padding-bottom: 120px;
+		}
+	}
+	@media (max-width: 767px) {
+		body {
+			background-size: cover;
+    	background-position: 50% -60px;
+		}
+		.header-contact .wrap-content {
+			margin-top: 120px;
+		}
+		.header-contact .border {
+    	margin-bottom: 55px;
+		}
+		.sec-contact .col-md-5 {
+			order: 2;
+		}
+		.sec-contact .box-info {
+			width: 100%;
+	    padding: 15px;
+	    border: 2px solid;
+	    height: 100%;
+	    margin-bottom: 20px;
+		}
+		.sec-contact .sec-top h3, 
+		.sec-contact .sec-bot h3 {
+			font-size: 20px;
+			line-height: 24px;
+		}
+		.sec-contact .sec-top ul li span, 
+		.sec-contact .sec-bot p {
+			font-size: 16px;
+    	line-height: 20px;
+    	padding-left: 30px;
+		}
+		.sec-contact .sec-top ul li span.phone:before, 
+		.sec-contact .sec-top ul li span.whatsapp:before, 
+		.sec-contact .sec-top ul li span.email:before {
+			width: 18px;
+			height: 18px;
+		}
+		.sec-contact .sec-bot h3 {
+			margin-bottom: 14px;
+		}
+		.sec-contact .sec-bot p {
+			padding-left: 0px;
+		}
+		.sec-contact .box-form {
+			width: 100%;
+			height: 100%;
+			padding: 15px;
+			margin-bottom: 25px;
+		}
+		.sec-contact .box-form .desc {
+	    font-size: 16px;
+	    height: 100%;
+	    margin-bottom: 20px;
+		}
+		.sec-contact input.form-group,
+		.sec-contact textarea {
+			width: 100%;
+			height: 35px;
+			font-size: 15px;
+		}
+		.sec-contact textarea {
+			height: 80px;
+		}
+		.sec-contact .wrap-btn {
+			margin-top: 10px;
+		}
+		.sec-contact .input {
+			margin-bottom: 20px;
+		}
+		::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		  font-size: 15px;
+		}
+		::-moz-placeholder { /* Firefox 19+ */
+		  font-size: 15px;
+		}
+		:-ms-input-placeholder { /* IE 10+ */
+		  font-size: 15px;
+		}
+		:-moz-placeholder { /* Firefox 18- */
+		  font-size: 15px;
+		}
+		.sec-contact .btn-tosca {
+		  width: 132px;
+		  height: 40px;
+		  font-size: 15px;
+		  line-height: unset;
+		}
+	}
+/*---------end responsive------*/
