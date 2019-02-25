@@ -165,9 +165,10 @@ ul {
   }
   .navbar-transparent .navbar-nav>li>a:hover,
   .navbar-transparent .navbar-nav>li>a:focus {
-    color: var(--tosca)
+    color: var(--tosca);
   }
-  .navbar-transparent .navbar-nav>li.active>a {
+  .navbar-transparent .navbar-nav>li.active>a,
+  .navbar-transparent .navbar-nav>li.active>a:hover {
     color: var(--tosca);
     background: transparent;
   }
