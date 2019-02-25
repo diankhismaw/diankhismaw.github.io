@@ -23,12 +23,12 @@
   color: rgba(0, 0, 0, .6);
   letter-spacing: .5px;
 }
-.navbar-transparent {
+/*.navbar-transparent {
   background:var(--tosca);
-}
+}*/
 .sec-regis {
   padding-top: 72px;
-  background-size: 100%;
+  background-size: 120%;
   height: 100vh;
   background-position: 0px;
   position: relative;
@@ -318,6 +318,10 @@ label.label-form span {
   }
   :-moz-placeholder { /* Firefox 18- */
     font-size: 14px;
+  }
+  .sec-regis {
+    background-size: cover;
+    background-position: -90px 0px;
   }
   .sec-regis .wrap-inside .wrap-desc {
     width: 100%;

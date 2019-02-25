@@ -39,7 +39,7 @@
             <li><a href="about-us.html">TENTANG KAMI</a></li>
             <li><a href="#">UNTUK TRANSPORTIR</a></li>
             <li><a href="#">UNTUK CARGO OWNER</a></li>
-            <li><a href="contact-us.html">KONTAK</a></li>
+            <li class="active"><a href="contact-us.html">KONTAK</a></li>
             <!-- <li><a href="#">DAFTAR</a></li> -->
             <li><a href="#">LOGIN</a></li>
           </ul>
@@ -71,16 +71,16 @@
                       <span class="phone">0817-0373-4008</span>
                     </li>
                     <li>
-                      <span class="email">Hello@logisly.com</span>
+                      <span class="email">hello@logisly.com</span>
                     </li>
-                    <li>
+                    <!-- <li>
                       <span class="whatsapp">0817-0373-4008</span>
-                    </li>
+                    </li> -->
                   </ul>
                 </div>
                 <div class="sec-bot">
                   <h3>Kantor</h3>
-                  <p>Equity Tower, Sudirman No.22, RT.5/RW.3, <br> Senayan, Central Business District, <br>South Jakarta City, Jakarta 12190</p>
+                  <p>DreamHUB, Equity Tower, <br> Sudirman No.22, RT.5/RW.3,<br> Senayan, Central Business District, <br>South Jakarta City, Jakarta 12190</p>
                 </div>
               </div>
             </div>
@@ -88,7 +88,7 @@
             <div class="col-md-7">
               <div class="box-form">
                 <div class="desc">
-                  Isi formulir untuk demo, partnership dan informasi lainnya mengenai logisly
+                  Isi formulir untuk demo, partnership dan informasi lainnya mengenai Logisly
                 </div>
                 <div class="wrap-form">
                   <div class="input">
@@ -120,28 +120,6 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $(".toggle-password").click(function() {
-          $(this).toggleClass("fa-eye fa-eye-slash");
-          var input = $($(this).attr("toggle"));
-          if (input.attr("type") == "password") {
-            input.attr("type", "text");
-          } else {
-            input.attr("type", "password");
-          }
-        });
-
-        var scroll_pos = 0;
-          $(document).scroll(function() { 
-              scroll_pos = $(this).scrollTop();
-              if(scroll_pos > 60) {
-                  $(".navbar-transparent").css('background', 'black');
-              } else {
-                  $(".navbar-transparent").css('background', 'transparent');
-              }
-          });
-      });
-    </script>
+    <script src="js/custom.js"></script>
   </body>
 </html>
