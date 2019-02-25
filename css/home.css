@@ -161,6 +161,11 @@ ul {
     line-height: 18px;
     font-weight: bold;
     letter-spacing: .5px;
+    transition: color .4s ease;
+  }
+  .navbar-transparent .navbar-nav>li>a:hover,
+  .navbar-transparent .navbar-nav>li>a:focus {
+    color: var(--tosca)
   }
   .navbar-transparent .navbar-nav>li.active>a {
     color: var(--tosca);
