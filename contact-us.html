@@ -96,33 +96,33 @@
               </div>
             </div>
 
-            <div class="col-md-7">
-              <div class="box-form">
-                <div class="desc">
-                  Isi formulir untuk demo, partnership dan informasi lainnya mengenai Logisly
-                </div>
-                <div id="form-messages"></div>
-                <form method="post" name="form1" action="email.php" onSubmit="return cekEmail()">
-                  <div class="input">
-                    <input type="text" name="nama" class="form-group" id="name" placeholder="Nama" required>
-                  </div>
-                  <div class="input">
-                    <input type="text" name="phone" class="form-group" id="phone" placeholder="No. Telpon" required>
-                  </div>
-                  <div class="input">
-                    <input type="text" name="email" class="form-group" id="email" placeholder="Email" required>
-                  </div>
-                  <div class="input">
-                    <textarea placeholder="Pesan" id="msg"></textarea>
-                  </div>
+            <div class="col-sm-6 kirim-pesan">
+    <h3>Kirimkan Pesan Anda</h3>
+    
+    <form name="form1" action="email.php" method="post" onSubmit="return cekEmail()">
+    <table border="0" class="tbl_contact" cellpadding="2">
 
-                  <div class="field">
-                    <!-- <button type="submit" class="btn btn-tosca">Kirim Pesan</button> -->
-                    <input type="submit" class="submit_button" value="Kirimkan" />
-                  </div>
-                </form>
-              </div>
-            </div>
+
+    <tr><td valign="top" width="110">Nama</td><td valign="top">
+      <input type="text" name="nama" style="class-sm-8" /></td></tr>
+    <tr><td valign="top">Email</td><td valign="top">
+      <input type="text" name="email" width="350" /></td></tr>
+    <tr><td valign="top">Topik</td><td valign="top">
+    <select name="subject">
+            <option value="Pendaftaran">Pendaftaran</option>
+            <option value="Kurikulum">Kurikulum</option>
+            <option value="Lain-Lain">Lain-Lain</option>
+    </select>
+    </td></tr>
+    <tr><td valign="top">Pesan</td><td valign="top"><textarea name="message" style="min-height:80px;min-width:175px;"></textarea></td></tr>
+    <tr><td colspan="2" align="right">
+    <input type="submit" class="submit_button" value="Kirimkan" />
+    </td></tr>
+    </table>
+
+    </form>
+
+  </div>
           </div>
         </div>
     	</div>
