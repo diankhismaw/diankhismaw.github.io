@@ -1,178 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>KONTAK KAMI | LOGISLY</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/about-us.css">
-    <link rel="stylesheet" href="css/contact-us.css">
-  </head>
-
-  <body>
-
-    <nav class="navbar navbar-inverse navbar-transparent navbar-fixed">
-      <div class="container">
-        <div class="navbar-header">  
-          <a href="home.html" class="navbar-brand">
-            <img src="img/logo-color.png">
-          </a> 
-          <div class="phone-nav hidden-xs">
-            <!-- <div class="wrap-phone">
-              <span class="number">0811 373 456</span>  
-            </div> -->
-            <div class="wrap-phone">
-              <span class="number">0817 0373 4008</span>  
-            </div>
-          </div>  
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse pull-right" id="navbar">
-          <ul class="nav navbar-nav">
-            <li><a href="about-us.html">TENTANG KAMI</a></li>
-            <li><a href="register-carrier.html">UNTUK TRANSPORTIR</a></li>
-            <li><a href="register-shipper.html">UNTUK CARGO OWNER</a></li>
-            <li class="active"><a href="contact-us.html">KONTAK</a></li>
-            <!-- <li><a href="#">DAFTAR</a></li> -->
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Login <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="http://transporter.logisly.com">Transportir</a></li>
-                <li><a href="http://shipper.logisly.com">Shipper</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <header class="header-home header-about header-contact">
-      <div class="container">
-        <div class="row">
-          <div class="wrap-content">
-            <div class="wrap-title">
-              <h1>Hubungi Kami</h1>
-            </div>
-            <span class="border"></span>
-          </div>
-        </div>
-      </div>
-    </header>
-    <section class="sec-contact">
-    	<div class="container">
-    		<div class="row">
-          <div class="wrap-content">
-            <div class="col-md-5">
-              <div class="box-info">
-                <div class="sec-top">
-                  <h3>Kontak Kami</h3>
-                  <ul>
-                    <li>
-                      <span class="phone">0817-0373-4008</span>
-                    </li>
-                    <li>
-                      <span class="email">hello@logisly.com</span>
-                    </li>
-                    <!-- <li>
-                      <span class="whatsapp">0817-0373-4008</span>
-                    </li> -->
-                  </ul>
-                </div>
-                <div class="sec-bot">
-                  <h3>Kantor</h3>
-                  <p>DreamHUB, Equity Tower, <br> Sudirman No.22, RT.5/RW.3,<br> Senayan Central Business District, <br>South Jakarta City, Jakarta 12190</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 kirim-pesan">
-    <h3>Kirimkan Pesan Anda</h3>
-    
-    <form name="form1" action="email.php" method="post" onSubmit="return cekEmail()">
-    <table border="0" class="tbl_contact" cellpadding="2">
-
-
-    <tr><td valign="top" width="110">Nama</td><td valign="top">
-      <input type="text" name="nama" style="class-sm-8" /></td></tr>
-    <tr><td valign="top">Email</td><td valign="top">
-      <input type="text" name="email" width="350" /></td></tr>
-    <tr><td valign="top">Topik</td><td valign="top">
-    <select name="subject">
-            <option value="Pendaftaran">Pendaftaran</option>
-            <option value="Kurikulum">Kurikulum</option>
-            <option value="Lain-Lain">Lain-Lain</option>
-    </select>
-    </td></tr>
-    <tr><td valign="top">Pesan</td><td valign="top"><textarea name="message" style="min-height:80px;min-width:175px;"></textarea></td></tr>
-    <tr><td colspan="2" align="right">
-    <input type="submit" class="submit_button" value="Kirimkan" />
-    </td></tr>
-    </table>
-
-    </form>
-
-  </div>
-          </div>
-        </div>
-    	</div>
-    </section>
-    <div class="container-fluid wrap-copyright">
-      <div class="copyright">
-        ©Copyright 2019 PT Logistik Pintar Indonesia. All Rights Reserved.​
-      </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
-    <!-- <script src="js/mail.js"></script> -->
-    <script language=javascript>
-      function cekEmail()
-      {
-        if (!document.form1.nama.value)
-        {
-        alert("Harap masukkan nama anda!")
-        document.form1.nama.focus();
-        return false
-        }
-        if (!document.form1.phone.value)
-        {
-        alert("Harap masukkan nama anda!")
-        document.form1.phone.focus();
-        return false
-        }
-        if (!document.form1.email.value)
-        {
-        alert("Harap masukkan alamat email anda!")
-        document.form1.email.focus();
-        return false
-        }
-        var filter=/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i
-        if (!filter.test(document.form1.email.value))
-        {
-        alert("Harap masukkan alamat email yang valid!")
-        document.form1.email.focus();
-        return false
-        }
-        if (!document.form1.msg.value)
-        {
-        alert("Harap masukkan pesan anda!")
-        document.form1.msg.focus();
-        return false
-        }
-
-      return true;
-      }
-  </script>
-  </body>
-</html>
+<form name="contactform" method="post" action="send_form_email.php">
+<table width="450px">
+<tr>
+ <td valign="top">
+  <label for="first_name">First Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="first_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top"">
+  <label for="last_name">Last Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="last_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="email">Email Address *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="email" maxlength="80" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="telephone">Telephone Number</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="telephone" maxlength="30" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="comments">Comments *</label>
+ </td>
+ <td valign="top">
+  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+ </td>
+</tr>
+<tr>
+ <td colspan="2" style="text-align:center">
+  <input type="submit" value="Submit">   <a href="http://www.freecontactform.com/email_form.php">Email Form</a>
+ </td>
+</tr>
+</table>
+</form>
