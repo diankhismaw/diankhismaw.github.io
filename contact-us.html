@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>LOGISLY</title>
+    <title>KONTAK KAMI | LOGISLY</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" href="css/home.css">
@@ -16,7 +21,7 @@
     <nav class="navbar navbar-inverse navbar-transparent navbar-fixed">
       <div class="container">
         <div class="navbar-header">  
-          <a href="index.html" class="navbar-brand">
+          <a href="home.html" class="navbar-brand">
             <img src="img/logo-color.png">
           </a> 
           <div class="phone-nav hidden-xs">
@@ -41,7 +46,13 @@
             <li><a href="register-shipper.html">UNTUK CARGO OWNER</a></li>
             <li class="active"><a href="contact-us.html">KONTAK</a></li>
             <!-- <li><a href="#">DAFTAR</a></li> -->
-            <li><a href="#">LOGIN</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Login <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://transporter.logisly.com">Transportir</a></li>
+                <li><a href="http://shipper.logisly.com">Shipper</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
@@ -80,7 +91,7 @@
                 </div>
                 <div class="sec-bot">
                   <h3>Kantor</h3>
-                  <p>DreamHUB, Equity Tower, <br> Sudirman No.22, RT.5/RW.3,<br> Senayan, Central Business District, <br>South Jakarta City, Jakarta 12190</p>
+                  <p>DreamHUB, Equity Tower, <br> Sudirman No.22, RT.5/RW.3,<br> Senayan Central Business District, <br>South Jakarta City, Jakarta 12190</p>
                 </div>
               </div>
             </div>
@@ -90,23 +101,26 @@
                 <div class="desc">
                   Isi formulir untuk demo, partnership dan informasi lainnya mengenai Logisly
                 </div>
-                <div class="wrap-form">
+                <div id="form-messages"></div>
+                <form method="post" name="form1" action="email.php" onSubmit="return cekEmail()">
                   <div class="input">
-                    <input type="text" name="nama" class="form-group" placeholder="Nama">
+                    <input type="text" name="nama" class="form-group" id="name" placeholder="Nama" required>
                   </div>
                   <div class="input">
-                    <input type="text" name="email" class="form-group" placeholder="No. Telpon">
+                    <input type="text" name="phone" class="form-group" id="phone" placeholder="No. Telpon" required>
                   </div>
                   <div class="input">
-                    <input type="text" name="pesan" class="form-group" placeholder="Email">
+                    <input type="text" name="email" class="form-group" id="email" placeholder="Email" required>
                   </div>
                   <div class="input">
-                    <textarea placeholder="Pesan"></textarea>
+                    <textarea placeholder="Pesan" id="msg"></textarea>
                   </div>
-                </div>
-                <div class="wrap-btn">
-                  <button type="submit" class="btn btn-tosca">Kirim Pesan</button>
-                </div>
+
+                  <div class="field">
+                    <!-- <button type="submit" class="btn btn-tosca">Kirim Pesan</button> -->
+                    <input type="submit" class="submit_button" value="Kirimkan" />
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -121,5 +135,44 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
+    <!-- <script src="js/mail.js"></script> -->
+    <script language=javascript>
+      function cekEmail()
+      {
+        if (!document.form1.nama.value)
+        {
+        alert("Harap masukkan nama anda!")
+        document.form1.nama.focus();
+        return false
+        }
+        if (!document.form1.phone.value)
+        {
+        alert("Harap masukkan nama anda!")
+        document.form1.phone.focus();
+        return false
+        }
+        if (!document.form1.email.value)
+        {
+        alert("Harap masukkan alamat email anda!")
+        document.form1.email.focus();
+        return false
+        }
+        var filter=/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i
+        if (!filter.test(document.form1.email.value))
+        {
+        alert("Harap masukkan alamat email yang valid!")
+        document.form1.email.focus();
+        return false
+        }
+        if (!document.form1.msg.value)
+        {
+        alert("Harap masukkan pesan anda!")
+        document.form1.msg.focus();
+        return false
+        }
+
+      return true;
+      }
+  </script>
   </body>
 </html>

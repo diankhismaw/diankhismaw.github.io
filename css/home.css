@@ -162,15 +162,47 @@ ul {
     font-weight: bold;
     letter-spacing: .5px;
     transition: color .4s ease;
+    text-transform: uppercase;
   }
   .navbar-transparent .navbar-nav>li>a:hover,
   .navbar-transparent .navbar-nav>li>a:focus {
     color: var(--tosca);
   }
   .navbar-transparent .navbar-nav>li.active>a,
-  .navbar-transparent .navbar-nav>li.active>a:hover {
+  .navbar-transparent .navbar-nav>li.active>a:hover,
+  .navbar-inverse .navbar-nav>.open>a,
+  .navbar-inverse .navbar-nav>.open>a, 
+  .navbar-inverse .navbar-nav>.open>a:focus {
     color: var(--tosca);
     background: transparent;
+  }
+  .navbar-transparent .navbar-nav>li>.dropdown-menu {
+    left: -80px;
+    background: rgba(255, 255, 255, .75);
+    font-size: 16px;
+    padding: 0px;
+    border: 0px;
+    border-radius: 4px;
+  }
+  .navbar-transparent .dropdown-menu>li>a {
+    font-family: 'Prox-reg';
+    padding: 5px 15px;
+  }
+  .navbar-transparent .dropdown-menu>li:nth-child(1)>a:hover,
+  .navbar-transparent .dropdown-menu>li:nth-child(1)>a:focus {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  .navbar-transparent .dropdown-menu>li:nth-child(2)>a:hover,
+  .navbar-transparent .dropdown-menu>li:nth-child(2)>a:focus {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  .navbar-transparent .dropdown-menu>li>a:focus, 
+  .navbar-transparent .dropdown-menu>li>a:hover {
+    color: var(--tosca);
+    text-decoration: none;
+    background-color: #f5f5f5;
   }
 /*------end-navbar---------*/
 
@@ -182,9 +214,11 @@ ul {
     background-repeat: no-repeat;
     height: 100vh;
     background-attachment: fixed;
+    display: flex;
+    align-items: center;
   }
   .header-home .wrap-content{
-    margin-top: 155px;
+    margin-top: 0px;
     text-align: center;
     display: inline-block;
     width: 100%;
@@ -267,6 +301,8 @@ ul {
     bottom: 0px;
     background:  rgba(0, 0, 0, 0.54);
     width: 100%;
+    z-index: 3;
+    left: 0px;
   }
   .wrap-copyright .copyright {
     padding: 13px;
@@ -274,6 +310,8 @@ ul {
     color: white;
     font-family: 'prox-reg';
     letter-spacing: .5px;
+    font-size: 14px;
+    line-height: normal;
   }
 /*-------end-copyright-------*/
 
