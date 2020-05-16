@@ -1,93 +1,126 @@
-<!DOCTYPE html>
+
+<!DOCTYPE html> 
 <html lang="en">
-	<head>
-	  <title>LOGISLY</title>
-	  <meta charset="utf-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<title>Hello</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#bb010a">
+</head>
+<style>
+	.nimbus-is-editor {
+		background:linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+		height: 100vh
+	}
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	h1 {
+	    font-size: 40px;
+	    color: #524d4d;
+	    font-family: sans-serif;
+	    text-shadow: 2px 2px 80px #3dc3b7;
+	    padding: 40px;
+	    border-radius: 20px;
+	    text-align: center;
+	    box-shadow: 2px 2px 30px 50px #f3f3f373;
+	}
+	button {
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	    padding: 15px 30px;
+	    font-size: 15px;
+	    color: white;
+	    font-weight: 500;
+	    border-radius: 5px;
+	    background: #ecacd6;
+	    border: 0px;
+	    cursor: pointer;
+	}
+	button:hover {
+	  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	}
+	@media (max-width: 767px) {
+		h1 {
+	    	font-size:25px;
+	    	box-shadow: none;
+	    }
+	}
+</style>
+<body class="nimbus-is-editor">
+	<div class="container">
+		<h1 id="app">Happy Birthday</h1>
+		<button onclick="toggleConfetti();" class="btn btn-warning">Penasaran Gak? Klik Aja</button>
+	</div>
 
-	  <link rel="shortcut icon" href="https://logisly.s3.amazonaws.com/assets/images/favicon.ico">
-    <link rel="shortcut icon" href="https://logisly.s3.amazonaws.com/assets/images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="https://logisly.s3.amazonaws.com/assets/images/favicon.ico" type="image/x-icon">
+	<script src="jquery-3.5.1.min.js"></script>
+	<script src="confetti.min.js"></script>
+	<script src="core.js"></script>
+	<script>
+		function startConfetti(){
+			confetti.start();
+		}
+		function stopConfetti() {
+			confetti.stop();
+		}
+		function toggleConfetti() {
+			confetti.toggle();
+		}
 
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-	  <link rel="stylesheet" href="css/home.css">
-	</head>
-	<body>
+		var app = document.getElementById('app');
 
-		<nav class="navbar navbar-inverse navbar-transparent navbar-fixed">
-	    <div class="container">
-	      <div class="navbar-header">  
-	      	<a href="index.html" class="navbar-brand">
-	      		<img src="img/logo-color.png">
-	      	</a> 
-	      	<div class="phone-nav hidden-xs">
-	      		<!-- <div class="wrap-phone">
-	      			<span class="number">0811 373 456</span>	
-	      		</div> -->
-	      		<div class="wrap-phone">
-	      			<span class="number">0817 0373 4008</span>	
-	      		</div>
-	      	</div>	
-	      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-	      </div>
-	      <div class="collapse navbar-collapse pull-right" id="navbar">
-	        <ul class="nav navbar-nav">
-	          <li><a href="about-us.html">TENTANG KAMI</a></li>
-	          <li><a href="register-carrier.html">UNTUK TRANSPORTIR</a></li>
-            <li><a href="register-shipper.html">UNTUK CARGO OWNER</a></li>
-	          <li><a href="contact-us.html">KONTAK</a></li>
-	          <!-- <li><a href="#">DAFTAR</a></li> -->
-	          <li><a href="#">LOGIN</a></li>
-	        </ul>
-	      </div>
-	    </div>
-		</nav>
-		<header class="header-home">
-			<div class="container">
-				<div class="row">
-					<div class="wrap-content">
-						<div class="wrap-title">
-							<h1>Forwarding Digital Untuk Truk</h1>
-							<h3 class="hidden-xs">	Dapatkan truk terpercaya dengan harga kompetitif, <br><i>online tracking</i> dan dashboard online</h3>	
-							<h3 style="display: none;" class="visible-xs">Dapatkan truk terpercaya dengan harga kompetitif, <i>online tracking</i> dan dashboard online</h3>	
-						</div>
-						<div class="wrap-action">
-							<div class="col-md-6">
-								<a href="register-carrier.html" class="btn btn-tosca">
-									Cari Truck
-								</a>
-								<div class="desc">
-									Dapatkan truk dalam 12 jam, <br> pantau pengiriman dan dapatkan invoice digital secara instan.
-								</div>
-							</div>
-							<div class="col-md-6">
-								<a href="register-shipper.html" class="btn btn-tosca">
-									Cari Muatan
-								</a>
-								<div class="desc hidden-xs">
-									Dapatkan muatan <br>dengan pembayaran 2x24 jam
-								</div>
-								<div class="desc visible-xs" style="display: none;">
-									Dapatkan muatan dengan pembayaran 2x24 jam
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>		
-		<div class="container-fluid wrap-copyright">
-			<div class="copyright">
-				©Copyright 2019 PT Logistik Pintar Indonesia. All Rights Reserved.​
-			</div>
-		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	  <script src="js/custom.js"></script>
-	</body>
+		var typewriter = new Typewriter(app, {
+		    loop: true,
+		    changeDeleteSpeed: 1
+		});
+
+		typewriter.typeString('Happy Birthday Sayang!')
+		    .pauseFor(2500)
+		    .deleteAll()
+		    .typeString('Sehat selalu yaaa!')
+		    .pauseFor(2500)
+		    .deleteAll()
+		    .typeString('Maafin aku masih sering bikin kamu kesal')
+		    .pauseFor(2500)
+		    .deleteAll()
+		    .typeString('Keadaan sekarang memang sedang buruk')
+		    .pauseFor(2500)
+		    .deleteAll()
+		    .typeString('Kamu pasti lagi bosen banget kan dirumah terus?')
+		    .pauseFor(2500)
+		    .deleteAll()
+		    .typeString('Sabar yaa sayang sebentar lagi ini berlalu')
+		    .pauseFor(2500)
+		    .deleteAll()
+		    .typeString('Kalau kamu butuh apapun bilang yaa, aku pasti akan carikan')
+		    .pauseFor(2500)
+		    .deleteAll()
+		    .typeString('Yang penting kamu sehat terus :)')
+		    .pauseFor(2500)
+		    .deleteAll()
+		    .typeString('Jangan cuekin aku ya sayang :( Maaf soal yang kemarin')
+		    .pauseFor(2500)
+		    .deleteAll()
+		    .typeString('Aku minta maaf yaa..')
+		    .pauseFor(2500)
+		    .deleteAll()
+		    .typeString('Semoga apa yang kamu impikan, segera terwujud yaa')
+		    .pauseFor(2500)
+		    .deleteAll()
+		    .typeString('Dipermudah segala urusannya dan dilancarkan rezekinya. Aaamiin!!')
+		    .pauseFor(2500)
+		    .deleteAll()
+		    .typeString('I Love You Sayang ♥')
+		    .pauseFor(2500)
+		    .deleteAll()
+		    .start();
+	</script>
+</body>
 </html>
+
