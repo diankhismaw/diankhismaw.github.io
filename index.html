@@ -1,21 +1,95 @@
-
-<!DOCTYPE html> 
-<html lang="en">
 <head>
-	<title>Hello</title>
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <meta name="theme-color" content="#bb010a">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=no" />
+    <meta charset="utf-8">
+
+    <!-- The Viewer CSS -->
+    <link rel="stylesheet" href="https://developer.api.autodesk.com/modelderivative/v2/viewers/6.*/style.min.css" type="text/css">
+
+    <!-- Developer CSS -->
+    <style>
+        body {
+            margin: 0;
+        }
+        #MyViewerDiv {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            background-color: #F0F8FF;
+        }
+    </style>
 </head>
 <body>
-	<div class='modelo-wrapper'> 
-		<div style="width: 100%; padding-bottom: 56.25%; position: relative"> 
-			<div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"> 
-				<iframe src="https://app.modelo.io/embedded/1412787857099878400?viewport=false&autoplay=false&autoRotate=false&hideTools=false&showBIM=false&showBBoxSize=false&showKooRender=false&showSettings=false" style="width:100%;height:100%;" frameborder="0" mozallowfullscreen webkitallowfullscreen allowfullscreen ></iframe> 
-			</div> 
-		</div> 
-	</div>
-</body>
-</html>
+    <!-- The Viewer will be instantiated here -->
+    <div id="MyViewerDiv"></div>
 
+    <!-- The Viewer JS -->
+    <script src="https://developer.api.autodesk.com/modelderivative/v2/viewers/6.*/viewer3D.min.js"></script>
+
+    <!-- Developer JS -->
+    <script>
+        var viewerApp;
+        var options = {
+            env: 'AutodeskProduction',
+            getAccessToken: function(onGetAccessToken) {
+                //
+                // TODO: Replace static access token string below with call to fetch new token from your backend
+                // Both values are provided by Forge's Authentication (OAuth) API.
+                //
+                // Example Forge's Authentication (OAuth) API return value:
+                // {
+                //    "access_token": "<YOUR_APPLICATION_TOKEN>",
+                //    "token_type": "Bearer",
+                //    "expires_in": 86400
+                // }
+                //
+                var accessToken = 'eyJhbGciOiJSUzI1NiIsImtpZCI6IlU3c0dGRldUTzlBekNhSzBqZURRM2dQZXBURVdWN2VhIn0.eyJzY29wZSI6WyJkYXRhOnJlYWQiLCJkYXRhOndyaXRlIiwiZGF0YTpjcmVhdGUiLCJidWNrZXQ6cmVhZCIsImJ1Y2tldDpjcmVhdGUiXSwiY2xpZW50X2lkIjoiYW1CSzZRQU9HSUNTNnA2TVp5MUhOMGhuOWtsYnhsbXAiLCJhdWQiOiJodHRwczovL2F1dG9kZXNrLmNvbS9hdWQvYWp3dGV4cDYwIiwianRpIjoiMXFCdG9TSnp4UTRNWlM0WEdTZXBCVWlyaGJhTnRod2wxMFdnY0NWTGdPT0hyV0sxR3JmMHAzU2JWemFCblBmRyIsImV4cCI6MTYyNTk0NTgzM30.bw8UH4Sh5KpNypLdzQvVUEWEAGPvN3kEMJQaIkYm0YxstJghmizA8sm9op9O2HCQfdnmoeBRmy0KAVgklY3kMalsyC2cX8Du6EIjuOFO3X1ufuiE1wb1mlAU8PDg-yhaJCbsNiS05fiTggEQGIEzQIOzTno_9q7t6ZVONwCdIT4W5esPJHEGDS_U91D5QKRaB9juxHZpagvGub1zKKPRVjhpLLyGMkfZZOhBvnQ1-33bQY_1SKd3qNUOJXdOzAV9o3LpCcyE4Zi-KFKgrz4wYVOZsAYgv1yW4fYSynCmHtuTe5gyO7OAZqyzu19UiBCRI_KhCruV9agmKqdu0sVASg';
+                var expireTimeSeconds = 60 * 30;
+                onGetAccessToken(accessToken, expireTimeSeconds);
+            }
+
+        };
+		let config3d = {
+          extensions: ['Autodesk.InViewerSearch']
+		}; 
+        
+        var documentId = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6ZGlhbndpamF5YTAwMy9hc3RsZXN0YXJpLnJ2dA';
+        Autodesk.Viewing.Initializer(options, function onInitialized(){
+            viewerApp = new Autodesk.Viewing.ViewingApplication('MyViewerDiv');
+            viewerApp.registerViewer(viewerApp.k3D, Autodesk.Viewing.Private.GuiViewer3D, config3d);
+            viewerApp.loadDocument(documentId, onDocumentLoadSuccess, onDocumentLoadFailure);
+        });
+
+        function onDocumentLoadSuccess(doc) {
+
+            // We could still make use of Document.getSubItemsWithProperties()
+            // However, when using a ViewingApplication, we have access to the **bubble** attribute,
+            // which references the root node of a graph that wraps each object from the Manifest JSON.
+            var viewables = viewerApp.bubble.search({'type':'geometry'});
+            if (viewables.length === 0) {
+                console.error('Document contains no viewables.');
+                return;
+            }
+
+            // Choose any of the avialble viewables
+            viewerApp.selectItem(viewables[0].data, onItemLoadSuccess, onItemLoadFail);
+        }
+
+        function onDocumentLoadFailure(viewerErrorCode) {
+            console.error('onDocumentLoadFailure() - errorCode:' + viewerErrorCode);
+        }
+
+        function onItemLoadSuccess(viewer, item) {
+            console.log('onItemLoadSuccess()!');
+            console.log(viewer);
+            console.log(item);
+
+            // Congratulations! The viewer is now ready to be used.
+            console.log('Viewers are equal: ' + (viewer === viewerApp.getCurrentViewer()));
+        }
+
+        function onItemLoadFail(errorCode) {
+            console.error('onItemLoadFail() - errorCode:' + errorCode);
+        }
+
+    </script>
+</body>
